@@ -1,0 +1,5 @@
+# Simulation sandbox — Layers 1-3
+numpy
+scipy
+matplotlib
+control        # python-control: transfer functions, Bode, gain/phase margins

@@ -60,6 +60,12 @@ When you sense current and assume Φ = NI/ℛ, you are trusting that:
 
 All three assumptions fail to some degree. Flux sensing bypasses all three.
 
+### 3b. Precision Isn't the Point — Structural vs. Measurement Error
+
+A natural follow-up: couldn't a *more precise* current sensor close this gap instead? No — the three failure modes above (hysteresis, PM drift, saturation) are **structural model error** in the i → Φ map, not measurement noise around a correct value. An arbitrarily precise ammeter still only tells you i exactly; it can't tell you what the reluctance network is currently doing with that current. Precision reduces noise around a value — it doesn't correct a systematically wrong (or drifting) transfer function. The value of Hall sensing isn't "better SNR than a current sensor," it's "measuring the variable one hop closer to the causal one (F depends on Φ, not i), so the uncertain i→Φ hop drops out of the loop entirely."
+
+Is a Hall sensor even *more precise* than current sensing, concretely? Not dramatically — the top pick in [[Maglev - Hall Sensor Selection]] (Allegro A1308) runs ~0.25 µT/√Hz input-referred noise at 20 kHz bandwidth, which is in the same performance class as the ACS711/ACS712 current sensors already planned for this build. Worth noting: those current sensors are *themselves* Hall-effect ICs — they infer coil current from the B-field around a busbar. So adding a gap Hall sensor isn't introducing a fundamentally more precise sensing modality; it's pointing the same class of sensor at a different, more causally direct location in the magnetic circuit (the air gap, where F is actually determined, instead of the busbar, one model-hop removed).
+
 ---
 
 ## 4. What Flux Feedback Actually Provides
