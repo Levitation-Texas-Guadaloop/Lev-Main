@@ -61,20 +61,20 @@ class ForcePlotApp:
 
     def _build_sliders(self):
         specs = [
-            ("N_turns", "Turns (N)", 10.0, 1000.0),
-            ("ydepth_in", "Yoke depth, ydepth [in]", 1.0, 20.0),
-            ("mass_kg", "Mass [kg]", 10.0, 1000.0),
+            ("N_turns", "Turns (N)", 10.0, 1000.0, None),
+            ("ydepth_in", "Yoke depth, ydepth [in]", 1.0, 20.0, 1.0),
+            ("mass_kg", "Mass [kg]", 10.0, 1000.0, 1.0),
         ]
         left0, width, gap = 0.07, 0.24, 0.06
         y_label, y_slider, slider_h = 0.24, 0.19, 0.025
 
         self.sliders = {}
-        for idx, (attr, label, vmin, vmax) in enumerate(specs):
+        for idx, (attr, label, vmin, vmax, valstep) in enumerate(specs):
             x0 = left0 + idx * (width + gap)
             self.fig.text(x0, y_label, label, fontsize=9.5, va="bottom")
             axs = self.fig.add_axes([x0, y_slider, width, slider_h])
             init = getattr(DEFAULT_GEOM, attr)
-            slider = Slider(axs, "", vmin, vmax, valinit=init, valfmt="%.3g")
+            slider = Slider(axs, "", vmin, vmax, valinit=init, valstep=valstep, valfmt="%.3g")
             slider.on_changed(self.update)
             self.sliders[attr] = slider
 

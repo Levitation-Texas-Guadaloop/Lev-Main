@@ -36,6 +36,7 @@ layer1_openloop.py          Layer 1: open-loop crash, confirms the RHP pole
 layer2_current_loop.py      Layer 2: inner PI current loop, bandwidth vs. pole
 layer3_siso_stabilizer.py   Layer 3: PID outer loop, Bode/margins + nested sim
 layer4_lqr.py               Layer 4: LQR state feedback + observer (MIMO-ready)
+eddy_margin_explorer.py     GUI: yoke-slice eddy lag vs gain crossover / phase margin
 bode_poles/                 prior standalone study: the RHP-pole bandwidth limit
 ```
 
@@ -47,6 +48,7 @@ python3 layer1_openloop.py        # -> figures/layer1_*.png
 python3 layer2_current_loop.py    # -> figures/layer2_*.png
 python3 layer3_siso_stabilizer.py # -> figures/layer3_*.png
 python3 layer4_lqr.py             # -> figures/layer4_lqr.png
+python3 eddy_margin_explorer.py   # interactive; --selftest / --snapshot PATH
 ```
 
 Each script is standalone, prints its key diagnostics to stdout, and writes its
