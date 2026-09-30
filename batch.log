@@ -1,0 +1,517 @@
+ 
+Ansys Electronics Desktop Student Version 2025.2.4, Build: 2025-11-06 17:01:32
+Location: F:\Ansys2\ANSYS Inc\ANSYS Student\v252\AnsysEM\ansysedtsv.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 12:11:42 PM  Sep 30, 2026
+Running as user : ADITYA-DESKTOP\adity
+Temp directory: C:\temp
+Project directory: F:\Ansys2\Projects
+[info] gRPC server started on port 50332 of local host. Only connections from the local host initiated by the same user are permitted.
+
+[error] No such feature exists.
+Feature
+m3dfs_gui
+License path
+C
+\Users\adity\AppData\Local\Temp\\8cc0d7d6-9b97-4882-9397-c8e774bacef7;
+FlexNet Licensing error
+-5,357
+
+
+[error] No such feature exists.
+Feature
+m3dfs_gui
+License path
+C
+\Users\adity\AppData\Local\Temp\\8cc0d7d6-9b97-4882-9397-c8e774bacef7;
+FlexNet Licensing error
+-5,357
+
+
+[info] Server 'srv_2001' started on ports (2001, 2002)
+ 
+Ansys Electronics Desktop Student Version 2025.2.4, Build: 2025-11-06 17:01:32
+Location: F:\Ansys2\ANSYS Inc\ANSYS Student\v252\AnsysEM\ansysedtsv.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 12:20:46 PM  Sep 30, 2026
+Running as user : ADITYA-DESKTOP\adity
+Temp directory: C:\temp
+Project directory: F:\Ansys2\Projects
+[info] gRPC server started on port 50864 of local host. Only connections from the local host initiated by the same user are permitted.
+
+Stopping Batch Run: 12:21:13 PM  Sep 30, 2026
+ 
+Ansys Electronics Desktop Student Version 2025.2.4, Build: 2025-11-06 17:01:32
+Location: F:\Ansys2\ANSYS Inc\ANSYS Student\v252\AnsysEM\ansysedtsv.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 12:26:49 PM  Sep 30, 2026
+Running as user : ADITYA-DESKTOP\adity
+Temp directory: C:\temp
+Project directory: F:\Ansys2\Projects
+[info] gRPC server started on port 51210 of local host. Only connections from the local host initiated by the same user are permitted.
+
+[warning] Project:yoke, Unable to open some designs from the project file. This may be caused by insufficient licenses or unsupported student version for the types of designs in the project, or by a corrupted project file.
+
+Saving this project will result in unopened designs and their data being removed from the project. Please use Save As to avoid overwriting and losing data from the existing files. (12:27:00 PM  Sep 30, 2026)
+[warning] There were minor errors reading the project.
+[warning] There were minor errors reading the project.
+[error] Project:yoke, Component MechanicalDesign1 references design MechanicalDesign1 which is missing. It would be best to remove the component. (12:27:00 PM  Sep 30, 2026)
+Stopping Batch Run: 12:27:11 PM  Sep 30, 2026
+ 
+Ansys Electronics Desktop Student Version 2025.2.4, Build: 2025-11-06 17:01:32
+Location: F:\Ansys2\ANSYS Inc\ANSYS Student\v252\AnsysEM\ansysedtsv.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 12:27:28 PM  Sep 30, 2026
+Running as user : ADITYA-DESKTOP\adity
+Temp directory: C:\temp
+Project directory: F:\Ansys2\Projects
+[info] gRPC server started on port 51287 of local host. Only connections from the local host initiated by the same user are permitted.
+
+[warning] Project:yoke, Unable to open some designs from the project file. This may be caused by insufficient licenses or unsupported student version for the types of designs in the project, or by a corrupted project file.
+
+Saving this project will result in unopened designs and their data being removed from the project. Please use Save As to avoid overwriting and losing data from the existing files. (12:27:39 PM  Sep 30, 2026)
+[warning] There were minor errors reading the project.
+[warning] There were minor errors reading the project.
+[error] Project:yoke, Component MechanicalDesign1 references design MechanicalDesign1 which is missing. It would be best to remove the component. (12:27:39 PM  Sep 30, 2026)
+Stopping Batch Run: 12:27:50 PM  Sep 30, 2026
+ 
+Ansys Electronics Desktop Student Version 2025.2.4, Build: 2025-11-06 17:01:32
+Location: F:\Ansys2\ANSYS Inc\ANSYS Student\v252\AnsysEM\ansysedtsv.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 12:28:04 PM  Sep 30, 2026
+Running as user : ADITYA-DESKTOP\adity
+Temp directory: C:\temp
+Project directory: F:\Ansys2\Projects
+[info] gRPC server started on port 51338 of local host. Only connections from the local host initiated by the same user are permitted.
+
+[warning] Project:yoke, Unable to open some designs from the project file. This may be caused by insufficient licenses or unsupported student version for the types of designs in the project, or by a corrupted project file.
+
+Saving this project will result in unopened designs and their data being removed from the project. Please use Save As to avoid overwriting and losing data from the existing files. (12:28:16 PM  Sep 30, 2026)
+[warning] There were minor errors reading the project.
+[warning] There were minor errors reading the project.
+[error] Project:yoke, Component MechanicalDesign1 references design MechanicalDesign1 which is missing. It would be best to remove the component. (12:28:16 PM  Sep 30, 2026)
+Stopping Batch Run: 12:28:28 PM  Sep 30, 2026
+ 
+Ansys Electronics Desktop Student Version 2025.2.4, Build: 2025-11-06 17:01:32
+Location: F:\Ansys2\ANSYS Inc\ANSYS Student\v252\AnsysEM\ansysedtsv.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 12:28:47 PM  Sep 30, 2026
+Running as user : ADITYA-DESKTOP\adity
+Temp directory: C:\temp
+Project directory: F:\Ansys2\Projects
+[info] gRPC server started on port 51405 of local host. Only connections from the local host initiated by the same user are permitted.
+
+Stopping Batch Run: 12:29:10 PM  Sep 30, 2026
+ 
+Ansys Electronics Desktop Student Version 2025.2.4, Build: 2025-11-06 17:01:32
+Location: F:\Ansys2\ANSYS Inc\ANSYS Student\v252\AnsysEM\ansysedtsv.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 12:29:13 PM  Sep 30, 2026
+Running as user : ADITYA-DESKTOP\adity
+Temp directory: C:\temp
+Project directory: F:\Ansys2\Projects
+[info] gRPC server started on port 51452 of local host. Only connections from the local host initiated by the same user are permitted.
+
+Stopping Batch Run: 12:29:37 PM  Sep 30, 2026
+ 
+Ansys Electronics Desktop Student Version 2025.2.4, Build: 2025-11-06 17:01:32
+Location: F:\Ansys2\ANSYS Inc\ANSYS Student\v252\AnsysEM\ansysedtsv.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 12:29:41 PM  Sep 30, 2026
+Running as user : ADITYA-DESKTOP\adity
+Temp directory: C:\temp
+Project directory: F:\Ansys2\Projects
+[info] gRPC server started on port 51514 of local host. Only connections from the local host initiated by the same user are permitted.
+
+Stopping Batch Run: 12:30:02 PM  Sep 30, 2026
+ 
+Ansys Electronics Desktop Student Version 2025.2.4, Build: 2025-11-06 17:01:32
+Location: F:\Ansys2\ANSYS Inc\ANSYS Student\v252\AnsysEM\ansysedtsv.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 12:30:23 PM  Sep 30, 2026
+Running as user : ADITYA-DESKTOP\adity
+Temp directory: C:\temp
+Project directory: F:\Ansys2\Projects
+[info] gRPC server started on port 51571 of local host. Only connections from the local host initiated by the same user are permitted.
+
+Stopping Batch Run: 12:30:44 PM  Sep 30, 2026
+ 
+Ansys Electronics Desktop Student Version 2025.2.4, Build: 2025-11-06 17:01:32
+Location: F:\Ansys2\ANSYS Inc\ANSYS Student\v252\AnsysEM\ansysedtsv.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 12:30:54 PM  Sep 30, 2026
+Running as user : ADITYA-DESKTOP\adity
+Temp directory: C:\temp
+Project directory: F:\Ansys2\Projects
+[info] gRPC server started on port 51621 of local host. Only connections from the local host initiated by the same user are permitted.
+
+Stopping Batch Run: 12:31:17 PM  Sep 30, 2026
+ 
+Ansys Electronics Desktop Student Version 2025.2.4, Build: 2025-11-06 17:01:32
+Location: F:\Ansys2\ANSYS Inc\ANSYS Student\v252\AnsysEM\ansysedtsv.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 12:31:34 PM  Sep 30, 2026
+Running as user : ADITYA-DESKTOP\adity
+Temp directory: C:\temp
+Project directory: F:\Ansys2\Projects
+[info] gRPC server started on port 51694 of local host. Only connections from the local host initiated by the same user are permitted.
+
+Stopping Batch Run: 12:31:55 PM  Sep 30, 2026
+ 
+Ansys Electronics Desktop Student Version 2025.2.4, Build: 2025-11-06 17:01:32
+Location: F:\Ansys2\ANSYS Inc\ANSYS Student\v252\AnsysEM\ansysedtsv.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 12:33:19 PM  Sep 30, 2026
+Running as user : ADITYA-DESKTOP\adity
+Temp directory: C:\temp
+Project directory: F:\Ansys2\Projects
+[info] gRPC server started on port 51811 of local host. Only connections from the local host initiated by the same user are permitted.
+
+[warning] Project:yoke, Design:Yoke (Magnetostatic), Material 'N52_up': The magnitude of Magnetic Coercivity is expected to be <= 0. If you use a positive value the direction used will be the opposite of the unit vector specified. (12:33:36 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), Material 'N52_up': The magnitude of Magnetic Coercivity is expected to be <= 0. If you use a positive value the direction used will be the opposite of the unit vector specified. (12:33:36 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), Part Attributes: Name tmp is already used, use name tmp_1. (12:33:36 PM  Sep 30, 2026)
+[error] Project:yoke, Design:Yoke (Magnetostatic), Insufficient FlexNet Publisher (FNP) license count of HPC Parallel are available for use, only 4 of the requested 8 tasks were available after using the 4 cores included with HPC Parametric context.
+ (12:33:39 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), Com Engine non-responsive since 12:34:38, September 30, 2026. 
+ Can be due to CPU intensive processing or network problems. 
+ If persisting for long, manually kill the com engine process and restart analysis. Retrying.....  (12:35:38 PM  Sep 30, 2026)
+[error] Project:yoke, Design:Yoke (Magnetostatic), Machine Local Machine: Engine terminated unexpectedly, or machine reported error or was inaccessible. (12:36:37 PM  Sep 30, 2026)
+Stopping Batch Run: 12:36:48 PM  Sep 30, 2026
+ 
+Ansys Electronics Desktop Student Version 2025.2.4, Build: 2025-11-06 17:01:32
+Location: F:\Ansys2\ANSYS Inc\ANSYS Student\v252\AnsysEM\ansysedtsv.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 12:36:58 PM  Sep 30, 2026
+Running as user : ADITYA-DESKTOP\adity
+Temp directory: C:\temp
+Project directory: F:\Ansys2\Projects
+[info] gRPC server started on port 53236 of local host. Only connections from the local host initiated by the same user are permitted.
+
+Stopping Batch Run: 12:37:20 PM  Sep 30, 2026
+ 
+Ansys Electronics Desktop Student Version 2025.2.4, Build: 2025-11-06 17:01:32
+Location: F:\Ansys2\ANSYS Inc\ANSYS Student\v252\AnsysEM\ansysedtsv.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 12:37:36 PM  Sep 30, 2026
+Running as user : ADITYA-DESKTOP\adity
+Temp directory: C:\temp
+Project directory: F:\Ansys2\Projects
+[info] gRPC server started on port 53384 of local host. Only connections from the local host initiated by the same user are permitted.
+
+[warning] Project:yoke, Design:Yoke (Magnetostatic), Part Attributes: Name Base is already used, use name Base_1. (12:37:55 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), Material 'N52_up': The magnitude of Magnetic Coercivity is expected to be <= 0. If you use a positive value the direction used will be the opposite of the unit vector specified. (12:37:55 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), Part Attributes: Name MagnetL is already used, use name MagnetL_1. (12:37:55 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), Material 'N52_up': The magnitude of Magnetic Coercivity is expected to be <= 0. If you use a positive value the direction used will be the opposite of the unit vector specified. (12:37:55 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), Part Attributes: Name CapL is already used, use name CapL_1. (12:37:55 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), Part Attributes: Name MagnetR is already used, use name MagnetR_1. (12:37:55 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), Part Attributes: Name CapR is already used, use name CapR_1. (12:37:55 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), Part Attributes: Name CoilL is already used, use name CoilL_1. (12:37:55 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), Part Attributes: Name tmp is already used, use name tmp_2. (12:37:55 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), Part Attributes: Name CoilLSection is already used, use name CoilLSection_1. (12:37:55 PM  Sep 30, 2026)
+[error] Project:yoke, Design:Yoke (Magnetostatic), Script macro error: Duplicate excitation name: 'CurrentL' (12:37:55 PM  Sep 30, 2026)
+ 
+Ansys Electronics Desktop Student Version 2025.2.4, Build: 2025-11-06 17:01:32
+Location: F:\Ansys2\ANSYS Inc\ANSYS Student\v252\AnsysEM\ansysedtsv.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 12:38:05 PM  Sep 30, 2026
+Running as user : ADITYA-DESKTOP\adity
+Temp directory: C:\temp
+Project directory: F:\Ansys2\Projects
+[info] gRPC server started on port 53469 of local host. Only connections from the local host initiated by the same user are permitted.
+
+[error] No such feature exists.
+Feature
+m3dfs_gui
+License path
+C
+\Users\adity\AppData\Local\Temp\\aff640d0-76a3-4e83-ad0d-aed6e0913fdf;
+FlexNet Licensing error
+-5,357
+
+
+[error] No such feature exists.
+Feature
+m3dfs_gui
+License path
+C
+\Users\adity\AppData\Local\Temp\\aff640d0-76a3-4e83-ad0d-aed6e0913fdf;
+FlexNet Licensing error
+-5,357
+
+
+[info] Server 'srv_2001' started on ports (2001, 2002)
+ 
+Ansys Electronics Desktop Student Version 2025.2.4, Build: 2025-11-06 17:01:32
+Location: F:\Ansys2\ANSYS Inc\ANSYS Student\v252\AnsysEM\ansysedtsv.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 12:44:31 PM  Sep 30, 2026
+Running as user : ADITYA-DESKTOP\adity
+Temp directory: C:\temp
+Project directory: F:\Ansys2\Projects
+[info] gRPC server started on port 53848 of local host. Only connections from the local host initiated by the same user are permitted.
+
+[warning] Project:yoke, Design:Yoke (Magnetostatic), Material 'N52_up': The magnitude of Magnetic Coercivity is expected to be <= 0. If you use a positive value the direction used will be the opposite of the unit vector specified. (12:44:48 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), Material 'N52_up': The magnitude of Magnetic Coercivity is expected to be <= 0. If you use a positive value the direction used will be the opposite of the unit vector specified. (12:44:48 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), Part Attributes: Name tmp is already used, use name tmp_1. (12:44:48 PM  Sep 30, 2026)
+[error] Project:yoke, Design:Yoke (Magnetostatic), Insufficient FlexNet Publisher (FNP) license count of HPC Parallel are available for use, only 4 of the requested 8 tasks were available after using the 4 cores included with HPC Parametric context.
+ (12:44:50 PM  Sep 30, 2026)
+[error] Project:yoke, Design:Yoke (Magnetostatic), Simulation was terminated by license error. (12:44:50 PM  Sep 30, 2026)
+[error] Project:yoke, Design:Yoke (Magnetostatic), Script macro error: Simulation for yoke : Yoke : Setup1 has failed with execution error.  (12:44:50 PM  Sep 30, 2026)
+Stopping Batch Run: 12:45:01 PM  Sep 30, 2026
+ 
+Ansys Electronics Desktop Student Version 2025.2.4, Build: 2025-11-06 17:01:32
+Location: F:\Ansys2\ANSYS Inc\ANSYS Student\v252\AnsysEM\ansysedtsv.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 12:45:18 PM  Sep 30, 2026
+Running as user : ADITYA-DESKTOP\adity
+Temp directory: C:\temp
+Project directory: F:\Ansys2\Projects
+[info] gRPC server started on port 53918 of local host. Only connections from the local host initiated by the same user are permitted.
+
+[warning] Project:yoke, Design:Yoke (Magnetostatic), Material 'N52_up': The magnitude of Magnetic Coercivity is expected to be <= 0. If you use a positive value the direction used will be the opposite of the unit vector specified. (12:45:35 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), Material 'N52_up': The magnitude of Magnetic Coercivity is expected to be <= 0. If you use a positive value the direction used will be the opposite of the unit vector specified. (12:45:35 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), Part Attributes: Name tmp is already used, use name tmp_1. (12:45:35 PM  Sep 30, 2026)
+[error] Project:yoke, Design:Yoke (Magnetostatic), Insufficient FlexNet Publisher (FNP) license count of HPC Parallel are available for use, only 4 of the requested 8 tasks were available after using the 4 cores included with HPC Parametric context.
+ (12:45:37 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), Com Engine non-responsive since 12:46:37, September 30, 2026. 
+ Can be due to CPU intensive processing or network problems. 
+ If persisting for long, manually kill the com engine process and restart analysis. Retrying.....  (12:47:37 PM  Sep 30, 2026)
+[error] Project:yoke, Design:Yoke (Magnetostatic), Machine Local Machine: Engine terminated unexpectedly, or machine reported error or was inaccessible. (12:48:36 PM  Sep 30, 2026)
+Stopping Batch Run: 12:48:48 PM  Sep 30, 2026
+ 
+Ansys Electronics Desktop Student Version 2025.2.4, Build: 2025-11-06 17:01:32
+Location: F:\Ansys2\ANSYS Inc\ANSYS Student\v252\AnsysEM\ansysedtsv.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 12:49:00 PM  Sep 30, 2026
+Running as user : ADITYA-DESKTOP\adity
+Temp directory: C:\temp
+Project directory: F:\Ansys2\Projects
+[info] gRPC server started on port 54151 of local host. Only connections from the local host initiated by the same user are permitted.
+
+[warning] Project:yoke, Design:Yoke (Magnetostatic), Material 'N52_up': The magnitude of Magnetic Coercivity is expected to be <= 0. If you use a positive value the direction used will be the opposite of the unit vector specified. (12:49:17 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), Material 'N52_up': The magnitude of Magnetic Coercivity is expected to be <= 0. If you use a positive value the direction used will be the opposite of the unit vector specified. (12:49:17 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), Part Attributes: Name tmp is already used, use name tmp_1. (12:49:17 PM  Sep 30, 2026)
+[error] Project:yoke, Design:Yoke (Magnetostatic), Insufficient FlexNet Publisher (FNP) license count of HPC Parallel are available for use, only 4 of the requested 8 tasks were available after using the 4 cores included with HPC Parametric context.
+ (12:49:19 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), Com Engine non-responsive since 12:50:19, September 30, 2026. 
+ Can be due to CPU intensive processing or network problems. 
+ If persisting for long, manually kill the com engine process and restart analysis. Retrying.....  (12:51:19 PM  Sep 30, 2026)
+[error] Project:yoke, Design:Yoke (Magnetostatic), Machine Local Machine: Engine terminated unexpectedly, or machine reported error or was inaccessible. (12:52:18 PM  Sep 30, 2026)
+[error] Project:yoke, Design:Yoke (Magnetostatic), Script macro error: No trace data for quantities: YokeForce.Force_z, YokeTorque.Torque (12:52:19 PM  Sep 30, 2026)
+Stopping Batch Run: 12:52:30 PM  Sep 30, 2026
+ 
+Ansys Electronics Desktop Student Version 2025.2.4, Build: 2025-11-06 17:01:32
+Location: F:\Ansys2\ANSYS Inc\ANSYS Student\v252\AnsysEM\ansysedtsv.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 12:52:42 PM  Sep 30, 2026
+Running as user : ADITYA-DESKTOP\adity
+Temp directory: C:\temp
+Project directory: F:\Ansys2\Projects
+[info] gRPC server started on port 54365 of local host. Only connections from the local host initiated by the same user are permitted.
+
+ 
+Ansys Electronics Desktop Student Version 2025.2.4, Build: 2025-11-06 17:01:32
+Location: F:\Ansys2\ANSYS Inc\ANSYS Student\v252\AnsysEM\ansysedtsv.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 12:53:01 PM  Sep 30, 2026
+Running as user : ADITYA-DESKTOP\adity
+Temp directory: C:\temp
+Project directory: F:\Ansys2\Projects
+[info] gRPC server started on port 54389 of local host. Only connections from the local host initiated by the same user are permitted.
+
+[warning] Project:yoke, Design:Yoke (Magnetostatic), Material 'N52_up': The magnitude of Magnetic Coercivity is expected to be <= 0. If you use a positive value the direction used will be the opposite of the unit vector specified. (12:53:17 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), Material 'N52_up': The magnitude of Magnetic Coercivity is expected to be <= 0. If you use a positive value the direction used will be the opposite of the unit vector specified. (12:53:17 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), Part Attributes: Name tmp is already used, use name tmp_1. (12:53:18 PM  Sep 30, 2026)
+[error] Project:yoke, Design:Yoke (Magnetostatic), Insufficient FlexNet Publisher (FNP) license count of HPC Parallel are available for use, only 4 of the requested 8 tasks were available after using the 4 cores included with HPC Parametric context.
+ (12:53:20 PM  Sep 30, 2026)
+[error] Project:yoke, Design:Yoke (Magnetostatic), Simulation was terminated by license error. (12:53:20 PM  Sep 30, 2026)
+[error] Project:yoke, Design:Yoke (Magnetostatic), Script macro error: Simulation for yoke : Yoke : Setup1 has failed with execution error.  (12:53:20 PM  Sep 30, 2026)
+Stopping Batch Run: 12:53:31 PM  Sep 30, 2026
+ 
+Ansys Electronics Desktop Student Version 2025.2.4, Build: 2025-11-06 17:01:32
+Location: F:\Ansys2\ANSYS Inc\ANSYS Student\v252\AnsysEM\ansysedtsv.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 12:53:43 PM  Sep 30, 2026
+Running as user : ADITYA-DESKTOP\adity
+Temp directory: C:\temp
+Project directory: F:\Ansys2\Projects
+[info] gRPC server started on port 54458 of local host. Only connections from the local host initiated by the same user are permitted.
+
+[warning] Project:yoke, Design:Yoke (Magnetostatic), Material 'N52_up': The magnitude of Magnetic Coercivity is expected to be <= 0. If you use a positive value the direction used will be the opposite of the unit vector specified. (12:54:01 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), Material 'N52_up': The magnitude of Magnetic Coercivity is expected to be <= 0. If you use a positive value the direction used will be the opposite of the unit vector specified. (12:54:01 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), Part Attributes: Name tmp is already used, use name tmp_1. (12:54:01 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), GPU acceleration will be disabled when automatic settings is selected in Analysis Configuration (12:54:03 PM  Sep 30, 2026)
+[error] Project:yoke, Design:Yoke (Magnetostatic), Parts CoilR and Base intersect. (12:54:04 PM  Sep 30, 2026)
+[error] Project:yoke, Design:Yoke (Magnetostatic), Parts CoilL and Base intersect. (12:54:04 PM  Sep 30, 2026)
+[error] Project:yoke, Design:Yoke (Magnetostatic), Simulation completed with execution error on server: Local Machine. (12:54:04 PM  Sep 30, 2026)
+[error] Project:yoke, Design:Yoke (Magnetostatic), Script macro error: Simulation for yoke : Yoke : Setup1 has failed with execution error.  (12:54:05 PM  Sep 30, 2026)
+Stopping Batch Run: 12:54:17 PM  Sep 30, 2026
+ 
+Ansys Electronics Desktop Student Version 2025.2.4, Build: 2025-11-06 17:01:32
+Location: F:\Ansys2\ANSYS Inc\ANSYS Student\v252\AnsysEM\ansysedtsv.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 12:54:34 PM  Sep 30, 2026
+Running as user : ADITYA-DESKTOP\adity
+Temp directory: C:\temp
+Project directory: F:\Ansys2\Projects
+[info] gRPC server started on port 54523 of local host. Only connections from the local host initiated by the same user are permitted.
+
+[warning] Project:yoke, Design:Yoke (Magnetostatic), Material 'N52_up': The magnitude of Magnetic Coercivity is expected to be <= 0. If you use a positive value the direction used will be the opposite of the unit vector specified. (12:54:51 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), Material 'N52_up': The magnitude of Magnetic Coercivity is expected to be <= 0. If you use a positive value the direction used will be the opposite of the unit vector specified. (12:54:51 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), Part Attributes: Name tmp is already used, use name tmp_1. (12:54:51 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), GPU acceleration will be disabled when automatic settings is selected in Analysis Configuration (12:54:53 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), Material 'N52_up': The magnitude of Magnetic Coercivity is expected to be <= 0. If you use a positive value the direction used will be the opposite of the unit vector specified. (12:54:54 PM  Sep 30, 2026)
+[info] Project:yoke, Design:Yoke (Magnetostatic), Verify conduction path: Conduction path validate success. (12:54:54 PM  Sep 30, 2026)
+[info] Project:yoke, Design:Yoke (Magnetostatic), Normal completion of simulation on server: Local Machine. (12:55:52 PM  Sep 30, 2026)
+Stopping Batch Run: 12:56:04 PM  Sep 30, 2026
+ 
+Ansys Electronics Desktop Student Version 2025.2.4, Build: 2025-11-06 17:01:32
+Location: F:\Ansys2\ANSYS Inc\ANSYS Student\v252\AnsysEM\ansysedtsv.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 12:56:16 PM  Sep 30, 2026
+Running as user : ADITYA-DESKTOP\adity
+Temp directory: C:\temp
+Project directory: F:\Ansys2\Projects
+[info] gRPC server started on port 54695 of local host. Only connections from the local host initiated by the same user are permitted.
+
+[warning] Project:yoke, Design:Yoke (Magnetostatic), Material 'N52_up': The magnitude of Magnetic Coercivity is expected to be <= 0. If you use a positive value the direction used will be the opposite of the unit vector specified. (12:56:34 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), Material 'N52_up': The magnitude of Magnetic Coercivity is expected to be <= 0. If you use a positive value the direction used will be the opposite of the unit vector specified. (12:56:34 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), Part Attributes: Name tmp is already used, use name tmp_1. (12:56:34 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), GPU acceleration will be disabled when automatic settings is selected in Analysis Configuration (12:56:37 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), Material 'N52_up': The magnitude of Magnetic Coercivity is expected to be <= 0. If you use a positive value the direction used will be the opposite of the unit vector specified. (12:56:38 PM  Sep 30, 2026)
+[info] Project:yoke, Design:Yoke (Magnetostatic), Verify conduction path: Conduction path validate success. (12:56:38 PM  Sep 30, 2026)
+[info] Project:yoke, Design:Yoke (Magnetostatic), Normal completion of simulation on server: Local Machine. (12:57:28 PM  Sep 30, 2026)
+Stopping Batch Run: 12:57:39 PM  Sep 30, 2026
+ 
+Ansys Electronics Desktop Student Version 2025.2.4, Build: 2025-11-06 17:01:32
+Location: F:\Ansys2\ANSYS Inc\ANSYS Student\v252\AnsysEM\ansysedtsv.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 12:57:52 PM  Sep 30, 2026
+Running as user : ADITYA-DESKTOP\adity
+Temp directory: C:\temp
+Project directory: F:\Ansys2\Projects
+[info] gRPC server started on port 54850 of local host. Only connections from the local host initiated by the same user are permitted.
+
+[warning] Project:yoke, Design:Yoke (Magnetostatic), Material 'N52_up': The magnitude of Magnetic Coercivity is expected to be <= 0. If you use a positive value the direction used will be the opposite of the unit vector specified. (12:58:09 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), Material 'N52_up': The magnitude of Magnetic Coercivity is expected to be <= 0. If you use a positive value the direction used will be the opposite of the unit vector specified. (12:58:09 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), Part Attributes: Name tmp is already used, use name tmp_1. (12:58:09 PM  Sep 30, 2026)
+Stopping Batch Run: 12:58:21 PM  Sep 30, 2026
+ 
+Ansys Electronics Desktop Student Version 2025.2.4, Build: 2025-11-06 17:01:32
+Location: F:\Ansys2\ANSYS Inc\ANSYS Student\v252\AnsysEM\ansysedtsv.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 12:58:31 PM  Sep 30, 2026
+Running as user : ADITYA-DESKTOP\adity
+Temp directory: C:\temp
+Project directory: F:\Ansys2\Projects
+[info] gRPC server started on port 54905 of local host. Only connections from the local host initiated by the same user are permitted.
+
+[warning] Project:yoke, Design:Yoke (Magnetostatic), Material 'N52_up': The magnitude of Magnetic Coercivity is expected to be <= 0. If you use a positive value the direction used will be the opposite of the unit vector specified. (12:58:47 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), Material 'N52_up': The magnitude of Magnetic Coercivity is expected to be <= 0. If you use a positive value the direction used will be the opposite of the unit vector specified. (12:58:47 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), Part Attributes: Name tmp is already used, use name tmp_1. (12:58:48 PM  Sep 30, 2026)
+[info] Project:yoke, Design:Yoke (Magnetostatic), Parametric Analysis on GapSweep has been started. (12:58:49 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), GPU acceleration will be disabled when automatic settings is selected in Analysis Configuration (12:58:50 PM  Sep 30, 2026)
+[info] Project:yoke, Design:Yoke (Magnetostatic), A variation (GapHeight='2mm') has been requested using the following machines: Local Machine. (12:58:50 PM  Sep 30, 2026)
+[error] Project:yoke, Design:Yoke (Magnetostatic), Parts CoilR and Track intersect. (12:58:51 PM  Sep 30, 2026)
+[error] Project:yoke, Design:Yoke (Magnetostatic), Parts CoilL and Track intersect. (12:58:51 PM  Sep 30, 2026)
+[info] Project:yoke, Design:Yoke (Magnetostatic), A variation (GapHeight='3mm') has been requested using the following machines: Local Machine. (12:58:51 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), GPU acceleration will be disabled when automatic settings is selected in Analysis Configuration (12:58:51 PM  Sep 30, 2026)
+[error] Project:yoke, Design:Yoke (Magnetostatic), Parts CoilR and Track intersect. (12:58:51 PM  Sep 30, 2026)
+[error] Project:yoke, Design:Yoke (Magnetostatic), Parts CoilL and Track intersect. (12:58:51 PM  Sep 30, 2026)
+[info] Project:yoke, Design:Yoke (Magnetostatic), A variation (GapHeight='4mm') has been requested using the following machines: Local Machine. (12:58:52 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), GPU acceleration will be disabled when automatic settings is selected in Analysis Configuration (12:58:52 PM  Sep 30, 2026)
+[error] Project:yoke, Design:Yoke (Magnetostatic), Parts CoilR and Track intersect. (12:58:53 PM  Sep 30, 2026)
+[error] Project:yoke, Design:Yoke (Magnetostatic), Parts CoilL and Track intersect. (12:58:53 PM  Sep 30, 2026)
+[info] Project:yoke, Design:Yoke (Magnetostatic), A variation (GapHeight='5mm') has been requested using the following machines: Local Machine. (12:58:53 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), GPU acceleration will be disabled when automatic settings is selected in Analysis Configuration (12:58:53 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), Material 'N52_up': The magnitude of Magnetic Coercivity is expected to be <= 0. If you use a positive value the direction used will be the opposite of the unit vector specified. (12:58:53 PM  Sep 30, 2026)
+[info] Project:yoke, Design:Yoke (Magnetostatic), Verify conduction path: Conduction path validate success. (12:58:53 PM  Sep 30, 2026)
+[info] Project:yoke, Design:Yoke (Magnetostatic), A variation (GapHeight='6mm') has been requested using the following machines: Local Machine. (12:59:46 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), GPU acceleration will be disabled when automatic settings is selected in Analysis Configuration (12:59:46 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), Material 'N52_up': The magnitude of Magnetic Coercivity is expected to be <= 0. If you use a positive value the direction used will be the opposite of the unit vector specified. (12:59:46 PM  Sep 30, 2026)
+[info] Project:yoke, Design:Yoke (Magnetostatic), Verify conduction path: Conduction path validate success. (12:59:46 PM  Sep 30, 2026)
+[info] Project:yoke, Design:Yoke (Magnetostatic), A variation (GapHeight='7mm') has been requested using the following machines: Local Machine. (01:00:34 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), GPU acceleration will be disabled when automatic settings is selected in Analysis Configuration (01:00:34 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), Material 'N52_up': The magnitude of Magnetic Coercivity is expected to be <= 0. If you use a positive value the direction used will be the opposite of the unit vector specified. (01:00:34 PM  Sep 30, 2026)
+[info] Project:yoke, Design:Yoke (Magnetostatic), Verify conduction path: Conduction path validate success. (01:00:34 PM  Sep 30, 2026)
+[info] Project:yoke, Design:Yoke (Magnetostatic), A variation (GapHeight='8mm') has been requested using the following machines: Local Machine. (01:01:34 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), GPU acceleration will be disabled when automatic settings is selected in Analysis Configuration (01:01:34 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), Material 'N52_up': The magnitude of Magnetic Coercivity is expected to be <= 0. If you use a positive value the direction used will be the opposite of the unit vector specified. (01:01:34 PM  Sep 30, 2026)
+[info] Project:yoke, Design:Yoke (Magnetostatic), Verify conduction path: Conduction path validate success. (01:01:34 PM  Sep 30, 2026)
+[info] Project:yoke, Design:Yoke (Magnetostatic), A variation (GapHeight='9mm') has been requested using the following machines: Local Machine. (01:02:33 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), GPU acceleration will be disabled when automatic settings is selected in Analysis Configuration (01:02:33 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), Material 'N52_up': The magnitude of Magnetic Coercivity is expected to be <= 0. If you use a positive value the direction used will be the opposite of the unit vector specified. (01:02:35 PM  Sep 30, 2026)
+[info] Project:yoke, Design:Yoke (Magnetostatic), Verify conduction path: Conduction path validate success. (01:02:35 PM  Sep 30, 2026)
+[info] Project:yoke, Design:Yoke (Magnetostatic), A variation (GapHeight='10mm') has been requested using the following machines: Local Machine. (01:03:33 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), GPU acceleration will be disabled when automatic settings is selected in Analysis Configuration (01:03:33 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), Material 'N52_up': The magnitude of Magnetic Coercivity is expected to be <= 0. If you use a positive value the direction used will be the opposite of the unit vector specified. (01:03:33 PM  Sep 30, 2026)
+[info] Project:yoke, Design:Yoke (Magnetostatic), Verify conduction path: Conduction path validate success. (01:03:33 PM  Sep 30, 2026)
+[info] Project:yoke, Design:Yoke (Magnetostatic), A variation (GapHeight='11mm') has been requested using the following machines: Local Machine. (01:04:32 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), GPU acceleration will be disabled when automatic settings is selected in Analysis Configuration (01:04:32 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), Material 'N52_up': The magnitude of Magnetic Coercivity is expected to be <= 0. If you use a positive value the direction used will be the opposite of the unit vector specified. (01:04:33 PM  Sep 30, 2026)
+[info] Project:yoke, Design:Yoke (Magnetostatic), Verify conduction path: Conduction path validate success. (01:04:33 PM  Sep 30, 2026)
+[info] Project:yoke, Design:Yoke (Magnetostatic), A variation (GapHeight='12mm') has been requested using the following machines: Local Machine. (01:05:27 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), GPU acceleration will be disabled when automatic settings is selected in Analysis Configuration (01:05:27 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), Material 'N52_up': The magnitude of Magnetic Coercivity is expected to be <= 0. If you use a positive value the direction used will be the opposite of the unit vector specified. (01:05:27 PM  Sep 30, 2026)
+[info] Project:yoke, Design:Yoke (Magnetostatic), Verify conduction path: Conduction path validate success. (01:05:27 PM  Sep 30, 2026)
+[info] Project:yoke, Design:Yoke (Magnetostatic), A variation (GapHeight='13mm') has been requested using the following machines: Local Machine. (01:06:23 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), GPU acceleration will be disabled when automatic settings is selected in Analysis Configuration (01:06:23 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), Material 'N52_up': The magnitude of Magnetic Coercivity is expected to be <= 0. If you use a positive value the direction used will be the opposite of the unit vector specified. (01:06:23 PM  Sep 30, 2026)
+[info] Project:yoke, Design:Yoke (Magnetostatic), Verify conduction path: Conduction path validate success. (01:06:23 PM  Sep 30, 2026)
+[info] Project:yoke, Design:Yoke (Magnetostatic), A variation (GapHeight='14mm') has been requested using the following machines: Local Machine. (01:07:18 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), GPU acceleration will be disabled when automatic settings is selected in Analysis Configuration (01:07:18 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), Material 'N52_up': The magnitude of Magnetic Coercivity is expected to be <= 0. If you use a positive value the direction used will be the opposite of the unit vector specified. (01:07:19 PM  Sep 30, 2026)
+[info] Project:yoke, Design:Yoke (Magnetostatic), Verify conduction path: Conduction path validate success. (01:07:19 PM  Sep 30, 2026)
+[info] Project:yoke, Design:Yoke (Magnetostatic), A variation (GapHeight='15mm') has been requested using the following machines: Local Machine. (01:08:44 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), GPU acceleration will be disabled when automatic settings is selected in Analysis Configuration (01:08:44 PM  Sep 30, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), Material 'N52_up': The magnitude of Magnetic Coercivity is expected to be <= 0. If you use a positive value the direction used will be the opposite of the unit vector specified. (01:08:44 PM  Sep 30, 2026)
+[info] Project:yoke, Design:Yoke (Magnetostatic), Verify conduction path: Conduction path validate success. (01:08:44 PM  Sep 30, 2026)
+[info] Project:yoke, Design:Yoke (Magnetostatic), Parametric Analysis is done. (01:09:44 PM  Sep 30, 2026)
+Stopping Batch Run: 1:09:56 PM  Sep 30, 2026
+ 
+Ansys Electronics Desktop Student Version 2025.2.4, Build: 2025-11-06 17:01:32
+Location: F:\Ansys2\ANSYS Inc\ANSYS Student\v252\AnsysEM\ansysedtsv.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 1:10:17 PM  Sep 30, 2026
+Running as user : ADITYA-DESKTOP\adity
+Temp directory: C:\temp
+Project directory: F:\Ansys2\Projects
+[info] gRPC server started on port 61058 of local host. Only connections from the local host initiated by the same user are permitted.
+
+Stopping Batch Run: 1:10:40 PM  Sep 30, 2026
+ 
+Ansys Electronics Desktop Student Version 2025.2.4, Build: 2025-11-06 17:01:32
+Location: F:\Ansys2\ANSYS Inc\ANSYS Student\v252\AnsysEM\ansysedtsv.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 1:10:55 PM  Sep 30, 2026
+Running as user : ADITYA-DESKTOP\adity
+Temp directory: C:\temp
+Project directory: F:\Ansys2\Projects
+[info] gRPC server started on port 61110 of local host. Only connections from the local host initiated by the same user are permitted.
+
+Stopping Batch Run: 1:11:16 PM  Sep 30, 2026
+ 
+Ansys Electronics Desktop Student Version 2025.2.4, Build: 2025-11-06 17:01:32
+Location: F:\Ansys2\ANSYS Inc\ANSYS Student\v252\AnsysEM\ansysedtsv.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 1:11:35 PM  Sep 30, 2026
+Running as user : ADITYA-DESKTOP\adity
+Temp directory: C:\temp
+Project directory: F:\Ansys2\Projects
+[info] gRPC server started on port 61177 of local host. Only connections from the local host initiated by the same user are permitted.
+
+Stopping Batch Run: 1:11:57 PM  Sep 30, 2026
+ 
+Ansys Electronics Desktop Student Version 2025.2.4, Build: 2025-11-06 17:01:32
+Location: F:\Ansys2\ANSYS Inc\ANSYS Student\v252\AnsysEM\ansysedtsv.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 1:12:08 PM  Sep 30, 2026
+Running as user : ADITYA-DESKTOP\adity
+Temp directory: C:\temp
+Project directory: F:\Ansys2\Projects
+[info] gRPC server started on port 61232 of local host. Only connections from the local host initiated by the same user are permitted.
+
+[error] Project:yoke, Design:Yoke (Magnetostatic), Script macro error: No trace data for quantity: YokeForce.Force_z (01:12:19 PM  Sep 30, 2026)
+[error] Project:yoke, Design:Yoke (Magnetostatic), Script macro error: No trace data for quantity: YokeForce.Force_z (01:12:19 PM  Sep 30, 2026)
+[error] Project:yoke, Design:Yoke (Magnetostatic), Script macro error: No trace data for quantity: YokeForce.Force_z (01:12:20 PM  Sep 30, 2026)
+Stopping Batch Run: 1:12:33 PM  Sep 30, 2026

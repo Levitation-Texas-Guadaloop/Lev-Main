@@ -240,12 +240,12 @@ Actual geometry from `Diagram_1.png`, one 1"-deep core (stack N of them for a he
 
 **Reluctance budget** (this is the whole story):
 
-| Term | Value (A/Wb) | Share |
-|---|---|---|
-| ℛ_gap (2×3 mm) | 7.4×10⁶ | 11% |
-| ℛ_pm (2×1" NdFeB) | 6.0×10⁷ | 89% |
-| ℛ_steel | 2.3×10⁵ | <1% |
-| **ℛ_total** | **6.7×10⁷** | → **η ≈ 0.11** |
+| Term              | Value (A/Wb) | Share          |
+| ----------------- | ------------ | -------------- |
+| ℛ_gap (2×3 mm)    | 7.4×10⁶      | 11%            |
+| ℛ_pm (2×1" NdFeB) | 6.0×10⁷      | 89%            |
+| ℛ_steel           | 2.3×10⁵      | <1%            |
+| **ℛ_total**       | **6.7×10⁷**  | → **η ≈ 0.11** |
 
 **Bias operating point** (coil off, PM loadline):
 
