@@ -39,15 +39,15 @@ Numbers come from `tutorials/maglev/params.py` and are illustrative ($A = 1\,\te
 
 ### Mechanical & linearized
 
-| Symbol | Meaning | Units |
-|---|---|---|
-| $m$ | **Total** suspended mass: yoke + dummy payload + brackets (constant) | kg |
-| $F$, $F_0$ | Magnet pull (upward); its equilibrium value $= mg$ | N |
-| $F_d$ | Small disturbances only (air, nudges). **Positive = downward** | N |
-| $k_i(z_0)$ | Current stiffness $\partial F/\partial i$ | N/A |
-| $k_s(z_0)$ | Negative-spring stiffness $-\partial F/\partial z$ (magnitude) | N/m |
-| $b = k_i/m$, $p = \sqrt{k_s/m}$ | Plant gain; RHP pole | m/(A·s²), rad/s |
-| $\lambda(z_0)$ | Plant scale factor $\mathcal{R}(z_{equ})/\mathcal{R}(z_0)$ | – |
+| Symbol                          | Meaning                                                              | Units           |
+| ------------------------------- | -------------------------------------------------------------------- | --------------- |
+| $m$                             | **Total** suspended mass: yoke + dummy payload + brackets (constant) | kg              |
+| $F$, $F_0$                      | Magnet pull (upward); its equilibrium value $= mg$                   | N               |
+| $F_d$                           | Small disturbances only (air, nudges). **Positive = downward**       | N               |
+| $k_i(z_0)$                      | Current stiffness $\partial F/\partial i$                            | N/A             |
+| $k_s(z_0)$                      | Negative-spring stiffness $-\partial F/\partial z$ (magnitude)       | N/m             |
+| $b = k_i/m$, $p = \sqrt{k_s/m}$ | Plant gain; RHP pole                                                 | m/(A·s²), rad/s |
+| $\lambda(z_0)$                  | Plant scale factor $\mathcal{R}(z_{equ})/\mathcal{R}(z_0)$           | –               |
 
 ### Controller
 
