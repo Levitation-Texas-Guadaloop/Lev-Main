@@ -1,0 +1,408 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Snapshot of https://claude.ai/artifact/ANqGeCG2LEzZvbXt2naJvg (v1, 2026-10-14). -->
+<title>Upright Roll Rig</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&family=IBM+Plex+Sans+Condensed:wght@600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout: one reading column; drawings and tables scroll in place. Tokens shared with the Single-Yoke F(z) Rig page. */
+:root{
+  --bg:#f4f6f5; --panel:#ffffff; --fg:#1b2220; --muted:#59645f; --line:#d3dad6;
+  --accent:#0b7fab; --yoke:#d9480f; --warn:#b4560a; --ok:#2f7d4f;
+  --alu:#c9d1d6; --alu-s:#8e9aa1; --steel:#5d6670; --steel-s:#3a4148;
+  --coil:#c47a2c; --cell:#2fa3d6; --laser:#d4233a; --g10:#b9c46a; --grid:#e3e8e5;
+  --sans:"IBM Plex Sans",system-ui,sans-serif; --cond:"IBM Plex Sans Condensed","IBM Plex Sans",system-ui,sans-serif; --mono:"IBM Plex Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#121816; --panel:#1a211f; --fg:#e5ebe8; --muted:#9aa7a1; --line:#2e3734;
+  --accent:#4cb8e6; --yoke:#ff7a3d; --warn:#f0a050; --ok:#6cc48f;
+  --alu:#4a555b; --alu-s:#7c8a91; --steel:#8a949e; --steel-s:#b5bec6;
+  --coil:#d99248; --cell:#4cb8e6; --laser:#ff5468; --g10:#9aa64e; --grid:#27302d; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#121816; --panel:#1a211f; --fg:#e5ebe8; --muted:#9aa7a1; --line:#2e3734;
+  --accent:#4cb8e6; --yoke:#ff7a3d; --warn:#f0a050; --ok:#6cc48f;
+  --alu:#4a555b; --alu-s:#7c8a91; --steel:#8a949e; --steel-s:#b5bec6;
+  --coil:#d99248; --cell:#4cb8e6; --laser:#ff5468; --g10:#9aa64e; --grid:#27302d; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--sans);font-size:15px;line-height:1.55}
+main{max-width:940px;margin:0 auto;padding-inline:16px;padding-block:32px 56px;display:grid;gap:34px}
+section{display:grid;gap:14px;min-width:0}
+h1{font-family:var(--cond);font-size:2rem;line-height:1.15;margin:0;text-wrap:balance}
+h2{font-family:var(--cond);font-size:1.35rem;margin:0;text-wrap:balance}
+h3{font-size:1.05rem;margin:0}
+h4{margin:0 0 4px;font-size:.8rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+p,li{max-width:70ch}
+p{margin:0}
+ul,ol{margin:0;padding-left:1.2em;display:grid;gap:6px}
+.lede{color:var(--muted)}
+.eyebrow{font-family:var(--mono);font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+code,.num{font-family:var(--mono);font-size:.9em;font-variant-numeric:tabular-nums}
+pre{margin:0;padding:14px 16px;background:var(--panel);border:1px solid var(--line);border-radius:6px;overflow-x:auto;font-family:var(--mono);font-size:.85rem;line-height:1.5}
+.panel{display:grid;gap:12px;padding:18px;background:var(--panel);border:1px solid var(--line);border-radius:6px;min-width:0}
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:6px;background:var(--panel)}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:.92rem}
+th,td{text-align:left;vertical-align:top;padding:9px 12px;border-bottom:1px solid var(--line)}
+th{font-weight:600;color:var(--muted);font-size:.8rem;letter-spacing:.04em;text-transform:uppercase}
+tr:last-child td{border-bottom:0}
+td.r,th.r{text-align:right}
+tfoot td{font-weight:600}
+.pill{display:inline-block;font-family:var(--mono);font-size:.75rem;padding:1px 8px;border-radius:99px;border:1px solid currentColor;white-space:nowrap}
+.pill.ok{color:var(--ok)}.pill.warn{color:var(--warn)}.pill.bad{color:var(--laser)}
+.fig{overflow-x:auto}
+.fig svg{display:block;width:100%;height:auto}
+.fig.wide svg{min-width:520px}
+.two{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px}
+.two>*{min-width:0}
+.legend{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:.85rem;color:var(--muted);list-style:none;padding:0}
+.legend li{display:flex;align-items:center;gap:6px}
+.sw{width:14px;height:10px;border-radius:2px;border:1px solid var(--line)}
+.note{padding:12px 16px;border-left:3px solid var(--warn);background:var(--panel);border-radius:0 6px 6px 0}
+.stack{display:grid;gap:0;counter-reset:none;list-style:none;padding:0}
+.stack li{display:grid;grid-template-columns:9.5em 1fr;gap:12px;padding:8px 0;border-bottom:1px dashed var(--line);max-width:none}
+.stack li:last-child{border-bottom:0}
+.stack b{font-family:var(--mono);font-size:.85rem;font-weight:500;color:var(--accent)}
+/* SVG parts */
+svg text{font-family:var(--mono);font-size:11px;fill:var(--muted)}
+svg .t-strong{fill:var(--fg);font-weight:500}
+svg .t-inv{fill:#fff}
+.alu{fill:var(--alu);stroke:var(--alu-s);stroke-width:1}
+.steel{fill:var(--steel);stroke:var(--steel-s);stroke-width:1}
+.yk{fill:var(--steel);stroke:var(--yoke);stroke-width:2}
+.coil{fill:var(--coil)}
+.cell{fill:var(--cell);stroke:var(--fg);stroke-width:.6}
+.laser{fill:var(--laser)}
+.beam{stroke:var(--laser);stroke-width:2;stroke-dasharray:4 3;fill:none}
+.g10{fill:var(--g10);stroke:var(--alu-s);stroke-width:.6}
+.rod{stroke:var(--fg);stroke-width:2;fill:none}
+.push{stroke:var(--alu-s);stroke-width:5;fill:none}
+.dim{stroke:var(--muted);stroke-width:1;fill:none}
+.ground{stroke:var(--muted);stroke-width:1.5}
+.motor{fill:var(--steel-s)}
+.rail{fill:var(--fg);opacity:.55}
+.arrow{fill:var(--yoke)}
+.arrow-w{fill:var(--muted)}
+.fl{stroke:var(--yoke);stroke-width:2.5;fill:none}
+.wl{stroke:var(--muted);stroke-width:2.5;fill:none}
+.grid{stroke:var(--grid);stroke-width:1}
+.axis{stroke:var(--muted);stroke-width:1}
+.ln-up{stroke:var(--laser);stroke-width:2.5;fill:none}
+.ln-inv{stroke:var(--accent);stroke-width:2.5;fill:none}
+.pt-up{fill:var(--laser)}
+.pt-inv{fill:var(--accent)}
+@media (max-width:520px){h1{font-size:1.6rem}.stack li{grid-template-columns:1fr;gap:2px}}
+</style>
+
+<main>
+<header style="display:grid;gap:10px">
+  <span class="eyebrow">Two Yoke Test Rig · S2 side sprint · single 1" yoke, zero current · Concept D, right-side up</span>
+  <h1>Upright roll rig: two steppers, two lasers, 3 mm to the crossover</h1>
+  <p class="lede">The build plan for Concept D right-side up, like the pod: the yoke sits under a fixed steel plate on an aluminum beam. A lead-screw stepper at each end sets gap and roll, and two Baumer lasers, one per pole, close the loop. Pitch is locked by the joints. The sweep covers 3 mm up to the crossover gap, where the magnet's pull equals the weight of the moving parts, about 9.7 mm. A counterweight keeps that range well preloaded. This replaces the <a href="https://claude.ai/artifact/6w2WHMEAc51wB9DNjf6bPa">Inverted Roll Rig</a> as the plan of record.</p>
+</header>
+
+<section>
+  <h2>Axes</h2>
+  <div class="two">
+    <div class="fig"><svg viewBox="0 0 300 170" role="img" aria-label="Axis key: pitch axis horizontal, yaw axis vertical, roll axis into the page">
+      <defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" style="fill:var(--fg)"/></marker></defs>
+      <line x1="90" y1="120" x2="210" y2="120" style="stroke:var(--fg);stroke-width:1.5" marker-end="url(#ah)"/>
+      <line x1="90" y1="120" x2="90" y2="22" style="stroke:var(--fg);stroke-width:1.5" marker-end="url(#ah)"/>
+      <circle cx="90" cy="120" r="10" style="fill:var(--panel);stroke:var(--fg);stroke-width:1.5"/><circle cx="90" cy="120" r="3.5" style="fill:var(--fg)"/>
+      <text x="216" y="124" class="t-strong">pitch axis</text>
+      <text x="100" y="28" class="t-strong">yaw axis</text>
+      <text x="90" y="150" text-anchor="middle" class="t-strong">roll axis ⊙ (into page)</text>
+    </svg></div>
+    <ul>
+      <li><b>Roll</b> is rotation about the into-the-page axis: left pole closer than right. <span class="pill ok">controlled</span></li>
+      <li><b>Pitch</b> is rotation about the horizontal axis: front edge versus back edge. <span class="pill warn">locked by joints</span> On a 1" deep yoke, 1° of pitch changes force by about 0.2% at 5 mm.</li>
+      <li><b>Yaw</b> is rotation about the vertical axis. Gap doesn't depend on it. <span class="pill ok">ignored</span></li>
+      <li>Every drawing is a side view, with the yoke's long direction running left to right.</li>
+    </ul>
+  </div>
+</section>
+
+<section>
+  <h2>Scope: 3 mm to the crossover</h2>
+  <p>The magnet pulls the yoke up (F) and gravity pulls the moving parts down (W ≈ 6 kg, 59 N). The sweep stays where <b>F ≥ W</b>. There, the net load always points up, so the cells, joints, and screw nuts are loaded in one direction only. Gaps beyond the crossover are left for later.</p>
+  <div class="panel">
+    <h4>Net upward load on the screws vs gap (total for both sides)</h4>
+    <div class="fig wide"><svg viewBox="0 0 560 262" role="img" aria-label="Line chart: without counterweight, net load falls from 61 N at 5 mm and crosses zero near 9.7 mm. With 3 kg of counterweight it falls from 91 N at 5 mm, is about 25 N at 9.7 mm, and crosses zero near 16 mm. The sweep band covers 3 to 9.7 mm.">
+      <!-- y = 210 - (v+30)*1.4615 ; x = 60 + (g-2)*33.571 -->
+      <rect x="93.6" y="20" width="224.9" height="190" style="fill:var(--accent);opacity:.08"/>
+      <text x="206" y="34" text-anchor="middle" style="fill:var(--accent)">sweep 3 → 9.7 mm</text>
+      <line class="grid" x1="60" y1="20" x2="530" y2="20"/><line class="grid" x1="60" y1="93.1" x2="530" y2="93.1"/><line class="grid" x1="60" y1="210" x2="530" y2="210"/>
+      <line x1="60" y1="144.2" x2="530" y2="144.2" style="stroke:var(--ok);stroke-width:1;stroke-dasharray:5 4"/>
+      <text x="526" y="139" text-anchor="end" style="fill:var(--ok)">≈15 N: firm preload</text>
+      <line class="axis" x1="60" y1="166.2" x2="530" y2="166.2" style="stroke-width:1.5"/>
+      <text x="52" y="24" text-anchor="end">100</text><text x="52" y="97" text-anchor="end">50</text><text x="52" y="170" text-anchor="end">0</text><text x="52" y="214" text-anchor="end">−30</text>
+      <text x="60" y="228" text-anchor="middle">2</text><text x="127.1" y="228" text-anchor="middle">4</text><text x="194.3" y="228" text-anchor="middle">6</text><text x="261.4" y="228" text-anchor="middle">8</text>
+      <text x="328.6" y="228" text-anchor="middle">10</text><text x="395.7" y="228" text-anchor="middle">12</text><text x="462.9" y="228" text-anchor="middle">14</text><text x="530" y="228" text-anchor="middle">16</text>
+      <text x="295" y="250" text-anchor="middle">gap g (mm)</text>
+      <text x="16" y="115" text-anchor="middle" transform="rotate(-90 16 115)">F + C − W (N)</text>
+      <polyline class="ln-inv" points="160.7,33.3 194.3,62.1 227.9,83.7 261.4,101.1 295,115.1 328.6,126.3 362.1,135.9 395.7,143.8 429.3,150.5 462.9,156.5 496.4,161.5"/>
+      <polyline class="ln-up" points="160.7,76.6 194.3,105.4 227.9,127 261.4,144.4 295,158.4 328.6,169.5 362.1,179.2 395.7,187.1 429.3,193.8 462.9,199.8 496.4,204.7"/>
+      <circle class="pt-inv" cx="160.7" cy="33.3" r="4"/><circle class="pt-up" cx="160.7" cy="76.6" r="4"/>
+      <circle cx="318.5" cy="166.2" r="5" style="fill:var(--panel);stroke:var(--laser);stroke-width:2"/>
+      <text x="318.5" y="184" text-anchor="middle" style="fill:var(--laser)">9.7 mm</text>
+      <circle cx="526.6" cy="166.2" r="5" style="fill:var(--panel);stroke:var(--accent);stroke-width:2"/>
+      <text x="520" y="184" text-anchor="end" style="fill:var(--accent)">≈16 mm</text>
+      <text x="170" y="30" class="t-strong" style="fill:var(--accent)">3 kg counterweight (91 N @ 5 mm)</text>
+      <text x="170" y="72" class="t-strong" style="fill:var(--laser)">no counterweight (61 N @ 5 mm)</text>
+      <text x="110" y="200">no Ansys data &lt; 5 mm</text>
+    </svg></div>
+    <p>F(g) is from <code>scripts/yoke_model.py</code> (Ansys, 0 A, 5–15 mm). W = 59 N, and C is the counterweight's upward pull. Without a counterweight, the net load drops below about 15 N past 8 mm and reaches zero at 9.7 mm, so the top of the sweep would sit on nut and joint play. With 3 kg of counterweight, the crossover moves to about 16 mm and there's still about 25 N of preload at 9.7 mm. That keeps the whole sweep firmly loaded.</p>
+  </div>
+  <p class="note"><b>The crossover is a property of the rig, not the pod.</b> 9.7 mm is where the magnet carries this rig's 6 kg of moving parts. The pod's equilibrium gap depends on each yoke's share of the pod's weight. F(z) is the same physics either way, so the measured curve applies to both. Just don't read the rig's crossover as the pod's operating gap.</p>
+</section>
+
+<section>
+  <h2>The rig</h2>
+  <ul class="legend" aria-label="Drawing legend">
+    <li><i class="sw" style="background:var(--alu)"></i>aluminum</li>
+    <li><i class="sw" style="background:var(--steel)"></i>steel plate</li>
+    <li><i class="sw" style="background:var(--steel);border:2px solid var(--yoke)"></i>yoke</li>
+    <li><i class="sw" style="background:var(--steel-s)"></i>stepper / counterweight</li>
+    <li><i class="sw" style="background:var(--fg);opacity:.55"></i>MGN12 rail</li>
+    <li><i class="sw" style="background:var(--cell)"></i>load cell</li>
+    <li><i class="sw" style="background:var(--laser)"></i>laser</li>
+    <li><i class="sw" style="background:var(--g10)"></i>G10 hard stop</li>
+  </ul>
+  <div class="panel">
+    <div class="fig wide"><svg viewBox="0 0 640 400" role="img" aria-label="Side view of the upright rig: fixed steel plate under the frame top beam with G10 hard stops; yoke poles-up on an aluminum beam below; lasers on the beam recessed 13.5 mm below the pole faces, aimed up at white matte tape; each beam end on a pin or pin-in-slot joint over a load cell in tension, an aluminum pushrod, a nut on an MGN12 carriage, and a stepper lead screw on the base; a counterweight cable from the beam end over two pulleys to a hanging weight outside the frame">
+      <line class="ground" x1="20" y1="388" x2="540" y2="388"/>
+      <rect class="alu" x="30" y="376" width="506" height="12"/>
+      <rect class="alu" x="30" y="40" width="16" height="336"/><rect class="alu" x="520" y="40" width="16" height="336"/>
+      <rect class="alu" x="30" y="24" width="506" height="16"/>
+      <!-- plate + tape -->
+      <rect class="steel" x="78" y="40" width="400" height="18"/>
+      <text x="278" y="53" text-anchor="middle" class="t-inv">fixed steel plate (track grade) · white matte tape under lasers</text>
+      <rect x="152" y="56" width="14" height="3" style="fill:#f4f4f4;stroke:var(--fg);stroke-width:.5"/><rect x="394" y="56" width="14" height="3" style="fill:#f4f4f4;stroke:var(--fg);stroke-width:.5"/>
+      <!-- hard stops -->
+      <rect class="g10" x="84" y="58" width="10" height="70"/><rect class="g10" x="462" y="58" width="10" height="70"/>
+      <text x="78" y="96" text-anchor="end">stop</text>
+      <!-- yoke poles up -->
+      <rect class="yk" x="215" y="78" width="38" height="30"/><rect class="yk" x="307" y="78" width="38" height="30"/>
+      <rect class="coil" x="205" y="84" width="8" height="24"/><rect class="coil" x="255" y="84" width="8" height="24"/>
+      <rect class="coil" x="297" y="84" width="8" height="24"/><rect class="coil" x="347" y="84" width="8" height="24"/>
+      <rect class="yk" x="195" y="108" width="170" height="26"/>
+      <text x="280" y="125" text-anchor="middle" class="t-inv">yoke (poles up)</text>
+      <line class="dim" x1="190" y1="58" x2="190" y2="78"/><text x="184" y="72" text-anchor="end">g</text>
+      <polygon class="arrow" points="280,60 273,72 287,72"/>
+      <!-- lasers -->
+      <rect class="laser" x="150" y="104" width="18" height="30"/><line class="beam" x1="159" y1="104" x2="159" y2="59"/>
+      <rect class="laser" x="392" y="104" width="18" height="30"/><line class="beam" x1="401" y1="104" x2="401" y2="59"/>
+      <text x="146" y="122" text-anchor="end">laser L</text>
+      <line class="dim" x1="416" y1="78" x2="416" y2="104"/><line class="dim" x1="412" y1="78" x2="420" y2="78"/><line class="dim" x1="412" y1="104" x2="420" y2="104"/>
+      <text x="422" y="95">13.5</text>
+      <text x="414" y="122">laser R</text>
+      <!-- beam -->
+      <rect class="alu" x="70" y="134" width="416" height="12"/>
+      <text x="280" y="160" text-anchor="middle">Al beam</text>
+      <!-- joints -->
+      <circle cx="96" cy="154" r="6" class="alu" style="stroke-width:2;stroke:var(--fg)"/>
+      <rect x="448" y="148" width="24" height="12" rx="6" style="fill:none;stroke:var(--fg);stroke-width:1.5"/><circle cx="456" cy="154" r="4.5" style="fill:var(--fg)"/>
+      <text x="108" y="166">pin</text><text x="442" y="174" text-anchor="end">pin-in-slot</text>
+      <!-- cells -->
+      <rect class="cell" x="84" y="162" width="24" height="34"/><rect class="cell" x="448" y="162" width="24" height="34"/>
+      <text x="114" y="186">LC·L (tension, arrow ↑)</text><text x="442" y="190" text-anchor="end">LC·R</text>
+      <!-- pushrods -->
+      <line class="push" x1="96" y1="196" x2="96" y2="240"/><line class="push" x1="460" y1="196" x2="460" y2="240"/>
+      <text x="108" y="222">Al pushrod</text>
+      <!-- rails + nut/carriage -->
+      <rect class="rail" x="117" y="206" width="6" height="96"/><rect class="rail" x="433" y="206" width="6" height="96"/>
+      <rect class="alu" x="84" y="240" width="42" height="20" style="stroke:var(--fg)"/><rect class="alu" x="430" y="240" width="42" height="20" style="stroke:var(--fg)"/>
+      <text x="132" y="254">nut on MGN12 carriage</text>
+      <!-- screws -->
+      <line class="rod" x1="96" y1="260" x2="96" y2="310" style="stroke-dasharray:3 2"/><line class="rod" x1="460" y1="260" x2="460" y2="310" style="stroke-dasharray:3 2"/>
+      <text x="132" y="290">Tr8×2 screw, 10 µm/step</text>
+      <!-- steppers -->
+      <rect class="motor" x="80" y="310" width="32" height="66" rx="2"/><rect class="motor" x="444" y="310" width="32" height="66" rx="2"/>
+      <text x="120" y="346">stepper, 48 mm NEMA 17</text><text x="120" y="360">≥150 mm from the poles</text>
+      <text x="436" y="346" text-anchor="end">actuator R</text>
+      <!-- counterweight -->
+      <line x1="482" y1="134" x2="482" y2="12" style="stroke:var(--fg);stroke-width:1.2"/>
+      <circle cx="489" cy="12" r="7" style="fill:var(--panel);stroke:var(--fg);stroke-width:1.5"/>
+      <line x1="489" y1="5" x2="581" y2="5" style="stroke:var(--fg);stroke-width:1.2"/>
+      <circle cx="581" cy="12" r="7" style="fill:var(--panel);stroke:var(--fg);stroke-width:1.5"/>
+      <line x1="588" y1="12" x2="588" y2="150" style="stroke:var(--fg);stroke-width:1.2"/>
+      <rect class="motor" x="572" y="150" width="32" height="40" rx="2"/>
+      <text x="588" y="208" text-anchor="middle" class="t-strong">1.5 kg</text>
+      <text x="588" y="222" text-anchor="middle">counterweight</text>
+      <text x="588" y="236" text-anchor="middle">×2, one per end</text>
+      <text x="588" y="250" text-anchor="middle">ball-bearing</text>
+      <text x="588" y="264" text-anchor="middle">pulleys</text>
+    </svg></div>
+  </div>
+
+  <h3>Load path, bottom to top (each side)</h3>
+  <ol class="stack">
+    <li><b>Base plate</b><span>Aluminum. The steppers bolt to it.</span></li>
+    <li><b>Stepper</b><span>A 48 mm NEMA 17, at least 150 mm below the poles. Its internal bearing takes the axial load.</span></li>
+    <li><b>Lead screw + nut</b><span>Tr8×2, 10 µm per full step, self-locking. The net upward load preloads the nut in one direction across the whole sweep.</span></li>
+    <li><b>MGN12 carriage</b><span>Keeps the nut from turning and moving sideways. The rail takes side load and pitch moment, so the cells don't.</span></li>
+    <li><b>Aluminum pushrod</b><span>Non-magnetic link up to the cell. It's in tension, holding the beam down against the magnet.</span></li>
+    <li><b>Load cell (YZC-133)</b><span>Fixed end to the pushrod bracket, free end to the joint. Mount it with the label arrow pointing up, along the magnet's pull. It stays in tension and never crosses zero inside the sweep.</span></li>
+    <li><b>Joint</b><span>Left: pin. Right: pin in a slot. Both pin axes run into the page, so roll is free and pitch is blocked. The slot absorbs the small horizontal shift as the beam rolls.</span></li>
+    <li><b>Beam → yoke</b><span>The yoke bolts on top of the beam, poles up, with non-magnetic fasteners. The lasers mount on the beam beside each pole, recessed 13.5 mm below the pole faces.</span></li>
+    <li><b>Counterweights</b><span>One cable from each end of the beam runs up over two ball-bearing pulleys to a 1.5 kg weight outside the frame. A hanging weight pulls with the same force at every gap, so the tare removes it, which a spring wouldn't allow. Putting one at each end keeps it from adding a roll moment.</span></li>
+    <li><b>Gap → plate</b><span>The steel plate bolts under the frame top and can be removed for the zero tare. It must match the track's steel grade and thickness. G10 hard stops hanging from the plate set the minimum gap at 3 mm or more.</span></li>
+  </ol>
+</section>
+
+<section>
+  <h2>Lasers: Baumer OM20-P0026.HH.YIN (×2, on hand)</h2>
+  <div class="tbl"><table>
+    <thead><tr><th>Spec</th><th>Value</th><th>For this rig</th></tr></thead>
+    <tbody>
+      <tr><td>Measuring distance</td><td class="num">16–26 mm (10 mm range)</td><td>Covers 3 → 9.7 mm (6.7 mm) with about 3 mm to spare.</td></tr>
+      <tr><td>Repeat accuracy</td><td class="num">1 µm</td><td>Specified on a white target with median 9 / average 128 filtering. That filtering is slow but fine for a slow sweep.</td></tr>
+      <tr><td>Linearity error</td><td class="num">±0.08% of range = ±8 µm</td><td>About 0.3% of gap at 3 mm, 0.1% at 8 mm.</td></tr>
+      <tr><td>Temperature drift</td><td class="num">0.01% of distance per °C</td><td>About 2 µm/°C. Log temperature anyway.</td></tr>
+      <tr><td>Output</td><td class="num">4–20 mA or IO-Link</td><td>Use 4–20 mA into a 150 Ω resistor, giving 0.6–3.0 V on a 3.3 V Nucleo ADC. At 12 bits that's about 3–4 µm per count. Skip IO-Link, which needs a separate master device.</td></tr>
+      <tr><td>Supply</td><td class="num">12–28 V, 50 mA</td><td>Shares the steppers' 24 V supply.</td></tr>
+      <tr><td>Response / rate</td><td class="num">0.4 ms / 5 kHz</td><td>Far faster than needed.</td></tr>
+      <tr><td>Housing</td><td class="num">Die-cast zinc, 13 × 37 × 34.5 mm, 41 g</td><td>Non-magnetic, so it can sit beside the poles.</td></tr>
+    </tbody>
+  </table></div>
+  <div class="two">
+    <div class="panel">
+      <h4>Mounting offset</h4>
+      <p>Mount each laser so <code>gap = reading − 13.5 mm</code>:</p>
+      <ul>
+        <li>A 16 mm reading means 2.5 mm, just below the hard stop.</li>
+        <li>A 26 mm reading means 12.5 mm, past the crossover, so the sweep never leaves the range.</li>
+      </ul>
+      <p>That puts each laser's front face 13.5 mm below the pole-face plane. Set it with a 13.5 mm gauge block, then confirm with the shim-zero step in bring-up.</p>
+    </div>
+    <div class="panel">
+      <h4>Target</h4>
+      <p>A triangulation laser needs a <b>diffuse, bright</b> spot, not a dark one. Bare steel is shiny, which makes readings noisy. Put <b>white matte</b> tape or paint on the plate where each beam lands, since Baumer specifies the sensor on a white target. Black tape would lose signal.</p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Actuator</h2>
+  <div class="two">
+    <div class="panel">
+      <h4>Pick</h4>
+      <p><a href="https://ozrobotics.com/shop/anti-backlash-screw-nut-nema-17-external-48mm-stack-0-4a-lead-2mm-0-07874-length-300mm/">StepperOnline 17LS19-0406E-300Y</a>, about $68.49 plus shipping and tariff.</p>
+      <ul>
+        <li>External (rotating) Tr8×2 screw, 2 mm lead, 300 mm long. Cut it down or leave it.</li>
+        <li>48 mm NEMA 17, 32 N·cm holding torque, 0.4 A/phase, 12 V coil.</li>
+        <li>Anti-backlash nut included.</li>
+      </ul>
+      <p class="lede">Parked for later: a VXB ball-screw stage (costs more and back-drives), an Actuonix P16 (0.3 mm backlash), and the Anaheim 17AW302CX06-LW4-EA ($182, lead not confirmed).</p>
+    </div>
+    <div class="panel">
+      <h4>Does it meet the requirements?</h4>
+      <pre>resolution = lead / steps = 2 mm / 200 = 10 µm per full step
+
+thrust     ≈ 2π · T · η / lead
+           = 2π · 0.32 N·m · 0.30 / 0.002 m ≈ 300 N   (holding)
+           ≈ 150–200 N moving slowly, after nut drag
+
+self-lock  lead angle  = atan(2 / (π·7 mm)) ≈ 5.2°
+           friction ∠  = atan(0.15)         ≈ 8.5°  → 5.2° &lt; 8.5°, holds unpowered</pre>
+    </div>
+  </div>
+  <div class="tbl"><table>
+    <thead><tr><th>Gap</th><th class="r">F (Ansys)</th><th class="r">Net up, no CW</th><th class="r">Net up, 3 kg CW</th><th class="r">Per side (CW)</th><th>Against motor (150–200 N)</th><th>Against cell (235 N safe)</th></tr></thead>
+    <tbody>
+      <tr><td class="num">3 mm (est.)</td><td class="r num">250–310 N</td><td class="r num">190–250 N</td><td class="r num">220–280 N</td><td class="r num">110–140 N</td><td><span class="pill ok">ok</span></td><td><span class="pill warn">47–60%</span></td></tr>
+      <tr><td class="num">5 mm</td><td class="r num">120 N</td><td class="r num">61 N</td><td class="r num">91 N</td><td class="r num">~45 N</td><td><span class="pill ok">ample</span></td><td><span class="pill ok">19%</span></td></tr>
+      <tr><td class="num">8 mm</td><td class="r num">74 N</td><td class="r num">15 N</td><td class="r num">45 N</td><td class="r num">~22 N</td><td><span class="pill ok">ample</span></td><td><span class="pill ok">10%</span></td></tr>
+      <tr><td class="num">9.7 mm</td><td class="r num">~59 N</td><td class="r num">0</td><td class="r num">~29 N</td><td class="r num">~15 N</td><td><span class="pill ok">ample</span></td><td><span class="pill ok">6%</span></td></tr>
+    </tbody>
+  </table></div>
+  <p>Right-side up is easier on the hardware than inverted, because gravity subtracts from the pull. The motor works hardest when lowering the beam near 3 mm, against the full net pull, and it still has margin there. Closing the gap is helped by the load, and the self-locking screw keeps it from running away. If power drops, the screws hold. The hard stops cover the snap-in case anyway.</p>
+</section>
+
+<section>
+  <h2>Sensing and control</h2>
+  <div class="two">
+    <div class="panel">
+      <h4>What's measured</h4>
+      <ul>
+        <li><code>gap = (g_L + g_R) / 2</code>, where <code>g = reading − 13.5 mm</code> for each laser, refined by shim-zero.</li>
+        <li><code>roll = (g_L − g_R) / b</code>, where b is the laser spacing. At b ≈ 100 mm, a 10 µm difference is about 0.006°.</li>
+        <li><b>Cells L and R</b>, each through its own HX711 at 10 SPS. <code>F_z = (L + R) − tare</code>, where the tare is taken with the plate removed and the counterweights attached. L − R gives the roll moment.</li>
+        <li>Pitch isn't measured. It's set once at assembly.</li>
+      </ul>
+    </div>
+    <div class="panel">
+      <h4>The two control loops are independent</h4>
+      <ul>
+        <li><b>Gap loop:</b> move both actuators the same number of steps.</li>
+        <li><b>Roll loop:</b> move them by opposite amounts.</li>
+        <li>The loop is quasi-static: no real-time control, just repeated move, settle, read, correct.</li>
+        <li>Approach every setpoint from the same side (from a larger gap) so any remaining nut play sits the same way each time.</li>
+      </ul>
+    </div>
+  </div>
+<pre>for g_target in sweep (9.5 → 3.0 → 9.5 mm, 0.25 mm steps, ×3):
+    repeat:
+        move_both(steps_for(g_target − gap))          # gap loop
+        move_diff(steps_for(roll · b / 2))             # roll loop, drive roll → 0
+        wait(dwell)                                     # cell creep: 0.2 N / 5 min
+        read lasers, cells (5 s @ 10 SPS), temperature
+    until |gap − g_target| &lt; 10 µm and |roll| &lt; 0.1°
+    log(t, g_L, g_R, gap, roll, cell_L, cell_R, F_z, temp)</pre>
+
+  <h3>Microcontroller wiring (Nucleo)</h3>
+  <div class="tbl"><table>
+    <thead><tr><th>Device</th><th>Signals</th><th>Notes</th></tr></thead>
+    <tbody>
+      <tr><td>TMC2209 × 2</td><td>STEP, DIR, EN each (optional UART)</td><td>Use full or half steps. Microsteps don't land accurately under load. Keep holding current on during readings.</td></tr>
+      <tr><td>HX711 × 2</td><td>DOUT + PD_SCK each, on GPIO</td><td>Digital two-wire protocol, not the ADC pins. Channel A, gain 128, 10 SPS.</td></tr>
+      <tr><td>Baumer OM20 × 2</td><td>4–20 mA → 150 Ω → ADC pin</td><td>0.6–3.0 V. Use a precision 0.1% resistor and a small RC filter. Powered from 24 V.</td></tr>
+      <tr><td>Limit switches × 2</td><td>GPIO</td><td>Home at the bottom of travel (largest gap). Add software travel limits on top of the hard stops.</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section>
+  <h2>Bill of materials</h2>
+  <div class="tbl"><table>
+    <thead><tr><th>Item</th><th class="r">Qty</th><th class="r">Each</th><th class="r">Total</th><th>Notes</th></tr></thead>
+    <tbody>
+      <tr><td>StepperOnline 17LS19-0406E-300Y actuator</td><td class="r num">2</td><td class="r num">$69</td><td class="r num">$138</td><td>Plus shipping and tariff, which depend on country of origin.</td></tr>
+      <tr><td>MGN12 rail (~150 mm) + carriage</td><td class="r num">2</td><td class="r num">$15–25</td><td class="r num">$30–50</td><td>Anti-rotation and guide for each nut.</td></tr>
+      <tr><td>TMC2209 driver</td><td class="r num">2</td><td class="r num">$10</td><td class="r num">$20</td><td></td></tr>
+      <tr><td>Pin joint, pin-in-slot joint, Al pushrods, brackets</td><td class="r num">2 sets</td><td class="r num">$20–30</td><td class="r num">$40–60</td><td>Non-magnetic fasteners (brass, 304/316 SS, Al).</td></tr>
+      <tr><td>Counterweight kit: 4 ball-bearing pulleys, cable, 2 × 1.5 kg weights</td><td class="r num">1</td><td class="r num">$20–30</td><td class="r num">$20–30</td><td>The weights can be any dense non-magnetic mass, such as lead shot or brass. If steel, keep it far from the yoke.</td></tr>
+      <tr><td>Limit switch + wiring</td><td class="r num">2</td><td class="r num">$5</td><td class="r num">$10</td><td></td></tr>
+      <tr><td>150 Ω 0.1% resistors, RC parts, connectors (lasers)</td><td class="r num">1</td><td class="r num">$5–10</td><td class="r num">$5–10</td><td>Plus the lasers' M8 4-pin cables, if you don't have them.</td></tr>
+      <tr><td>24 V power supply (shared)</td><td class="r num">1</td><td class="r num">$25</td><td class="r num">$25</td><td>Shared by both drivers and both lasers.</td></tr>
+      <tr><td>G10 sheet for hard stops, white matte tape</td><td class="r num">1</td><td class="r num">$10–15</td><td class="r num">$10–15</td><td></td></tr>
+    </tbody>
+    <tfoot><tr><td>Total</td><td></td><td></td><td class="r num">≈ $300–360</td><td>About $150–180 per side, under the $200 cap.</td></tr></tfoot>
+  </table></div>
+  <p class="lede">Already on hand, not counted: 2× YZC-133 cells with HX711s, 2× Baumer OM20 lasers, the Nucleo, and the yoke. The frame, beam, and steel plate depend on the stock you have and aren't priced here.</p>
+</section>
+
+<section>
+  <h2>Bring-up sequence</h2>
+  <ol>
+    <li><b>Frame, plate, and screening.</b> Bolt the plate under the top beam so it can come off. Check every part within 150 mm of the poles with a magnet.</li>
+    <li><b>Beam on the actuators without the yoke.</b> Home both actuators to the bottom. Check that the joints move freely and that the cells see only the beam's weight.</li>
+    <li><b>Calibrate the cells in the working direction, using the pulleys.</b> In the sweep the cells see an upward pull. Hanging masses from the beam would load them the other way. Instead, add known masses to the counterweight hangers, in 5–6 steps up to about 140 N per side, then remove them. That applies a known upward force through the real load path. Fit each cell's gain separately (they vary ±15%). Load and unload both ways, so the small pulley friction shows up as a known hysteresis band.</li>
+    <li><b>Mount the yoke, attach the 1.5 kg counterweights, remove the plate, and tare.</b> That reading is the zero. At 30 mm the magnet would still pull several newtons, so only a plate-off tare is a true zero.</li>
+    <li><b>Set the laser offsets.</b> Refit the plate. Set each laser 13.5 mm below its pole face with a gauge block. Then shim-zero: put identical non-magnetic shims between each pole and the plate, and raise the yoke until the cells start to change, which means the shims are clamped. That fixes each laser's offset to its own pole.</li>
+    <li><b>Set pitch.</b> Use feeler gauges front and back at one gap, then repeat at a small gap. If pitch changes with gap, the frame is flexing; stiffen it.</li>
+    <li><b>Install the hard stops</b> at 3.5 mm for the first runs. Lower them to 3 mm once the Ansys 2–4 mm results confirm the cell margin.</li>
+    <li><b>Sweep.</b> Run 9.5 → 3 → 9.5 mm three times, with roll held under 0.1° by the loop. Accept the data only if F is positive and decreases monotonically with gap, the sweeps repeat within a stated band, and zero drift stays below a stated limit.</li>
+  </ol>
+</section>
+
+<section>
+  <h2>Open items</h2>
+  <ul>
+    <li><b>Weigh the moving parts</b> (yoke, beam, joints, cells, lasers). 6 kg is an estimate, and it sets both the crossover and the counterweight size. The rule: pick C so that F(9.7 mm) + C − W is at least 20 N.</li>
+    <li><b>Ansys results at 2–4 mm</b> (pyaedt handoff, issue #1). These set the hard-stop height and the cell margin near contact.</li>
+    <li><b>The 2× reference disagreement.</b> The new Ansys script and the §8 "per-yoke" curve differ by about 2×. Settle which definition you're testing against before you compare data.</li>
+    <li><b>Pulley friction.</b> Measure it once, by loading and unloading through the pulleys at the calibration step. If it's more than about 0.5 N, use better bearings or bigger sheaves.</li>
+    <li><b>Laser cables and teach-in.</b> Confirm the M8 cables are on hand, and that the analog output is scaled to the full 16–26 mm range (factory default, or set by teach-in).</li>
+    <li><b>Measure cell deflection under load once.</b> The laser removes it from the gap reading, but it's worth knowing.</li>
+  </ul>
+</section>
+</main>
