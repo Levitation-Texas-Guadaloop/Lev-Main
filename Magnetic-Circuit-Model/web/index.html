@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="data:," />
+  <title>HEMS Yoke Explorer</title>
+  <script type="module" src="/src/main.js"></script>
+</head>
+<body>
+  <header>
+    <h1>HEMS Yoke Explorer</h1>
+    <nav id="tabs">
+      <button data-tab="force" class="active">Force vs. gap</button>
+      <button data-tab="power">Power budget</button>
+    </nav>
+    <span id="status" class="status">connecting…</span>
+  </header>
+
+  <main>
+    <aside id="controls">
+      <section>
+        <h2>Yoke</h2>
+        <div class="knob" data-key="N_turns" data-min="10" data-max="1000" data-step="1" data-label="Turns (N)"></div>
+        <div class="knob" data-key="ydepth_in" data-min="1" data-max="20" data-step="1" data-label="Yoke depth [in]"></div>
+        <div class="knob" data-key="mass_kg" data-min="10" data-max="1000" data-step="1" data-label="Mass [kg]"></div>
+      </section>
+      <section>
+        <h2>Release / power</h2>
+        <label class="field">Starting gap s0 [mm]
+          <input id="s0" type="text" inputmode="decimal" />
+        </label>
+        <label class="field">Power ceiling, total [W]
+          <input id="ceiling" type="text" inputmode="decimal" />
+        </label>
+        <label class="field">R coil [Ω] per leg
+          <input id="rcoil" type="text" inputmode="decimal" />
+        </label>
+        <label class="check"><input id="rauto" type="checkbox" checked /> auto from yoke depth (coil_model)</label>
+      </section>
+      <section class="force-only">
+        <h2>Force plot</h2>
+        <label class="field">Currents [A], comma-separated
+          <input id="currents" type="text" />
+        </label>
+        <div class="row2">
+          <label class="field">Gap min [mm]<input id="gapmin" type="text" inputmode="decimal" /></label>
+          <label class="field">Gap max [mm]<input id="gapmax" type="text" inputmode="decimal" /></label>
+        </div>
+      </section>
+      <div class="btnrow">
+        <button id="reset">Reset</button>
+        <button id="setdefault" title="Save the current knob values as the default (stored in this browser)">Set as default</button>
+      </div>
+      <button id="factory" class="linkish" hidden>Restore factory defaults</button>
+      <p id="error" class="error" hidden></p>
+    </aside>
+
+    <div id="content">
+      <div id="tab-force" class="tab active">
+        <div id="plot-force" class="plot"></div>
+        <div class="cards" id="cards-force"></div>
+      </div>
+      <div id="tab-power" class="tab">
+        <div id="plot-power" class="plot"></div>
+        <div class="cards" id="cards-power"></div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

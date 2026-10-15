@@ -161,6 +161,35 @@ def equilibrium_gap_mm(geom: YokeGeometry, i_amp=0.0, bracket_mm=(0.1, 30.0)):
     return brentq(residual, lo, hi) * 1000.0
 
 
+def required_release_current_amp(geom: YokeGeometry, gap_m):
+    """
+    solve(4*Frel11(g=gap_m, N=geom.N_turns, i) == mass*9.8, i) -- the (positive) coil
+    current that knocks the PM-bias force down to the pod's weight at a gap strictly
+    inside the i=0 equilibrium gap, i.e. the current needed to overcome the magnetic
+    bias and let the pod fall from `gap_m`.
+
+    `Mmf = 2*(PM - N*i)`, so force falls monotonically from its i=0 value to ~0 at
+    `i_null = PM/N` (net MMF cancelled), then rises again for i > i_null (reverse flux).
+    The root therefore lies in [0, i_null]. This only has a solution when the passive
+    (i=0) force at `gap_m` exceeds the weight, i.e. `gap_m` is strictly less than
+    `equilibrium_gap_mm(geom)`. Raises ValueError if that's not the case.
+    """
+    Fw = geom.mass_kg * 9.8
+    residual = lambda i_amp: total_force(gap_m, i_amp, geom) - Fw
+
+    F0 = residual(0.0) + Fw
+    if F0 <= Fw:
+        raise ValueError(
+            f"passive force at gap={gap_m * 1000:.4f} mm ({F0:.2f} N) is already <= "
+            f"weight ({Fw:.2f} N) -- gap must be strictly less than the i=0 "
+            f"equilibrium gap ({equilibrium_gap_mm(geom):.4f} mm) for a release "
+            f"current to exist"
+        )
+
+    i_null = OERSTED_TO_A_PER_M * geom.H_c_oersted * length_m(geom.pm_len_in) / geom.N_turns
+    return brentq(residual, 0.0, i_null)
+
+
 if __name__ == "__main__":
     geom = YokeGeometry()  # exact .mw defaults
 
