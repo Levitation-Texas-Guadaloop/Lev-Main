@@ -1,0 +1,434 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- Snapshot of https://claude.ai/artifact/EdJgNUxt55UUnGAGm4f3A9 (v3, 2026-10-14). -->
+<title>Single-Yoke F(z) Rig</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;600;700&family=IBM+Plex+Sans+Condensed:wght@600&family=IBM+Plex+Mono:wght@500&display=swap">
+<style>
+/* Layout: one reading column; three concept cards each with a side-view drawing; tables scroll in place */
+:root{
+  --bg:#f4f6f5; --panel:#ffffff; --fg:#1b2220; --muted:#59645f; --line:#d3dad6;
+  --accent:#0b7fab; --yoke:#d9480f; --warn:#b4560a; --ok:#2f7d4f;
+  --alu:#c9d1d6; --alu-s:#8e9aa1; --steel:#5d6670; --steel-s:#3a4148;
+  --coil:#c47a2c; --cell:#2fa3d6; --laser:#d4233a; --g10:#b9c46a;
+  --sans:"IBM Plex Sans",system-ui,sans-serif; --cond:"IBM Plex Sans Condensed","IBM Plex Sans",system-ui,sans-serif; --mono:"IBM Plex Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#121816; --panel:#1a211f; --fg:#e5ebe8; --muted:#9aa7a1; --line:#2e3734;
+  --accent:#4cb8e6; --yoke:#ff7a3d; --warn:#f0a050; --ok:#6cc48f;
+  --alu:#4a555b; --alu-s:#7c8a91; --steel:#8a949e; --steel-s:#b5bec6;
+  --coil:#d99248; --cell:#4cb8e6; --laser:#ff5468; --g10:#9aa64e; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#121816; --panel:#1a211f; --fg:#e5ebe8; --muted:#9aa7a1; --line:#2e3734;
+  --accent:#4cb8e6; --yoke:#ff7a3d; --warn:#f0a050; --ok:#6cc48f;
+  --alu:#4a555b; --alu-s:#7c8a91; --steel:#8a949e; --steel-s:#b5bec6;
+  --coil:#d99248; --cell:#4cb8e6; --laser:#ff5468; --g10:#9aa64e; color-scheme:dark}
+body{background:var(--bg);color:var(--fg);font-family:var(--sans);font-size:15px;line-height:1.55}
+main{max-width:940px;margin:0 auto;padding-inline:16px;padding-block:32px 56px;display:grid;gap:34px}
+section{display:grid;gap:14px;min-width:0}
+h1{font-family:var(--cond);font-size:2rem;line-height:1.15;margin:0;text-wrap:balance}
+h2{font-family:var(--cond);font-size:1.35rem;margin:0;text-wrap:balance}
+h3{font-size:1.05rem;margin:0}
+p,li{max-width:70ch}
+p{margin:0}
+ul,ol{margin:0;padding-left:1.2em;display:grid;gap:6px}
+.lede{color:var(--muted)}
+.eyebrow{font-family:var(--mono);font-size:.75rem;letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+code,.num{font-family:var(--mono);font-size:.9em;font-variant-numeric:tabular-nums}
+.answers{display:grid;gap:10px}
+.answer{display:grid;grid-template-columns:2.2em 1fr;gap:4px 12px;padding:14px 16px;background:var(--panel);border:1px solid var(--line);border-radius:6px}
+.answer .q{font-family:var(--mono);color:var(--accent);font-weight:500}
+.answer div{min-width:0}
+.tbl{overflow-x:auto;border:1px solid var(--line);border-radius:6px;background:var(--panel)}
+table{border-collapse:collapse;width:100%;min-width:640px;font-size:.92rem}
+th,td{text-align:left;vertical-align:top;padding:9px 12px;border-bottom:1px solid var(--line)}
+th{font-weight:600;color:var(--muted);font-size:.8rem;letter-spacing:.04em;text-transform:uppercase}
+tr:last-child td{border-bottom:0}
+.pill{display:inline-block;font-family:var(--mono);font-size:.75rem;padding:1px 8px;border-radius:99px;border:1px solid currentColor;white-space:nowrap}
+.pill.ok{color:var(--ok)}.pill.warn{color:var(--warn)}.pill.bad{color:var(--laser)}
+.concept{display:grid;gap:12px;padding:18px;background:var(--panel);border:1px solid var(--line);border-radius:6px}
+.concept.rec{border-color:var(--accent);border-width:2px}
+.concept header{display:flex;flex-wrap:wrap;gap:6px 14px;align-items:baseline}
+.fig{overflow-x:auto}
+.fig svg{display:block;width:100%;min-width:480px;height:auto}
+.pc{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px 24px}
+.pc h4{margin:0 0 4px;font-size:.8rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)}
+.legend{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:.85rem;color:var(--muted);list-style:none;padding:0}
+.legend li{display:flex;align-items:center;gap:6px}
+.sw{width:14px;height:10px;border-radius:2px;border:1px solid var(--line)}
+.note{padding:12px 16px;border-left:3px solid var(--warn);background:var(--panel);border-radius:0 6px 6px 0}
+/* SVG parts */
+svg text{font-family:var(--mono);font-size:11px;fill:var(--muted)}
+svg .t-strong{fill:var(--fg);font-weight:500}
+.alu{fill:var(--alu);stroke:var(--alu-s);stroke-width:1}
+.steel{fill:var(--steel);stroke:var(--steel-s);stroke-width:1}
+.yk{fill:var(--steel);stroke:var(--yoke);stroke-width:2}
+.coil{fill:var(--coil)}
+.cell{fill:var(--cell);stroke:var(--fg);stroke-width:.6}
+.laser{fill:var(--laser)}
+.beam{stroke:var(--laser);stroke-width:2;stroke-dasharray:4 3;fill:none}
+.g10{fill:var(--g10);stroke:var(--alu-s);stroke-width:.6}
+.rod{stroke:var(--fg);stroke-width:2;fill:none}
+.dim{stroke:var(--muted);stroke-width:1;fill:none}
+.flex{stroke:var(--accent);stroke-width:1.6;fill:none}
+.ground{stroke:var(--muted);stroke-width:1.5}
+.shim{fill:var(--g10)}
+.arrow{fill:var(--yoke)}
+@media (max-width:520px){h1{font-size:1.6rem}.answer{grid-template-columns:1fr}}
+</style>
+
+<main>
+<header style="display:grid;gap:10px">
+  <span class="eyebrow">Two Yoke Test Rig · S2 side sprint · single small yoke, zero current</span>
+  <h1>Single-yoke F(z) rig: load cells, layouts, and magnet proximity</h1>
+  <p class="lede">The goal is a calibrated, reproducible zero-current force-vs-gap curve for one small yoke, with the laser as the gap reference, to check against the Ansys script and the reluctance model. The Dec 2025 dataset failed on zero, gap, and tilt (Actuator Characterization §8). The plan below targets those three failures directly.</p>
+</header>
+
+<section>
+  <h2>Short answers</h2>
+  <div class="answers">
+    <div class="answer"><span class="q">Q1</span><div><b>Yes, with three conditions from the datasheet.</b> The YZC-133 20 kg is an aluminum bar cell, and once calibrated its errors stay under 1% of the force at 5 mm. The three conditions: rated output is only ±15%, so every cell needs its own in-place calibration; safe overload is just 120% (235 N per cell), so hard stops are required; and the cell is specified for loading in one direction only. S-beams are better for a clean axial tension path at high load, which is why LEV-90 uses them at 1300 N. At this scale, a third YZC-133 for a 3-point mount helps more than switching to S-beams.</div></div>
+    <div class="answer"><span class="q">Q2</span><div><b>Four layouts are below. I recommend D, the two-actuator roll rig.</b> The yoke rides on a beam, a stepper actuator at each end sets gap and roll, and two lasers (one per pole) close the loop. Joints lock pitch, which is safe on a 1" yoke. It controls exactly what two lasers can measure and runs scripted sweeps. B (an inverted 3-point hang) remains the better rehearsal for LEV-90.</div></div>
+    <div class="answer"><span class="q">Q3</span><div><b>The magnet won't bother the strain gauges at 1/2", but it will pull on any steel near them.</b> A static field doesn't change a foil-gauge bridge in any meaningful way. The risk is ferromagnetic hardware on the frame side of the cell. A steel part there adds a gap-dependent force that a tare cannot remove. The threaded rod next to the left coil in the photo looks like steel. With coils on, heat and PWM pickup are added risks.</div></div>
+  </div>
+</section>
+
+<section>
+  <h2>Q1 · Is this the right load cell?</h2>
+  <p>Expected forces, from <code>scripts/yoke_model.py</code> (Ansys, zero current): <span class="num">120 N @ 5 mm</span>, <span class="num">57 N @ 10 mm</span>, <span class="num">33 N @ 15 mm</span>. Near contact (2–3 mm) is unsolved and probably 200–300 N. A 20 kg cell is <span class="num">196 N</span> full scale, so two or three cells sharing the load sit at 20–60% FS at the design gaps. That range is good for resolution.</p>
+  <h3>What the YZC-133 datasheet says (20 kg, aluminum, HX711 kit)</h3>
+  <p>All %FS figures below are percentages of full scale, 196 N. Per-cell loads are for 2–3 cells at 5 mm, about 40–60 N each.</p>
+  <div class="tbl"><table>
+    <thead><tr><th>Spec</th><th>Value</th><th>In newtons</th><th>What it means here</th></tr></thead>
+    <tbody>
+      <tr><td>Rated output</td><td class="num">1.0 ± 0.15 mV/V</td><td class="num">≈25 µV/N at 5 V</td><td><span class="pill bad">calibrate</span> Gain can be off by ±15% from cell to cell. Using the nominal value alone is enough to produce the Dec 2025 split, where c0 fit at k = 1.01 and c1 at k = 0.79. Each cell needs its own dead-weight calibration.</td></tr>
+      <tr><td>Safe / ultimate overload</td><td class="num">120% / 150%</td><td class="num">235 N / 294 N per cell</td><td><span class="pill bad">hard stops</span> Pull near contact is probably 200–300 N total. If the yoke snaps in or tilts, one cell can take most of that. Put hard stops at ≥3 mm until the 2–4 mm Ansys points exist.</td></tr>
+      <tr><td>Nonlinearity / repeatability / hysteresis</td><td class="num">0.05 / 0.03 / 0.03 %FS</td><td class="num">0.10 / 0.06 / 0.06 N</td><td><span class="pill ok">fine</span> Together these stay under about 0.5% of 120 N. They become large only at wide gaps, where the force is under 5 N.</td></tr>
+      <tr><td>Creep (5 min)</td><td class="num">0.1 %FS</td><td class="num">0.2 N</td><td><span class="pill warn">dwell</span> This is the largest per-point error. Use the same dwell before every reading, and record a short time series per point instead of one sample.</td></tr>
+      <tr><td>Temperature effect on zero / span</td><td class="num">0.02 / 0.003 %RO/°C</td><td class="num">0.04 N/°C zero</td><td><span class="pill ok">fine at 0 A</span> With coils on, a 20 °C rise near a cell shifts zero about 0.8 N, and uneven heating makes it worse.</td></tr>
+      <tr><td>Zero balance</td><td class="num">±0.1 %RO</td><td class="num">±0.2 N</td><td>Tare removes it. It does not explain Dec 2025's −5 N at wide gaps, which points to a second load path rather than the cell.</td></tr>
+      <tr><td>Mounting</td><td colspan="3">Screw one end down and leave the other end free. Load along the label arrow. Don't press on the white cover over the gauges. A printed shroud that touches the free end or the middle section creates a second load path. That is the leading suspect for the broken Dec 2025 zero, and checking it costs nothing.</td></tr>
+      <tr><td>Leads</td><td colspan="3">Four wires, 0.8 mm × 180 mm, unshielded. Keep them short and twisted, and strain-relieve them on the fixed side so cable tension doesn't load the cell.</td></tr>
+      <tr><td>HX711</td><td colspan="3">Use one per cell (channel A, gain 128). Run at 10 SPS, which has lower noise and is the only rate with 50/60 Hz rejection. The green modules usually excite at about 4.3 V rather than 5 V. The measurement is ratiometric, so that is fine, but calibrate at the voltage you actually run. A third cell needs a third module.</td></tr>
+    </tbody>
+  </table></div>
+  <p><b>Error budget after calibration, per cell at 5 mm:</b> about 0.3 N combined, under 1% of the 120 N total. At 30 mm, where the force is about 4 N, the same 0.3 N is around 10%, so quote wide-gap points with wider error bars.</p>
+  <h3>Compared with other cell types</h3>
+  <div class="tbl"><table>
+    <thead><tr><th>Cell type</th><th>Fit here</th><th>Strength</th><th>Weakness</th></tr></thead>
+    <tbody>
+      <tr><td><b>Aluminum parallel-beam bar</b> (what you have)</td><td><span class="pill ok">keep</span></td><td>Non-magnetic body. Moment-compensated, so output barely depends on where along the platform the load sits. Bidirectional. Cheap enough to buy a third.</td><td>±15% gain spread and only 120% safe overload. Handles side load and torsion poorly. Specified for the labeled direction only. Deflection isn't on the datasheet; measure it.</td></tr>
+      <tr><td><b>S-beam</b> (LEV-90 pick)</td><td><span class="pill warn">optional</span></td><td>Clean axial path in tension with rod-end eyes. High capacity. Good C3-class specs.</td><td>Most are steel, which LEV-90 already keeps ≥150 mm from the poles. Small aluminum S-beams exist but cost more and add little at 100–300 N.</td></tr>
+      <tr><td><b>Button / compression</b></td><td><span class="pill warn">later</span></td><td>Very stiff and compact. Three under a plate give the moments directly.</td><td>Needs flat, true seats and gives poor resolution at low FS. Usually stainless steel.</td></tr>
+    </tbody>
+  </table></div>
+  <p>Whatever cell you use, the Dec 2025 failures were in the system around it: a drifting zero, probably a second load path, hand-typed gaps, and uncontrolled tilt. Those get fixed in the mounting and the calibration protocol below, not by changing cells.</p>
+</section>
+
+<section>
+  <h2>Q3 · Does a magnet 1/2" from the cell corrupt the reading?</h2>
+  <p>A load cell reports every force between its live side and its dead side. The question is what else the magnet can add to that path.</p>
+  <div class="tbl"><table>
+    <thead><tr><th>Mechanism</th><th>Zero current</th><th>Coils on</th><th>Check / fix</th></tr></thead>
+    <tbody>
+      <tr><td>Field acting on the foil gauges and bridge (magnetoresistance)</td><td><span class="pill ok">negligible</span></td><td><span class="pill ok">negligible</span></td><td>None needed. Constantan foil is essentially non-magnetic, and a static field induces no EMF in a DC bridge.</td></tr>
+      <tr><td>Steel hardware on the <b>dead</b> (frame/track) side attracted to the magnet</td><td><span class="pill bad">real</span></td><td><span class="pill bad">real</span></td><td>This force passes through the cell and changes with gap, so a tare can't cancel it. Use aluminum, brass, or 316/304 SS screws, standoffs, and rods. Check every part near the yoke with a fridge magnet.</td></tr>
+      <tr><td>Steel on the <b>live</b> (yoke) side</td><td><span class="pill ok">mostly fine</span></td><td><span class="pill ok">mostly fine</span></td><td>Force between yoke and its own hardware is internal, so the cell doesn't see it. It can slightly reshape the gap field, so still keep it out of the pole region.</td></tr>
+      <tr><td>Coil heat drifting the cell zero</td><td><span class="pill ok">n/a</span></td><td><span class="pill warn">likely</span></td><td>At about 1.1 Ω and 15 A, a coil dissipates up to about 250 W. Zero shifts 0.02 %RO/°C, about 0.04 N/°C, so a 20 °C rise moves it about 0.8 N, more if heating is uneven. Keep cells ≥2" away on standoffs, re-zero often, and log cell temperature.</td></tr>
+      <tr><td>PWM pickup in the cell leads (16 kHz)</td><td><span class="pill ok">n/a</span></td><td><span class="pill warn">some</span></td><td>Use twisted, shielded leads routed away from the coils. The HX711 at 10 SPS filters most of it.</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note"><b>One-minute test on the current rig:</b> take the track off and tare. Then sweep a loose steel bar of about track size around the cells and brackets, not over the poles, and watch the reading. Anything above the noise means a magnetic load path on the dead side.</p>
+</section>
+
+<section>
+  <h2>Q2 · Three rig layouts, with the laser as ground truth</h2>
+  <ul class="legend" aria-label="Drawing legend">
+    <li><i class="sw" style="background:var(--alu)"></i>aluminum / non-magnetic</li>
+    <li><i class="sw" style="background:var(--steel)"></i>steel (track-grade plate)</li>
+    <li><i class="sw" style="background:var(--steel);border:2px solid var(--yoke)"></i>yoke</li>
+    <li><i class="sw" style="background:var(--cell)"></i>load cell</li>
+    <li><i class="sw" style="background:var(--laser)"></i>laser</li>
+    <li><i class="sw" style="background:var(--g10)"></i>G10 / shims / stops</li>
+  </ul>
+  <p><b>Load direction differs between layouts.</b> The YZC-133 is specified for force along its label arrow. In B, the magnet pulls the hanging plate down, so each cell loads like a kitchen scale, in the specified direction. In A and C, the magnet pulls the yoke up off its cells. The cells unload and, near contact, go into reverse (tension). The bridge still reads in reverse, but the datasheet doesn't cover it. Calibrate in the direction you'll use, or flip the cells.</p>
+  <p>All three follow one rule for the laser: <b>mount it on the same body as the pole faces</b>, or on the fixed base when the yoke is fixed. It then reads the true gap, including cell and frame deflection. At 5 mm, 0.1 mm of hidden deflection is about a 2% force error.</p>
+
+  <!-- A -->
+  <article class="concept">
+    <header><span class="eyebrow">Concept A</span><h3>Hanging-yoke Z-carriage (an upgrade of today's rig)</h3></header>
+    <div class="fig"><svg viewBox="0 0 560 320" role="img" aria-label="Side view: steel track fixed under the frame's top beam; yoke below it on two load cells on a carriage raised by a lead screw; laser on the yoke aimed up at the track">
+      <line class="ground" x1="20" y1="300" x2="540" y2="300"/>
+      <rect class="alu" x="40" y="40" width="16" height="260"/><rect class="alu" x="504" y="40" width="16" height="260"/>
+      <rect class="alu" x="40" y="34" width="480" height="16"/>
+      <rect class="steel" x="110" y="50" width="340" height="18"/>
+      <text x="300" y="63" text-anchor="middle" style="fill:#fff">fixed steel track</text>
+      <!-- yoke -->
+      <rect class="yk" x="200" y="92" width="38" height="32"/><rect class="yk" x="322" y="92" width="38" height="32"/>
+      <rect class="coil" x="190" y="100" width="8" height="24"/><rect class="coil" x="240" y="100" width="8" height="24"/>
+      <rect class="coil" x="312" y="100" width="8" height="24"/><rect class="coil" x="362" y="100" width="8" height="24"/>
+      <rect class="yk" x="180" y="124" width="200" height="28"/>
+      <text x="280" y="142" text-anchor="middle" style="fill:#fff">yoke</text>
+      <!-- gap dim -->
+      <line class="dim" x1="172" y1="68" x2="172" y2="92"/><text x="166" y="84" text-anchor="end">g</text>
+      <!-- standoffs + cells -->
+      <rect class="alu" x="205" y="152" width="14" height="40"/><rect class="alu" x="341" y="152" width="14" height="40"/>
+      <rect class="cell" x="190" y="192" width="44" height="14"/><rect class="cell" x="326" y="192" width="44" height="14"/>
+      <text x="212" y="222" text-anchor="middle">LC·L</text><text x="348" y="222" text-anchor="middle">LC·R</text>
+      <!-- carriage -->
+      <rect class="alu" x="56" y="206" width="448" height="10"/>
+      <rect class="g10" x="56" y="200" width="14" height="22"/><rect class="g10" x="490" y="200" width="14" height="22"/>
+      <text x="78" y="196">rail bearings</text>
+      <!-- lead screw -->
+      <line class="rod" x1="280" y1="216" x2="280" y2="290"/>
+      <rect class="alu" x="262" y="288" width="36" height="8"/>
+      <text x="292" y="262">Z lead screw (brass nut)</text>
+      <!-- laser on yoke -->
+      <rect class="alu" x="380" y="134" width="30" height="6"/>
+      <rect class="laser" x="404" y="104" width="18" height="36"/>
+      <line class="beam" x1="413" y1="104" x2="413" y2="68"/>
+      <text x="428" y="96">laser on yoke</text>
+      <text x="428" y="108">→ reads true g</text>
+      <polygon class="arrow" points="280,74 272,88 288,88"/>
+      <text x="300" y="86" class="t-strong">F</text>
+    </svg></div>
+    <div class="pc">
+      <div><h4>Good</h4><ul><li>Same geometry as the pod (yoke under the track) and reuses the current cells and brackets.</li><li>Gap sweeps continuously with one screw.</li></ul></div>
+      <div><h4>Weak</h4><ul><li>Two cells leave pitch to the carriage rails, so rail play becomes tilt error.</li><li>Roll is nulled only through rail alignment, with no fine adjustment.</li><li>The carriage holds the full pull, so the lead screw needs a positive lock.</li></ul></div>
+    </div>
+  </article>
+
+  <!-- B -->
+  <article class="concept">
+    <header><span class="eyebrow">Concept B</span><h3>Inverted kinematic hang (LEV-90 at 1/10 scale)</h3></header>
+    <div class="fig"><svg viewBox="0 0 560 320" role="img" aria-label="Side view: yoke fixed poles-up on an aluminum riser; steel plate hangs above from fine-thread adjusters through load cells in tension; G10 hard stops; flexure strap; laser on the base aimed up at the plate">
+      <line class="ground" x1="20" y1="300" x2="540" y2="300"/>
+      <rect class="alu" x="40" y="288" width="480" height="12"/>
+      <rect class="alu" x="40" y="30" width="16" height="258"/><rect class="alu" x="504" y="30" width="16" height="258"/>
+      <rect class="alu" x="40" y="24" width="480" height="16"/>
+      <!-- adjusters -->
+      <g>
+        <rect class="alu" x="138" y="40" width="24" height="8"/>
+        <line class="rod" x1="150" y1="48" x2="150" y2="74"/>
+        <rect class="cell" x="136" y="74" width="28" height="34"/>
+        <line class="rod" x1="150" y1="108" x2="150" y2="150"/>
+        <rect class="alu" x="398" y="40" width="24" height="8"/>
+        <line class="rod" x1="410" y1="48" x2="410" y2="74"/>
+        <rect class="cell" x="396" y="74" width="28" height="34"/>
+        <line class="rod" x1="410" y1="108" x2="410" y2="150"/>
+      </g>
+      <text x="172" y="66">fine-thread adjuster</text>
+      <text x="172" y="78">(M8×0.75 or finer)</text>
+      <text x="172" y="96">LC in tension</text>
+      <text x="300" y="100" text-anchor="middle">3rd point behind</text>
+      <text x="300" y="112" text-anchor="middle">cone · V · flat</text>
+      <!-- plate -->
+      <rect class="steel" x="110" y="150" width="340" height="18"/>
+      <text x="280" y="163" text-anchor="middle" style="fill:#fff">steel plate (track grade + thickness)</text>
+      <!-- flexure -->
+      <polyline class="flex" points="450,159 462,153 474,165 486,153 498,165 504,159"/>
+      <text x="452" y="182">flexure strap</text>
+      <!-- hard stops -->
+      <rect class="g10" x="118" y="176" width="14" height="112"/><rect class="g10" x="428" y="176" width="14" height="112"/>
+      <text x="112" y="230" text-anchor="end">hard</text><text x="112" y="242" text-anchor="end">stop</text>
+      <!-- yoke poles up -->
+      <rect class="yk" x="220" y="180" width="38" height="30"/><rect class="yk" x="302" y="180" width="38" height="30"/>
+      <rect class="coil" x="210" y="186" width="8" height="24"/><rect class="coil" x="260" y="186" width="8" height="24"/>
+      <rect class="coil" x="292" y="186" width="8" height="24"/><rect class="coil" x="342" y="186" width="8" height="24"/>
+      <rect class="yk" x="200" y="210" width="160" height="28"/>
+      <text x="280" y="228" text-anchor="middle" style="fill:#fff">yoke (fixed)</text>
+      <rect class="alu" x="240" y="238" width="80" height="50"/>
+      <text x="280" y="268" text-anchor="middle">Al riser</text>
+      <line class="dim" x1="192" y1="168" x2="192" y2="180"/><text x="186" y="178" text-anchor="end">g</text>
+      <!-- laser on base -->
+      <rect class="alu" x="384" y="232" width="10" height="56"/>
+      <rect class="laser" x="378" y="196" width="22" height="36"/>
+      <line class="beam" x1="389" y1="196" x2="389" y2="168"/>
+      <text x="402" y="214">laser</text><text x="402" y="226">(fixed side)</text>
+      <polygon class="arrow" points="280,174 272,160 288,160" transform="translate(0,4)"/>
+    </svg></div>
+    <div class="pc">
+      <div><h4>Good</h4><ul><li>Three points are kinematic, so height, pitch, and roll set independently. Roll stays below 0.7° by turning one knob.</li><li>Three cells give F<sub>z</sub>, both moments, and the center of force.</li><li>Cells hang far above the poles on rods, away from the magnet, and are loaded along the label arrow.</li><li>Three cells share up to 705 N at the safe-overload limit, compared with 470 N for two.</li><li>Uses the same procedure as LEV-90 (shim-zero, hard stops, flexures), so mistakes cost little here.</li></ul></div>
+      <div><h4>Weak</h4><ul><li>New build: frame, plate, and three adjusters.</li><li>Needs a third bar cell and a third HX711. Both are cheap.</li><li>The plate stands in for the track, so it must match the track's steel grade and thickness or it saturates and reads low.</li></ul></div>
+    </div>
+  </article>
+
+  <!-- C -->
+  <article class="concept">
+    <header><span class="eyebrow">Concept C</span><h3>Spacer posts with shim stacks (fastest to first data)</h3></header>
+    <div class="fig"><svg viewBox="0 0 560 320" role="img" aria-label="Side view: yoke poles-up sitting on two load cells via aluminum standoffs; steel plate resting on two posts with swappable shim stacks; laser bracketed off the yoke aimed at the plate">
+      <line class="ground" x1="20" y1="300" x2="540" y2="300"/>
+      <rect class="alu" x="40" y="288" width="480" height="12"/>
+      <!-- posts + shims -->
+      <rect class="alu" x="92" y="182" width="20" height="106"/><rect class="alu" x="448" y="182" width="20" height="106"/>
+      <g class="shim">
+        <rect x="90" y="176" width="24" height="5"/><rect x="90" y="170" width="24" height="5"/><rect x="90" y="164" width="24" height="5"/><rect x="90" y="158" width="24" height="5"/>
+        <rect x="446" y="176" width="24" height="5"/><rect x="446" y="170" width="24" height="5"/><rect x="446" y="164" width="24" height="5"/><rect x="446" y="158" width="24" height="5"/>
+      </g>
+      <text x="120" y="200">shim stack</text>
+      <text x="120" y="212">(gauge blocks / G10)</text>
+      <line class="rod" x1="102" y1="182" x2="102" y2="148"/><text x="60" y="140">jack screw</text>
+      <!-- plate -->
+      <rect class="steel" x="80" y="140" width="400" height="18"/>
+      <text x="280" y="153" text-anchor="middle" style="fill:#fff">steel plate (rests on posts)</text>
+      <!-- yoke -->
+      <rect class="yk" x="220" y="172" width="38" height="30"/><rect class="yk" x="302" y="172" width="38" height="30"/>
+      <rect class="coil" x="210" y="178" width="8" height="24"/><rect class="coil" x="260" y="178" width="8" height="24"/>
+      <rect class="coil" x="292" y="178" width="8" height="24"/><rect class="coil" x="342" y="178" width="8" height="24"/>
+      <rect class="yk" x="200" y="202" width="160" height="26"/>
+      <text x="280" y="219" text-anchor="middle" style="fill:#fff">yoke (live)</text>
+      <line class="dim" x1="192" y1="158" x2="192" y2="172"/><text x="186" y="169" text-anchor="end">g</text>
+      <!-- standoffs + cells -->
+      <rect class="alu" x="222" y="228" width="12" height="38"/><rect class="alu" x="326" y="228" width="12" height="38"/>
+      <rect class="cell" x="206" y="266" width="44" height="22"/><rect class="cell" x="310" y="266" width="44" height="22"/>
+      <text x="280" y="282" text-anchor="middle">LC</text>
+      <!-- laser on yoke -->
+      <rect class="alu" x="360" y="212" width="38" height="6"/>
+      <rect class="laser" x="392" y="182" width="18" height="36"/>
+      <line class="beam" x1="401" y1="182" x2="401" y2="158"/>
+      <text x="414" y="200">laser on yoke</text>
+    </svg></div>
+    <div class="pc">
+      <div><h4>Good</h4><ul><li>Stable by construction with no moving stage, so gaps repeat exactly.</li><li>Can be built in days from the current cells.</li><li>Its base, plate, laser bracket, and riser carry over to B. Swapping the posts for screws turns C into B.</li></ul></div>
+      <div><h4>Weak</h4><ul><li>Gaps are discrete, and each shim swap means lifting the plate against up to about 300 N. Jack screws help.</li><li>Roll is set only by shim matching.</li><li>Plate weight must stay off the cells, so the posts sit on the base, never on the yoke.</li></ul></div>
+    </div>
+  </article>
+
+  <!-- D -->
+  <article class="concept rec">
+    <header><span class="eyebrow">Concept D · recommended</span><h3>Two-actuator roll rig, closed loop on two lasers</h3></header>
+    <p>The yoke rides on an aluminum beam under a fixed steel plate. A stepper-driven actuator at each end of the beam sets gap and roll, and two lasers, one per pole, close the loop. Pitch is locked by the joints. With only two lasers, this rig controls exactly what it can measure.</p>
+    <div class="fig"><svg viewBox="0 0 640 370" role="img" aria-label="Side view: fixed steel plate under the frame top; yoke poles-up on an aluminum beam; beam supported at each end by a joint, a load cell, an aluminum pushrod and a stepper lead-screw actuator; a laser over each pole aimed at matte tape on the plate; hard stops and a flexure; axis glyph showing pitch horizontal, yaw vertical, roll into the page">
+      <defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="arrow"/></marker></defs>
+      <line class="ground" x1="20" y1="340" x2="540" y2="340"/>
+      <rect class="alu" x="30" y="328" width="506" height="12"/>
+      <rect class="alu" x="30" y="30" width="16" height="298"/><rect class="alu" x="520" y="30" width="16" height="298"/>
+      <rect class="alu" x="30" y="24" width="506" height="16"/>
+      <!-- fixed plate + tape -->
+      <rect class="steel" x="78" y="40" width="400" height="18"/>
+      <text x="278" y="53" text-anchor="middle" style="fill:#fff">fixed steel plate · matte tape under lasers</text>
+      <rect x="152" y="56" width="14" height="3" style="fill:var(--fg)"/><rect x="394" y="56" width="14" height="3" style="fill:var(--fg)"/>
+      <!-- hard stops -->
+      <rect class="g10" x="84" y="58" width="10" height="70"/><rect class="g10" x="466" y="58" width="10" height="70"/>
+      <text x="78" y="96" text-anchor="end">stop</text>
+      <!-- yoke -->
+      <rect class="yk" x="215" y="78" width="38" height="30"/><rect class="yk" x="307" y="78" width="38" height="30"/>
+      <rect class="coil" x="205" y="84" width="8" height="24"/><rect class="coil" x="255" y="84" width="8" height="24"/>
+      <rect class="coil" x="297" y="84" width="8" height="24"/><rect class="coil" x="347" y="84" width="8" height="24"/>
+      <rect class="yk" x="195" y="108" width="170" height="26"/>
+      <text x="280" y="125" text-anchor="middle" style="fill:#fff">yoke (live)</text>
+      <line class="dim" x1="190" y1="58" x2="190" y2="78"/><text x="184" y="72" text-anchor="end">g</text>
+      <polygon class="arrow" points="280,62 273,74 287,74"/><text x="292" y="72" class="t-strong">F</text>
+      <!-- lasers on beam -->
+      <rect class="laser" x="150" y="104" width="18" height="30"/><line class="beam" x1="159" y1="104" x2="159" y2="59"/>
+      <rect class="laser" x="392" y="104" width="18" height="30"/><line class="beam" x1="401" y1="104" x2="401" y2="59"/>
+      <text x="154" y="98" text-anchor="end">laser L</text><text x="414" y="98">laser R</text>
+      <!-- beam -->
+      <rect class="alu" x="70" y="134" width="416" height="12"/>
+      <text x="280" y="160" text-anchor="middle">Al beam</text>
+      <line class="dim" x1="159" y1="150" x2="401" y2="150" marker-start="url(#ah)" marker-end="url(#ah)"/>
+      <text x="230" y="175" text-anchor="middle">b (laser baseline)</text>
+      <!-- joints -->
+      <circle cx="96" cy="154" r="6" class="alu" style="stroke-width:2;stroke:var(--fg)"/>
+      <rect x="448" y="148" width="24" height="12" rx="6" style="fill:none;stroke:var(--fg);stroke-width:1.5"/>
+      <circle cx="456" cy="154" r="4.5" style="fill:var(--fg)"/>
+      <text x="108" y="166">pin</text><text x="442" y="174" text-anchor="end">pin-in-slot</text>
+      <!-- cells -->
+      <rect class="cell" x="84" y="162" width="24" height="34"/><rect class="cell" x="448" y="162" width="24" height="34"/>
+      <text x="114" y="186">LC·L</text><text x="442" y="190" text-anchor="end">LC·R</text>
+      <!-- pushrods -->
+      <line class="rod" x1="96" y1="196" x2="96" y2="262" style="stroke:var(--alu-s);stroke-width:4"/>
+      <line class="rod" x1="460" y1="196" x2="460" y2="262" style="stroke:var(--alu-s);stroke-width:4"/>
+      <text x="106" y="232">Al pushrod</text>
+      <!-- actuators -->
+      <rect x="80" y="262" width="32" height="66" rx="2" style="fill:var(--steel-s)"/><rect x="444" y="262" width="32" height="66" rx="2" style="fill:var(--steel-s)"/>
+      <text x="120" y="290">stepper + lead screw</text><text x="120" y="304">≥150 mm from poles</text>
+      <text x="436" y="296" text-anchor="end">actuator R</text>
+      <!-- flexure -->
+      <polyline class="flex" points="486,140 492,134 498,146 504,134 510,146 520,140"/>
+      <text x="542" y="144">flexure</text>
+      <!-- axes glyph -->
+      <text x="556" y="222" class="t-strong">your axes</text>
+      <line class="dim" x1="580" y1="282" x2="618" y2="282" marker-end="url(#ah)" style="stroke:var(--fg)"/>
+      <line class="dim" x1="580" y1="282" x2="580" y2="244" marker-end="url(#ah)" style="stroke:var(--fg)"/>
+      <circle cx="580" cy="282" r="7" style="fill:var(--panel);stroke:var(--fg);stroke-width:1.5"/><circle cx="580" cy="282" r="2.5" style="fill:var(--fg)"/>
+      <text x="598" y="274" text-anchor="middle">pitch</text>
+      <text x="588" y="252">yaw</text>
+      <text x="580" y="306" text-anchor="middle">roll ⊙</text>
+    </svg></div>
+    <div class="pc">
+      <div><h4>Mechanics</h4><ul>
+        <li><b>The pin axes run into the page.</b> A pin allows rotation only about its own axis, so roll is free and pitch is blocked.</li>
+        <li><b>One joint is a pin in a slot</b> so the beam can slide a little horizontally. Without it the two pins over-constrain the beam as it rolls. The shift is about 0.02 mm at 1°, but it would put a side load on the cells.</li>
+        <li><b>Each cell sits in series with its actuator.</b> All vertical load goes through the cells. Nothing passive carries force without being measured.</li>
+        <li><b>The magnet pulls the yoke up, so the cells are in tension.</b> Mount them with the label arrow along that pull.</li>
+        <li><b>Use a stepper on a fine, non-backdrivable lead screw</b>, for example a T8 with 2 mm lead, about 10 µm per full step. The magnet's pull preloads the screw in one direction, which takes up backlash. Approach every setpoint from the same side anyway. Cheap 12 V gear-motor actuators have 0.1–0.5 mm of backlash, which is a 4–10% force error at 5 mm.</li>
+        <li><b>Keep motors and steel lead screws ≥150 mm from the poles</b> and drive the yoke through aluminum pushrods. Keep the hard stops and add software travel limits.</li>
+      </ul></div>
+      <div><h4>Sensing and control</h4><ul>
+        <li><b>Put one laser at each pole</b>, on the beam (live side), aimed at matte tape. Shim-zero each laser to its own pole face.</li>
+        <li><code>gap = (g_L + g_R)/2</code> and <code>roll = (g_L − g_R)/b</code>. At b ≈ 100 mm, 10 µm of laser difference is about 0.006°, so holding roll under 0.7° is easy.</li>
+        <li><b>The two control loops are independent.</b> Move both actuators together to change gap, or in opposite directions to change roll.</li>
+        <li><b>The loop is quasi-static, not real time:</b> move, wait out creep, read lasers and cells, correct, log. Up/down sweeps run from a script, which removes hand-typed gaps.</li>
+        <li><b>The two cells give F<sub>z</sub> = L + R and the roll moment.</b> Pitch moment isn't measured, which is fine while pitch is locked.</li>
+      </ul></div>
+    </div>
+    <h4 style="margin:0;font-size:.8rem;letter-spacing:.05em;text-transform:uppercase;color:var(--muted)">Why locking pitch is safe on a 1" yoke</h4>
+    <p>A pitch angle θ tilts the 25.4 mm deep pole face by about ±12.7·θ (θ in radians). Because force goes roughly as 1/g², a tilt that averages out symmetrically changes force only at second order, by about (a/g)², where a is the edge offset.</p>
+    <div class="tbl"><table style="min-width:420px">
+      <thead><tr><th>Pitch error</th><th>Edge gap offset</th><th>Force error @ 5 mm</th><th>@ 3 mm</th></tr></thead>
+      <tbody>
+        <tr><td class="num">0.5°</td><td class="num">±0.11 mm</td><td class="num">~0.05%</td><td class="num">~0.13%</td></tr>
+        <tr><td class="num">1°</td><td class="num">±0.22 mm</td><td class="num">~0.2%</td><td class="num">~0.5%</td></tr>
+      </tbody>
+    </table></div>
+    <p>Set pitch once at assembly with feeler gauges. Then check it by moving one laser front to back, at a large gap and again at a small one. If pitch changes with gap, the structure is flexing under load. Stiffen the frame instead of adding a third actuator.</p>
+    <div class="pc">
+      <div><h4>Good</h4><ul><li>Controls exactly the two degrees of freedom the two lasers can measure.</li><li>Scripted, repeatable sweeps with logged gap and roll at every point.</li><li>Uses the two cells you have.</li></ul></div>
+      <div><h4>Weak</h4><ul><li>Adds a small motion-control project: steppers, drivers, firmware.</li><li>Pitch is assumed, not measured. That's safe at 1" depth but won't carry over to the 9" yoke.</li><li>Needs a stiff frame, since any flex shows up as pitch.</li></ul></div>
+    </div>
+  </article>
+
+  <div class="tbl"><table>
+    <thead><tr><th></th><th>A · Z-carriage</th><th>B · Kinematic hang</th><th>C · Shim posts</th><th>D · Two-actuator roll</th></tr></thead>
+    <tbody>
+      <tr><td>Roll control (&lt;0.7°)</td><td><span class="pill warn">rail alignment</span></td><td><span class="pill ok">3 knobs</span></td><td><span class="pill warn">shim matching</span></td><td><span class="pill ok">closed loop, 2 lasers</span></td></tr>
+      <tr><td>Gap sweep</td><td>continuous</td><td>continuous, about 25 µm per 10° of knob</td><td>discrete</td><td>continuous, scripted</td></tr>
+      <tr><td>Outputs</td><td>F<sub>z</sub>, roll moment</td><td>F<sub>z</sub>, roll and pitch moments, center of force</td><td>F<sub>z</sub>, roll moment</td><td>F<sub>z</sub>, roll moment, gap + roll angle</td></tr>
+      <tr><td>Cells</td><td>2 (have)</td><td>3 (buy 1 + HX711)</td><td>2 (have)</td><td>2 (have)</td></tr>
+      <tr><td>Cell load direction</td><td><span class="pill warn">reversed</span></td><td><span class="pill ok">as labeled</span></td><td><span class="pill warn">reversed</span></td><td><span class="pill ok">as labeled (cells flipped)</span></td></tr>
+      <tr><td>Build effort</td><td>medium</td><td>medium–high</td><td>low</td><td>medium, plus motion control</td></tr>
+      <tr><td>Carries over to LEV-90</td><td>little</td><td>procedure + layout</td><td>layout (the LEV-90 alternate)</td><td>sweep scripts + laser loop</td></tr>
+    </tbody>
+  </table></div>
+  <p><b>Suggested path:</b> build D's mechanics ready for steppers: beam, pin and pin-in-slot joints, cells in series, lead screws. Run the first sweeps with hand knobs on the lead screws while the lasers and cells are validated. Add the steppers and the laser loop once the hand-run data passes the acceptance checks.</p>
+</section>
+
+<section>
+  <h2>Calibration protocol (all layouts)</h2>
+  <p>This is the part the Dec 2025 run skipped. The steps run in order.</p>
+  <ol>
+    <li><b>Check the mounting.</b> One end of each cell bolted, the other end free. Nothing touches the white gauge cover. Leads are strain-relieved on the fixed side.</li>
+    <li><b>In-situ dead-weight calibration, one cell at a time</b> (gain spreads ±15%). Fully assembled, magnet in place, plate removed. Load known masses through the real load path, in the direction the magnet will pull, in 5–6 steps up to about 150 N per cell, staying under the 235 N safe overload. Then unload. Use the same dwell time at every step. Fit gain per cell and record nonlinearity and hysteresis.</li>
+    <li><b>Load-path check.</b> Move one mass across several positions. The sum of all cells must stay within about 1%. If it drifts, something else is carrying load, such as cables, a rubbing guide, or steel hardware.</li>
+    <li><b>True zero at infinite gap.</b> Remove the plate or track, or set it ≥40 mm away, and tare. Re-tare before and after every sweep and report the drift.</li>
+    <li><b>Shim-zero the gap.</b> Place non-magnetic shims on the pole faces and lower the plate until the cell reading starts to change. That sets the laser offset against the pole faces.</li>
+    <li><b>Sweep.</b> Go from 30 mm down to the hard stop and back up, three times, in 0.5 mm steps below 8 mm. At each point, wait a fixed dwell (creep is 0.2 N over 5 min), then log about 5 s of laser gap, all cells, roll, and temperature at 10 SPS. Bracket 3 mm only after the hard stops and overload margin are confirmed.</li>
+    <li><b>Accept</b> only if F is positive everywhere, decreases monotonically with gap, sweeps repeat within a stated band, and zero drift stays below a stated limit.</li>
+  </ol>
+</section>
+
+<section>
+  <h2>Flags before building</h2>
+  <ul>
+    <li><b>The two force references disagree by about 2×.</b> The new Ansys script gives <span class="num">85.8 N @ 7 mm</span>. The "per-yoke" Ansys curve in Characterization §8 gives <span class="num">43.8 N @ 7 mm</span>. That doc's "half-baseline" wording suggests §8 counts one magnet leg pair rather than the whole yoke. Settle the definition before comparing any measurements.</li>
+    <li><b>Ansys points at 2–4 mm are missing</b> (handoff open issue #1). Those points set hard-stop height and cell overload margin, so solve them first.</li>
+    <li>The <b>threaded rod beside the left coil</b> in <code>yoke-rig.html</code> looks like zinc-plated steel. Check it with a magnet.</li>
+    <li><b>Laser model and target.</b> LEV-91 says to find the lasers first. Triangulation lasers read bare steel poorly, so put a matte patch of paint or tape on the plate where the beam lands.</li>
+    <li>The YZC-133 datasheet leaves out deflection. Measure it once under load so the stiffness margin is known rather than assumed. The magnet's negative stiffness is about 20 N/mm at 5 mm.</li>
+    <li><b>Inspect the current white shrouds</b> for contact with the free end or the gauge cover. That would be a second load path, and it is the cheapest explanation for the broken Dec 2025 zero.</li>
+    <li>The YZC-133 and HX711 specs belong in LEV-88 (Load Cell Prereqs).</li>
+  </ul>
+</section>
+</main>
