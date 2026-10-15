@@ -1,0 +1,4 @@
+D_in,R_ohm,method,temp_C,notes
+1,1.1,2wire,20,re-checked empirical value
+9,3.9,2wire,20,"re-checked empirical: 3.8-4.0 ohm, midpoint used"
+5,,4wire,,pending measurement -- next recommended data point

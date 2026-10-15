@@ -45,7 +45,11 @@ duplicate. Don't merge them.
 | File | Contents |
 |---|---|
 | `reluctance_model.py` | The transcription. `YokeGeometry` dataclass (all knobs), symbolic derivation (module-level, built once at import), `force_per_leg_pair()` == Maple `Frel11`, `total_force()` == Maple `4*Frel11(...)`, `equilibrium_gap_mm()` == Maple `fsolve(...)`. Has a `__main__` block that prints the validation numbers. |
-| `interactive_force_plot.py` | `ForcePlotApp` — matplotlib figure with 3 sliders (N_turns, ydepth_in, mass_kg), current-list and gap-range text boxes, hover tooltips, reset button. Non-slider `YokeGeometry` fields stay at their dataclass defaults. |
+| `interactive_force_plot.py` | `ForcePlotApp` (matplotlib) — F(z) curve family at swept currents; sliders for N_turns / ydepth_in / mass_kg; text boxes for currents, gap range, s0, R coil; "auto" R checkbox; hover tooltips; power-draw panel; reset button. Non-slider `YokeGeometry` fields stay at dataclass defaults. |
+| `coil_model.py` | Leg-coil DC resistance from geometry (`resistance(D, ...)`), `fit_k_c()` (current fit)/`fit_k()`/`fit_k_power()`, `report()`. Data in `measurements.csv`; tests in `test_coil_model.py`. |
+| `power_model.py` | Power/voltage/current helper (forward + inverse) — see "Power helper". Tests in `test_power_model.py`. |
+| `power_ui.py` | matplotlib UI for `power_model` (ceiling → V/I, release-vs-ceiling plot). Kept as-is alongside the web UI. |
+| `web/` | Browser UI (Vite + Plotly frontend, stdlib Python API reusing the real models) — see "Web UI". `start_web.sh` launches it. |
 
 ## Maple → Python Name Map
 
@@ -77,6 +81,108 @@ Run `python reluctance_model.py` (needs the project venv — see below). Expecte
 | PM MMF | 22233.94555 | 22233.94555 |
 | `Frel11(5mm, 250, 0)` | 772.597343436 | 772.597342 |
 | Equilibrium gap @ 180 kg, i=0 | 9.184990200 mm | 9.184990 mm |
+
+## Release current (s0)
+
+`reluctance_model.required_release_current_amp(geom, gap_m)` solves
+`total_force(gap_m, i) = mass*9.8` for `i`: the coil current that cancels enough PM bias for
+the pod to fall from a starting gap `s0`. `s0` must be strictly below the i=0 equilibrium gap
+(above it the passive force is already < weight, so no release current exists — the UIs say so).
+Since `Mmf = 2*(PM - N*i)`, force falls from its i=0 value to ~0 at `i_null = PM_mmf/N`, then
+*rises again* (reverse flux); the root is bracketed in `[0, i_null]`. (An earlier version doubled
+`i` until the sign flipped and could overshoot `i_null` for low mass / high turns — fixed; found by
+the web API's knob-grid stability test.) Pure force-law solve: no resistance/power content here.
+In the UIs `s0` is a text box (blank = unset); the plot marks it with a red dotted line.
+
+## Coil resistance from geometry (`coil_model.py`) — rough derivation
+
+One leg coil: N turns of 18 AWG magnet wire (insulated OD `d` = 0.043 in, `rho'` = 0.533 mΩ/in at
+20 °C) wound on a rectangular bobbin around the leg. Leg depth `D` == `YokeGeometry.ydepth_in`.
+
+    R(D) = rho' * N * MLT(D) * (1 + 0.00393*(T-20)) + R_leads
+    MLT  = 2*k*D + c*(2*w + 8*t_b + 2*pi*r_bar)       (mean length per turn, inches)
+
+- `2*k*D`: the two long sides (along D). `k` is the **slope correction**. Pure geometry is k = 1.
+- `2*w`: the two short sides (leg width `w` = 1 in).
+- `8*t_b`: bobbin wall (`t_b` = 0.125 in, confirmed 1/8"; an earlier 1/4" was a mistake) grows the
+  rectangle by `t_b` on all four sides → perimeter +8·t_b.
+- `2*pi*r_bar`: layer build-up. Turns per layer = floor(h/d) with winding height `h` = 1.5 in
+  (→ 34); layer j sits at radial offset (j−½)·d and adds ~2π·offset of rounded-corner perimeter;
+  `r_bar` = turn-weighted mean offset over all layers incl. the partial last one. Depends on N.
+- `c` scales those three fixed-length terms (c = 1 is pure geometry).
+- Temperature coeff 0.00393/°C; `R_leads` default 0 (4-wire measurement assumed).
+
+**Current fit (2026-10-13)** — empirical data: D=1 in → 1.1 Ω, D=9 in → 3.8–4.0 Ω (3.9 used).
+`fit_k_c()` fits both `k` and `c` (weighted LSQ, linear): **k = 1.313, c = 1.408** — exact through
+both points, R(D) ≈ 0.750 + 0.350·D. Both are empirical: k≈1.3 is a plausible pillowing factor;
+c>1 means the fixed-length terms are bigger than the ideal bobbin geometry (leads, flanges, looser
+winding). With 2 points and 2 params there are no residual dof (se's are formal,
+`K_BULGE_STDERR_DEFAULT` = 0.066). The pure-k fit (c = 1, original model form) gives k = 1.413 and
+predicts 0.91 Ω at D=1 (−0.19, just inside the 0.2 Ω acceptance) and 3.92 Ω at D=9; use it
+(`resistance(D, k=1.413, c=1.0)`) if you prefer the single-knob model. History: the D=9 row was
+briefly misread as D=4 (and t_b as 1/4"); do not trust older k values (1.39, 1.45, 3.5).
+Pending D=5 row predicts 2.50 Ω. More points at intermediate D will show whether R is truly linear
+in D; `fit_k_power()` (needs ≥3 points) tests a D-dependent k. Re-run `python coil_model.py` after
+editing `measurements.csv`, then copy new k, c into `K_BULGE_DEFAULT`/`C_SCALE_DEFAULT`.
+Prediction table: D = 1, 2, 3, 4, 5, 6, 9 in → 1.10, 1.45, 1.80, 2.15, 2.50, 2.85, 3.90 Ω.
+UIs show the breakdown ("How R is derived" in the web UI).
+
+## Power helper (`power_model.py`)
+
+Not part of the Maple transcription (keeps `reluctance_model.py` pure). Wiring model: each yoke has
+2 leg coils; the reluctance model uses one shared `i`, so **each coil must carry `i_coil`** →
+dissipation `2*i_coil²*R` per yoke regardless of wiring. What the supply sees:
+
+| | voltage | supply current |
+|---|---|---|
+| 2 coils series | `2*i*R` | `i` |
+| 2 coils parallel | `i*R` | `2*i` |
+
+Whole pod = `N_YOKES` (4) yokes: power ×4, battery current ×4 (same voltage; assumes identical yokes
+fed in parallel from one bus). Functions:
+- `coil_resistance(geom, override=None)` — manual R if given, else `coil_model.resistance(D, N)`
+  (this is the UIs' "auto" toggle).
+- `power_for_coil_current(i, R)` → `{per_yoke, total}`.
+- `release_current_power(geom, gap_m, R=None)` — **forward**: release current at s0 → power/V/I.
+- `power_budget(geom, power_ceiling_w, R=None, gap_m=None)` — **inverse**: total-pod power ceiling →
+  `i_max = sqrt(P / (4*2*R))`, series/parallel V/I, amp-turns/coil; with `gap_m` also headroom vs the
+  release current. CLI: `python power_model.py --ceiling-w 1500 --s0-mm 6`.
+- Reference (UI defaults 226 kg / 6 in / 250 T / s0 6 mm, R auto = 2.849 Ω): eq. gap 7.485 mm,
+  release 8.412 A, 403.3 W/yoke, 1613.2 W total; a 1500 W ceiling allows 8.112 A → NOT covered
+  (−0.300 A), covers s0 ≥ ~6.06 mm.
+
+## Web UI (`web/`)
+
+Run: `./start_web.sh` (from this dir) → Vite on http://localhost:5173, API on 127.0.0.1:8765.
+Manually: `guadaloop_lev_control/.venv/bin/python3 web/api_server.py` + `cd web && npm run dev`.
+- `web/api_server.py` — stdlib `http.server` (no pip installs; Streamlit isn't in the venv). One
+  endpoint `POST /api/model` returns everything (force curves, eq. gap, release, budget, power-vs-s0
+  sweep, coil breakdown) by calling the real `reluctance_model`/`coil_model`/`power_model` — the
+  physics lives only in Python.
+- `web/src/main.js` — vanilla JS + Plotly (`plotly.js-basic-dist-min`). Two tabs sharing all knobs:
+  **Force vs. gap** (curves, weight line, eq-gap and s0 markers, equilibrium/release/coil cards, power
+  table) and **Power budget** (release power vs s0 curve with ceiling line and green "covered" band,
+  COVERED/NOT COVERED card, V/I tables per yoke and ×4 battery). Auto-R checkbox mirrors the
+  desktop one (typing a manual R unchecks auto). Light/dark follows the OS. Requests are debounced
+  (60 ms) with a sequence guard so stale responses can't overwrite newer ones.
+- Tests: `web/test_api.py` (stdlib unittest) — reference numbers, a 3×3×3×4×2 knob-grid for
+  exceptions/NaN, manual-R override, input validation. Browser-level check used headless Chrome via
+  puppeteer-core installed *outside* the repo (slider drags, rapid-fire changes, auto/manual R, bad
+  text input, tab switch, reset — no console errors); not checked in.
+- The equilibrium gap is solved over a wide bracket (0.05–200 mm), independent of the plot's gap
+  range, so changing the range never changes "eq. gap" or whether s0 is valid.
+
+Matplotlib scripts (`interactive_force_plot.py`, `power_ui.py`) are intentionally unchanged
+reference UIs. Gotcha: `TextBox.set_val()` fires `on_submit` in the installed matplotlib; wrap
+programmatic calls in `eventson = False/True` (see `_on_reset`, auto-R sync in `update()`).
+
+## Tests / verification
+
+    guadaloop_lev_control/.venv/bin/python3 Magnetic-Circuit-Model/reluctance_model.py   # 3 Maple numbers
+    cd Magnetic-Circuit-Model && ../guadaloop_lev_control/.venv/bin/python3 -m unittest test_coil_model test_power_model
+    cd Magnetic-Circuit-Model && ../guadaloop_lev_control/.venv/bin/python3 -m unittest discover -s web -p test_api.py
+
+No pytest in the venv — stdlib `unittest` only.
 
 ## Known, Deliberately Unfixed Discrepancy
 
