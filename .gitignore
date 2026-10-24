@@ -3,4 +3,6 @@
 __pycache__/
 *.py[cod]
 .venv/
-sim/
+sim/*
+!sim/*.csv
+*.swp

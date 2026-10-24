@@ -1,0 +1,4731 @@
+# AEDT materials, version ANSYSEM_ROOT252
+# library: 4725   project: 0
+
+## Library
+$base_index$
+$index$
+ABM Magnetics - N30SH
+ABM Magnetics - N38M
+ABM Magnetics - N42H
+ABM Magnetics - N48
+Acrylic Resin-JSME
+Advance Magnetics - AD-MU-80
+Advance Magnetics - AD-MU-80, B-H at 60Hz
+Ag-99.9%
+Ag-99.99%
+Ag-Typical
+Ag-Typical_Ref
+AGC Nelco - Meteorwave 8000, Core, 1x1080, 3.2 mil
+AGC Nelco - Meteorwave 8000, Prepreg, 1080, 3.2 mil
+AIC Magnetics - N33EH
+AIC Magnetics - N33UH
+AIC Magnetics - N35
+AIC Magnetics - N40H
+AIC Magnetics - N45
+AIC Magnetics - N50
+Aichi Steel - MF18C
+AIM Industrial - Y10
+AIM Industrial - Y25
+AIM Industrial - Y30
+AIM Industrial - Y35
+air
+Air(@300K)
+Air, gas
+Air-Dry(@325K)
+Air-Moist(@325K)
+Air-solid
+Air@(10000m)
+Air@(1000m)
+Air@(11000m)
+Air@(12000m)
+Air@(2000m)
+Air@(3000m)
+Air@(4000m)
+Air@(5000m)
+Air@(500m)
+Air@(6000m)
+Air@(7000m)
+Air@(8000m)
+Air@(9000m)
+AK Steel - H-0
+AK Steel - H-0 DR
+AK Steel - H-1
+AK Steel - H-1 DR
+AK Steel - H-2
+AK Steel - H-2 DR
+AK Steel - HF-10
+AK Steel - HF-10 Stress Relief Annealed
+AK Steel - HF-10X
+AK Steel - HF-10X Stress Relief Annealed
+AK Steel - HF-12
+AK Steel - HF-12 Stress Relief Annealed
+AK Steel - M-10
+AK Steel - M-10, 50/50
+AK Steel - M-10, RD
+AK Steel - M-10X
+AK Steel - M-10X 50/50
+AK Steel - M-13
+AK Steel - M-13, B-H at 100Hz
+AK Steel - M-13, B-H at 150Hz
+AK Steel - M-13, B-H at 200Hz
+AK Steel - M-13, B-H at 50Hz
+AK Steel - M-13, B-H at 60Hz
+AK Steel - M-14, 14mil
+AK Steel - M-15, 14mil
+AK Steel - M-15, 14mil, B-H at 60Hz
+AK Steel - M-15, 19mil, 50/50
+AK Steel - M-15, 19mil, B-H at 60Hz
+AK Steel - M-15, 19mil, RD
+AK Steel - M-15, 19mil, TD
+AK Steel - M-19, 14mil
+AK Steel - M-19, 14mil, B-H at 100Hz
+AK Steel - M-19, 14mil, B-H at 150Hz
+AK Steel - M-19, 14mil, B-H at 200Hz
+AK Steel - M-19, 19mil, B-H at 100Hz
+AK Steel - M-19, 19mil, B-H at 150Hz
+AK Steel - M-19, 19mil, B-H at 200Hz
+AK Steel - M-2 Lite Carlite
+AK Steel - M-2 Mill Anneal
+AK Steel - M-22, 19mil
+AK Steel - M-22, 19mil, Cold Rolled
+AK Steel - M-27, 14mil
+AK Steel - M-27, 19mil
+AK Steel - M-3 Carlite
+AK Steel - M-3 Lite Carlite
+AK Steel - M-36 SP
+AK Steel - M-36, 14mil
+AK Steel - M-36, 14mil, B-H at 200Hz
+AK Steel - M-36, 19mil
+AK Steel - M-36, 19mil, B-H at 50Hz
+AK Steel - M-3X Lite Carlite
+AK Steel - M-4 Carlite
+AK Steel - M-4 Mill Anneal
+AK Steel - M-43 FP
+AK Steel - M-43 FP, B-H at 120Hz
+AK Steel - M-43 FP, B-H at 50Hz
+AK Steel - M-43 SP
+AK Steel - M-45 FP
+AK Steel - M-47 FP
+AK Steel - M-47 SP, 19mil
+AK Steel - M-5 Carlite
+AK Steel - M-5 Mill Anneal
+AK Steel - M-6 Carlite
+AK Steel - M-6 Mill Anneal
+AK Steel - Steel (3%Si)
+Al-2024-T6
+Al-Die Cast
+Al-Die Cast-90
+Al-Die Cast-99.8
+Al-Duralumin
+Al-Extruded
+Al-Pure
+Al-Pure_Ref
+Al-Silumin
+Al2_O3_ceramic
+Al_N
+Alliance - A-2
+Alliance - A-5
+Alliance - A-5DG
+Alliance - A-8
+Alliance - A5-7
+Alliance - N30EH
+Alliance - N30UH
+Alliance - N33
+Alliance - N35
+Alliance - N35H
+Alliance - N35SH
+Alliance - N35UH
+Alliance - N38AH
+Alliance - N38SH
+Alliance - N40H
+Alliance - N42SH
+Alliance - N42UH
+Alliance - N45H
+Alliance - N48SH
+Alliance - N50
+Alliance - N50H
+Alliance - N52
+Alliance - N52M
+Alliance - S-18
+Alliance - S-18T
+Alliance - S-20
+Alliance - S-22
+Alliance - S-22H
+Alliance - S-22T
+Alliance - S-26L
+Alliance - S-26U
+Alliance - S-28H
+Alliance - S-28L
+Alliance - S-28U
+Alliance - S-30H
+Alliance - S-30L
+Alliance - S-30U
+Alliance - S-32
+Alloy steel, AerMet 100
+Alloy steel, AF1410
+Alloy steel, Fe-5Cr-Mo-V
+Alloy steel, iron-base-superalloy, A-286
+Alloy steel, Kovar
+Alloy steel, maraging, 250
+Alloy steel, maraging, 300
+Alloy steel, TRIP, YS450
+Alnico5
+Alnico9
+Alumina, 88%
+Alumina-Typical
+alumina_92pct
+alumina_96pct
+aluminum
+Aluminum 1100
+Aluminum 6061-T4
+Aluminum 6061-T6
+Aluminum 6063-T5
+Aluminum alloy, cast, 319.0
+Aluminum alloy, cast, 332.0
+Aluminum alloy, cast, 333.0
+Aluminum alloy, cast, 336.0
+Aluminum alloy, cast, 354.0
+Aluminum alloy, cast, 355.0
+Aluminum alloy, cast, 356.0
+Aluminum alloy, cast, 357.0
+Aluminum alloy, cast, 360.0
+Aluminum alloy, cast, 383.0
+Aluminum alloy, cast, 413.0
+Aluminum alloy, cast, 518.0
+Aluminum alloy, cast, 520.0
+Aluminum alloy, cast, 713.0
+Aluminum alloy, cast, A206.0
+Aluminum alloy, cast, A332.0
+Aluminum alloy, cast, A356.0
+Aluminum alloy, cast, EN AC-46000
+Aluminum alloy, wrought, 2008, T4
+Aluminum alloy, wrought, 2014, T4
+Aluminum alloy, wrought, 2014, T6
+Aluminum alloy, wrought, 2024, O
+Aluminum alloy, wrought, 2024, T3
+Aluminum alloy, wrought, 2024, T6
+Aluminum alloy, wrought, 2024, T861
+Aluminum alloy, wrought, 2090, T83
+Aluminum alloy, wrought, 2219, T62
+Aluminum alloy, wrought, 2618, T6
+Aluminum alloy, wrought, 3004, H11
+Aluminum alloy, wrought, 3004, O
+Aluminum alloy, wrought, 3105, O
+Aluminum alloy, wrought, 5005, H14
+Aluminum alloy, wrought, 5052, H32
+Aluminum alloy, wrought, 5052, O
+Aluminum alloy, wrought, 5083, H111
+Aluminum alloy, wrought, 5083, O
+Aluminum alloy, wrought, 5086, O
+Aluminum alloy, wrought, 5182, H19
+Aluminum alloy, wrought, 6005, T5
+Aluminum alloy, wrought, 6010, T6
+Aluminum alloy, wrought, 6060, T4
+Aluminum alloy, wrought, 6060, T6
+Aluminum alloy, wrought, 6061, T4
+Aluminum alloy, wrought, 6061, T6
+Aluminum alloy, wrought, 6061, T651
+Aluminum alloy, wrought, 6063, O
+Aluminum alloy, wrought, 6063, T6
+Aluminum alloy, wrought, 6082, T6
+Aluminum alloy, wrought, 6262, T9
+Aluminum alloy, wrought, 7055, T77511
+Aluminum alloy, wrought, 7075, O
+Aluminum alloy, wrought, 7075, T6
+Aluminum alloy, wrought, 8009
+Aluminum alloy, wrought, 8090, T851
+Aluminum alloy, wrought, 8091, T6
+Aluminum, 1050A, H19
+Aluminum, 1050A, O
+Aluminum, 1080, O
+Aluminum, 1200, H14
+Aluminum, 1200, O
+Aluminum, cast, S150.1
+Aluminum, pure
+aluminum_EC
+aluminum_no2_EC
+Ammonia
+Ammonia gas
+Amuneal - A4K Annealed, 150K
+Amuneal - A4K Annealed, 250K
+Amuneal - A4K Annealed, 300K
+Amuneal - A4K Annealed, 5K
+Amuneal - A4K, 150K
+Amuneal - A4K, 4K
+Amuneal - Amumetal Annealed, 150K
+Amuneal - Amumetal Annealed, 250K
+Amuneal - Amumetal Annealed, 300K
+Amuneal - Amumetal Annealed, 5K
+Amuneal - Amumetal, 150K
+Amuneal - Amumetal, 250K
+Amuneal - Amumetal, 300K
+Amuneal - Amumetal, 5K
+Amuneal - Cryoperm 10, 4K
+Ankey Magnets - N30EH
+Ankey Magnets - N30H
+Ankey Magnets - N30SH
+Ankey Magnets - N30UH
+Ankey Magnets - N33H
+Ankey Magnets - N33M
+Ankey Magnets - N33SH
+Ankey Magnets - N33UH
+Ankey Magnets - N35
+Ankey Magnets - N35EH
+Ankey Magnets - N35H
+Ankey Magnets - N35M
+Ankey Magnets - N35SH
+Ankey Magnets - N35UH
+Ankey Magnets - N38
+Ankey Magnets - N38EH
+Ankey Magnets - N38H
+Ankey Magnets - N38M
+Ankey Magnets - N38SH
+Ankey Magnets - N38UH
+Ankey Magnets - N40
+Ankey Magnets - N40EH
+Ankey Magnets - N40H
+Ankey Magnets - N40M
+Ankey Magnets - N40SH
+Ankey Magnets - N40UH
+Ankey Magnets - N42
+Ankey Magnets - N42EH
+Ankey Magnets - N42H
+Ankey Magnets - N42M
+Ankey Magnets - N42SH
+Ankey Magnets - N42UH
+Ankey Magnets - N45
+Ankey Magnets - N45H
+Ankey Magnets - N45M
+Ankey Magnets - N45SH
+Ankey Magnets - N45UH
+Ankey Magnets - N48
+Ankey Magnets - N48H
+Ankey Magnets - N48M
+Ankey Magnets - N48SH
+Ankey Magnets - N48UH
+Ankey Magnets - N50
+Ankey Magnets - N50H
+Ankey Magnets - N50M
+Ankey Magnets - N50SH
+Ankey Magnets - N52
+Ankey Magnets - N52H
+Ankey Magnets - N52M
+Ankey Magnets - N54
+Antimony, pure
+Arcelor Mittal - AFK 1
+Arcelor Mittal - AFK 502
+Arcelor Mittal - AFK18
+Arcelor Mittal - M195-35A, B-H at 50Hz
+Arcelor Mittal - M195-35A, B-H at 60Hz
+Arcelor Mittal - M235-35A, B-H at 50Hz
+Arelec - Ferram 27-23
+Arlon - 86HP, Core, 1067x1, 2.1 mil
+Arlon - 86HP, Core, 1086x1, 3.5 mil
+Arlon - 86HP, Prepreg, 1067, 2.01 mil
+Arlon - 86HP, Prepreg, 1086, 2.81 mil
+Arlon 25FR (tm)
+Arlon 25N (tm)
+Arlon AD1000 (tm)
+Arlon AD250A (tm)
+Arlon AD255A (tm)
+Arlon AD255C (tm)
+Arlon AD260A (tm)
+Arlon AD270 (tm)
+Arlon AD295 (tm)
+Arlon AD300A (tm)
+Arlon AD300C (tm)
+Arlon AD320A (tm)
+Arlon AD350A (tm)
+Arlon AD410 (tm)
+Arlon AD430 (tm)
+Arlon AD450 (tm)
+Arlon AD600 (tm)
+Arlon AR1000 (tm)
+Arlon CLTE (tm)
+Arlon CLTE-AT (tm)
+Arlon CLTE-XT (tm)
+Arlon CuClad 217 (tm)
+Arlon CuClad 233 (tm)
+Arlon CuClad 250GT (tm)
+Arlon CuClad 250GX (tm)
+Arlon DiClad 522 (tm)
+Arlon DiClad 527 (tm)
+Arlon DiClad 870 (tm)
+Arlon DiClad 880 (tm)
+Arlon IsoClad 917 (tm)
+Arlon IsoClad 933 (tm)
+Arlon TC350 (tm)
+Arlon TC600 (tm)
+Armstrong Magnetics - Grade 16
+Armstrong Magnetics - Grade 18
+Armstrong Magnetics - Grade 20
+Armstrong Magnetics - Grade 20S
+Armstrong Magnetics - Grade 22
+Armstrong Magnetics - Grade 24
+Armstrong Magnetics - Grade 24H
+Armstrong Magnetics - Grade 26H
+Armstrong Magnetics - Grade 28H
+Armstrong Magnetics - Grade 30H
+Armstrong Magnetics - Grade 32H
+Armstrong Magnetics - Grade 32L
+Arnold - Arnon 5
+Arnold - Arnon 7
+Arnold - BMG Plastiform 2039
+Arnold - BMG Plastiform 2040
+Arnold - BMG Plastiform 2048
+Arnold - BMG Plastiform 2049
+Arnold - BMG Plastiform 2051
+Arnold - BMG Plastiform 2052
+Arnold - BMG Plastiform 2054
+Arnold - BMG Plastiform 2055
+Arnold - BMG Plastiform 2056
+Arnold - BMG Plastiform 2057
+Arnold - BMG Plastiform 2058
+Arnold - BMG Plastiform 2070
+Arnold - BMG Plastiform 2071
+Arnold - BMG Plastiform 2101
+Arnold - BMG Plastiform 2103
+Arnold - BMG Plastiform 2105
+Arnold - BMG Plastiform 2202
+Arnold - BMG Plastiform 2204
+Arnold - BMG Plastiform 2205
+Arnold - BMG Plastiform 2206
+Arnold - BMG Plastiform 2212
+Arnold - BMG Plastiform 2213
+Arnold - BMG Plastiform 2214
+Arnold - BMG Plastiform 2216
+Arnold - BMG Plastiform 2217
+Arnold - BMG Plastiform 2218
+Arnold - BMG Plastiform 2225
+Arnold - BMG Plastiform 2226
+Arnold - BMG Plastiform 2227
+Arnold - BMG Plastiform 2409
+Arnold - BMG Plastiform 2413
+Arnold - BMG Plastiform 2414
+Arnold - BMG Plastiform 2415
+Arnold - BMG Plastiform 2416
+Arnold - BMG Plastiform 2418
+Arnold - BMG Plastiform 2521
+Arnold - BMG Plastiform 2534
+Arnold - BMG Plastiform 2535
+Arnold - BMG Plastiform 2560
+Arnold - BMG Plastiform B-1037
+Arnold - Cast Alnico 2
+Arnold - Cast Alnico 3
+Arnold - Cast Alnico 4
+Arnold - N28AH
+Arnold - N28EH
+Arnold - N28UH
+Arnold - N30
+Arnold - N30AH
+Arnold - N30AHZ
+Arnold - N30EH
+Arnold - N30EHZ
+Arnold - N30H
+Arnold - N30SH
+Arnold - N30SHZ
+Arnold - N30UH
+Arnold - N30UHZ
+Arnold - N33
+Arnold - N33AH
+Arnold - N33EH
+Arnold - N33H
+Arnold - N33M
+Arnold - N33SH
+Arnold - N33SHX
+Arnold - N33SHZ
+Arnold - N33UH
+Arnold - N33UHZ
+Arnold - N35
+Arnold - N35AH
+Arnold - N35EH
+Arnold - N35H
+Arnold - N35M
+Arnold - N35MX
+Arnold - N35SH
+Arnold - N35SHX
+Arnold - N35SHZ
+Arnold - N35UH
+Arnold - N35X
+Arnold - N38
+Arnold - N38AH
+Arnold - N38EH
+Arnold - N38EHZ
+Arnold - N38H
+Arnold - N38HX
+Arnold - N38M
+Arnold - N38SH
+Arnold - N38SHX
+Arnold - N38SHZ
+Arnold - N38UH
+Arnold - N38UHZ
+Arnold - N40
+Arnold - N40EH
+Arnold - N40H
+Arnold - N40HX
+Arnold - N40M
+Arnold - N40SH
+Arnold - N40UH
+Arnold - N40UHZ
+Arnold - N42
+Arnold - N42EH
+Arnold - N42H
+Arnold - N42M
+Arnold - N42SH
+Arnold - N42SHX
+Arnold - N42UH
+Arnold - N45
+Arnold - N45H
+Arnold - N45HX
+Arnold - N45M
+Arnold - N45MX
+Arnold - N45SH
+Arnold - N45SHZ
+Arnold - N45UH
+Arnold - N48
+Arnold - N48H
+Arnold - N48M
+Arnold - N48SH
+Arnold - N50
+Arnold - N50H
+Arnold - N50M
+Arnold - N52
+Arnold - N52M
+Arnold - N55
+Arnold - Recoma 18
+Arnold - Recoma 20
+Arnold - Recoma 22
+Arnold - Recoma 24HE
+Arnold - Recoma 25
+Arnold - Recoma 26
+Arnold - Recoma 26HE
+Arnold - Recoma 28
+Arnold - Recoma 28HE
+Arnold - Recoma 30
+Arnold - Recoma 30HE
+Arnold - Recoma 30S
+Arnold - Recoma 32
+Arnold - Recoma 32S
+Arnold - Recoma 33E
+Arnold - Recoma 35E
+Arnold - Recoma STAB 02
+Arnold - Sintered Alnico 5
+Arnold - Sintered Alnico 6
+Arnold_Magnetics_Alnico 2, Cast_20C
+Arnold_Magnetics_Alnico 2, Sintered_20C
+Arnold_Magnetics_Alnico 3, Cast_20C
+Arnold_Magnetics_Alnico 4, Cast_20C
+Arnold_Magnetics_Alnico 5, Cast_20C
+Arnold_Magnetics_Alnico 5, Sintered_20C
+Arnold_Magnetics_Alnico 5cc, Cast_20C
+Arnold_Magnetics_Alnico 6, Cast_20C
+Arnold_Magnetics_Alnico 6, Sintered_20C
+Arnold_Magnetics_Alnico 8, Sintered_20C
+Arnold_Magnetics_Alnico 8B, Cast_20C
+Arnold_Magnetics_Alnico 8B, Sintered_20C
+Arnold_Magnetics_Alnico 8H, Cast_20C
+Arnold_Magnetics_Alnico 8H, Sintered_20C
+Arnold_Magnetics_Alnico 8HE, Cast_20C
+Arnold_Magnetics_Alnico 9, Cast_20C
+Arnold_Magnetics_Arkomax 800_20C
+Arnold_Magnetics_Arkomax 800Hi-Hc_20C
+Arnold_Magnetics_N28AH_-40C
+Arnold_Magnetics_N28AH_100C
+Arnold_Magnetics_N28AH_120C
+Arnold_Magnetics_N28AH_150C
+Arnold_Magnetics_N28AH_180C
+Arnold_Magnetics_N28AH_200C
+Arnold_Magnetics_N28AH_20C
+Arnold_Magnetics_N28AH_220C
+Arnold_Magnetics_N28AH_60C
+Arnold_Magnetics_N28AH_80C
+Arnold_Magnetics_N28EH_-40C
+Arnold_Magnetics_N28EH_100C
+Arnold_Magnetics_N28EH_120C
+Arnold_Magnetics_N28EH_150C
+Arnold_Magnetics_N28EH_180C
+Arnold_Magnetics_N28EH_200C
+Arnold_Magnetics_N28EH_20C
+Arnold_Magnetics_N28EH_220C
+Arnold_Magnetics_N28EH_60C
+Arnold_Magnetics_N28EH_80C
+Arnold_Magnetics_N28UH_-40C
+Arnold_Magnetics_N28UH_100C
+Arnold_Magnetics_N28UH_120C
+Arnold_Magnetics_N28UH_150C
+Arnold_Magnetics_N28UH_180C
+Arnold_Magnetics_N28UH_200C
+Arnold_Magnetics_N28UH_20C
+Arnold_Magnetics_N28UH_220C
+Arnold_Magnetics_N28UH_60C
+Arnold_Magnetics_N28UH_80C
+Arnold_Magnetics_N30_-40C
+Arnold_Magnetics_N30_100C
+Arnold_Magnetics_N30_120C
+Arnold_Magnetics_N30_150C
+Arnold_Magnetics_N30_180C
+Arnold_Magnetics_N30_200C
+Arnold_Magnetics_N30_20C
+Arnold_Magnetics_N30_220C
+Arnold_Magnetics_N30_60C
+Arnold_Magnetics_N30_80C
+Arnold_Magnetics_N30AH_-40C
+Arnold_Magnetics_N30AH_100C
+Arnold_Magnetics_N30AH_120C
+Arnold_Magnetics_N30AH_150C
+Arnold_Magnetics_N30AH_180C
+Arnold_Magnetics_N30AH_200C
+Arnold_Magnetics_N30AH_20C
+Arnold_Magnetics_N30AH_220C
+Arnold_Magnetics_N30AH_60C
+Arnold_Magnetics_N30AH_80C
+Arnold_Magnetics_N30AHZ_-40C
+Arnold_Magnetics_N30AHZ_100C
+Arnold_Magnetics_N30AHZ_120C
+Arnold_Magnetics_N30AHZ_150C
+Arnold_Magnetics_N30AHZ_180C
+Arnold_Magnetics_N30AHZ_200C
+Arnold_Magnetics_N30AHZ_20C
+Arnold_Magnetics_N30AHZ_220C
+Arnold_Magnetics_N30AHZ_60C
+Arnold_Magnetics_N30AHZ_80C
+Arnold_Magnetics_N30EH_-40C
+Arnold_Magnetics_N30EH_100C
+Arnold_Magnetics_N30EH_120C
+Arnold_Magnetics_N30EH_150C
+Arnold_Magnetics_N30EH_180C
+Arnold_Magnetics_N30EH_200C
+Arnold_Magnetics_N30EH_20C
+Arnold_Magnetics_N30EH_220C
+Arnold_Magnetics_N30EH_60C
+Arnold_Magnetics_N30EH_80C
+Arnold_Magnetics_N30EHZ_-40C
+Arnold_Magnetics_N30EHZ_100C
+Arnold_Magnetics_N30EHZ_120C
+Arnold_Magnetics_N30EHZ_150C
+Arnold_Magnetics_N30EHZ_180C
+Arnold_Magnetics_N30EHZ_200C
+Arnold_Magnetics_N30EHZ_20C
+Arnold_Magnetics_N30EHZ_220C
+Arnold_Magnetics_N30EHZ_60C
+Arnold_Magnetics_N30EHZ_80C
+Arnold_Magnetics_N30H_-40C
+Arnold_Magnetics_N30H_100C
+Arnold_Magnetics_N30H_120C
+Arnold_Magnetics_N30H_150C
+Arnold_Magnetics_N30H_180C
+Arnold_Magnetics_N30H_200C
+Arnold_Magnetics_N30H_20C
+Arnold_Magnetics_N30H_220C
+Arnold_Magnetics_N30H_60C
+Arnold_Magnetics_N30H_80C
+Arnold_Magnetics_N30SH_-40C
+Arnold_Magnetics_N30SH_100C
+Arnold_Magnetics_N30SH_120C
+Arnold_Magnetics_N30SH_150C
+Arnold_Magnetics_N30SH_180C
+Arnold_Magnetics_N30SH_200C
+Arnold_Magnetics_N30SH_20C
+Arnold_Magnetics_N30SH_220C
+Arnold_Magnetics_N30SH_60C
+Arnold_Magnetics_N30SH_80C
+Arnold_Magnetics_N30SHZ_-40C
+Arnold_Magnetics_N30SHZ_100C
+Arnold_Magnetics_N30SHZ_120C
+Arnold_Magnetics_N30SHZ_150C
+Arnold_Magnetics_N30SHZ_180C
+Arnold_Magnetics_N30SHZ_200C
+Arnold_Magnetics_N30SHZ_20C
+Arnold_Magnetics_N30SHZ_220C
+Arnold_Magnetics_N30SHZ_60C
+Arnold_Magnetics_N30SHZ_80C
+Arnold_Magnetics_N30UH_-40C
+Arnold_Magnetics_N30UH_100C
+Arnold_Magnetics_N30UH_120C
+Arnold_Magnetics_N30UH_150C
+Arnold_Magnetics_N30UH_180C
+Arnold_Magnetics_N30UH_200C
+Arnold_Magnetics_N30UH_20C
+Arnold_Magnetics_N30UH_220C
+Arnold_Magnetics_N30UH_60C
+Arnold_Magnetics_N30UH_80C
+Arnold_Magnetics_N30UHZ_-40C
+Arnold_Magnetics_N30UHZ_100C
+Arnold_Magnetics_N30UHZ_120C
+Arnold_Magnetics_N30UHZ_150C
+Arnold_Magnetics_N30UHZ_180C
+Arnold_Magnetics_N30UHZ_200C
+Arnold_Magnetics_N30UHZ_20C
+Arnold_Magnetics_N30UHZ_220C
+Arnold_Magnetics_N30UHZ_60C
+Arnold_Magnetics_N30UHZ_80C
+Arnold_Magnetics_N33_-40C
+Arnold_Magnetics_N33_100C
+Arnold_Magnetics_N33_120C
+Arnold_Magnetics_N33_150C
+Arnold_Magnetics_N33_180C
+Arnold_Magnetics_N33_200C
+Arnold_Magnetics_N33_20C
+Arnold_Magnetics_N33_220C
+Arnold_Magnetics_N33_60C
+Arnold_Magnetics_N33_80C
+Arnold_Magnetics_N33AH_-40C
+Arnold_Magnetics_N33AH_100C
+Arnold_Magnetics_N33AH_120C
+Arnold_Magnetics_N33AH_150C
+Arnold_Magnetics_N33AH_180C
+Arnold_Magnetics_N33AH_200C
+Arnold_Magnetics_N33AH_20C
+Arnold_Magnetics_N33AH_220C
+Arnold_Magnetics_N33AH_60C
+Arnold_Magnetics_N33AH_80C
+Arnold_Magnetics_N33EH_-40C
+Arnold_Magnetics_N33EH_100C
+Arnold_Magnetics_N33EH_120C
+Arnold_Magnetics_N33EH_150C
+Arnold_Magnetics_N33EH_180C
+Arnold_Magnetics_N33EH_200C
+Arnold_Magnetics_N33EH_20C
+Arnold_Magnetics_N33EH_220C
+Arnold_Magnetics_N33EH_60C
+Arnold_Magnetics_N33EH_80C
+Arnold_Magnetics_N33H_-40C
+Arnold_Magnetics_N33H_100C
+Arnold_Magnetics_N33H_120C
+Arnold_Magnetics_N33H_150C
+Arnold_Magnetics_N33H_180C
+Arnold_Magnetics_N33H_200C
+Arnold_Magnetics_N33H_20C
+Arnold_Magnetics_N33H_220C
+Arnold_Magnetics_N33H_60C
+Arnold_Magnetics_N33H_80C
+Arnold_Magnetics_N33M_-40C
+Arnold_Magnetics_N33M_100C
+Arnold_Magnetics_N33M_120C
+Arnold_Magnetics_N33M_150C
+Arnold_Magnetics_N33M_180C
+Arnold_Magnetics_N33M_200C
+Arnold_Magnetics_N33M_20C
+Arnold_Magnetics_N33M_220C
+Arnold_Magnetics_N33M_60C
+Arnold_Magnetics_N33M_80C
+Arnold_Magnetics_N33SH_-40C
+Arnold_Magnetics_N33SH_100C
+Arnold_Magnetics_N33SH_120C
+Arnold_Magnetics_N33SH_150C
+Arnold_Magnetics_N33SH_180C
+Arnold_Magnetics_N33SH_200C
+Arnold_Magnetics_N33SH_20C
+Arnold_Magnetics_N33SH_220C
+Arnold_Magnetics_N33SH_60C
+Arnold_Magnetics_N33SH_80C
+Arnold_Magnetics_N33SHX_-40C
+Arnold_Magnetics_N33SHX_100C
+Arnold_Magnetics_N33SHX_120C
+Arnold_Magnetics_N33SHX_150C
+Arnold_Magnetics_N33SHX_180C
+Arnold_Magnetics_N33SHX_200C
+Arnold_Magnetics_N33SHX_20C
+Arnold_Magnetics_N33SHX_220C
+Arnold_Magnetics_N33SHX_60C
+Arnold_Magnetics_N33SHX_80C
+Arnold_Magnetics_N33SHZ_-40C
+Arnold_Magnetics_N33SHZ_100C
+Arnold_Magnetics_N33SHZ_120C
+Arnold_Magnetics_N33SHZ_150C
+Arnold_Magnetics_N33SHZ_180C
+Arnold_Magnetics_N33SHZ_200C
+Arnold_Magnetics_N33SHZ_20C
+Arnold_Magnetics_N33SHZ_220C
+Arnold_Magnetics_N33SHZ_60C
+Arnold_Magnetics_N33SHZ_80C
+Arnold_Magnetics_N33UH_-40C
+Arnold_Magnetics_N33UH_100C
+Arnold_Magnetics_N33UH_120C
+Arnold_Magnetics_N33UH_150C
+Arnold_Magnetics_N33UH_180C
+Arnold_Magnetics_N33UH_200C
+Arnold_Magnetics_N33UH_20C
+Arnold_Magnetics_N33UH_220C
+Arnold_Magnetics_N33UH_60C
+Arnold_Magnetics_N33UH_80C
+Arnold_Magnetics_N33UHZ_-40C
+Arnold_Magnetics_N33UHZ_100C
+Arnold_Magnetics_N33UHZ_120C
+Arnold_Magnetics_N33UHZ_150C
+Arnold_Magnetics_N33UHZ_180C
+Arnold_Magnetics_N33UHZ_200C
+Arnold_Magnetics_N33UHZ_20C
+Arnold_Magnetics_N33UHZ_220C
+Arnold_Magnetics_N33UHZ_60C
+Arnold_Magnetics_N33UHZ_80C
+Arnold_Magnetics_N35_-40C
+Arnold_Magnetics_N35_100C
+Arnold_Magnetics_N35_120C
+Arnold_Magnetics_N35_150C
+Arnold_Magnetics_N35_180C
+Arnold_Magnetics_N35_200C
+Arnold_Magnetics_N35_20C
+Arnold_Magnetics_N35_220C
+Arnold_Magnetics_N35_60C
+Arnold_Magnetics_N35_80C
+Arnold_Magnetics_N35AH_-40C
+Arnold_Magnetics_N35AH_100C
+Arnold_Magnetics_N35AH_120C
+Arnold_Magnetics_N35AH_150C
+Arnold_Magnetics_N35AH_180C
+Arnold_Magnetics_N35AH_200C
+Arnold_Magnetics_N35AH_20C
+Arnold_Magnetics_N35AH_220C
+Arnold_Magnetics_N35AH_60C
+Arnold_Magnetics_N35AH_80C
+Arnold_Magnetics_N35EH_-40C
+Arnold_Magnetics_N35EH_100C
+Arnold_Magnetics_N35EH_120C
+Arnold_Magnetics_N35EH_150C
+Arnold_Magnetics_N35EH_180C
+Arnold_Magnetics_N35EH_200C
+Arnold_Magnetics_N35EH_20C
+Arnold_Magnetics_N35EH_220C
+Arnold_Magnetics_N35EH_60C
+Arnold_Magnetics_N35EH_80C
+Arnold_Magnetics_N35H_-40C
+Arnold_Magnetics_N35H_100C
+Arnold_Magnetics_N35H_120C
+Arnold_Magnetics_N35H_150C
+Arnold_Magnetics_N35H_180C
+Arnold_Magnetics_N35H_200C
+Arnold_Magnetics_N35H_20C
+Arnold_Magnetics_N35H_220C
+Arnold_Magnetics_N35H_60C
+Arnold_Magnetics_N35H_80C
+Arnold_Magnetics_N35M_-40C
+Arnold_Magnetics_N35M_100C
+Arnold_Magnetics_N35M_120C
+Arnold_Magnetics_N35M_150C
+Arnold_Magnetics_N35M_180C
+Arnold_Magnetics_N35M_200C
+Arnold_Magnetics_N35M_20C
+Arnold_Magnetics_N35M_220C
+Arnold_Magnetics_N35M_60C
+Arnold_Magnetics_N35M_80C
+Arnold_Magnetics_N35MX_-40C
+Arnold_Magnetics_N35MX_100C
+Arnold_Magnetics_N35MX_120C
+Arnold_Magnetics_N35MX_150C
+Arnold_Magnetics_N35MX_180C
+Arnold_Magnetics_N35MX_200C
+Arnold_Magnetics_N35MX_20C
+Arnold_Magnetics_N35MX_220C
+Arnold_Magnetics_N35MX_60C
+Arnold_Magnetics_N35MX_80C
+Arnold_Magnetics_N35SH_-40C
+Arnold_Magnetics_N35SH_100C
+Arnold_Magnetics_N35SH_120C
+Arnold_Magnetics_N35SH_150C
+Arnold_Magnetics_N35SH_180C
+Arnold_Magnetics_N35SH_200C
+Arnold_Magnetics_N35SH_20C
+Arnold_Magnetics_N35SH_220C
+Arnold_Magnetics_N35SH_60C
+Arnold_Magnetics_N35SH_80C
+Arnold_Magnetics_N35SHX_-40C
+Arnold_Magnetics_N35SHX_100C
+Arnold_Magnetics_N35SHX_120C
+Arnold_Magnetics_N35SHX_150C
+Arnold_Magnetics_N35SHX_180C
+Arnold_Magnetics_N35SHX_200C
+Arnold_Magnetics_N35SHX_20C
+Arnold_Magnetics_N35SHX_220C
+Arnold_Magnetics_N35SHX_60C
+Arnold_Magnetics_N35SHX_80C
+Arnold_Magnetics_N35SHZ_-40C
+Arnold_Magnetics_N35SHZ_100C
+Arnold_Magnetics_N35SHZ_120C
+Arnold_Magnetics_N35SHZ_150C
+Arnold_Magnetics_N35SHZ_180C
+Arnold_Magnetics_N35SHZ_200C
+Arnold_Magnetics_N35SHZ_20C
+Arnold_Magnetics_N35SHZ_220C
+Arnold_Magnetics_N35SHZ_60C
+Arnold_Magnetics_N35SHZ_80C
+Arnold_Magnetics_N35UH_-40C
+Arnold_Magnetics_N35UH_100C
+Arnold_Magnetics_N35UH_120C
+Arnold_Magnetics_N35UH_150C
+Arnold_Magnetics_N35UH_180C
+Arnold_Magnetics_N35UH_200C
+Arnold_Magnetics_N35UH_20C
+Arnold_Magnetics_N35UH_220C
+Arnold_Magnetics_N35UH_60C
+Arnold_Magnetics_N35UH_80C
+Arnold_Magnetics_N35X_-40C
+Arnold_Magnetics_N35X_100C
+Arnold_Magnetics_N35X_120C
+Arnold_Magnetics_N35X_150C
+Arnold_Magnetics_N35X_180C
+Arnold_Magnetics_N35X_200C
+Arnold_Magnetics_N35X_20C
+Arnold_Magnetics_N35X_220C
+Arnold_Magnetics_N35X_60C
+Arnold_Magnetics_N35X_80C
+Arnold_Magnetics_N38_-40C
+Arnold_Magnetics_N38_100C
+Arnold_Magnetics_N38_120C
+Arnold_Magnetics_N38_150C
+Arnold_Magnetics_N38_180C
+Arnold_Magnetics_N38_200C
+Arnold_Magnetics_N38_20C
+Arnold_Magnetics_N38_220C
+Arnold_Magnetics_N38_60C
+Arnold_Magnetics_N38_80C
+Arnold_Magnetics_N38AH_-40C
+Arnold_Magnetics_N38AH_100C
+Arnold_Magnetics_N38AH_120C
+Arnold_Magnetics_N38AH_150C
+Arnold_Magnetics_N38AH_180C
+Arnold_Magnetics_N38AH_200C
+Arnold_Magnetics_N38AH_20C
+Arnold_Magnetics_N38AH_220C
+Arnold_Magnetics_N38AH_60C
+Arnold_Magnetics_N38AH_80C
+Arnold_Magnetics_N38EH_-40C
+Arnold_Magnetics_N38EH_100C
+Arnold_Magnetics_N38EH_120C
+Arnold_Magnetics_N38EH_150C
+Arnold_Magnetics_N38EH_180C
+Arnold_Magnetics_N38EH_200C
+Arnold_Magnetics_N38EH_20C
+Arnold_Magnetics_N38EH_220C
+Arnold_Magnetics_N38EH_60C
+Arnold_Magnetics_N38EH_80C
+Arnold_Magnetics_N38EHZ_-40C
+Arnold_Magnetics_N38EHZ_100C
+Arnold_Magnetics_N38EHZ_120C
+Arnold_Magnetics_N38EHZ_150C
+Arnold_Magnetics_N38EHZ_180C
+Arnold_Magnetics_N38EHZ_200C
+Arnold_Magnetics_N38EHZ_20C
+Arnold_Magnetics_N38EHZ_220C
+Arnold_Magnetics_N38EHZ_60C
+Arnold_Magnetics_N38EHZ_80C
+Arnold_Magnetics_N38H_-40C
+Arnold_Magnetics_N38H_100C
+Arnold_Magnetics_N38H_120C
+Arnold_Magnetics_N38H_150C
+Arnold_Magnetics_N38H_180C
+Arnold_Magnetics_N38H_200C
+Arnold_Magnetics_N38H_20C
+Arnold_Magnetics_N38H_220C
+Arnold_Magnetics_N38H_60C
+Arnold_Magnetics_N38H_80C
+Arnold_Magnetics_N38HX_-40C
+Arnold_Magnetics_N38HX_100C
+Arnold_Magnetics_N38HX_120C
+Arnold_Magnetics_N38HX_150C
+Arnold_Magnetics_N38HX_180C
+Arnold_Magnetics_N38HX_200C
+Arnold_Magnetics_N38HX_20C
+Arnold_Magnetics_N38HX_220C
+Arnold_Magnetics_N38HX_60C
+Arnold_Magnetics_N38HX_80C
+Arnold_Magnetics_N38SHZ_-40C
+Arnold_Magnetics_N38SHZ_100C
+Arnold_Magnetics_N38SHZ_120C
+Arnold_Magnetics_N38SHZ_150C
+Arnold_Magnetics_N38SHZ_180C
+Arnold_Magnetics_N38SHZ_200C
+Arnold_Magnetics_N38SHZ_20C
+Arnold_Magnetics_N38SHZ_220C
+Arnold_Magnetics_N38SHZ_60C
+Arnold_Magnetics_N38SHZ_80C
+Arnold_Magnetics_N38UH_-40C
+Arnold_Magnetics_N38UH_100C
+Arnold_Magnetics_N38UH_120C
+Arnold_Magnetics_N38UH_150C
+Arnold_Magnetics_N38UH_180C
+Arnold_Magnetics_N38UH_200C
+Arnold_Magnetics_N38UH_20C
+Arnold_Magnetics_N38UH_220C
+Arnold_Magnetics_N38UH_60C
+Arnold_Magnetics_N38UH_80C
+Arnold_Magnetics_N38UHZ_-40C
+Arnold_Magnetics_N38UHZ_100C
+Arnold_Magnetics_N38UHZ_120C
+Arnold_Magnetics_N38UHZ_150C
+Arnold_Magnetics_N38UHZ_180C
+Arnold_Magnetics_N38UHZ_200C
+Arnold_Magnetics_N38UHZ_20C
+Arnold_Magnetics_N38UHZ_220C
+Arnold_Magnetics_N38UHZ_60C
+Arnold_Magnetics_N38UHZ_80C
+Arnold_Magnetics_N40_-40C
+Arnold_Magnetics_N40_100C
+Arnold_Magnetics_N40_120C
+Arnold_Magnetics_N40_150C
+Arnold_Magnetics_N40_180C
+Arnold_Magnetics_N40_200C
+Arnold_Magnetics_N40_20C
+Arnold_Magnetics_N40_220C
+Arnold_Magnetics_N40_60C
+Arnold_Magnetics_N40_80C
+Arnold_Magnetics_N40EH_-40C
+Arnold_Magnetics_N40EH_100C
+Arnold_Magnetics_N40EH_120C
+Arnold_Magnetics_N40EH_150C
+Arnold_Magnetics_N40EH_180C
+Arnold_Magnetics_N40EH_200C
+Arnold_Magnetics_N40EH_20C
+Arnold_Magnetics_N40EH_220C
+Arnold_Magnetics_N40EH_60C
+Arnold_Magnetics_N40EH_80C
+Arnold_Magnetics_N40H_-40C
+Arnold_Magnetics_N40H_100C
+Arnold_Magnetics_N40H_120C
+Arnold_Magnetics_N40H_150C
+Arnold_Magnetics_N40H_180C
+Arnold_Magnetics_N40H_200C
+Arnold_Magnetics_N40H_20C
+Arnold_Magnetics_N40H_220C
+Arnold_Magnetics_N40H_60C
+Arnold_Magnetics_N40H_80C
+Arnold_Magnetics_N40HX_-40C
+Arnold_Magnetics_N40HX_100C
+Arnold_Magnetics_N40HX_120C
+Arnold_Magnetics_N40HX_150C
+Arnold_Magnetics_N40HX_180C
+Arnold_Magnetics_N40HX_200C
+Arnold_Magnetics_N40HX_20C
+Arnold_Magnetics_N40HX_220C
+Arnold_Magnetics_N40HX_60C
+Arnold_Magnetics_N40HX_80C
+Arnold_Magnetics_N40M_-40C
+Arnold_Magnetics_N40M_100C
+Arnold_Magnetics_N40M_120C
+Arnold_Magnetics_N40M_150C
+Arnold_Magnetics_N40M_180C
+Arnold_Magnetics_N40M_200C
+Arnold_Magnetics_N40M_20C
+Arnold_Magnetics_N40M_220C
+Arnold_Magnetics_N40M_60C
+Arnold_Magnetics_N40M_80C
+Arnold_Magnetics_N40SH_-40C
+Arnold_Magnetics_N40SH_100C
+Arnold_Magnetics_N40SH_120C
+Arnold_Magnetics_N40SH_150C
+Arnold_Magnetics_N40SH_180C
+Arnold_Magnetics_N40SH_200C
+Arnold_Magnetics_N40SH_20C
+Arnold_Magnetics_N40SH_220C
+Arnold_Magnetics_N40SH_60C
+Arnold_Magnetics_N40SH_80C
+Arnold_Magnetics_N40UH_-40C
+Arnold_Magnetics_N40UH_100C
+Arnold_Magnetics_N40UH_120C
+Arnold_Magnetics_N40UH_150C
+Arnold_Magnetics_N40UH_180C
+Arnold_Magnetics_N40UH_200C
+Arnold_Magnetics_N40UH_20C
+Arnold_Magnetics_N40UH_220C
+Arnold_Magnetics_N40UH_60C
+Arnold_Magnetics_N40UH_80C
+Arnold_Magnetics_N40UHZ_-40C
+Arnold_Magnetics_N40UHZ_100C
+Arnold_Magnetics_N40UHZ_120C
+Arnold_Magnetics_N40UHZ_150C
+Arnold_Magnetics_N40UHZ_180C
+Arnold_Magnetics_N40UHZ_200C
+Arnold_Magnetics_N40UHZ_20C
+Arnold_Magnetics_N40UHZ_220C
+Arnold_Magnetics_N40UHZ_60C
+Arnold_Magnetics_N40UHZ_80C
+Arnold_Magnetics_N42_-40C
+Arnold_Magnetics_N42_100C
+Arnold_Magnetics_N42_120C
+Arnold_Magnetics_N42_150C
+Arnold_Magnetics_N42_180C
+Arnold_Magnetics_N42_200C
+Arnold_Magnetics_N42_20C
+Arnold_Magnetics_N42_220C
+Arnold_Magnetics_N42_60C
+Arnold_Magnetics_N42_80C
+Arnold_Magnetics_N42EH_-40C
+Arnold_Magnetics_N42EH_100C
+Arnold_Magnetics_N42EH_120C
+Arnold_Magnetics_N42EH_150C
+Arnold_Magnetics_N42EH_180C
+Arnold_Magnetics_N42EH_200C
+Arnold_Magnetics_N42EH_20C
+Arnold_Magnetics_N42EH_220C
+Arnold_Magnetics_N42EH_60C
+Arnold_Magnetics_N42EH_80C
+Arnold_Magnetics_N42H_-40C
+Arnold_Magnetics_N42H_100C
+Arnold_Magnetics_N42H_120C
+Arnold_Magnetics_N42H_150C
+Arnold_Magnetics_N42H_180C
+Arnold_Magnetics_N42H_200C
+Arnold_Magnetics_N42H_20C
+Arnold_Magnetics_N42H_220C
+Arnold_Magnetics_N42H_60C
+Arnold_Magnetics_N42H_80C
+Arnold_Magnetics_N42M_-40C
+Arnold_Magnetics_N42M_100C
+Arnold_Magnetics_N42M_120C
+Arnold_Magnetics_N42M_150C
+Arnold_Magnetics_N42M_180C
+Arnold_Magnetics_N42M_200C
+Arnold_Magnetics_N42M_20C
+Arnold_Magnetics_N42M_220C
+Arnold_Magnetics_N42M_60C
+Arnold_Magnetics_N42M_80C
+Arnold_Magnetics_N42SH_-40C
+Arnold_Magnetics_N42SH_100C
+Arnold_Magnetics_N42SH_120C
+Arnold_Magnetics_N42SH_150C
+Arnold_Magnetics_N42SH_180C
+Arnold_Magnetics_N42SH_200C
+Arnold_Magnetics_N42SH_20C
+Arnold_Magnetics_N42SH_220C
+Arnold_Magnetics_N42SH_60C
+Arnold_Magnetics_N42SH_80C
+Arnold_Magnetics_N42SHX_-40C
+Arnold_Magnetics_N42SHX_100C
+Arnold_Magnetics_N42SHX_120C
+Arnold_Magnetics_N42SHX_150C
+Arnold_Magnetics_N42SHX_180C
+Arnold_Magnetics_N42SHX_200C
+Arnold_Magnetics_N42SHX_20C
+Arnold_Magnetics_N42SHX_220C
+Arnold_Magnetics_N42SHX_60C
+Arnold_Magnetics_N42SHX_80C
+Arnold_Magnetics_N42UH_-40C
+Arnold_Magnetics_N42UH_100C
+Arnold_Magnetics_N42UH_120C
+Arnold_Magnetics_N42UH_150C
+Arnold_Magnetics_N42UH_180C
+Arnold_Magnetics_N42UH_200C
+Arnold_Magnetics_N42UH_20C
+Arnold_Magnetics_N42UH_220C
+Arnold_Magnetics_N42UH_60C
+Arnold_Magnetics_N42UH_80C
+Arnold_Magnetics_N45_-40C
+Arnold_Magnetics_N45_100C
+Arnold_Magnetics_N45_120C
+Arnold_Magnetics_N45_150C
+Arnold_Magnetics_N45_180C
+Arnold_Magnetics_N45_200C
+Arnold_Magnetics_N45_20C
+Arnold_Magnetics_N45_220C
+Arnold_Magnetics_N45_60C
+Arnold_Magnetics_N45_80C
+Arnold_Magnetics_N45H_-40C
+Arnold_Magnetics_N45H_100C
+Arnold_Magnetics_N45H_120C
+Arnold_Magnetics_N45H_150C
+Arnold_Magnetics_N45H_180C
+Arnold_Magnetics_N45H_200C
+Arnold_Magnetics_N45H_20C
+Arnold_Magnetics_N45H_220C
+Arnold_Magnetics_N45H_60C
+Arnold_Magnetics_N45H_80C
+Arnold_Magnetics_N45HX_-40C
+Arnold_Magnetics_N45HX_100C
+Arnold_Magnetics_N45HX_120C
+Arnold_Magnetics_N45HX_150C
+Arnold_Magnetics_N45HX_180C
+Arnold_Magnetics_N45HX_200C
+Arnold_Magnetics_N45HX_20C
+Arnold_Magnetics_N45HX_220C
+Arnold_Magnetics_N45HX_60C
+Arnold_Magnetics_N45HX_80C
+Arnold_Magnetics_N45M_-40C
+Arnold_Magnetics_N45M_100C
+Arnold_Magnetics_N45M_120C
+Arnold_Magnetics_N45M_150C
+Arnold_Magnetics_N45M_180C
+Arnold_Magnetics_N45M_200C
+Arnold_Magnetics_N45M_20C
+Arnold_Magnetics_N45M_220C
+Arnold_Magnetics_N45M_60C
+Arnold_Magnetics_N45M_80C
+Arnold_Magnetics_N45MX_-40C
+Arnold_Magnetics_N45MX_100C
+Arnold_Magnetics_N45MX_120C
+Arnold_Magnetics_N45MX_150C
+Arnold_Magnetics_N45MX_180C
+Arnold_Magnetics_N45MX_200C
+Arnold_Magnetics_N45MX_20C
+Arnold_Magnetics_N45MX_220C
+Arnold_Magnetics_N45MX_60C
+Arnold_Magnetics_N45MX_80C
+Arnold_Magnetics_N45SH_-40C
+Arnold_Magnetics_N45SH_100C
+Arnold_Magnetics_N45SH_120C
+Arnold_Magnetics_N45SH_150C
+Arnold_Magnetics_N45SH_180C
+Arnold_Magnetics_N45SH_200C
+Arnold_Magnetics_N45SH_20C
+Arnold_Magnetics_N45SH_220C
+Arnold_Magnetics_N45SH_60C
+Arnold_Magnetics_N45SH_80C
+Arnold_Magnetics_N45SHZ_-40C
+Arnold_Magnetics_N45SHZ_100C
+Arnold_Magnetics_N45SHZ_120C
+Arnold_Magnetics_N45SHZ_150C
+Arnold_Magnetics_N45SHZ_180C
+Arnold_Magnetics_N45SHZ_200C
+Arnold_Magnetics_N45SHZ_20C
+Arnold_Magnetics_N45SHZ_220C
+Arnold_Magnetics_N45SHZ_60C
+Arnold_Magnetics_N45SHZ_80C
+Arnold_Magnetics_N45UH_-40C
+Arnold_Magnetics_N45UH_100C
+Arnold_Magnetics_N45UH_120C
+Arnold_Magnetics_N45UH_150C
+Arnold_Magnetics_N45UH_180C
+Arnold_Magnetics_N45UH_200C
+Arnold_Magnetics_N45UH_20C
+Arnold_Magnetics_N45UH_220C
+Arnold_Magnetics_N45UH_60C
+Arnold_Magnetics_N45UH_80C
+Arnold_Magnetics_N48_-40C
+Arnold_Magnetics_N48_100C
+Arnold_Magnetics_N48_120C
+Arnold_Magnetics_N48_150C
+Arnold_Magnetics_N48_180C
+Arnold_Magnetics_N48_200C
+Arnold_Magnetics_N48_20C
+Arnold_Magnetics_N48_220C
+Arnold_Magnetics_N48_60C
+Arnold_Magnetics_N48_80C
+Arnold_Magnetics_N48H_-40C
+Arnold_Magnetics_N48H_100C
+Arnold_Magnetics_N48H_120C
+Arnold_Magnetics_N48H_150C
+Arnold_Magnetics_N48H_180C
+Arnold_Magnetics_N48H_200C
+Arnold_Magnetics_N48H_20C
+Arnold_Magnetics_N48H_220C
+Arnold_Magnetics_N48H_60C
+Arnold_Magnetics_N48H_80C
+Arnold_Magnetics_N48M_-40C
+Arnold_Magnetics_N48M_100C
+Arnold_Magnetics_N48M_120C
+Arnold_Magnetics_N48M_150C
+Arnold_Magnetics_N48M_180C
+Arnold_Magnetics_N48M_200C
+Arnold_Magnetics_N48M_20C
+Arnold_Magnetics_N48M_220C
+Arnold_Magnetics_N48M_60C
+Arnold_Magnetics_N48M_80C
+Arnold_Magnetics_N48SH_-40C
+Arnold_Magnetics_N48SH_100C
+Arnold_Magnetics_N48SH_120C
+Arnold_Magnetics_N48SH_150C
+Arnold_Magnetics_N48SH_180C
+Arnold_Magnetics_N48SH_200C
+Arnold_Magnetics_N48SH_20C
+Arnold_Magnetics_N48SH_220C
+Arnold_Magnetics_N48SH_60C
+Arnold_Magnetics_N48SH_80C
+Arnold_Magnetics_N50_-40C
+Arnold_Magnetics_N50_100C
+Arnold_Magnetics_N50_120C
+Arnold_Magnetics_N50_150C
+Arnold_Magnetics_N50_180C
+Arnold_Magnetics_N50_200C
+Arnold_Magnetics_N50_20C
+Arnold_Magnetics_N50_220C
+Arnold_Magnetics_N50_60C
+Arnold_Magnetics_N50_80C
+Arnold_Magnetics_N50H_-40C
+Arnold_Magnetics_N50H_100C
+Arnold_Magnetics_N50H_120C
+Arnold_Magnetics_N50H_150C
+Arnold_Magnetics_N50H_180C
+Arnold_Magnetics_N50H_200C
+Arnold_Magnetics_N50H_20C
+Arnold_Magnetics_N50H_220C
+Arnold_Magnetics_N50H_60C
+Arnold_Magnetics_N50H_80C
+Arnold_Magnetics_N50M_-40C
+Arnold_Magnetics_N50M_100C
+Arnold_Magnetics_N50M_120C
+Arnold_Magnetics_N50M_150C
+Arnold_Magnetics_N50M_180C
+Arnold_Magnetics_N50M_200C
+Arnold_Magnetics_N50M_20C
+Arnold_Magnetics_N50M_220C
+Arnold_Magnetics_N50M_60C
+Arnold_Magnetics_N50M_80C
+Arnold_Magnetics_N52_-40C
+Arnold_Magnetics_N52_100C
+Arnold_Magnetics_N52_120C
+Arnold_Magnetics_N52_150C
+Arnold_Magnetics_N52_180C
+Arnold_Magnetics_N52_200C
+Arnold_Magnetics_N52_20C
+Arnold_Magnetics_N52_220C
+Arnold_Magnetics_N52_60C
+Arnold_Magnetics_N52_80C
+Arnold_Magnetics_N52M_-40C
+Arnold_Magnetics_N52M_100C
+Arnold_Magnetics_N52M_120C
+Arnold_Magnetics_N52M_150C
+Arnold_Magnetics_N52M_180C
+Arnold_Magnetics_N52M_200C
+Arnold_Magnetics_N52M_20C
+Arnold_Magnetics_N52M_220C
+Arnold_Magnetics_N52M_60C
+Arnold_Magnetics_N52M_80C
+Arnold_Magnetics_N55_-40C
+Arnold_Magnetics_N55_100C
+Arnold_Magnetics_N55_120C
+Arnold_Magnetics_N55_150C
+Arnold_Magnetics_N55_180C
+Arnold_Magnetics_N55_200C
+Arnold_Magnetics_N55_20C
+Arnold_Magnetics_N55_220C
+Arnold_Magnetics_N55_60C
+Arnold_Magnetics_N55_80C
+Arnold_Magnetics_Recoma 18_-40C
+Arnold_Magnetics_Recoma 18_100C
+Arnold_Magnetics_Recoma 18_150C
+Arnold_Magnetics_Recoma 18_200C
+Arnold_Magnetics_Recoma 18_20C
+Arnold_Magnetics_Recoma 18_250C
+Arnold_Magnetics_Recoma 18_300C
+Arnold_Magnetics_Recoma 18_350C
+Arnold_Magnetics_Recoma 20_-40C
+Arnold_Magnetics_Recoma 20_100C
+Arnold_Magnetics_Recoma 20_150C
+Arnold_Magnetics_Recoma 20_200C
+Arnold_Magnetics_Recoma 20_20C
+Arnold_Magnetics_Recoma 20_250C
+Arnold_Magnetics_Recoma 20_300C
+Arnold_Magnetics_Recoma 20_350C
+Arnold_Magnetics_Recoma 22_-40C
+Arnold_Magnetics_Recoma 22_100C
+Arnold_Magnetics_Recoma 22_150C
+Arnold_Magnetics_Recoma 22_200C
+Arnold_Magnetics_Recoma 22_20C
+Arnold_Magnetics_Recoma 22_250C
+Arnold_Magnetics_Recoma 22_300C
+Arnold_Magnetics_Recoma 22_350C
+Arnold_Magnetics_Recoma 24HE_-40C
+Arnold_Magnetics_Recoma 24HE_100C
+Arnold_Magnetics_Recoma 24HE_150C
+Arnold_Magnetics_Recoma 24HE_200C
+Arnold_Magnetics_Recoma 24HE_20C
+Arnold_Magnetics_Recoma 24HE_250C
+Arnold_Magnetics_Recoma 24HE_300C
+Arnold_Magnetics_Recoma 24HE_350C
+Arnold_Magnetics_Recoma 25_-40C
+Arnold_Magnetics_Recoma 25_100C
+Arnold_Magnetics_Recoma 25_150C
+Arnold_Magnetics_Recoma 25_200C
+Arnold_Magnetics_Recoma 25_20C
+Arnold_Magnetics_Recoma 25_250C
+Arnold_Magnetics_Recoma 25_300C
+Arnold_Magnetics_Recoma 25_350C
+Arnold_Magnetics_Recoma 26_-40C
+Arnold_Magnetics_Recoma 26_100C
+Arnold_Magnetics_Recoma 26_150C
+Arnold_Magnetics_Recoma 26_200C
+Arnold_Magnetics_Recoma 26_20C
+Arnold_Magnetics_Recoma 26_250C
+Arnold_Magnetics_Recoma 26_300C
+Arnold_Magnetics_Recoma 26_350C
+Arnold_Magnetics_Recoma 26HE_-40C
+Arnold_Magnetics_Recoma 26HE_100C
+Arnold_Magnetics_Recoma 26HE_150C
+Arnold_Magnetics_Recoma 26HE_200C
+Arnold_Magnetics_Recoma 26HE_20C
+Arnold_Magnetics_Recoma 26HE_250C
+Arnold_Magnetics_Recoma 26HE_300C
+Arnold_Magnetics_Recoma 26HE_350C
+Arnold_Magnetics_Recoma 28_-40C
+Arnold_Magnetics_Recoma 28_100C
+Arnold_Magnetics_Recoma 28_150C
+Arnold_Magnetics_Recoma 28_200C
+Arnold_Magnetics_Recoma 28_20C
+Arnold_Magnetics_Recoma 28_250C
+Arnold_Magnetics_Recoma 28_300C
+Arnold_Magnetics_Recoma 28_350C
+Arnold_Magnetics_Recoma 28HE_-40C
+Arnold_Magnetics_Recoma 28HE_100C
+Arnold_Magnetics_Recoma 28HE_150C
+Arnold_Magnetics_Recoma 28HE_200C
+Arnold_Magnetics_Recoma 28HE_20C
+Arnold_Magnetics_Recoma 28HE_250C
+Arnold_Magnetics_Recoma 28HE_300C
+Arnold_Magnetics_Recoma 28HE_350C
+Arnold_Magnetics_Recoma 30_-40C
+Arnold_Magnetics_Recoma 30_100C
+Arnold_Magnetics_Recoma 30_150C
+Arnold_Magnetics_Recoma 30_200C
+Arnold_Magnetics_Recoma 30_20C
+Arnold_Magnetics_Recoma 30_250C
+Arnold_Magnetics_Recoma 30_300C
+Arnold_Magnetics_Recoma 30_350C
+Arnold_Magnetics_Recoma 30HE_-40C
+Arnold_Magnetics_Recoma 30HE_100C
+Arnold_Magnetics_Recoma 30HE_150C
+Arnold_Magnetics_Recoma 30HE_200C
+Arnold_Magnetics_Recoma 30HE_20C
+Arnold_Magnetics_Recoma 30HE_250C
+Arnold_Magnetics_Recoma 30HE_300C
+Arnold_Magnetics_Recoma 30HE_350C
+Arnold_Magnetics_Recoma 30S_-40C
+Arnold_Magnetics_Recoma 30S_100C
+Arnold_Magnetics_Recoma 30S_150C
+Arnold_Magnetics_Recoma 30S_200C
+Arnold_Magnetics_Recoma 30S_20C
+Arnold_Magnetics_Recoma 30S_250C
+Arnold_Magnetics_Recoma 30S_300C
+Arnold_Magnetics_Recoma 30S_350C
+Arnold_Magnetics_Recoma 32_-40C
+Arnold_Magnetics_Recoma 32_100C
+Arnold_Magnetics_Recoma 32_150C
+Arnold_Magnetics_Recoma 32_200C
+Arnold_Magnetics_Recoma 32_20C
+Arnold_Magnetics_Recoma 32_250C
+Arnold_Magnetics_Recoma 32_300C
+Arnold_Magnetics_Recoma 32_350C
+Arnold_Magnetics_Recoma 32S_-40C
+Arnold_Magnetics_Recoma 32S_100C
+Arnold_Magnetics_Recoma 32S_150C
+Arnold_Magnetics_Recoma 32S_200C
+Arnold_Magnetics_Recoma 32S_20C
+Arnold_Magnetics_Recoma 32S_250C
+Arnold_Magnetics_Recoma 32S_300C
+Arnold_Magnetics_Recoma 32S_350C
+Arnold_Magnetics_Recoma 33E_-40C
+Arnold_Magnetics_Recoma 33E_100C
+Arnold_Magnetics_Recoma 33E_150C
+Arnold_Magnetics_Recoma 33E_200C
+Arnold_Magnetics_Recoma 33E_20C
+Arnold_Magnetics_Recoma 33E_250C
+Arnold_Magnetics_Recoma 33E_300C
+Arnold_Magnetics_Recoma 33E_350C
+Arnold_Magnetics_Recoma 35E_-40C
+Arnold_Magnetics_Recoma 35E_100C
+Arnold_Magnetics_Recoma 35E_150C
+Arnold_Magnetics_Recoma 35E_200C
+Arnold_Magnetics_Recoma 35E_20C
+Arnold_Magnetics_Recoma 35E_250C
+Arnold_Magnetics_Recoma 35E_300C
+Arnold_Magnetics_Recoma 35E_350C
+Arnold_Magnetics_Recoma HT 360_-40C
+Arnold_Magnetics_Recoma HT 360_100C
+Arnold_Magnetics_Recoma HT 360_150C
+Arnold_Magnetics_Recoma HT 360_200C
+Arnold_Magnetics_Recoma HT 360_20C
+Arnold_Magnetics_Recoma HT 360_250C
+Arnold_Magnetics_Recoma HT 360_300C
+Arnold_Magnetics_Recoma HT 360_350C
+Arnold_Magnetics_Recoma HT 420_-40C
+Arnold_Magnetics_Recoma HT 420_100C
+Arnold_Magnetics_Recoma HT 420_150C
+Arnold_Magnetics_Recoma HT 420_200C
+Arnold_Magnetics_Recoma HT 420_20C
+Arnold_Magnetics_Recoma HT 420_250C
+Arnold_Magnetics_Recoma HT 420_300C
+Arnold_Magnetics_Recoma HT 420_350C
+Arnold_Magnetics_Recoma HT 470_-40C
+Arnold_Magnetics_Recoma HT 470_100C
+Arnold_Magnetics_Recoma HT 470_150C
+Arnold_Magnetics_Recoma HT 470_200C
+Arnold_Magnetics_Recoma HT 470_20C
+Arnold_Magnetics_Recoma HT 470_250C
+Arnold_Magnetics_Recoma HT 470_300C
+Arnold_Magnetics_Recoma HT 470_350C
+Arnold_Magnetics_Recoma HT 520_-40C
+Arnold_Magnetics_Recoma HT 520_100C
+Arnold_Magnetics_Recoma HT 520_150C
+Arnold_Magnetics_Recoma HT 520_200C
+Arnold_Magnetics_Recoma HT 520_20C
+Arnold_Magnetics_Recoma HT 520_250C
+Arnold_Magnetics_Recoma HT 520_300C
+Arnold_Magnetics_Recoma HT 520_350C
+Arnold_Magnetics_Recoma STAB 02_-40C
+Arnold_Magnetics_Recoma STAB 02_100C
+Arnold_Magnetics_Recoma STAB 02_150C
+Arnold_Magnetics_Recoma STAB 02_200C
+Arnold_Magnetics_Recoma STAB 02_20C
+Arnold_Magnetics_Recoma STAB 02_250C
+Arnold_Magnetics_Recoma STAB 02_300C
+Arnold_Magnetics_Recoma STAB 02_350C
+Asbestos-Typical
+AT&M - ATMAX33H
+AT&M - ATMAX45H
+AT&M - ATMAX50M
+ATI - 405
+ATI - 410
+ATI - 416
+ATI - 430
+ATI - 430 Annealed
+ATI - 430F
+ATI - 4750, B-H at 60Hz
+ATI - M-2
+ATI - M-3
+ATI - M-4
+ATI - M-5
+ATI - M-6
+ATI - M-6 Rolling
+ATI - M-6, Cross
+ATI - Perminvar
+Au-Typical
+Au-Typical_Ref
+Bake hardening steel, YS260, cold rolled
+bakelite
+Bakelite-JSME
+Baosteel - B50AH300
+Baosteel - B50AH470
+Baosteel - B50AH600
+Baosteel - B65A470
+Baosteel - B65A700
+Baosteel - B65A800
+Be_O
+Benzene
+Benzene, liquid
+benzocyclobuten
+Benzocyclobutene, liquid
+Beryllia
+beryllium
+Beryllium alloy, AlBeMet 162
+Beryllium alloy, Beralcast 310
+Beryllium alloy, grade I-250
+Beryllium alloy, Standard grade
+Bestway Magnet - NB-12
+Bestway Magnet - Y25
+Bestway Magnet - Y28
+Bestway Magnet - Y30H-1
+Bestway Magnet - Y32
+Bestway Magnet - YX18T
+Bestway Magnet - YX27C
+Bismuth, pure
+Bismuth-Telluride
+BJMT - N48UHa
+BJMT - N50UH
+BJMT - N52UH
+Boron carbide (hot pressed)
+Boron nitride (HIP)
+brass
+Brass, C22000
+Brass, C23000, cast
+Brass, C26000
+Brass, C26800
+Brass, C36000
+Brass, C37700
+Brass, C37710
+Brass, C46400
+Brick
+Brick, engineering
+bronze
+Bronze, C51000
+Bronze, C52100, extra hard
+Bronze, C52400, cast
+Bronze, C93700, cast
+Bronze, CuSn3Zn1
+BT_systems
+Bunting - Alnico 5
+Bunting - Alnico 5B
+Bunting - Alnico 5CC
+Bunting - Alnico 6
+Bunting - Alnico 8-B
+Bunting - Alnico 8-H
+Bunting - Alnico 8-HE
+Bunting - Alnico 9
+Bunting - B10
+Bunting - B11
+Bunting - Ceramic 5
+Bunting - Ceramic 8
+Bunting - N33SH
+Bunting - N33UH
+Bunting - N35H
+Bunting - N50
+Bunting - S18
+Bunting - S26
+Bunting - S28
+Bunting - S32
+Cadmium, pure
+Calcium, pure
+Carbon (industrial)
+Carbon Dioxide
+Carbon dioxide gas
+Carbon Dioxide(@300K)
+Carbon Monoxide
+Carbon monoxide gas
+Carbon steel, 1010, annealed
+Carbon steel, 1015, annealed
+Carbon steel, 1015, normalized
+Carbon steel, 1020, annealed
+Carbon steel, 1020, as rolled
+Carbon steel, 1022, annealed
+Carbon steel, 1025, annealed
+Carbon steel, 1025, normalized
+Carbon steel, 1030, annealed
+Carbon steel, 1030, normalized
+Carbon steel, 1040, annealed
+Carbon steel, 1040, hardened & tempered
+Carbon steel, 1040, normalized
+Carbon steel, 1050, annealed
+Carbon steel, 1050, normalized
+Carbon steel, 1060, annealed
+Carbon steel, 1080, annealed
+Carbon steel, 1095, annealed
+Carbon steel, 1095, hardened & tempered
+Carbon steel, 1095, normalized
+Carbon steel, 12L14, as rolled
+Carbon steel, 1340, annealed
+Carbon steel, 1340, hardened & tempered
+Carbon steel, cast
+Carbon steel, SA216, normalized
+Carpenter - 12-FM
+Carpenter - 13-FM
+Carpenter - 13-XP
+Carpenter - 430F-RB75
+Carpenter - 430F-RB82
+Carpenter - 430F-RB87
+Carpenter - 430FR
+Carpenter - 430FR, 100mm dia
+Carpenter - 8-FM
+Carpenter - Carpenter 49 1121C Anneal
+Carpenter - Carpenter 49 871C Anneal
+Carpenter - Carpenter 49 954C Anneal
+Carpenter - Carpenter 49 Rotor 1066C Anneal, B-H at 60Hz
+Carpenter - Consumet (99.58%Fe) 843C Anneal
+Carpenter - High permeability \'49\', 0.15mm
+Carpenter - High permeability \'49\', 0.1mm
+Carpenter - Hiperco 15 1180C Anneal, .014in
+Carpenter - Hiperco 27 760C Anneal, .014in
+Carpenter - Hiperco 27 760C Anneal, .01in
+Carpenter - Hiperco 27 845C Anneal, 6inch
+Carpenter - Hiperco 27 845C Anneal, 9x4inch
+Carpenter - Hiperco 27, stator grade, 0.1mm
+Carpenter - Hiperco 27, stator grade, 0.25mm
+Carpenter - Hiperco 27HS
+Carpenter - Hiperco 50
+Carpenter - Hiperco 50, rotor grade, 0.15mm
+Carpenter - Hiperco 50, rotor grade, 0.25mm
+Carpenter - Hiperco 50, stator grade, 0.15mm
+Carpenter - Hiperco 50, stator grade, 0.25mm
+Carpenter - Hiperco 50, stator grade, 0.2mm
+Carpenter - Hiperco 50A Bar 1010C Anneal
+Carpenter - Hiperco 50A Bar 820C Anneal
+Carpenter - Hiperco 50A Bar 871C Anneal
+Carpenter - Hiperco 50A Strip 871C Anneal
+Carpenter - Hiperco 50A, stator grade, 0.15mm
+Carpenter - Hiperco 50A, stator grade, 0.1mm
+Carpenter - Hiperco 50A, stator grade, 0.25mm
+Carpenter - Hiperco 50A, stator grade, 0.35mm
+Carpenter - Hiperco 50HS 720C Anneal
+Carpenter - Hiperco 50HS 740C Anneal
+Carpenter - Hiperco 50HS 760C Anneal
+Carpenter - Hiperco 50HS, high str rotor, 0.15mm
+Carpenter - Hiperco 50HS, rotor grade, 0.15mm
+Carpenter - Hiperco 50HS, rotor grade, 0.25mm
+Carpenter - HS50
+Carpenter - Hypocore 1180C Anneal, .007in
+Carpenter - Hypocore 1180C Anneal, .014in
+Carpenter - Hypocore, rotor grade, 0.25mm
+Carpenter - Hypocore, stator grade, 0.125mm
+Carpenter - Hypocore, stator grade, 0.25mm
+Carpenter - Hypocore, stator grade, 0.35mm
+Carpenter - Permendur24
+Carpenter - Permendur49
+Carpenter - Rotelloy 3
+Carpenter - Rotelloy 5
+Carpenter - Rotelloy 8
+Carpenter - Silicon Core Iron A 1066C Anneal
+Carpenter - Silicon Core Iron A 732C Anneal
+Carpenter - Silicon Core Iron A 843C Anneal
+Carpenter - Silicon Core Iron A 954C Anneal
+Carpenter - Silicon Core Iron A-FM 1066C Anneal
+Carpenter - Silicon Core Iron A-FM 732C Anneal
+Carpenter - Silicon Core Iron A-FM 843C Anneal
+Carpenter - Silicon Core Iron A-FM 954C Anneal
+Carpenter - Silicon Core Iron B 1066C Anneal
+Carpenter - Silicon Core Iron B 732C Anneal
+Carpenter - Silicon Core Iron B 843C Anneal
+Carpenter - Silicon Core Iron B 954C Anneal
+Carpenter - Silicon Core Iron B-FM 1066C Anneal
+Carpenter - Silicon Core Iron B-FM 732C Anneal
+Carpenter - Silicon Core Iron B-FM 843C Anneal
+Carpenter - Silicon Core Iron B-FM 954C Anneal
+Carpenter - Silicon Core Iron C 1066C Anneal
+Carpenter - Silicon Core Iron C 843C Anneal
+Carpenter - Silicon Core Iron C 954C Anneal
+Cast iron, BS grade Si 10
+Cast iron, EN GJL 100
+Cast iron, EN GJL 250
+Cast iron, EN GJLA XNiCuCr15-6-2
+Cast iron, EN GJMB 550-4
+Cast iron, EN GJN HV350
+Cast iron, EN GJN HV600
+Cast iron, EN GJS 350 22
+Cast iron, EN GJS 900 2
+cast_aluminum_75C
+cast_iron
+Cement
+Ceramic5
+Ceramic8D
+Ceramic_material
+China Steel - 35CS440, B-H at 60Hz
+China Steel - 35CS550
+China Steel - 35CS550, B-H at 50Hz
+China Steel - 35CS550, B-H at 60Hz
+China Steel - 50CS1000
+China Steel - 50CS1000, B-H at 50Hz
+China Steel - 50CS1000, B-H at 60Hz
+China Steel - 50CS1300
+China Steel - 50CS1300, B-H at 50Hz
+China Steel - 50CS1300, B-H at 60Hz
+China Steel - 50CS350, B-H at 50Hz
+China Steel - 50CS400
+China Steel - 50CS400, B-H at 50Hz
+China Steel - 50CS470
+China Steel - 50CS470, B-H at 50Hz
+China Steel - 50CS470, B-H at 60Hz
+China Steel - 50CS600AC
+China Steel - 50CS800, B-H at 50Hz
+China Steel - 50CS800, B-H at 60Hz
+China Steel - 65CS1300
+China Steel - 65CS1300, B-H at 50Hz
+China Steel - 65CS1300, B-H at 60Hz
+ChinaSteel_35CS210  [nonlinear]
+ChinaSteel_35CS250  [nonlinear]
+ChinaSteel_35CS250H  [nonlinear]
+ChinaSteel_35CS300  [nonlinear]
+ChinaSteel_35CS440  [nonlinear]
+ChinaSteel_35CS550  [nonlinear]
+ChinaSteel_50CS290  [nonlinear]
+ChinaSteel_50CS350  [nonlinear]
+ChinaSteel_50CS400  [nonlinear]
+ChinaSteel_50CS470  [nonlinear]
+Chlorine
+Chlorine gas
+chromium
+Chromium, pure
+CMI - 1002 CMI-C Annealed, 100C
+CMI - 1002 CMI-C Annealed, 25C
+cobalt
+Cobalt alloy, CMM
+Cobalt alloy, Co-Cr
+Cobalt alloy, Haynes Stellite 6B
+Cobalt alloy, HS 188
+Cobalt alloy, MAR-M 302, cast
+Cobalt alloy, MP35N
+Cobalt, pure
+Cogent Power - M085-23P, B-H at 50Hz
+Cogent Power - M090-23P, B-H at 50Hz
+Cogent Power - M090-27P, B-H at 50Hz
+Cogent Power - M095-23P, B-H at 50Hz
+Cogent Power - M095-27P, B-H at 50Hz
+Cogent Power - M100-23P, B-H at 50Hz
+Cogent Power - M100-30P, B-H at 50Hz
+Cogent Power - M1000-100A, B-H at 50Hz
+Cogent Power - M103-27P, B-H at 50Hz
+Cogent Power - M105-30P, B-H at 50Hz
+Cogent Power - M110-23S, B-H at 50Hz
+Cogent Power - M110-27S, B-H at 50Hz
+Cogent Power - M111-30P, B-H at 50Hz
+Cogent Power - M115-27S, B-H at 50Hz
+Cogent Power - M115-30S, B-H at 50Hz
+Cogent Power - M120-23S, B-H at 50Hz
+Cogent Power - M120-27S, B-H at 50Hz
+Cogent Power - M120-30S, B-H at 50Hz
+Cogent Power - M127-23S, B-H at 50Hz
+Cogent Power - M130-27S, B-H at 50Hz
+Cogent Power - M130-30S, B-H at 50Hz
+Cogent Power - M140-27S, B-H at 50Hz
+Cogent Power - M140-30S, B-H at 50Hz
+Cogent Power - M140-35S, B-H at 50Hz
+Cogent Power - M150-30S, B-H at 50Hz
+Cogent Power - M150-35S, B-H at 50Hz
+Cogent Power - M235-35A, B-H at 50Hz
+Cogent Power - M250-35A, B-H at 50Hz
+Cogent Power - M250-35HS, B-H at 50Hz
+Cogent Power - M250-50, mixed
+Cogent Power - M250-50A, B-H at 50Hz
+Cogent Power - M270-35A, B-H at 50Hz
+Cogent Power - M270-50A, B-H at 50Hz
+Cogent Power - M290-50A, B-H at 50Hz
+Cogent Power - M300-35A, B-H at 50Hz
+Cogent Power - M310-50A, B-H at 50Hz
+Cogent Power - M310-65A, B-H at 50Hz
+Cogent Power - M330-35A, B-H at 50Hz
+Cogent Power - M330-35HP, B-H at 100Hz
+Cogent Power - M330-35HP, B-H at 200Hz
+Cogent Power - M330-35HP, B-H at 50Hz
+Cogent Power - M330-35HS, B-H at 50Hz
+Cogent Power - M330-35HT, B-H at 50Hz
+Cogent Power - M330-50A, Anisotropy, 0deg
+Cogent Power - M330-50A, Anisotropy, 15deg
+Cogent Power - M330-50A, Anisotropy, 90deg
+Cogent Power - M330-50A, B-H at 100Hz
+Cogent Power - M330-50A, B-H at 200Hz
+Cogent Power - M330-50A, B-H at 50Hz
+Cogent Power - M330-65A, B-H at 50Hz
+Cogent Power - M350-50A, B-H at 50Hz
+Cogent Power - M350-65A, B-H at 50Hz
+Cogent Power - M400-50A, B-H at 50Hz
+Cogent Power - M400-65A, B-H at 50Hz
+Cogent Power - M470-50A, B-H at 50Hz
+Cogent Power - M470-65A, B-H at 50Hz
+Cogent Power - M530-50A, B-H at 50Hz
+Cogent Power - M530-50HP, B-H at 50Hz
+Cogent Power - M530-65A, B-H at 50Hz
+Cogent Power - M600-100A, B-H at 50Hz
+Cogent Power - M600-50A, B-H at 50Hz
+Cogent Power - M600-65A, B-H at 50Hz
+Cogent Power - M600-65HP, B-H at 50Hz
+Cogent Power - M700-100A, B-H at 50Hz
+Cogent Power - M700-50A, B-H at 50Hz
+Cogent Power - M700-65A, B-H at 50Hz
+Cogent Power - M800-100A, B-H at 50Hz
+Cogent Power - M800-50A, B-H at 50Hz
+Cogent Power - M800-65A, B-H at 50Hz
+Cogent Power - NO10, B-H at 50Hz
+Cogent Power - NO12, B-H at 50Hz
+Cogent Power - NO15, B-H at 50Hz
+Cogent Power - NO18, B-H at 50Hz
+Cogent Power - NO20, B-H at 50Hz
+Cogent Power - NO27, B-H at 50Hz
+Cogent Power - NO30, B-H at 50Hz
+Composite, BMI/carbon fiber, UD prepreg, QI lay-up
+Composite, BMI/carbon fiber, woven prepreg, biax.
+Composite, Carbon fiber reinforced carbon matrix
+Composite, Cyanate/carbon fiber, UD prepreg, QI
+Composite, Epoxy SMC (55% long carbon fiber)
+Composite, Epoxy SMC (65% long glass fiber)
+Composite, Epoxy/CF, resin infused fabric, biaxial
+Composite, Epoxy/CF, resin infused fabric, QI
+Composite, Epoxy/CF, UD prepreg, QI
+Composite, Epoxy/CF, woven prepreg, biaxial
+Composite, Epoxy/CF, woven prepreg, QI
+Composite, Epoxy/glass fiber, UD prepreg, QI
+Composite, Epoxy/glass fiber, woven prepreg, biax.
+Composite, Epoxy/glass fiber, woven prepreg, QI
+Composite, PA12/glass fiber, woven fabric, biaxial
+Composite, PA6/glass fiber, woven fabric, biaxial
+Composite, PF/glass fiber, woven prepreg, biaxial
+Composite, PF/glass fiber, woven prepreg, QI
+Composite, Polyester BMC (10-20% glass fiber)
+Composite, Polyester SMC (50% glass fiber)
+Concrete
+Concrete, aerated
+Concrete, asphalt
+Concrete, high alumina cement
+Concrete, high density
+Concrete, high performance
+Concrete, insulating lightweight
+conformal_coat
+copper
+Copper alloy, aluminum bronze, C95200, cast
+Copper alloy, aluminum bronze, CuAl10
+Copper alloy, C14500, hard
+Copper alloy, C14700, hard
+Copper alloy, C15100
+Copper alloy, C18200
+Copper alloy, C64700
+Copper alloy, C83600, cast
+Copper alloy, C90500, cast
+Copper alloy, C96200
+Copper alloy, manganese bronze, C65500
+Copper alloy, manganese bronze, C67500
+Copper alloy, manganese bronze, C75200
+Copper alloy, manganese bronze, C86500
+Copper beryllium alloy, C17000
+Copper beryllium alloy, C17200
+Copper beryllium alloy, C17500
+Copper, C10200, hard
+Copper, C10200, soft
+Copper, C10500
+Copper, C12200
+Copper, C12500
+Copper, C14200
+Copper, high conductivity, cast
+Copper, pure, C10100, hard
+copper_75C
+corning_glass
+Cu-Aluminised
+Cu-Brass
+Cu-Brass(Die-Cast)
+Cu-Brass(Moldformed)
+Cu-Brass-30%Zn
+Cu-Bronze
+Cu-Constantan
+Cu-German
+Cu-Pure
+Cu-Pure_Ref
+cyanate_ester
+D21_50
+D23_50
+D24_50
+Daido Electronics - ND-31HR
+Daido Electronics - ND-31SHR
+Daido Electronics - ND-35HR
+Daido Electronics - ND-39R
+Daido Electronics - ND-43R
+Daido Electronics - NP-11L
+Daido Electronics - NP-12L
+Daido Electronics - NP-7L
+Daido Electronics - NP-8
+Daido Electronics - NP-8L
+Daido Electronics - NP-8SR
+Daido Electronics - NPI-10LL
+Daido Electronics - NPI-4L
+Daido Electronics - NPI-5L
+Daido Electronics - NPI-6
+Daido Electronics - NPI-6L
+Daido Electronics - NPI-6LR
+Daido Electronics - NPI-6SR
+Daido Electronics - NPI-9L
+Daido Electronics - SP-14
+Daido Electronics - SP-14L
+Datoyo - Y30 H-1
+Datoyo - Y30 H-2
+Datoyo - Y33H
+Dexing Magnet - YX-18T
+Dexing Magnet - YX-27C
+Dexter - AC200
+Dexter - AC300
+Dexter - AC400
+Dexter - AC500
+Dexter - AC570
+Dexter - AC5DG
+Dexter - AC600
+Dexter - AC800
+Dexter - AC8HC
+Dexter - AC900
+Dexter - AS200
+Dexter - AS500
+Dexter - AS600
+Dexter - AS800
+Dexter - AS8HC
+Dexter - HF010
+Dexter - HF050
+Dexter - HF070
+Dexter - HF081
+Dexter - HF082
+Dexter - HF083
+Dexter - HF084
+Dexter - HF085
+Dexter - N2717
+Dexter - N2720
+Dexter - N2825
+Dexter - N2830
+Dexter - N2833
+Dexter - N3017
+Dexter - N3020
+Dexter - N3021
+Dexter - N3025
+Dexter - N3030
+Dexter - N3033
+Dexter - N3116
+Dexter - N3235
+Dexter - N3314
+Dexter - N3317
+Dexter - N3320
+Dexter - N3328
+Dexter - N3330
+Dexter - N3333
+Dexter - N3512
+Dexter - N3514
+Dexter - N3517a
+Dexter - N3520
+Dexter - N3521
+Dexter - N3525
+Dexter - N3530
+Dexter - N3616
+Dexter - N3812
+Dexter - N3814
+Dexter - N3817
+Dexter - N3820
+Dexter - N3821
+Dexter - N3825
+Dexter - N3828
+Dexter - N3830
+Dexter - N4012
+Dexter - N4014
+Dexter - N4017
+Dexter - N4020
+Dexter - N4021
+Dexter - N4025
+Dexter - N4212
+Dexter - N4214
+Dexter - N4216
+Dexter - N4217
+Dexter - N4220
+Dexter - N4221
+Dexter - N4511
+Dexter - N4512
+Dexter - N4514
+Dexter - N4516
+Dexter - N4517
+Dexter - N4520
+Dexter - N4811
+Dexter - N4812
+Dexter - N4814
+Dexter - N4816
+Dexter - N5011
+Dexter - N5014
+Dexter - N5211
+Dexter - S1818a
+Dexter - S1820
+Dexter - S1825
+Dexter - S2018
+Dexter - S2020
+Dexter - S2025
+Dexter - S2030
+Dexter - S2212
+Dexter - S2215
+Dexter - S2218
+Dexter - S2220
+Dexter - S2223
+Dexter - S2225
+Dexter - S2230
+Dexter - S2235
+Dexter - S2415
+Dexter - S2418
+Dexter - S2425
+Dexter - S2430
+Dexter - S2435
+Dexter - S2610
+Dexter - S2612
+Dexter - S2616
+Dexter - S2618
+Dexter - S2620
+Dexter - S2625
+Dexter - S2630
+Dexter - S2816
+Dexter - S2820
+Dexter - S2825
+Dexter - S2830
+Dexter - S3010
+Dexter - S3012
+Dexter - S3015
+Dexter - S3018
+Dexter - S3212
+Dexter - S3215
+Dexter - S3218
+diamond
+Diamond (carbon)
+Diamond-IIa
+diamond_hi_pres
+diamond_pl_cvd
+Die_attach_material
+Doosan - DS-7409DJL2+, Core, 1078X1, 3 mil
+Doosan - DS-7409DJL2+, Prepreg, 1078, 3.2 mil
+Doosan - DS-7409DJN+, Core, 1078x1, 3.5 mil
+Doosan - DS-7409DJN+, Prepreg, 1078, 4.2 mil
+Doosan - DS-7409DV (N), Core, 1027, 1.4 mil
+Doosan - DS-7409DV (N), Prepreg, 1027, 1.4 mil
+Doosan - DS-7409DV, Core, 1035, 2 mil
+Doosan - DS-7409DV, Prepreg, 1035, 2 mil
+Drawing quality steel, YS140
+Drawing quality steel, YS170
+Dupont Type 100 HN Film (tm)
+Duroid (tm)
+DW310_35
+DW315_50
+DW360_50
+DW465_50
+DW540_50
+Earth-Panda - 30TH
+Earth-Panda - 33TH
+Earth-Panda - 35EH
+Earth-Panda - 38EH
+Earth-Panda - 38UH
+Earth-Panda - 40UH
+Earth-Panda - 42SH
+Earth-Panda - 45H
+Earth-Panda - 45M
+Earth-Panda - 45SH
+Earth-Panda - 48H
+Earth-Panda - 48M
+Earth-Panda - EP 13-9
+Earth-Panda - EP-B
+Earth-Panda - EP-B+
+Earth-Panda - EP-C
+Earth-Panda - N48
+Earth-Panda - N50
+Eclipse Magnetics - N25AH
+Eclipse Magnetics - N25BH
+Eclipse Magnetics - N28AH
+Eclipse Magnetics - N28EH
+Eclipse Magnetics - N28UH
+Eclipse Magnetics - N30AH
+Eclipse Magnetics - N30EH
+Eclipse Magnetics - N30H
+Eclipse Magnetics - N30SH
+Eclipse Magnetics - N30UH
+Eclipse Magnetics - N33EH
+Eclipse Magnetics - N33H
+Eclipse Magnetics - N33M
+Eclipse Magnetics - N33SH
+Eclipse Magnetics - N33UH
+Eclipse Magnetics - N35
+Eclipse Magnetics - N35EH
+Eclipse Magnetics - N35H
+Eclipse Magnetics - N35M
+Eclipse Magnetics - N35SH
+Eclipse Magnetics - N35UH
+Eclipse Magnetics - N38
+Eclipse Magnetics - N38EH
+Eclipse Magnetics - N38H
+Eclipse Magnetics - N38M
+Eclipse Magnetics - N38SH
+Eclipse Magnetics - N38UH
+Eclipse Magnetics - N40
+Eclipse Magnetics - N40H
+Eclipse Magnetics - N40M
+Eclipse Magnetics - N40SH
+Eclipse Magnetics - N40UH
+Eclipse Magnetics - N42
+Eclipse Magnetics - N42H
+Eclipse Magnetics - N42M
+Eclipse Magnetics - N42SH
+Eclipse Magnetics - N44H
+Eclipse Magnetics - N44SH
+Eclipse Magnetics - N45
+Eclipse Magnetics - N45M
+Eclipse Magnetics - N46H
+Eclipse Magnetics - N46SH
+Eclipse Magnetics - N48
+Eclipse Magnetics - N48H
+Eclipse Magnetics - N48M
+Eclipse Magnetics - N50
+Eclipse Magnetics - N50M
+Eclipse Magnetics - N52
+Eclipse Magnetics - SmCo 26H
+eGRAF_HITHERM_SRS_1200
+eGRAF_HITHERM_SRS_700
+eGRAF_HS_400
+eGRAF_SPREAD_SS300
+eGRAF_SPREAD_SS400
+eGRAF_SPREAD_SS500
+Electrodyne - C80E
+Electrodyne - C89E
+Electrodyne - I33
+Electron Energy - EEC 16-T550
+Electron Energy - EEC 20-T500
+Electron Energy - EEC 217-33
+Electron Energy - EEC 217-TC16
+Electron Energy - EEC 24-T400
+EMC - EM-285, Core, 7628x1, 7 mil
+EMC - EM-285, Prepreg, 7628, 7.8 mil
+EMC - EM-370(D), Core, 1501x1, 6 mil
+EMC - EM-370(D), Prepreg, 1501, 6.8 mil
+EMC - EM-626, Core, 1078x1, 2.5 mil
+EMC - EM-827(I), Core, 1506x1, 6.4 mil
+EMC - EM-890, Core, 3313x1, 4 mil
+EMC - EM-890, Prepreg, 3313, 3.9 mil
+EMC - EM-892K, Core, 2116x1, 5 mil
+EMC - EM-892K, Prepreg, 2116, 5.5 mil
+EncryptionData
+Epoxy Resin-JSME
+Epoxy Resin-Typical
+Epoxy-glass fiber
+Epoxy-hysol 6000
+Epoxy-silica filled
+Epoxy-unfilled
+epoxy_Kevlar_xy
+Ethylene glycol 20
+Ethylene glycol 30
+Ethylene glycol 40
+Ethylene glycol 50
+Ethylene glycol 60
+FC-3283(@25degC)
+FC-40(@25degC)
+FC-43(@25degC)
+FC-72(@25degC)
+FC-75
+FC-78
+FC-88
+Fe-Cast(Grey)
+Fe-Cast(White)
+Fe-Pure
+Fe-Pure_Ref
+Fe-Wrought
+Feller Magnets - 33EH
+Feller Magnets - 38UH
+Feller Magnets - 45M
+Feller Magnets - N50
+Feller Magnets - YX-20
+Feller Magnets - YXG-24H
+Feller Magnets - YXG-28H
+Feller Magnets - YXG-30H
+Feller Magnets - YXG-32
+ferrite
+Flipchip_underfill
+FLN8
+FLNG28
+FLNG34
+FLNGT31
+FLNGT33J
+Flouroethylene Resin-JSME
+Fluxtrol - Alphaform LF
+Fluxtrol - Fluxtrol 100
+Fluxtrol - Fluxtrol 25
+Fluxtrol - Fluxtrol LRM
+Foam, ABS (structural)
+Foam, aluminum
+Foam, expanded polystyrene
+Foam, glass
+Foam, graphite
+Foam, LDPE
+Foam, melamine
+Foam, PET
+Foam, phenolic
+Foam, PMI
+Foam, polyurethane, flexible
+Foam, polyurethane, rigid
+Foam, PP (closed cell)
+Foam, PS (structural)
+Foam, PVC (rigid, closed cell)
+Foam, SAN (closed cell)
+FR-4
+FR-4_Ref
+FR4_epoxy
+Freon-C-51-12
+Freon-E5
+Freon-TF
+Galaxy Magnets - GPM-12
+Galaxy Magnets - GPM-12L
+Galaxy Magnets - GPM-6
+Galaxy Magnets - GPM-8
+Galaxy Magnets - GPM-8H
+Galaxy Magnets - GPM-8SR
+Gallium, pure
+gallium_arsenide
+Galvanized steel
+GE GETEK ML200/RG200 (tm)
+Ge-n type
+Ge-Typical
+Germanium
+GIL GML1000 (tm)
+GIL GML1032 (tm)
+GIL GML2032 (tm)
+GIL MC5 (tm)
+glass
+Glass ceramic, FC
+Glass ceramic, MCR
+Glass ceramic, N0
+Glass ceramic, ZD
+Glass, alkali strontium
+Glass, alkaline earth lead
+Glass, aluminosilicate
+Glass, borosilicate
+Glass, low-e
+Glass, potash soda lead
+Glass, silica fused, SiO2
+Glass, soda lime (common glass)
+Glass, soda zinc
+Glass, soda zirconia
+Glass, titanium silicate
+glass_PTFEreinf
+Glycol-20
+Glycol-34
+Glycol-50
+Glycol-60
+Glycol-80
+gold
+Gold, pure
+Gold-platinum alloy
+Grand Forest - N40SH
+Grand Forest - N45M
+Grand Forest - N45SH
+Grand Forest - N48
+Granite
+graphite
+Graphite (pure)
+Graphite-Typical
+h2o
+h2o(@373K)
+Hard Vinyl Chloride-JSME
+HDPE plastic
+Helium
+Helium gas
+Helium(@366K)
+High strength low alloy steel, YS300
+High strength low alloy steel, YS355
+High strength low alloy steel, YS550
+HiperV_R1755V
+Hitachi Metals - Finemet FT3M
+Hitachi Metals - Hi-Mag
+Hitachi Metals - Hidense-1000
+Hitachi Metals - Hidense-500
+Hitachi Metals - Hidense-600
+Hitachi Metals - Hidense-700
+Hitachi Metals - NMF-3B
+Hitachi Metals - NMF-3C
+Hitachi Metals - NMF-3D
+Hitachi Metals - NMF-3E
+Hitachi Metals - NMF-3F
+Hitachi Metals - NMF-3G
+Hitachi Metals - NMF-5C
+Hitachi Metals - NMF-5D
+Hitachi Metals - NMF-5E
+Hitachi Metals - NMF-5F
+Hitachi Metals - NMF-5G
+Hitachi Metals - NMF-6C
+Hitachi Metals - NMF-6D
+Hitachi Metals - NMF-6E
+Hitachi Metals - NMF-6F
+Hitachi Metals - NMF-6G
+Hitachi Metals - NMF-7C
+Hitachi Metals - NMF-7D
+Hitachi Metals - NMF-7E
+Hitachi Metals - NMF-7F
+Hitachi Metals - NMF-7G
+Hitachi Metals - NMF-9D
+Hitachi Metals - NMX-31UH
+Hitachi Metals - NMX-33UH
+Hitachi Metals - NMX-34EH
+Hitachi Metals - NMX-36EH
+Hitachi Metals - NMX-37SH
+Hitachi Metals - NMX-39EH
+Hitachi Metals - NMX-40CH
+Hitachi Metals - NMX-41SH
+Hitachi Metals - NMX-42BH
+Hitachi Metals - NMX-43SH
+Hitachi Metals - NMX-44
+Hitachi Metals - NMX-44CH
+Hitachi Metals - NMX-46CH
+Hitachi Metals - NMX-48BH
+Hitachi Metals - NMX-50
+Hitachi Metals - NMX-S34GH
+Hitachi Metals - NMX-S36UH
+Hitachi Metals - NMX-S38EH
+Hitachi Metals - NMX-S41EH
+Hitachi Metals - NMX-S43SH
+Hitachi Metals - NMX-S45SH
+Hitachi Metals - NMX-S49CH
+Hitachi Metals - NMX-S50BH
+Hitachi Metals - NMX-S52
+Hitachi Metals - NMX-S54
+Hitachi Metals - PMC-1B
+Hitachi Metals - PMC-2B
+Hitachi Metals - PMC-4A
+Hitachi Metals - PMC-4B
+Hitachi Metals - PMC-8C
+Hitachi Metals - PMC-8E
+Hitachi Metals - PMC-9B
+HJ Magnet - BNP6
+HJ Magnet - XG18-18
+HJ Magnet - XG22-25
+HJ Magnet - XG32-12
+Hoganas - 1000 3P, 600MPa
+Hoganas - 1000 3P, 800MPa
+Hoganas - 1000 5P, 600MPa
+Hoganas - 1000 5P, 800MPa
+Hoganas - 110i 1P, 600MPa
+Hoganas - 110i 1P, 800MPa
+Hoganas - 110i 5P, 600MPa
+Hoganas - 110i 5P, 800MPa
+Hoganas - 130i 1P, 600MPa
+Hoganas - 130i 1P, 800MPa
+Hoganas - 130i 5P, 600MPa
+Hoganas - 130i 5P, 800MPa
+Hoganas - 500 1P, 600MPa
+Hoganas - 500 1P, 800MPa
+Hoganas - 700 1P, 800MPa
+Hoganas - 700 3P, 600MPa
+Hoganas - 700 3P, 800MPa
+Hoganas - 700HR 1P, 600MPa
+Hoganas - 700HR 1P, 800MPa
+Hoganas - 700HR 3P, 600MPa
+Hoganas - 700HR 3P, 800MPa
+Hoganas - 700HR 5P, 600MPa
+Hoganas - 700HR 5P, 800MPa
+Hoganas - Somaloy 130-1P
+Hoganas - Somaloy 500A
+Hoganas - Somaloy 500B
+Hoganas - Somaloy 700-3P
+Hoganas - Somaloy 700HR-5P
+Hoganas - Somaloy 700HR3P
+Hoganas - Somaloy, 500C
+Honeycomb, aluminum alloy 3003
+Honeycomb, polycarbonate
+Honeycomb, polypropylene
+HPMG - 135-127
+HPMG - 151-127
+HPMG - 151-143
+HPMG - 159-127
+HPMG - 159-143
+HPMG - 159-199
+HPMG - 175-143
+HPMG - 175-199
+HPMG - 191-143
+HPMG - 191-199
+HPMG - 191-80
+HPMG - 207-143
+HPMG - 207-199
+HPMG - 207-80
+HPMG - 220-80
+HPMG - 222-143
+HPMG - 222-199
+HPMG - 239-143
+HPMG - 239-199
+HPMG - 239-80
+HPMG - IN10
+HPMG - LNG13
+HPMG - LNG37
+HPMG - LNG44
+HPMG - LNG52
+HPMG - LNGT18
+HPMG - LNGT28
+HPMG - LNGT36J
+HPMG - LNGT38
+HPMG - LNGT44
+HPMG - LNGT72
+HPMG - LNGT80
+HPMG - N28AH
+HPMG - N28UH
+HPMG - N30EH
+HPMG - N33UH
+HPMG - N35AH
+HPMG - N35EH
+HPMG - N35H
+HPMG - N35SH
+HPMG - N35UH
+HPMG - N38AH
+HPMG - N38EH
+HPMG - N38SH
+HPMG - N38UH
+HPMG - N40SH
+HPMG - N40UH
+HPMG - N42AH
+HPMG - N42SH
+HPMG - N42UH
+HPMG - N45H
+HPMG - N45SH
+HPMG - N45UH
+HPMG - N48H
+HPMG - N48SH
+HPMG - N48UH
+HPMG - N50SH
+HPMG - N52
+Hydrogen
+Hydrogen gas
+Ice
+indium
+Indium, pure
+Innuovo - BNM10
+Innuovo - BNM8
+Innuovo - N45EH
+Innuovo - N48UH
+Innuovo - N50SH
+Innuovo - N52H
+Innuovo - N52M
+Innuovo - N54
+Integrated Magnetics - N3330
+Integrated Magnetics - N3335
+Integrated Magnetics - N3530
+Integrated Magnetics - N3621
+Integrated Magnetics - N3725
+Integrated Magnetics - N3730
+Integrated Magnetics - N3917
+Integrated Magnetics - N4021
+Integrated Magnetics - N4025
+Integrated Magnetics - N4316
+Integrated Magnetics - N4321
+Integrated Magnetics - N4518
+Integrated Magnetics - N4614
+Integrated Magnetics - N4616
+Integrated Magnetics - N4914
+Integrated Magnetics - N4916
+Integrated Magnetics - N5011
+Integrated Magnetics - N5014
+Integrated Magnetics - N5311
+Integrated Magnetics - S2809
+Integrated Magnetics - S2909
+Integrated Magnetics - S3007
+Integrated Magnetics - S3018
+Integrated Magnetics - S3120
+Integrated Magnetics - S3310
+Integrated Magnetics - S3320
+Integrated Magnetics - S3410
+Iridium, pure
+iron
+Isola - I-Speed, Core, 1x1067, 2.5 mil
+Isola - I-Speed, Prepreg, 1067, 2 mil
+Isola - P95, Core, 1x106, 2.5 mil
+Isola - P95, Core, 1x1080, 3 mil
+Isola - P95, Core, 1x2116, 4 mil
+Isola Astra (R)
+Isola Chronon (tm)
+Isola FR408
+Isola FR408HR
+Isola FR408HRIS
+Isola GigaSync (R)
+Isola Gigaver 210 (tm)
+Isola Gigaver 410 (tm)
+Isola GreenSpeed (tm)
+Isola I-Speed (R)
+Isola I-Speed IS (R)
+Isola I-TeraMT (R)
+Isola IS300MD
+Isola IS680-280
+Isola IS680-300
+Isola IS680-320
+Isola IS680-338
+Isola IS680-345
+Isola IS680AG
+Isola Stratus (R)
+Isola Tachyon (R)
+Isola Tachyon 100G (R)
+Isola TerraGreen (R)
+ITEQ - IT-150DA, Core, 106x1, 2 mil
+ITEQ - IT-150DA, Prepreg, 106, 2.1 mil
+ITEQ - IT-180I, Prepreg, 1078, 2.9 mil
+ITEQ - IT-958G, Core, 3313x1, 4 mil
+ITEQ - IT-958G, Prepreg, 3313, 4 mil
+ITEQ - IT-968G, Core, 3313x2, 8 mil
+ITEQ - IT-968G, Prepreg, 3313, 4.6 mil
+ITEQ - IT-968GSE, Core, 1067x1, 2 mil
+ITEQ - IT-968GSE, Prepreg, 1067, 2.4 mil
+JFE Steel - 10JNHF600
+JFE Steel - 10JNHF600, B-H at 50Hz
+JFE Steel - 20JNHF1300
+JFE Steel - 20JNHF1300, B-H at 50Hz
+JFE Steel - 35JN200
+JFE Steel - 35JN200, B-H at 50Hz
+JFE Steel - 35JNP7, B-H at 50Hz
+JFE Steel - 50RMA350, B-H at 50Hz
+JFE_Steel_20JNEH1200  [nonlinear]
+JFE_Steel_20JNEH1500  [nonlinear]
+JFE_Steel_35JN210  [nonlinear]
+JFE_Steel_35JN230  [nonlinear]
+JFE_Steel_35JN250  [nonlinear]
+JFE_Steel_35JN270  [nonlinear]
+JFE_Steel_35JN300  [nonlinear]
+JFE_Steel_35JN360  [nonlinear]
+JFE_Steel_35JN440  [nonlinear]
+JFE_Steel_35JNE230  [nonlinear]
+JFE_Steel_35JNE250  [nonlinear]
+JFE_Steel_35JNE300  [nonlinear]
+JFE_Steel_50JN1000  [nonlinear]
+JFE_Steel_50JN1300  [nonlinear]
+JFE_Steel_50JN230  [nonlinear]
+JFE_Steel_50JN250  [nonlinear]
+JFE_Steel_50JN270  [nonlinear]
+JFE_Steel_50JN290  [nonlinear]
+JFE_Steel_50JN310  [nonlinear]
+JFE_Steel_50JN350  [nonlinear]
+JFE_Steel_50JN400  [nonlinear]
+JFE_Steel_50JN470  [nonlinear]
+JFE_Steel_50JN600  [nonlinear]
+JFE_Steel_50JN700  [nonlinear]
+JFE_Steel_50JN800  [nonlinear]
+JFE_Steel_50JNA350  [nonlinear]
+JFE_Steel_50JNA500  [nonlinear]
+JFE_Steel_50JNA600  [nonlinear]
+JFE_Steel_50JNE300  [nonlinear]
+JFE_Steel_50JNE350  [nonlinear]
+JFE_Steel_50JNE470  [nonlinear]
+JFE_Steel_SuperCore_10JNEX900  [nonlinear]
+JFE_Steel_SuperCore_10JNHF600  [nonlinear]
+JFE_Steel_SuperCore_20JNHF1300  [nonlinear]
+JL Mag Rare-Earth - 42SH Dy Free
+JL Mag Rare-Earth - 45H Dy Free
+JL Mag Rare-Earth - 48H Dy Free
+JL Mag Rare-Earth - N30AH
+JL Mag Rare-Earth - N30EH
+JL Mag Rare-Earth - N30EHT
+JL Mag Rare-Earth - N30SHT
+JL Mag Rare-Earth - N30UH
+JL Mag Rare-Earth - N30UHT
+JL Mag Rare-Earth - N33AH
+JL Mag Rare-Earth - N33EH
+JL Mag Rare-Earth - N33EHT
+JL Mag Rare-Earth - N33H
+JL Mag Rare-Earth - N33SH
+JL Mag Rare-Earth - N33SHT
+JL Mag Rare-Earth - N33UH
+JL Mag Rare-Earth - N33UHT
+JL Mag Rare-Earth - N35
+JL Mag Rare-Earth - N35AH
+JL Mag Rare-Earth - N35EH
+JL Mag Rare-Earth - N35EHT
+JL Mag Rare-Earth - N35H
+JL Mag Rare-Earth - N35M
+JL Mag Rare-Earth - N35SH
+JL Mag Rare-Earth - N35SHT
+JL Mag Rare-Earth - N35UH
+JL Mag Rare-Earth - N35UHT
+JL Mag Rare-Earth - N38
+JL Mag Rare-Earth - N38AH
+JL Mag Rare-Earth - N38EH
+JL Mag Rare-Earth - N38EHT
+JL Mag Rare-Earth - N38H
+JL Mag Rare-Earth - N38M
+JL Mag Rare-Earth - N38SH
+JL Mag Rare-Earth - N38SHT
+JL Mag Rare-Earth - N38UH
+JL Mag Rare-Earth - N38UHT
+JL Mag Rare-Earth - N40
+JL Mag Rare-Earth - N40AH
+JL Mag Rare-Earth - N40EH
+JL Mag Rare-Earth - N40EHT
+JL Mag Rare-Earth - N40H
+JL Mag Rare-Earth - N40M
+JL Mag Rare-Earth - N40SH
+JL Mag Rare-Earth - N40SHT
+JL Mag Rare-Earth - N40UH
+JL Mag Rare-Earth - N40UHT
+JL Mag Rare-Earth - N42
+JL Mag Rare-Earth - N42AH
+JL Mag Rare-Earth - N42EH
+JL Mag Rare-Earth - N42EHT
+JL Mag Rare-Earth - N42H
+JL Mag Rare-Earth - N42M
+JL Mag Rare-Earth - N42SH
+JL Mag Rare-Earth - N42SHT
+JL Mag Rare-Earth - N42UH
+JL Mag Rare-Earth - N42UHT
+JL Mag Rare-Earth - N45
+JL Mag Rare-Earth - N45AH
+JL Mag Rare-Earth - N45EH
+JL Mag Rare-Earth - N45EHT
+JL Mag Rare-Earth - N45H
+JL Mag Rare-Earth - N45M
+JL Mag Rare-Earth - N45SH
+JL Mag Rare-Earth - N45SHT
+JL Mag Rare-Earth - N45UH
+JL Mag Rare-Earth - N45UHT
+JL Mag Rare-Earth - N48
+JL Mag Rare-Earth - N48EH
+JL Mag Rare-Earth - N48EHT
+JL Mag Rare-Earth - N48H
+JL Mag Rare-Earth - N48M
+JL Mag Rare-Earth - N48SH
+JL Mag Rare-Earth - N48SHT
+JL Mag Rare-Earth - N48UH
+JL Mag Rare-Earth - N48UHT
+JL Mag Rare-Earth - N50
+JL Mag Rare-Earth - N50EH
+JL Mag Rare-Earth - N50H
+JL Mag Rare-Earth - N50M
+JL Mag Rare-Earth - N50SH
+JL Mag Rare-Earth - N50SHT
+JL Mag Rare-Earth - N50UH
+JL Mag Rare-Earth - N50UHT
+JL Mag Rare-Earth - N52
+JL Mag Rare-Earth - N52 Dy Free
+JL Mag Rare-Earth - N52H
+JL Mag Rare-Earth - N52M
+JL Mag Rare-Earth - N52SH
+JL Mag Rare-Earth - N52SHT
+JL Mag Rare-Earth - N52UH
+JL Mag Rare-Earth - N52UHT
+JL Mag Rare-Earth - N54
+JL Mag Rare-Earth - N54H
+JL Mag Rare-Earth - N54M
+JL Mag Rare-Earth - N54SH
+JL Mag Rare-Earth - N54SHT
+JL Mag Rare-Earth - N54UH
+JL Mag Rare-Earth - N54UHT
+JL Mag Rare-Earth - N56
+JL Mag Rare-Earth - N56H
+JL Mag Rare-Earth - N56M
+JL Mag Rare-Earth - N56SH
+JL Mag Rare-Earth - N58
+K&J Magnetics - N28UH
+K&J Magnetics - N30EH
+K&J Magnetics - N30SH
+K&J Magnetics - N30UH
+K&J Magnetics - N33EH
+K&J Magnetics - N33H
+K&J Magnetics - N33SH
+K&J Magnetics - N33UH
+K&J Magnetics - N35
+K&J Magnetics - N35EH
+K&J Magnetics - N35H
+K&J Magnetics - N35M
+K&J Magnetics - N35SH
+K&J Magnetics - N35UH
+K&J Magnetics - N38
+K&J Magnetics - N38EH
+K&J Magnetics - N38H
+K&J Magnetics - N38M
+K&J Magnetics - N38SH
+K&J Magnetics - N38UH
+K&J Magnetics - N40
+K&J Magnetics - N40H
+K&J Magnetics - N40M
+K&J Magnetics - N40SH
+K&J Magnetics - N40UH
+K&J Magnetics - N42
+K&J Magnetics - N42H
+K&J Magnetics - N42M
+K&J Magnetics - N42SH
+K&J Magnetics - N45
+K&J Magnetics - N45H
+K&J Magnetics - N45M
+K&J Magnetics - N45SH
+K&J Magnetics - N48
+K&J Magnetics - N48H
+K&J Magnetics - N48M
+K&J Magnetics - N50
+K&J Magnetics - N50M
+K&J Magnetics - N52
+Kingboard - KB-6160A, Core, 2116*1, 5 mil
+Kingboard - KB-6160A, Prepreg, 2116, 5 mil
+Kingboard - KB-6167F, Core, 1080x1, 3 mil
+Kingboard - KB-6167F, Prepreg, 1080, 3.03 mil
+Kobelco - 1002 ELCH2 Steel
+Kobelco - 1002 ELCH2S Steel
+Kobelco - 1002 SUY-0 Steel
+Kobelco - 1002 SUY-1 Steel
+Kolektor - Koerdym 32PA
+Kolektor - Koerdym 35PA
+Kolektor - Koerdym 38A
+Kolektor - Koerdym 38PA
+Kolektor - Koerdym 39PA
+Kolektor - Koerdym 42PA
+Kolektor - Koerdym 43PA
+Kolektor - Koerdym 47PA
+Kolektor - Koerdym 61EP
+Kolektor - Koerdym 63EP
+Kolektor - Koerdym 64EP
+Kolektor - Koerdym 68EP
+Kolektor - Koerdym 80EP
+Kolektor - Koerdym 83EP
+Kolektor - Koerdym 86EP
+Krempel Akaflex KCL (tm)
+Krempel Akaflex PCL (tm)
+Kyungwon - KWA 1
+Kyungwon - KWA 2
+Kyungwon - KWA 3
+Kyungwon - KWA 4
+L500_50
+L800_65
+Laird - Coolzorb 400
+Laird - Coolzorb 500
+Laird - Coolzorb 600
+Laird - Coolzorb D 3W/1K
+Laird - Coolzorb Ultra
+Laird - Eccosorb AN-72 Back layer
+Laird - Eccosorb AN-72 Front layer
+Laird - Eccosorb AN-73 Back layer
+Laird - Eccosorb AN-73 Front layer
+Laird - Eccosorb AN-73 Middle layer
+Laird - Eccosorb AN-74 Back layer
+Laird - Eccosorb AN-74 Front layer
+Laird - Eccosorb AN-74 Middle layer
+Laird - Eccosorb AN-75 Back layer
+Laird - Eccosorb AN-75 Front layer
+Laird - Eccosorb AN-75 Middle layer
+Laird - Eccosorb AN-77 Back layer
+Laird - Eccosorb AN-77 Front layer
+Laird - Eccosorb AN-77 Middle layer
+Laird - Eccosorb AN-79 Back layer
+Laird - Eccosorb AN-79 Front layer
+Laird - Eccosorb AN-79 Layer 2
+Laird - Eccosorb AN-79 Layer 3
+Laird - Eccosorb AN-79 Layer 4
+Laird - Eccosorb AN-79 Layer 5
+Laird - Eccosorb BSR-1
+Laird - Eccosorb BSR-2
+Laird - Eccosorb FGM-125
+Laird - Eccosorb FGM-40
+Laird - Eccosorb GDS
+Laird - Eccosorb HR-10 Layer 1 (2mm)
+Laird - Eccosorb HR-10 Layer 2 (2.5mm)
+Laird - Eccosorb HR-10 Layer 3 (2.5mm)
+Laird - Eccosorb HR-10 Layer 4 (3mm)
+Laird - Eccosorb HR-25 Layer 1 (3.75mm)
+Laird - Eccosorb HR-25 Layer 2 (3.75mm)
+Laird - Eccosorb HR-25 Layer 3 (7.5mm)
+Laird - Eccosorb HR-25 Layer 4 (10mm)
+Laird - Eccosorb JCP-PBT-252
+Laird - Eccosorb JCS-11
+Laird - Eccosorb JCS-3
+Laird - Eccosorb JCS-5
+Laird - Eccosorb JCS-7
+Laird - Eccosorb JCS-9
+Laird - Eccosorb LS-14
+Laird - Eccosorb LS-16
+Laird - Eccosorb LS-18
+Laird - Eccosorb LS-20
+Laird - Eccosorb LS-22
+Laird - Eccosorb LS-24
+Laird - Eccosorb LS-26
+Laird - Eccosorb LS-28
+Laird - Eccosorb LS-30
+Laird - Eccosorb MCS
+Laird - Eccosorb MF-110
+Laird - Eccosorb MF-112
+Laird - Eccosorb MF-114
+Laird - Eccosorb MF-116
+Laird - Eccosorb MF-117
+Laird - Eccosorb MF-124
+Laird - Eccosorb MF-175
+Laird - Eccosorb MF-190
+Laird - Eccosorb MF-PP-120
+Laird - Eccosorb MFS-117
+Laird - Eccosorb MFS-124
+Laird - Eccosorb MMI
+Laird - Eccosorb QR-13AF
+Laird - Eccosorb SF-9
+Laird - Noisesorb NS-1000
+Laird - QZorb 2388
+lead
+Lead, pure
+Lead-antimony alloy, cast
+Limestone
+Lithium, pure
+LN10
+LNG12
+LNG34
+LNG37
+LNG44
+LNG52
+LNGT28
+LNGT36J
+LNGT38
+LNGT60
+LNGT72
+Low alloy steel, 300M (high carbon)
+Low alloy steel, 300M (low carbon)
+Low alloy steel, 3140, annealed
+Low alloy steel, 4037, hardened & tempered
+Low alloy steel, 4130, annealed
+Low alloy steel, 4130, cast, hardened & tempered
+Low alloy steel, 4130, cast, normalized & tempered
+Low alloy steel, 4130, normalized
+Low alloy steel, 4135, hardened & tempered
+Low alloy steel, 4135, normalized
+Low alloy steel, 4140, annealed
+Low alloy steel, 4140, hardened & temper at 205C
+Low alloy steel, 4140, hardened & temper at 650C
+Low alloy steel, 4140, normalized
+Low alloy steel, 4330V, hardened & tempered
+Low alloy steel, 4335M, cast, hardened & tempered
+Low alloy steel, 4340, annealed
+Low alloy steel, 4340, hardened & temper at 205C
+Low alloy steel, 4340, hardened & temper at 315C
+Low alloy steel, 4340, normalized
+Low alloy steel, 50B60, hardened & tempered
+Low alloy steel, 5140, annealed
+Low alloy steel, 5160, hardened & tempered
+Low alloy steel, 6150, annealed
+Low alloy steel, 9255, hardened & tempered
+Low alloy steel, 9310, annealed
+Low alloy steel, D6AC, hardened & tempered
+M15_26G
+M15_29G
+M19_24G
+M19_26G
+M19_29G
+M22_24G
+M22_26G
+M22_29G
+M27_24G
+M27_26G
+M27_29G
+M36_24G
+M36_26G
+M36_29G
+M43_24G
+M43_26G
+M43_29G
+Magfine - NdFeB 28AH
+Magfine - NdFeB 28EH
+Magfine - NdFeB 28UH
+Magfine - NdFeB 30
+Magfine - NdFeB 30AH
+Magfine - NdFeB 30EH
+Magfine - NdFeB 30H
+Magfine - NdFeB 30M
+Magfine - NdFeB 30SH
+Magfine - NdFeB 30UH
+Magfine - NdFeB 33AH
+Magfine - NdFeB 33EH
+Magfine - NdFeB 33H
+Magfine - NdFeB 33M
+Magfine - NdFeB 33SH
+Magfine - NdFeB 33UH
+Magfine - NdFeB 35
+Magfine - NdFeB 35EH
+Magfine - NdFeB 35H
+Magfine - NdFeB 35M
+Magfine - NdFeB 35SH
+Magfine - NdFeB 35UH
+Magfine - NdFeB 38
+Magfine - NdFeB 38EH
+Magfine - NdFeB 38H
+Magfine - NdFeB 38M
+Magfine - NdFeB 38SH
+Magfine - NdFeB 38UH
+Magfine - NdFeB 40
+Magfine - NdFeB 40H
+Magfine - NdFeB 40M
+Magfine - NdFeB 40SH
+Magfine - NdFeB 40UH
+Magfine - NdFeB 42
+Magfine - NdFeB 42H
+Magfine - NdFeB 42M
+Magfine - NdFeB 42SH
+Magfine - NdFeB 45
+Magfine - NdFeB 45H
+Magfine - NdFeB 45M
+Magfine - NdFeB 45SH
+Magfine - NdFeB 48
+Magfine - NdFeB 48H
+Magfine - NdFeB 50
+Magfine - NdFeB 50M
+Magfine - NdFeB 52
+Magnequench - MQ1-10
+Magnequench - MQ1-10h
+Magnequench - MQ1-10L
+Magnequench - MQ1-11
+Magnequench - MQ1-11L
+Magnequench - MQ1-12
+Magnequench - MQ1-5
+Magnequench - MQ1-7
+Magnequench - MQ1-8
+Magnequench - MQ1-9
+magnesium
+Magnesium alloy, AM100A, cast, T6
+Magnesium alloy, AZ31B, wrought
+Magnesium alloy, AZ61A, cast
+Magnesium alloy, AZ80A, wrought, T5
+Magnesium alloy, AZ91D, cast
+Magnesium alloy, EZ33A, cast
+Magnesium alloy, WE43A, cast
+Magnesium alloy, ZK60A, wrought, T5
+Magnesium, pure
+Magnet, permanent, Alnico 1 (cast)
+Magnet, permanent, Alnico 2 (cast)
+Magnet, permanent, Alnico 2 (sintered)
+Magnet, permanent, Alnico 3 (cast)
+Magnet, permanent, Alnico 5 (cast)
+Magnet, permanent, Alnico 5 (sintered)
+Magnet, permanent, Alnico 8 (cast)
+Magnet, permanent, Alnico 8 (sintered)
+Magnet, permanent, Alnico 9 (cast)
+Magnet, permanent, Ferrite Y30BH (YBM-2B)
+Magnet, permanent, Ferrite Y32H-2 (YBM-5BB)
+Magnet, permanent, Ferrite Y33H (YBM-6BB)
+Magnet, permanent, Ferrite Y8T (YBM-3)
+Magnet, permanent, Neodymium N30EH
+Magnet, permanent, Neodymium N30H
+Magnet, permanent, Neodymium N35
+Magnet, permanent, Neodymium N35H
+Magnet, permanent, Neodymium N35UH
+Magnet, permanent, Neodymium N42
+Magnet, permanent, Neodymium N42H
+Magnet, permanent, Neodymium N42SH
+Magnet, permanent, Neodymium N52
+Magnet, permanent, Neodymium N54
+Magnet, permanent, SmCo20 (2 17)
+Magnet, permanent, SmCo22 (1 5)
+Magnet, soft, Ferrite B (Mn-Zn)
+Magnet, soft, Ferrite G (Ni-Zn)
+Magnetfabrik Bonn - Alnico 500
+Magnetfabrik Bonn - Neofer 25-60p
+Magnetfabrik Bonn - Neofer 31-100p
+Magnetfabrik Bonn - Neofer 37-60p
+Magnetfabrik Bonn - Neofer 39-60p
+Magnetfabrik Bonn - Neofer 41-100p
+Magnetfabrik Bonn - Neofer 44-60p
+Magnetfabrik Bonn - Neofer 48-60p
+Magnetfabrik Bonn - Neofer 55-100p
+Magnetfabrik Bonn - Neofer 55-50p
+Magnetfabrik Bonn - Neofer 62-60p
+Magnetfabrik Bonn - Neofer 65-70p
+Magnetfabrik Bonn - Seco 170-120
+Magnetfabrik Bonn - Sprox 10-20p
+Magnetfabrik Bonn - Sprox 11-21p
+Magnetfabrik Bonn - Sprox 11-22p
+Magnetfabrik Bonn - Sprox 13-21
+Magnetfabrik Bonn - Sprox 14-21
+Magnetfabrik Bonn - Sprox 15-21p
+Magnetfabrik Bonn - Sprox 15-22p
+Magnetfabrik Bonn - Sprox 3-20p
+Magnetfabrik Bonn - Sprox 5F
+Magnetfabrik Bonn - Sprox-100
+Magnetfabrik Bonn - Sprox-400
+Magnetic alloy, core iron
+Magnetic alloy, Hiperco 27
+Magnetic alloy, Hiperco 50
+Magnetic alloy, Metglas 2714A
+Magnetic alloy, MuMetal
+Magnetic alloy, Permalloy 45
+Magnetic alloy, silicon core iron A
+Magnetic alloy, silicon core iron B
+Magnetic alloy, silicon core iron C
+Magnetic Metals - Microsil, 4mil
+Magnetic Metals - Silectron rolling, 4mil
+Magnetic Metals - Silectron, 12mil
+Magnetic Metals - Silectron, 4mil
+Magnetic Metals - Silectron, 6mil
+Magnetic Metals - Supermalloy, 2mil
+Magnetic Shield - Conetic
+Magnetic Shield - Mumetal (77%Ni)
+Magnetic Shield - Mumetal (80%Ni)
+Magnetic Shield - Mumetal, 2mil
+Magnetic Shield - Netic
+Magnetics - 75-Series 40mu
+Magnetics - Amoflux
+Magnetics - Edge 60mu
+Magnetics - High DC Bias Edge 60mu
+Magnetics - High DC Bias XFlux 40mu
+Magnetics - High Flux 125mu
+Magnetics - High Flux 147mu
+Magnetics - High Flux 14mu
+Magnetics - High Flux 160mu
+Magnetics - High Flux 26mu
+Magnetics - High Flux 60mu
+Magnetics - Kool Mu 125mu
+Magnetics - Kool Mu 26mu
+Magnetics - Kool Mu 40mu
+Magnetics - Kool Mu 60mu
+Magnetics - Kool Mu 75mu
+Magnetics - Kool Mu 90mu
+Magnetics - Kool Mu Hf 26mu
+Magnetics - Kool Mu MAX 26mu
+Magnetics - MPP 125mu
+Magnetics - MPP 147mu
+Magnetics - MPP 14mu
+Magnetics - MPP 160mu
+Magnetics - MPP 173mu
+Magnetics - MPP 200mu
+Magnetics - MPP 26mu
+Magnetics - MPP 300mu
+Magnetics - MPP 550mu
+Magnetics - MPP 60mu
+Magnetics - Permalloy, 2mil
+Magnetics - Permalloy, Nonoriented
+Magnetics - Permalloy, Oriented
+Magnetics - XFlux 40mu
+Manganese, pure
+marble
+Marble (stone)
+Maruwa - Q-2
+Maruwa - Q-6
+Maruwa - SR-2H
+Maruwa - SR-3
+Maruwa - SR-30
+Maruwa - SR-40
+Maruwa - SR-40S
+Mask_material
+Max Baermann - Tromadur 1122
+Max Baermann - Tromadur 1123
+Max Baermann - Tromadur 1322
+Max Baermann - Tromadur 1525
+Max Baermann - Tromadur 2250
+Max Baermann - Tromadur 317
+Max Baermann - Tromadur 526
+Max Baermann - Tromadym 4169
+Max Baermann - Tromadym 4451
+Max Baermann - Tromadym 4574
+Max Baermann - Tromamax 4675
+Megtron2_R1577
+Megtron4_R5725
+Megtron4S_R5725S
+Megtron6_1035_Laminate
+Megtron6_1035_PP
+Megtron6_1078_PP
+Megtron6_3313_Laminate
+Megtron6_R5755
+Megtron6_R5755(N)
+Megtron7_R5785
+Megtron7_R5785(N)
+MegtronM_R5735
+Metal matrix composite (MMC), Aluminum/15% SiC
+Metal matrix composite (MMC), Aluminum/20% SiC
+Metal matrix composite (MMC), Aluminum/70% SiC
+Metglas - 2605HB1M
+Metglas - 2605S3A HFA
+Mg-Typical
+Mg-Typical_Ref
+mica
+Mica-brick-red or white
+Mica-powder
+Mica-Typical
+Micrometals - 1 Material
+Micrometals - 12 Material
+Micrometals - 14 Material
+Micrometals - 15 Material
+Micrometals - 26 Material
+Micrometals - 3 Material
+Micrometals - 30 Material
+Micrometals - 35 Material
+Micrometals - 38 Material
+Micrometals - 40 Material
+Micrometals - 45 Material
+Micrometals - 52 Material
+Micrometals - 60 Material
+Micrometals - 61 Material
+Micrometals - 63 Material
+Micrometals - 66 Material
+Micrometals - 70 Material
+Micrometals - 8 Material
+Micrometals - LM085 Material
+Micrometals - M125 Material
+Micrometals - Powder Iron Annealed
+Micrometals - SuperMSS
+Micrometals - SuperMSS 26
+Micrometals - SuperMSS 60mu
+Minteq_Pyroid_HT
+modified_epoxy
+Mold_material
+molybdenum
+Molybdenum alloy, Alloy 363
+MPCO - 35AH
+MPCO - 42EH
+MPCO - 45UH
+MPCO - BNM10
+MPCO - BNM8
+MPCO - Cast Alnico 5
+MPCO - Cast Alnico 7
+MPCO - Cast Alnico 8
+MPCO - N50H
+MPCO - N50SH
+MPCO - N52
+MPCO - Sintered Alnico 5
+MPCO - Sintered Alnico 8
+MPCO - SmCo26H
+MS-Schramberg - 180-250w
+MS-Schramberg - 200-220w
+MS-Schramberg - 210-250h
+MS-Schramberg - 230-175w
+MS-Schramberg - 230-220h
+MS-Schramberg - 250-125w
+MS-Schramberg - 250-175h
+MS-Schramberg - 270-125h
+MS-Schramberg - 300-125h
+MS-Schramberg - 342-135
+MS-Schramberg - HF24-16
+MS-Schramberg - HF24-23
+MS-Schramberg - HF26-24
+MS-Schramberg - HF28-26
+MS-Schramberg - HF28-28
+MS-Schramberg - HF30-26
+MS-Schramberg - HF8-22
+MS-Schramberg - HF8-26
+MS-Schramberg - NdFeB 27-80p
+MS-Schramberg - NdFeB 30-60p
+MS-Schramberg - NdFeB 32-80p
+MS-Schramberg - NdFeB 37-60p
+MS-Schramberg - NdFeB 38-80p
+MS-Schramberg - NdFeB 42-60p
+MS-Schramberg - NdFeB 43-80p
+MS-Schramberg - NdFeB 46-80p
+MS-Schramberg - NdFeB 48-60p
+MS-Schramberg - NdFeB 49-80p
+MS-Schramberg - NdFeB 55-60p
+MS-Schramberg - NdFeB 76-110p
+MS-Schramberg - SmCo17 180-160
+MS-Schramberg - SmCo5 143-143
+MS-Schramberg - SmCo5 160-143Q
+mu_metal
+Nanya - NPG-170D, Core, 2116*1, 5 mil
+Nanya - NPG-170D, Prepreg, 2116, 4.79 mil
+Nanya - NPG-186K, Core, 3313*1, 4 mil
+Nanya - NPG-186K, Prepreg, 3313, 4.4 mil
+Nanya - NPG-199, Core, 3313*3, 12 mil
+Nanya - NPG-199, Prepreg, 3313, 4.34 mil
+NdFe30
+NdFe35
+Nelco N4000-13 (tm)
+Nelco N4000-13 SI (tm)
+Neltec NH9294 (tm)
+Neltec NH9300 (tm)
+Neltec NH9320 (tm)
+Neltec NH9338 (tm)
+Neltec NH9348 (tm)
+Neltec NH9350 (tm)
+Neltec NX9240 (tm)
+Neltec NX9245(IM) (tm)
+Neltec NX9294 (tm)
+Neltec NX9300(IM) (tm)
+Neltec NX9320(IM) (tm)
+Neltec NY9208(IM) (tm)
+Neltec NY9217(IM) (tm)
+Neltec NY9220(IM) (tm)
+Neltec NY9233(IM) (tm)
+Neltec NY9250(IM) (tm)
+Neltec NY9255(IM) (tm)
+Neltec NY9260(IM) (tm)
+Neorem Magnets - Neorem 512a
+Neorem Magnets - Neorem 512t
+Neorem Magnets - Neorem 537a
+Neorem Magnets - Neorem 537t
+Neorem Magnets - Neorem 553a
+Neorem Magnets - Neorem 553t
+Neorem Magnets - Neorem 576a
+Neorem Magnets - Neorem 576t
+Neorem Magnets - Neorem 591a
+Neorem Magnets - Neorem 591t
+Neorem Magnets - Neorem 593a
+Neorem Magnets - Neorem 593t
+Neorem Magnets - Neorem 595a
+Neorem Magnets - Neorem 595t
+Neorem Magnets - Neorem 597a
+Neorem Magnets - Neorem 597t
+Neorem Magnets - Neorem 599a
+Neorem Magnets - Neorem 599t
+Neorem Magnets - Neorem 712a
+Neorem Magnets - Neorem 712t
+Neorem Magnets - Neorem 737a
+Neorem Magnets - Neorem 737t
+Neorem Magnets - Neorem 737t mod
+Neorem Magnets - Neorem 753a
+Neorem Magnets - Neorem 753t
+Neorem Magnets - Neorem 776a
+Neorem Magnets - Neorem 776t
+Neorem Magnets - Neorem 776t mod
+Neorem Magnets - Neorem 791a
+Neorem Magnets - Neorem 791t
+Neorem Magnets - Neorem 793a
+Neorem Magnets - Neorem 793a mod
+Neorem Magnets - Neorem 793t
+Neorem Magnets - Neorem 795a
+Neorem Magnets - Neorem 795t
+Neorem Magnets - Neorem 797a
+Neorem Magnets - Neorem 797t
+Neorem Magnets - Neorem 799a
+Neorem Magnets - Neorem 799t
+Neorem Magnets - Neorem 830a
+Neorem Magnets - Neorem 830t
+Neorem Magnets - Neorem 870a
+Neorem Magnets - Neorem 870t
+Neorem Magnets - Neorem 880a
+Neorem Magnets - Neorem 880t
+Neorem Magnets - Neorem 890a
+Neorem Magnets - Neorem 890t
+Neorem Magnets - Neorem tmod
+NGYC - 33EHT
+NGYC - 38SH
+NGYC - N40UHT
+NGYC - N42SH
+NGYC - N50
+Ni-Inconel
+Ni-Inconel-cast
+Ni-Monel
+Ni-Monel-cast
+Ni-Pure
+Ni-Pure_Ref
+Nickel alloy, Alloy 440
+Nickel alloy, CW-6MC, cast
+Nickel alloy, Duranickel Alloy 301
+Nickel alloy, Hastelloy C-276
+Nickel alloy, Hastelloy X
+Nickel alloy, Haynes 230
+Nickel alloy, Haynes C263
+Nickel alloy, IN-939, cast
+Nickel alloy, Incoloy 800
+Nickel alloy, Incoloy 901
+Nickel alloy, Inconel 600
+Nickel alloy, Inconel 625
+Nickel alloy, Inconel 713, cast
+Nickel alloy, Inconel 718, solution treated
+Nickel alloy, Inconel 718, solution treated & aged
+Nickel alloy, Invar
+Nickel alloy, Monel 400, hard
+Nickel alloy, Monel K-500
+Nickel alloy, Nichrome V, annealed
+Nickel alloy, Nichrome, annealed
+Nickel alloy, Nimonic 80A
+Nickel alloy, Nimonic 90
+Nickel alloy, Rene 41
+Nickel alloy, Udimet 500
+Nickel alloy, Waspaloy
+nickel, DC
+Nickel, pure, grade 200, hard
+Nickel, pure, grade 200, soft
+Nickel-titanium alloy, austenitic
+Nickel-titanium alloy, martensitic
+Niobium, pure
+Nippon Steel - 15HX1000
+Nippon Steel - 20HX1200
+Nippon Steel - 20HX1300
+Nippon Steel - 23ZDKH75
+Nippon Steel - 23ZDKH80
+Nippon Steel - 23ZDKH85
+Nippon Steel - 23ZDKH90
+Nippon Steel - 23ZDMH80
+Nippon Steel - 23ZDMH85
+Nippon Steel - 23ZDMH90
+Nippon Steel - 23ZH100
+Nippon Steel - 23ZH85
+Nippon Steel - 23ZH90
+Nippon Steel - 23ZH95
+Nippon Steel - 27HX1500
+Nippon Steel - 27HX1800
+Nippon Steel - 27Z120
+Nippon Steel - 27Z130
+Nippon Steel - 27ZDKH85
+Nippon Steel - 27ZDKH90
+Nippon Steel - 27ZDKH95
+Nippon Steel - 27ZH100
+Nippon Steel - 27ZH110
+Nippon Steel - 27ZH90
+Nippon Steel - 27ZH95
+Nippon Steel - 30HX1600
+Nippon Steel - 30HX1800
+Nippon Steel - 30Z120
+Nippon Steel - 30Z130
+Nippon Steel - 30ZH100
+Nippon Steel - 30ZH105
+Nippon Steel - 30ZH110
+Nippon Steel - 30ZH95
+Nippon Steel - 35H210
+Nippon Steel - 35H230
+Nippon Steel - 35H250
+Nippon Steel - 35H270
+Nippon Steel - 35H300
+Nippon Steel - 35H360
+Nippon Steel - 35H440
+Nippon Steel - 35HX230
+Nippon Steel - 35HX250
+Nippon Steel - 35HX300
+Nippon Steel - 35PN210
+Nippon Steel - 35PN230
+Nippon Steel - 35PN250
+Nippon Steel - 35PN270
+Nippon Steel - 35PN300
+Nippon Steel - 35PN360
+Nippon Steel - 35PN440
+Nippon Steel - 35Z135
+Nippon Steel - 35Z145
+Nippon Steel - 35Z155
+Nippon Steel - 35ZH110
+Nippon Steel - 35ZH115
+Nippon Steel - 35ZH125
+Nippon Steel - 35ZH135
+Nippon Steel - 50H1000
+Nippon Steel - 50H1300
+Nippon Steel - 50H230
+Nippon Steel - 50H250
+Nippon Steel - 50H270
+Nippon Steel - 50H290
+Nippon Steel - 50H310
+Nippon Steel - 50H350
+Nippon Steel - 50H400
+Nippon Steel - 50H470
+Nippon Steel - 50H600
+Nippon Steel - 50H700
+Nippon Steel - 50H800
+Nippon Steel - 50HX290
+Nippon Steel - 50HX350
+Nippon Steel - 50HX470
+Nippon Steel - 50HX600
+NipponPillar_NPC-F220A-0.127
+NipponPillar_NPC-F220A-0.254
+NipponPillar_NPC-F260A-0.1
+NipponPillar_NPC-F260A-0.2
+NipponPillar_NPC-F260A-0.4
+NipponPillar_NPC-F260A-0.5
+NipponPillar_NPC-H220A-0.4
+NipponPillar_NPC-H220A-0.5
+NipponPillar_NPC-H220A-0.6
+Nitrogen
+Nitrogen gas
+Nitrogen(@300K)
+NLMK - 3407, .27mm, B-H at 50Hz
+NLMK - 3407, .30mm, B-H at 50Hz
+NLMK - 3407, .35mm, B-H at 50Hz
+NLMK - 3408, .27mm, B-H at 50Hz
+NLMK - 3408, .30mm, B-H at 50Hz
+NLMK - NV23P-95, B-H at 50Hz
+NLMK - NV23P-95, B-H at 60Hz
+NLMK - NV23S-100, B-H at 50Hz
+NLMK - NV23S-100, B-H at 60Hz
+NLMK - NV23S-100L, B-H at 50Hz
+NLMK - NV23S-100L, B-H at 60Hz
+NLMK - NV23S-110, B-H at 50Hz
+NLMK - NV23S-110, B-H at 60Hz
+NLMK - NV23S-120, B-H at 50Hz
+NLMK - NV23S-120, B-H at 60Hz
+NLMK - NV23S-95L, B-H at 50Hz
+NLMK - NV23S-95L, B-H at 60Hz
+NLMK - NV27P-100, B-H at 50Hz
+NLMK - NV27P-100, B-H at 60Hz
+NLMK - NV27S-100L, B-H at 50Hz
+NLMK - NV27S-100L, B-H at 60Hz
+NLMK - NV27S-105, B-H at 50Hz
+NLMK - NV27S-105, B-H at 60Hz
+NLMK - NV27S-105L, B-H at 50Hz
+NLMK - NV27S-105L, B-H at 60Hz
+NLMK - NV27S-110, B-H at 50Hz
+NLMK - NV27S-110, B-H at 60Hz
+NLMK - NV27S-120, B-H at 50Hz
+NLMK - NV27S-120, B-H at 60Hz
+NLMK - NV27S-130, B-H at 50Hz
+NLMK - NV27S-130, B-H at 60Hz
+NLMK - NV30S-110, B-H at 50Hz
+NLMK - NV30S-110, B-H at 60Hz
+NLMK - NV30S-110L, B-H at 50Hz
+NLMK - NV30S-110L, B-H at 60Hz
+NLMK - NV30S-120, B-H at 50Hz
+NLMK - NV30S-120, B-H at 60Hz
+NLMK - NV30S-130, B-H at 50Hz
+NLMK - NV30S-130, B-H at 60Hz
+NLMK - NV35S-120, B-H at 50Hz
+NLMK - NV35S-120, B-H at 60Hz
+NLMK - NV35S-130, B-H at 50Hz
+NLMK - NV35S-130, B-H at 60Hz
+NLMK - NV35S-145, B-H at 50Hz
+NLMK - NV35S-145, B-H at 60Hz
+Nylon-glass filled
+Nylon-Nylon-6
+Nylon-Nylon-66
+Nylon-polycaprolactam
+Osmium, pure
+Oxygen
+Oxygen gas
+Oxygen(@300k)
+Pad_material
+palladium
+Palladium, pure
+Panasonic - MEGTRON 6 (N), Core, 1x2013, 3.9 mil
+Panasonic - MEGTRON 6 (N), Prepreg, 2013, 3.858 mil
+Panasonic - MEGTRON 7 (GN), Core, 1x1035, 2 mil
+Panasonic - MEGTRON 7 (GN), Prepreg, 1035, 2.362 mil
+Panasonic - MEGTRON 8 (N), Core, 2013x1, 3.9 mil
+Panasonic - MEGTRON 8 (N), Prepreg, 2013, 4.331 mil
+Paper (cellulose based)
+PCB laminate, Bismaleimide-Triazine
+PCB laminate, Composite Epoxy Material, CEM-1
+PCB laminate, Composite Epoxy Material, CEM-3
+PCB laminate, Epoxy/Aramid
+PCB laminate, Epoxy/Glass fiber, FR-4.0 (Df < 0.02 at 10GHz)
+PCB laminate, Epoxy/Glass fiber, FR-4.0 (Df > 0.02 at 10GHz)
+PCB laminate, Epoxy/Glass fiber, FR-5
+PCB laminate, Phenolic/Paper, FR-1
+PCB laminate, Phenolic/Paper, FR-2
+PCB laminate, Polyamide (PI)
+PCB laminate, Polyphenylene oxide (PPO)
+PCB laminate, PTFE
+PCB laminate, PTFE/Ceramic
+PCB laminate, PTFE/Glass fiber
+pec
+perfect conductor
+Phenol Resin-JSME
+Plastic
+Plastic, ABS
+Plastic, ABS (10% carbon fiber)
+Plastic, ABS (15-20% stainess steel fiber)
+Plastic, ABS (20% glass fiber)
+Plastic, ABS (30% carbon fiber, flame retarded)
+Plastic, ABS (30% glass fiber)
+Plastic, ABS (flame retarded)
+Plastic, ABS (high-impact)
+Plastic, ABS (medium-impact)
+Plastic, ABS+PC
+Plastic, ABS+PC (15% stainless steel fiber, flame retarded)
+Plastic, ABS+PC (flame retarded)
+Plastic, Acrylic (PMMA)
+Plastic, ASA
+Plastic, bisphenol epoxy molding compound (mineral filler)
+Plastic, CA
+Plastic, Epoxy (glass filler)
+Plastic, Epoxy resin
+Plastic, Epoxy resin (cycloaliphatic)
+Plastic, Epoxy resin (flexibilized)
+Plastic, Epoxy resin (heat resistant)
+Plastic, EVA (Shore A65, 33% vinyl acetate)
+Plastic, EVA (Shore A85, 25% vinyl acetate)
+Plastic, EVA (Shore A95/D50, 12% vinyl acetate)
+Plastic, FEP
+Plastic, HDPE
+Plastic, HDPE (20-30% long glass fiber)
+Plastic, HDPE (30% glass fiber)
+Plastic, HDPE (high molecular weight)
+Plastic, HDPE (low/medium molecular weight)
+Plastic, LCP
+Plastic, LCP (30% carbon fiber)
+Plastic, LCP (30% glass fiber)
+Plastic, LCP (30% mineral filled)
+Plastic, LDPE
+Plastic, LLDPE
+Plastic, MDPE
+Plastic, PA11 (flexible)
+Plastic, PA11 (rigid)
+Plastic, PA12 (30% glass fiber)
+Plastic, PA12 (flexible)
+Plastic, PA12 (rigid)
+Plastic, PA6
+Plastic, PA6 (30-35% glass fiber)
+Plastic, PA6 (cast)
+Plastic, PA6 (lubricated)
+Plastic, PA612
+Plastic, PA66
+Plastic, PA66 (10% carbon fiber, 25% glass fiber)
+Plastic, PA66 (20% carbon fiber)
+Plastic, PA66 (30-33% glass fiber)
+Plastic, PA66 (40-45% mineral filled)
+Plastic, PA66/6 (30% glass fiber)
+Plastic, PA66/6 (molding)
+Plastic, PAI
+Plastic, PAI (30% carbon fiber)
+Plastic, PARA (50% glass fiber)
+Plastic, PARA (unfilled)
+Plastic, PBT
+Plastic, PBT (30% glass fiber)
+Plastic, PC (30% PTFE, lubricated)
+Plastic, PC (40% carbon fiber)
+Plastic, PC (50% long glass fiber)
+Plastic, PC (copolymer, heat resistant)
+Plastic, PC (high viscosity)
+Plastic, PC (low viscosity)
+Plastic, PC (low viscosity, flame retarded)
+Plastic, PE (cross-linked)
+Plastic, PE (cross-linked, wire and cable grade)
+Plastic, PEEK (40% carbon fiber)
+Plastic, PEEK (unfilled)
+Plastic, PEI
+Plastic, PEI (40% glass fiber)
+Plastic, PESU
+Plastic, PESU (30% carbon fiber)
+Plastic, PET (15% glass fiber)
+Plastic, PET (30% glass fiber)
+Plastic, PET (35% glass fiber/mineral, recycled)
+Plastic, PET (45% glass fiber, recycled content)
+Plastic, PET (amorphous)
+Plastic, PET (semi-crystalline)
+Plastic, PF (casting resin)
+Plastic, PF (cellulose filled, impact modified)
+Plastic, PF (glass fiber filled)
+Plastic, PF (glass/mineral filled, heat resistant)
+Plastic, PF (woodflour filled)
+Plastic, PFA
+Plastic, PHA
+Plastic, PI (thermoplastic)
+Plastic, PI (thermoset)
+Plastic, PLA
+Plastic, PLA (30% natural fiber)
+Plastic, PLA (high heat)
+Plastic, PLA (high impact)
+Plastic, PMMA (cast sheet)
+Plastic, PMMA (impact modified)
+Plastic, Polyester (cast, flexible)
+Plastic, Polyester (cast, rigid)
+Plastic, POM (copolymer 10% carbon fiber 10% PTFE)
+Plastic, POM (copolymer)
+Plastic, POM (copolymer, UV stabilized)
+Plastic, POM (homopolymer)
+Plastic, POM (homopolymer, UV stabilized)
+Plastic, PP (10% carbon fiber)
+Plastic, PP (10% glass fiber)
+Plastic, PP (20% glass fiber)
+Plastic, PP (30% glass fiber)
+Plastic, PP (30% long glass fiber)
+Plastic, PP (40% long glass fiber)
+Plastic, PP (50% long glass fiber)
+Plastic, PP (65-70% barium sulfate)
+Plastic, PP (copolymer, 20% talc)
+Plastic, PP (copolymer, 40% talc)
+Plastic, PP (homopolymer, 20% talc)
+Plastic, PP (homopolymer, 40% talc)
+Plastic, PP (homopolymer, clarified/nucleated)
+Plastic, PP (homopolymer, flame retarded)
+Plastic, PP (homopolymer, high flow)
+Plastic, PP (homopolymer, low flow)
+Plastic, PP (impact copolymer, high flow)
+Plastic, PP (impact copolymer, UV stabilized)
+Plastic, PP (random copolymer, clarified)
+Plastic, PP (random copolymer, high flow)
+Plastic, PP (random copolymer, low flow)
+Plastic, PPA
+Plastic, PPA (50% carbon fiber)
+Plastic, PPA (50% glass fiber)
+Plastic, PPE+PS alloy (15% glass fiber)
+Plastic, PPE+PS alloy (low glass transition)
+Plastic, PPS
+Plastic, PPS (40% carbon fiber)
+Plastic, PPS (60% long glass fiber)
+Plastic, PPSU
+Plastic, PS (20% glass fiber)
+Plastic, PS (general purpose, crystal)
+Plastic, PS (heat resistant)
+Plastic, PS (high impact)
+Plastic, PSU
+Plastic, PTFE
+Plastic, PTFE (25% glass fiber)
+Plastic, PUR (casting resin, unsaturated)
+Plastic, PVC (20% glass fiber)
+Plastic, PVC (chlorinated)
+Plastic, PVC (flexible, Shore A60)
+Plastic, PVC (flexible, Shore A85)
+Plastic, PVC (rigid)
+Plastic, PVC (rigid, high impact)
+Plastic, PVDF (copolymer, cable jacketing)
+Plastic, PVDF (homopolymer)
+Plastic, SAN
+Plastic, SAN (20% glass fiber)
+Plastic, silicone molding compound (50-70% glass fiber)
+Plastic, SRP
+Plastic, Thermoplastic starch (plasticized)
+Plastic, TPU (rigid)
+Plastic, TPU rigid (60% long glass fiber)
+Plastic, UHMWPE
+platinum
+Platinum, pure
+plexiglass
+PMG - S280b
+PMG - S300b
+PMG - S400b
+PMG - S720
+PMG - STestb
+polyamide
+Polycarbonate-JSME
+polyester
+polyethylene
+Polyethylene Resin-JSME
+Polyflon Copper-Clad ULTEM (tm)
+Polyflon CuFlon (tm)
+Polyflon Polyguide (tm)
+Polyflon_NorCLAD (tm)
+polyimide
+polyimideQuartz
+Polypropylene-JSME
+polystyrene
+Polystyrene-JSME
+Polystyrene-rigid-R12
+Polystyrene-Typical
+porcelain
+Porcelain, clay-based
+POSCO - 23PH090
+POSCO - 23PH095
+POSCO - 23PHD085
+POSCO - 27PG130
+POSCO - 27PH100
+POSCO - 27PHD090
+POSCO - 30PG120
+POSCO - 30PG130
+POSCO - 30PG140
+POSCO - 30PH105
+POSCO - 35PG145
+POSCO - 35PG155
+POSCO - 35PN210
+POSCO - 35PN230
+POSCO - 35PN250
+POSCO - 35PN270
+POSCO - 35PN300
+POSCO - 35PN360
+POSCO - 35PN440
+POSCO - 50PN1300
+POSCO - 50PN250
+POSCO - 50PN270
+POSCO - 50PN290
+POSCO - 50PN310
+POSCO - 50PN350
+POSCO - 50PN400
+POSCO - 50PN470
+POSCO - 50PN600
+POSCO - 50PN700
+POSCO - 50PN800
+Press-hardening steel, 22MnB5, coated
+Press-hardening steel, 22MnB5, uncoated
+Propylene glycol 20
+Propylene glycol 30
+Propylene glycol 34
+Propylene glycol 40
+Propylene glycol 50
+Propylene glycol 60
+Propylene glycol 80
+Pt-Typical
+Pt-Typical_Ref
+PVC plastic
+quartz_glass
+Refrigerant, FC-3283
+Refrigerant, FC-40
+Refrigerant, FC-43
+Refrigerant, FC-72
+Refrigerant, FC-75
+Refrigerant, FC-78
+Refrigerant, FC-88
+Refrigerant, Freon C-51-12
+Refrigerant, Freon E5
+Refrigerant, Freon TF
+Resonac (Hitachi) - GIA-671N(H), Prepreg, 1080, 3.74 mil
+Resonac (Hitachi) - GIA-671N(T), Prepreg, 1080, 3.268 mil
+Resonac (Hitachi) - MCL-E-705G(L), Core, 2116x4, 16.142 mil
+Resonac (Hitachi) - MCL-E-705G(L), Core, 2116x8, 32.283 mil
+Resonac (Hitachi) - MCL-E-705G(LH), Core, 2118x12, 50 mil
+Resonac (Hitachi) - MCL-I-671N, Core, 1080, 2.5 mil
+Resonac (Hitachi) - MCL-I-671N, Core, 1080, 3 mil
+Resonac (Hitachi) - SR-F, Solder Resist, 0.787 mil
+Rhenium, pure
+rhodium
+Rhodium, pure
+Risheng Magnets - 35AH
+Risheng Magnets - 38EH
+Rogers - AD1000 ED, Core, 10mil
+Rogers - AD255C-IM RT ED, Core, 60mil
+Rogers - RO3003 ED, Core, 10mil
+Rogers - RO3010 ED, Core, 50mil
+Rogers - RO4003C LoPro, Core, 2x1080, 8.7 mil
+Rogers - RO4003C LoPro, Core, 2x1674, 16.7 mil
+Rogers - RO4003C LoPro, Core, 2x1674/1080, 20.7 mil
+Rogers - RO4003C LoPro, Core, 3x1080, 12.7 mil
+Rogers - RO4003C LoPro, Core, 4x1674, 32.7 mil
+Rogers - RO4003C LoPro, Core, 7x1674/1x1080, 60.7 mil
+Rogers - RO4003C, Core, 2x1080, 8 mil
+Rogers - RO4003C, Core, 2x1674, 16 mil
+Rogers - RO4003C, Core, 2x1674/1080, 20 mil
+Rogers - RO4003C, Core, 3x1080, 12 mil
+Rogers - RO4003C, Core, 4x1674, 32 mil
+Rogers - RO4003C, Core, 7x1674/1x1080, 60 mil
+Rogers - RO4350B LoPro, Core, 1080, 4 mil
+Rogers - RO4350B LoPro, Core, 18x1080, 60.7 mil
+Rogers - RO4350B LoPro, Core, 2x1080, 7.3 mil
+Rogers - RO4350B LoPro, Core, 3x1080, 10.7 mil
+Rogers - RO4350B LoPro, Core, 4x1080, 14 mil
+Rogers - RO4350B LoPro, Core, 5x1080, 17.3 mil
+Rogers - RO4350B LoPro, Core, 6x1080, 20.7 mil
+Rogers - RO4350B LoPro, Core, 9x1080, 30.7 mil
+Rogers - RO4350B, Core, 1080, 4 mil
+Rogers - RO4350B, Core, 18x1080, 60 mil
+Rogers - RO4350B, Core, 2x1080, 6.6 mil
+Rogers - RO4350B, Core, 3x1080, 10 mil
+Rogers - RO4350B, Core, 4x1080, 13.3 mil
+Rogers - RO4350B, Core, 5x1080, 16.6 mil
+Rogers - RO4350B, Core, 6x1080, 20 mil
+Rogers - RO4350B, Core, 9x1080, 30 mil
+Rogers - RO4360G2, Core, 15x1080, 60 mil
+Rogers - RO4360G2, Core, 2x1080, 8 mil
+Rogers - RO4360G2, Core, 3x1080, 12 mil
+Rogers - RO4360G2, Core, 4x1080, 16 mil
+Rogers - RO4360G2, Core, 5x1080, 20 mil
+Rogers - RO4360G2, Core, 6x1080, 24 mil
+Rogers - RO4360G2, Core, 8x1080, 32 mil
+Rogers - RO4533, Core, 3x1674, 30.7 mil
+Rogers - RO4533, Core, 6x1674, 60.7 mil
+Rogers - RO4534, Core, 4x1674, 32.7 mil
+Rogers - RO4534, Core, 7x1674/1x1080, 60.7 mil
+Rogers - RO4535, Core, 3x1674, 30 mil
+Rogers - RO4535, Core, 6x1674, 60 mil
+Rogers - RO4725JXR, Core, 2x1674, 30.7 mil
+Rogers - RO4725JXR, Core, 4x1674, 60.7 mil
+Rogers - RO4730G3, Core, 12x1080, 60.7 mil
+Rogers - RO4730G3, Core, 4x1080, 20.7 mil
+Rogers - RO4730G3, Core, 6x1080, 30.7 mil
+Rogers - RO4730G3, Core, 8x1080, 40.7 mil
+Rogers - RO4730JXR, Core, ED Cu, 20.7 mil
+Rogers - RO4730JXR, Core, ED Cu, 30.7 mil
+Rogers - RO4730JXR, Core, ED Cu, 40.7 mil
+Rogers - RO4730JXR, Core, ED Cu, 60.7 mil
+Rogers - RO4830, Core, 1x1035, 5 mil
+Rogers - RO4830, Core, 2x1035, 9.4 mil
+Rogers - RO4835 LoPro, Core, 1080, 4 mil
+Rogers - RO4835 LoPro, Core, 18x1080, 60.7 mil
+Rogers - RO4835 LoPro, Core, 2x1080, 7.3 mil
+Rogers - RO4835 LoPro, Core, 3x1080, 10.7 mil
+Rogers - RO4835 LoPro, Core, 4x1080, 14 mil
+Rogers - RO4835 LoPro, Core, 5x1080, 17.3 mil
+Rogers - RO4835 LoPro, Core, 6x1080, 20.7 mil
+Rogers - RO4835 LoPro, Core, 9x1080, 30.7 mil
+Rogers - RO4835, Core, 1080, 4 mil
+Rogers - RO4835, Core, 18x1080, 60 mil
+Rogers - RO4835, Core, 2x1080, 6.6 mil
+Rogers - RO4835, Core, 3x1080, 10 mil
+Rogers - RO4835, Core, 4x1080, 13.3 mil
+Rogers - RO4835, Core, 5x1080, 16.6 mil
+Rogers - RO4835, Core, 6x1080, 20 mil
+Rogers - RO4835, Core, 9x1080, 30 mil
+Rogers - RO4835T, Core, 1x1035, 3 mil
+Rogers - RO4835T, Core, 1x106, 2.5 mil
+Rogers - RO4835T, Core, 1x1065, 4 mil
+Rogers RO3003 (tm)
+Rogers RO3006 (tm)
+Rogers RO3010 (tm)
+Rogers RO3203 (tm)
+Rogers RO3210 (tm)
+Rogers RO4003 (tm)
+Rogers RO4232 (tm)
+Rogers RO4350 (tm)
+Rogers RT/duroid 5870 (tm)
+Rogers RT/duroid 5880 (tm)
+Rogers RT/duroid 6002 (tm)
+Rogers RT/duroid 6006 (tm)
+Rogers RT/duroid 6010/6010LM (tm)
+Rogers TMM 10 (tm)
+Rogers TMM 10i (tm)
+Rogers TMM 3 (tm)
+Rogers TMM 4 (tm)
+Rogers TMM 6 (tm)
+Rogers Ultralam 1250 (tm)
+Rogers Ultralam 1300 (tm)
+Rogers Ultralam 2000 (tm)
+Rogers Ultralam1217 (tm)
+Rubber, butyl (IIR)
+Rubber, butyl (IIR, 30-50% carbon black)
+Rubber, ethylene propylene (diene) (EPDM/EPM)
+Rubber, fluoroelastomer (FKM)
+Rubber, natural
+Rubber, natural (15-42% carbon black)
+Rubber, Neoprene (polychloroprene)
+Rubber, Neoprene (polychloroprene, carbon black)
+Rubber, nitrile (NBR)
+Rubber, nitrile, hydrogenated (HNBR)
+Rubber, polyisoprene
+Rubber, polyurethane
+Rubber, PVC-elastomer (Shore A35)
+Rubber, SEBS (Shore A65)
+Rubber, silicone (thermal interface material)
+Rubber, silicone (VMQ)
+Rubber, silicone (VMQ, thermally conductive)
+Rubber, styrene butadiene (SBR)
+Rubber, styrene butadiene (SBR, 30% carbon black)
+Rubber, TPC (Shore D40)
+Rubber, TPC (Shore D70)
+Rubber, TPO (PP+EPDM, Shore D50)
+Rubber, TPU (Ester, aromatic, 40% glass fiber)
+Rubber, TPU (Ester, aromatic, Shore A85/D35)
+Rubber, TPV (PP+EPDM, Shore A70)
+Rubber-buna-carbon black
+Rubber-natural
+Rubber-Plyspr natural
+Rubber-Polyisoprene-hard
+rubber_hard
+Ruber-dielectric
+Rusteel - 2112, Along, B-H at 50Hz
+Rusteel - 2112, Mixed, B-H at 50Hz
+Rusteel - 2212, Mixed, B-H at 50Hz
+Rusteel - 2312, Along, B-H at 50Hz
+Rusteel - 2312, Mixed, B-H at 50Hz
+Rusteel - 2312, Transverse, B-H at 50Hz
+Rusteel - 2412, Along, B-H at 50Hz
+Rusteel - M530, Along, B-H at 50Hz
+SABIC - LEXAN Copolymer EXL9134 - Americas - PC
+SABIC - LEXAN Copolymer EXL9134 - Asia - PC
+SABIC - LEXAN Copolymer EXL9134 - Europe - PC
+SABIC - LEXAN Copolymer EXL9330 - Americas - PC
+SABIC - LEXAN Copolymer EXL9330 - Asia - PC
+SABIC - LEXAN Copolymer EXL9330 - Europe - PC
+SABIC - LNP STAT-KON Compound DX04490R - PC
+SABIC - LNP THERMOCOMP Compound Z1C00I - PPE+PS
+SABIC - LNP THERMOCOMP Compound ZKC04 - PPE+SEBS
+SABIC - LNP THERMOCOMP Compound ZKC08 - PPE+PS
+SABIC - ULTEM Resin 1000 - PEI
+SABIC - ULTEM Resin 1010 - PEI
+SABIC - ULTEM Resin 2300 - PEI
+SABIC - ULTEM Resin 3452 - Americas - PEI
+SABIC - ULTEM Resin 3452 - Asia - PEI
+SABIC - ULTEM Resin 3452 - Europe - PEI
+Sandstone
+sapphire
+Sapphire (aluminum oxide)
+Seiko - DM16
+Seiko - DM18
+Seiko - DM20
+Seiko - DM22
+Seiko - DM26
+Seiko - DM30
+Selenium, pure
+Semiconductor, Aluminum nitride, AlN
+Semiconductor, Antimony telluride, Sb2Te3 p-type
+Semiconductor, Barium titanate, BaTiO3
+Semiconductor, Bismuth telluride, Bi2Te3 n-type
+Semiconductor, Cadmium telluride, CdTe
+Semiconductor, Gallium arsenide, GaAs
+Semiconductor, Gallium nitride, GaN
+Semiconductor, Gallium phosphide, GaP
+Semiconductor, Indium antimonide, InSb
+Semiconductor, Lead Telluride, PbTe n-type
+Semiconductor, Silicon carbide (sintered), SiC
+Semiconductor, Silicon germanium, Si0.8Ge0.2
+Semiconductor, Tantalum nitride, TaN
+Semiconductor, Zinc oxide, ZnO
+Sheldahl ComClad HF (tm)
+Shengyi - Autolad2G, Core, 7628, 7 mil
+Shengyi - Autolad2G, Prepreg, 7628, 7.1 mil
+Shengyi - S1170G, Core, 1x106, 2 mil
+Shengyi - S1170G, Prepreg, 106, 2 mil
+Shengyi - Synamic 6, Core, 1*1080, 3.5 mil
+Shengyi - Synamic 6, Prepreg, 1080, 3.5 mil
+Shengyi - Synamic8GN, Core, 1x1078, 3.5 mil
+Shengyi - Synamic8GN, Prepreg, 1078, 3.7 mil
+Shin-Etsu - N32EZ
+Shin-Etsu - N36Z
+Shin-Etsu - N37EZ-G
+Shin-Etsu - N37UZ
+Shin-Etsu - N39MZ-G
+Shin-Etsu - N39UH
+Shin-Etsu - N41TS-R
+Shin-Etsu - N41TU
+Shin-Etsu - N41Z-GR
+Shin-Etsu - N42SH-R
+Shin-Etsu - N42UZ-GR
+Shin-Etsu - N43TS
+Shin-Etsu - N44AS-R
+Shin-Etsu - N44TU-R
+Shin-Etsu - N47TH-R
+Shin-Etsu - N47TS-GF
+Shin-Etsu - N47UH-GR
+Shin-Etsu - N48H-F
+Shin-Etsu - N49H
+Shin-Etsu - N49M
+Shin-Etsu - R26H
+Shin-Etsu - R26HE
+Shin-Etsu - R26HS
+Shin-Etsu - R30
+Shin-Etsu - R32HS
+Shin-Etsu - R33H
+Si-Typical
+Si-Typical_Ref
+SiC-kt grade
+SiC-single xtal
+SiC-slf bnd_ he atm
+silicon
+Silicon nitride (HIP), Si3N4
+Silicon, pure
+silicon_dioxide
+silicon_nitrate
+Silicone Resin-JSME
+silver
+Silver, pure
+Sintex - B7
+Sintex - B7X
+Sintex - M7
+Sintex - S10
+Sintex - S7
+Sintex - S7b
+Slate
+Smart Magnets - Y30
+Smart Magnets - Y30H-1
+Smart Magnets - Y33
+SmCo24
+SmCo28
+SMP - SMP 1172
+SMP - SMP 1182
+SMP - SMP 1192
+SMP - SMP 1220
+SMP - SMP 1230
+SMP - SMP 1321
+Sodium chloride (NaCl, halite)
+solder
+Solder Alloy 99C Sn-0.7Cu
+Solder Castin-TM Sn-2.5Ag-0.8Cu-0.5Sb
+Solder Ecosol TSC Sn-3.8Ag-0.7Cu
+Solder Eutectic Sn-37 Pb
+Solder Lead-Free Sn-3.5Ag
+Solder Lead-Free Sn-3.5Ag-0.7Cu
+Solder, bismuth-tin (58-42)
+Solder, gold-germanium (88-12)
+Solder, gold-tin (80-20)
+Solder, indium-silver (97-3)
+Solder, indium-tin (52-48)
+Solder, lead-indium (50-50)
+Solder, lead-indium (81-19)
+Solder, lead-tin (50-50)
+Solder, lead-tin (90-10)
+Solder, lead-tin-antimony (85-5-10)
+Solder, tin-antimony (95-5)
+Solder, tin-copper (97-3)
+Solder, tin-lead (60-40)
+Solder, tin-lead (63-37)
+Solder, tin-lead (80-20)
+Solder, tin-lead, (95-5)
+Solder, tin-lead-silver (62-36-2)
+Solder, tin-silver (96.5-3.5)
+Solder, tin-silver-copper (95.5-3.8-0.7)
+Solder, tin-silver-copper (96-2.5-0.8)
+Solder, tin-zinc (91-9)
+Solder, tin-zinc-gallium (90.5-9-0.5)
+Solder, zinc-aluminum (96-4)
+Solder-pb37.5_sn37.5_in25
+Solder-pb39.2_sn60.8
+Solder-pb50_sn50
+SolderMask
+Spacemagnets - HT-N10
+Spacemagnets - HT-N10H
+Spacemagnets - HT-N10S
+Spacemagnets - HT-N12
+Spacemagnets - HT-N12S
+Spacemagnets - HT-N8L
+Spacemagnets - HTY38H
+Spacemagnets - HTY40
+Spacemagnets - HTY40-1
+Spacemagnets - HTY40N
+Spacemagnets - HTY45E
+STABLCOR_ST10
+STABLCOR_ST175
+STABLCOR_ST250
+STABLCOR_ST325
+STABLCOR_ST500
+Stainless steel, 15-5PH, H1100
+Stainless steel, 17-4PH, cast, H1100
+Stainless steel, 17-4PH, H1100
+Stainless steel, 17-7PH, TH1050
+Stainless steel, 201, 1/2 hard
+Stainless steel, 201, full hard
+Stainless steel, 205, annealed
+Stainless steel, 2205, annealed
+Stainless steel, 301, 1/2 hard
+Stainless steel, 301, annealed
+Stainless steel, 301, full hard
+Stainless steel, 302, annealed
+Stainless steel, 302, grade D
+Stainless steel, 304, 1/2 hard
+Stainless steel, 304, 1/4 hard
+Stainless steel, 304, annealed
+Stainless steel, 304L, annealed
+Stainless steel, 304LN, annealed
+Stainless steel, 310, annealed
+Stainless steel, 314, annealed
+Stainless steel, 316, annealed
+Stainless steel, 316L, annealed
+Stainless steel, 316LN, annealed
+Stainless steel, 316Ti, annealed
+Stainless steel, 403, annealed
+Stainless steel, 409, annealed
+Stainless steel, 410, annealed
+Stainless steel, 410, hardened & tempered
+Stainless steel, 420, hardened & tempered
+Stainless steel, 430, annealed
+Stainless steel, 440A, hardened & tempered
+Stainless steel, 440B, hardened & tempered
+Stainless steel, 440C, hardened & tempered
+Stainless steel, 444, annealed
+Stainless steel, 446, annealed
+Stainless steel, ASTM CA-15, cast
+Stainless steel, ASTM CA-6NM, cast
+Stainless steel, ASTM CB-30, cast
+Stainless steel, ASTM CE-30, cast
+Stainless steel, ASTM CF-12M, cast
+Stainless steel, BioDur 108, cold worked
+Stainless steel, Custom 450, solution treated
+Stainless steel, Custom 465, H950
+Steel-300m-high strength
+Steel-Carbon  [simple]
+Steel-Carbon-1020  [simple]
+Steel-Cast
+Steel-Chrome
+Steel-Chromenickel
+Steel-Nickel(10Ni)
+Steel-Stainless
+Steel-Stainless-300
+Steel-stainless-400
+steel_1008  [nonlinear]
+steel_1010  [nonlinear]
+steel_stainless  [simple]
+Structural steel, ASTM A106 Grade B
+Structural steel, ASTM A36  [structural, skipped]
+Structural steel, ASTM A500 Grade A
+Structural steel, ASTM A500 Grade B
+Structural steel, ASTM A500 Grade C
+Structural steel, ASTM A537 Class 1
+Structural steel, ASTM A992
+Structural steel, S235J
+Structural steel, S275J
+Structural steel, S275N
+Structural steel, S355J
+Substrate_material
+Sumitomo SMC - HB1, 20C
+Sumitomo SMC - HB2, 20C
+Sumitomo SMC - HB3, 20C
+Sumitomo SMC - HF1, 20C
+Sumitomo SMC - HF3, 20C
+Sumitomo SMC - HX1, 20C
+Sumitomo SMC - NM, 20C
+Sun Magnetic - Alnico 5
+Sun Magnetic - Alnico 8
+Sun Magnetic - Y10T
+Sun Magnetic - Y30
+Sun Magnetic - Y30BK
+Sun Magnetic - Y30K
+Sun Magnetic - Y35
+Sura Magnets - N25BH
+Sura Magnets - N28AH
+Sura Magnets - N28EH
+Sura Magnets - N28UH
+Sura Magnets - N30AH
+Sura Magnets - N30EH
+Sura Magnets - N30H
+Sura Magnets - N30SH
+Sura Magnets - N30UH
+Sura Magnets - N33AH
+Sura Magnets - N33EH
+Sura Magnets - N33H
+Sura Magnets - N33M
+Sura Magnets - N33SH
+Sura Magnets - N33UH
+Sura Magnets - N35
+Sura Magnets - N35EH
+Sura Magnets - N35H
+Sura Magnets - N35M
+Sura Magnets - N35SH
+Sura Magnets - N35UH
+Sura Magnets - N38
+Sura Magnets - N38EH
+Sura Magnets - N38H
+Sura Magnets - N38M
+Sura Magnets - N38SH
+Sura Magnets - N38UH
+Sura Magnets - N40
+Sura Magnets - N40H
+Sura Magnets - N40M
+Sura Magnets - N40SH
+Sura Magnets - N40UH
+Sura Magnets - N42
+Sura Magnets - N42H
+Sura Magnets - N42M
+Sura Magnets - N42SH
+Sura Magnets - N42UH
+Sura Magnets - N44H
+Sura Magnets - N44SH
+Sura Magnets - N45
+Sura Magnets - N45M
+Sura Magnets - N46H
+Sura Magnets - N46SH
+Sura Magnets - N48
+Sura Magnets - N48H
+Sura Magnets - N48M
+Sura Magnets - N50
+Sura Magnets - N50H
+Sura Magnets - N50M
+Sura Magnets - N52
+Sura Magnets - N52M
+Taconic - RF-35TC, Core, 10 mil
+Taconic - RF-35TC, Core, 20 mil
+Taconic - TLF-35A, Core, 30 mil
+Taconic - TLF-35A, Core, 60 mil
+Taconic CER-10 (tm)
+Taconic RF-30 (tm)
+Taconic RF-35 (tm)
+Taconic RF-60 (tm)
+Taconic TLC (tm)
+Taconic TLE (tm)
+Taconic TLT (tm)
+Taconic TLX (tm)
+Taconic TLY (tm)
+tantalum
+Tantalum alloy, Ta-10W
+Tantalum Nitride
+Tantalum, pure
+TC Magnets - 35AH
+TC Magnets - 35EH
+TC Magnets - 38UH
+TC Magnets - 45SH
+TC Magnets - 48H
+TC Magnets - 48M
+TCM - N35
+TCM - N38
+TCM - N40
+TCM - N42
+TCM - N45
+TCM - N50
+TDK - FB12B
+TDK - FB12H
+TDK - FB13B
+TDK - FB3G
+TDK - FB3N
+TDK - FB5D
+TDK - FB5DH
+TDK - FB9B
+TDK - FB9H
+TDK - FB9N
+TDK - NEOREC35NX
+TDK - NEOREC38UX
+TDK - NEOREC40TH
+TDK - NEOREC40UH
+TDK - NEOREC42SH
+TDK - NEOREC43SX
+TDK - NEOREC44DUX
+TDK - NEOREC45MHF
+TDK - NEOREC45SH
+TDK - NEOREC46HF
+TDK - NEOREC46HG
+TDK - NEOREC47HF
+TDK - NEOREC48DUH
+TDK - NEOREC50BF
+TDK - NEOREC51DSX
+TDK - PC40, 120C
+TDK - PC40, 25C
+TDK - PC44, 100C
+TDK - PC44, 120C
+TDK - PC44, 25C
+TDK - PC45, 100C
+TDK - PC45, 120C
+TDK - PC95, 120C
+TDK_FB12B_-20cel
+TDK_FB12B_-60cel
+TDK_FB12B_100cel
+TDK_FB12B_20cel
+TDK_FB12B_60cel
+TDK_FB12H_-20cel
+TDK_FB12H_-60cel
+TDK_FB12H_100cel
+TDK_FB12H_20cel
+TDK_FB12H_60cel
+TDK_FB13B_-20cel
+TDK_FB13B_-60cel
+TDK_FB13B_100cel
+TDK_FB13B_20cel
+TDK_FB13B_60cel
+TDK_FB3G_-20cel
+TDK_FB3G_-60cel
+TDK_FB3G_100cel
+TDK_FB3G_20cel
+TDK_FB3G_60cel
+TDK_FB3N_-20cel
+TDK_FB3N_-60cel
+TDK_FB3N_100cel
+TDK_FB3N_20cel
+TDK_FB3N_60cel
+TDK_FB5D_-20cel
+TDK_FB5D_-60cel
+TDK_FB5D_100cel
+TDK_FB5D_20cel
+TDK_FB5D_60cel
+TDK_FB5DH_-20cel
+TDK_FB5DH_-60cel
+TDK_FB5DH_100cel
+TDK_FB5DH_20cel
+TDK_FB5DH_60cel
+TDK_FB6B_-20cel
+TDK_FB6B_-60cel
+TDK_FB6B_100cel
+TDK_FB6B_20cel
+TDK_FB6B_60cel
+TDK_FB6E_-20cel
+TDK_FB6E_-60cel
+TDK_FB6E_100cel
+TDK_FB6E_20cel
+TDK_FB6E_60cel
+TDK_FB6H_-20cel
+TDK_FB6H_-60cel
+TDK_FB6H_100cel
+TDK_FB6H_20cel
+TDK_FB6H_60cel
+TDK_FB6N_-20cel
+TDK_FB6N_-60cel
+TDK_FB6N_100cel
+TDK_FB6N_20cel
+TDK_FB6N_60cel
+TDK_FB9B_-20cel
+TDK_FB9B_-60cel
+TDK_FB9B_100cel
+TDK_FB9B_20cel
+TDK_FB9B_60cel
+TDK_FB9BF_-20cel
+TDK_FB9BF_-60cel
+TDK_FB9BF_100cel
+TDK_FB9BF_20cel
+TDK_FB9BF_60cel
+TDK_FB9H_-20cel
+TDK_FB9H_-60cel
+TDK_FB9H_100cel
+TDK_FB9H_20cel
+TDK_FB9H_60cel
+TDK_FB9HF_-20cel
+TDK_FB9HF_-60cel
+TDK_FB9HF_100cel
+TDK_FB9HF_20cel
+TDK_FB9HF_60cel
+TDK_FB9N_-20cel
+TDK_FB9N_-60cel
+TDK_FB9N_100cel
+TDK_FB9N_20cel
+TDK_FB9N_60cel
+TDK_FB9NF_-20cel
+TDK_FB9NF_-60cel
+TDK_FB9NF_100cel
+TDK_FB9NF_20cel
+TDK_FB9NF_60cel
+TDK_HS10_100cel
+TDK_HS10_100cel_BH
+TDK_HS10_25cel
+TDK_HS10_25cel_BH
+TDK_HS10_60cel
+TDK_HS10_60cel_BH
+TDK_HS12_100cel
+TDK_HS12_100cel_BH
+TDK_HS12_25cel
+TDK_HS12_25cel_BH
+TDK_HS12_60cel
+TDK_HS12_60cel_BH
+TDK_HS72_100cel
+TDK_HS72_100cel_BH
+TDK_HS72_25cel
+TDK_HS72_25cel_BH
+TDK_HS72_60cel
+TDK_HS72_60cel_BH
+TDK_NEOREC30EV_100cel
+TDK_NEOREC30EV_140cel
+TDK_NEOREC30EV_180cel
+TDK_NEOREC30EV_200cel
+TDK_NEOREC30EV_20cel
+TDK_NEOREC30EV_60cel
+TDK_NEOREC35NX_100cel
+TDK_NEOREC35NX_140cel
+TDK_NEOREC35NX_180cel
+TDK_NEOREC35NX_20cel
+TDK_NEOREC35NX_60cel
+TDK_NEOREC35UX_100cel
+TDK_NEOREC35UX_140cel
+TDK_NEOREC35UX_180cel
+TDK_NEOREC35UX_200cel
+TDK_NEOREC35UX_20cel
+TDK_NEOREC35UX_60cel
+TDK_NEOREC38UH_100cel
+TDK_NEOREC38UH_140cel
+TDK_NEOREC38UH_180cel
+TDK_NEOREC38UH_200cel
+TDK_NEOREC38UH_20cel
+TDK_NEOREC38UH_60cel
+TDK_NEOREC38UX_100cel
+TDK_NEOREC38UX_140cel
+TDK_NEOREC38UX_180cel
+TDK_NEOREC38UX_200cel
+TDK_NEOREC38UX_20cel
+TDK_NEOREC38UX_60cel
+TDK_NEOREC40TH_100cel
+TDK_NEOREC40TH_140cel
+TDK_NEOREC40TH_180cel
+TDK_NEOREC40TH_20cel
+TDK_NEOREC40TH_60cel
+TDK_NEOREC40UH_100cel
+TDK_NEOREC40UH_140cel
+TDK_NEOREC40UH_180cel
+TDK_NEOREC40UH_200cel
+TDK_NEOREC40UH_20cel
+TDK_NEOREC40UH_60cel
+TDK_NEOREC42SH_100cel
+TDK_NEOREC42SH_140cel
+TDK_NEOREC42SH_180cel
+TDK_NEOREC42SH_20cel
+TDK_NEOREC42SH_60cel
+TDK_NEOREC43SX_100cel
+TDK_NEOREC43SX_140cel
+TDK_NEOREC43SX_180cel
+TDK_NEOREC43SX_20cel
+TDK_NEOREC43SX_60cel
+TDK_NEOREC44H_100cel
+TDK_NEOREC44H_140cel
+TDK_NEOREC44H_20cel
+TDK_NEOREC44H_60cel
+TDK_NEOREC45MHF_100cel
+TDK_NEOREC45MHF_120cel
+TDK_NEOREC45MHF_140cel
+TDK_NEOREC45MHF_160cel
+TDK_NEOREC45MHF_20cel
+TDK_NEOREC45MHF_60cel
+TDK_NEOREC45MHF_80cel
+TDK_NEOREC45SH_100cel
+TDK_NEOREC45SH_140cel
+TDK_NEOREC45SH_180cel
+TDK_NEOREC45SH_20cel
+TDK_NEOREC45SH_60cel
+TDK_NEOREC46HF_100cel
+TDK_NEOREC46HF_140cel
+TDK_NEOREC46HF_180cel
+TDK_NEOREC46HF_20cel
+TDK_NEOREC46HF_60cel
+TDK_NEOREC46HG_100cel
+TDK_NEOREC46HG_140cel
+TDK_NEOREC46HG_180cel
+TDK_NEOREC46HG_20cel
+TDK_NEOREC46HG_60cel
+TDK_NEOREC47B_100cel
+TDK_NEOREC47B_140cel
+TDK_NEOREC47B_20cel
+TDK_NEOREC47B_60cel
+TDK_NEOREC47HF_100cel
+TDK_NEOREC47HF_140cel
+TDK_NEOREC47HF_20cel
+TDK_NEOREC47HF_60cel
+TDK_NEOREC50BF_100cel
+TDK_NEOREC50BF_140cel
+TDK_NEOREC50BF_20cel
+TDK_NEOREC50BF_60cel
+TDK_NEOREC50H_100cel
+TDK_NEOREC50H_140cel
+TDK_NEOREC50H_20cel
+TDK_NEOREC50H_60cel
+TDK_PC40_100cel
+TDK_PC40_100cel_BH
+TDK_PC40_25cel
+TDK_PC40_25cel_BH
+TDK_PC40_60cel
+TDK_PC40_60cel_BH
+TDK_PC47_100cel
+TDK_PC47_100cel_BH
+TDK_PC47_25cel
+TDK_PC47_25cel_BH
+TDK_PC47_60cel
+TDK_PC47_60cel_BH
+TDK_PC90_100cel
+TDK_PC90_100cel_BH
+TDK_PC90_25cel
+TDK_PC90_25cel_BH
+TDK_PC90_60cel
+TDK_PC90_60cel_BH
+TDK_PC95_100cel
+TDK_PC95_100cel_BH
+TDK_PC95_25cel
+TDK_PC95_25cel_BH
+TDK_PC95_60cel
+TDK_PC95_60cel_BH
+Teflon (tm)
+teflon_based
+Tellurium, pure
+Terracotta
+Thallium, pure
+Thomas & Skinner - Alnico 2
+Thomas & Skinner - Alnico 5
+Thomas & Skinner - Alnico 5-7
+Thomas & Skinner - Alnico 5-DG
+Thomas & Skinner - Alnico 8-HC
+Thomas & Skinner - Alnico 8-HE
+Thomas & Skinner - Alnico 9
+Thomas & Skinner - Alnico-6 cast
+Thyssenkrupp - 020-130Y320, B-H at 50Hz
+Thyssenkrupp - 020-130Y320, B-H at 60Hz
+Thyssenkrupp - 020-150Y320, B-H at 200Hz
+Thyssenkrupp - 020-150Y320, B-H at 50Hz
+Thyssenkrupp - 020-150Y320, B-H at 60Hz
+Thyssenkrupp - 027-150Y370, B-H at 200Hz
+Thyssenkrupp - 027-150Y370, B-H at 50Hz
+Thyssenkrupp - 027-150Y370, B-H at 60Hz
+Thyssenkrupp - 027-180Y370, B-H at 200Hz
+Thyssenkrupp - 027-180Y370, B-H at 50Hz
+Thyssenkrupp - 027-180Y370, B-H at 60Hz
+Thyssenkrupp - 030-160Y420, B-H at 200Hz
+Thyssenkrupp - 030-160Y420, B-H at 50Hz
+Thyssenkrupp - 030-160Y420, B-H at 60Hz
+Thyssenkrupp - 032-190Y330, B-H at 50Hz
+Thyssenkrupp - 032-190Y330, B-H at 60Hz
+Thyssenkrupp - 035-170Y410, B-H at 50Hz
+Thyssenkrupp - 035-170Y410, B-H at 60Hz
+Thyssenkrupp - 035-180Y400, B-H at 200Hz
+Thyssenkrupp - 035-180Y400, B-H at 50Hz
+Thyssenkrupp - 035-180Y400, B-H at 60Hz
+Thyssenkrupp - 035-190Y390, B-H at 200Hz
+Thyssenkrupp - 035-190Y390, B-H at 50Hz
+Thyssenkrupp - 035-190Y390, B-H at 60Hz
+Thyssenkrupp - 035-220Y300, B-H at 50Hz
+Thyssenkrupp - 035-220Y300, B-H at 60Hz
+Thyssenkrupp - 5350H, B-H at 50Hz
+Thyssenkrupp - 8050, B-H at 50Hz
+Thyssenkrupp - Alnico 18-10
+Thyssenkrupp - Alnico 38-5
+Thyssenkrupp - Alnico 41-12
+Thyssenkrupp - M235-35A, B-H at 50Hz
+Thyssenkrupp - M250-35A, B-H at 50Hz
+Thyssenkrupp - M250-50A, B-H at 50Hz
+Thyssenkrupp - M270-50A, B-H at 50Hz
+Thyssenkrupp - M270-50PP, B-H at 50Hz
+Thyssenkrupp - M330-35A, B-H at 50Hz
+Thyssenkrupp - M330-50A, B-H at 50Hz
+Thyssenkrupp - M340-50K, B-H at 50Hz
+Thyssenkrupp - M350-50A, B-H at 50Hz
+Thyssenkrupp - M350-65A, B-H at 50Hz
+Thyssenkrupp - M400-50A, B-H at 50Hz
+Thyssenkrupp - M400-50AP, B-H at 50Hz
+Thyssenkrupp - M450-50K, B-H at 50Hz
+Thyssenkrupp - M470-50A, B-H at 50Hz
+Thyssenkrupp - M470-65A, B-H at 50Hz
+Thyssenkrupp - M530-50A, B-H at 50Hz
+Thyssenkrupp - M530-50AP, B-H at 50Hz
+Thyssenkrupp - M600-65A, B-H at 50Hz
+Thyssenkrupp - M660-50K, B-H at 50Hz
+Thyssenkrupp - M660-50PP, B-H at 50Hz
+Thyssenkrupp - M700-50AP, B-H at 50Hz
+Thyssenkrupp - M800-50A, B-H at 50Hz
+Thyssenkrupp - M800-65A, B-H at 50Hz
+Thyssenkrupp - M800-65AP, B-H at 50Hz
+Thyssenkrupp - M800-65K, B-H at 50Hz
+Thyssenkrupp - M940-50A, B-H at 50Hz
+Thyssenkrupp - RECO 17-120
+Thyssenkrupp - RECO 190-200
+Thyssenkrupp - RECO 220-160
+Thyssenkrupp - RECO 230-40
+Thyssenkrupp - REFeB 200-320
+Thyssenkrupp - REFeB 300-200
+Thyssenkrupp - REFeB 370-115
+Thyssenkrupp - REFeB 410-88
+Ti-Typical
+Ti-Typical_Ref
+tin
+Tin, pure
+titanium
+Titanium alloy, Ti-12Mo-6Zr-2Fe
+Titanium alloy, Ti-13V-11Cr-3Al
+Titanium alloy, Ti-24Al-11Nb
+Titanium alloy, Ti-25-10-3-1
+Titanium alloy, Ti-3Al-2.5V
+Titanium alloy, Ti-5Al-2.5Sn-0.5Fe
+Titanium alloy, Ti-6Al-2Sn-2Zr-2Mo, annealed
+Titanium alloy, Ti-6Al-2Sn-4Zr-2Mo
+Titanium alloy, Ti-6Al-4V, aged
+Titanium alloy, Ti-6Al-4V, annealed
+Titanium alloy, Ti-6Al-4V, cast
+Titanium alloy, Ti-6Al-5Zr-0.5Mo
+Titanium alloy, Ti-6Al-7Nb
+Titanium alloy, Ti-8Al-1Mo-1V, annealed
+Titanium carbide
+Titanium, Grade 1
+Titanium, Grade 4
+Toda Kogyo - FLX-170V
+Toda Kogyo - FLX-221
+Toda Kogyo - FLX-247
+Toda Kogyo - FRX-146
+Toda Kogyo - FRX-221
+Toda Kogyo - FRX-2473
+Toda Kogyo - FRX-511C
+Toda Kogyo - FRX-955
+Toda Kogyo - TP-A27N
+Toda Kogyo - TP-S68
+Toda Kogyo - TP-S73
+Toda Kogyo - TRP-M760
+Toda Kogyo - TRP-T710C
+Tohoku Steel - KMH50
+Tohoku Steel - KMH60
+Tohoku Steel - MES2CS
+Tohoku Steel - MES3F
+Tokin - LM-19
+Tokin - LM-30FH
+Tokin - LM-30SH
+Tokin - LM-32SH
+Tokyo Ferrite - TF Isotropic
+Tokyo Ferrite - THD2
+Tokyo Ferrite - THD3G
+Tokyo Ferrite - THD3N
+Tokyo Ferrite - THD4
+Tokyo Ferrite - THW5B
+Tokyo Ferrite - THW5H
+Tokyo Ferrite - THW6B
+Tokyo Ferrite - THW6H
+Tokyo Ferrite - THW6N
+Tool steel, A2
+Tool steel, A7
+Tool steel, D2
+Tool steel, H13
+Tool steel, H21
+Tool steel, M10
+Tool steel, M46
+Tool steel, M47
+Tool steel, P20
+Tool steel, Q1
+Tool steel, S7
+Tool steel, T6
+Tool steel, W1
+Tridus - SC18
+Tridus - SC24
+Tridus - SC26
+Tridus - SC30
+Tridus - Tri Cast Alnico-5
+Tridus - Tri Sintered Alnico-5
+Tridus - Tri Sintered Alnico-8
+Tridus - TRI-FER-8C
+Tridus - TRI-FER-8E
+Tridus - Tri-Neo-33EH
+Tridus - Tri-Neo-35UH
+Tridus - Tri-Neo-38M
+Tridus - Tri-Neo-38SH
+Tridus - Tri-Neo-39SH
+Tridus - Tri-Neo-42SH
+Tridus - Tri-Neo-44H
+Tridus - Tri-Neo-45
+Tridus - Tri-Neo-50
+TUC - TU-883 (ThunderClad 2), Core, 3313x1, 4.5 mil
+TUC - TU-883 (ThunderClad 2), Prepreg, 3313, 4.5 mil
+TUC - TU-933 (ThunderClad 3), Core, 2116x1, 5 mil
+TUC - TU-933 (ThunderClad 3), Prepreg, 2116, 5 mil
+TUC - TU-943R (ThunderClad 4R), Core, 1035x1, 2 mil
+TUC - TU-943R (ThunderClad 4R), Prepreg, 1035, 2.5 mil
+TUC - TU-943SR (ThunderClad 4SR), Core, 1035x2, 4 mil
+TUC - TU-943SR (ThunderClad 4SR), Prepreg, 1035, 2.3 mil
+tungsten
+Tungsten alloy, W-25Re
+Tungsten carbide
+Tungsten, pure, R07004
+Ugitech - IMRE Steel (18%Cr)
+Union - SSM-360iH
+Union - SSM-380iH
+Union - SSM-390H
+Union - SSM-400H
+Union - SSM-430H
+Union - SSM-710iH
+Union - SSM-720H
+Union - SSM-720iH
+Union - SSM-740iH
+Union - SSM-K10iH
+Union - SSM-K20iH
+Union - SSM-K30iH
+Union - SSM-K50H
+Union - SSM-U50H
+Union - SSM-XT10iH
+Union - SSM-XT20iH
+US Steel - Qcore P19
+US Steel - Qcore P21
+vacuum
+Vacuumschmelze - Mumetall (80%Ni)
+Vacuumschmelze - Nano Powder Composite, 5wt%
+Vacuumschmelze - Permax M (65%Ni)
+Vacuumschmelze - Trafoperm N3
+Vacuumschmelze - Ultraperm 10 (80%Ni)
+Vacuumschmelze - Ultraperm 200 (80%Ni)
+Vacuumschmelze - Vacodur 49
+Vacuumschmelze - Vacodur S Plus
+Vacuumschmelze - Vacodym 238AP
+Vacuumschmelze - Vacodym 238TP
+Vacuumschmelze - Vacodym 247AP
+Vacuumschmelze - Vacodym 247TP
+Vacuumschmelze - Vacodym 510HR
+Vacuumschmelze - Vacodym 633AP
+Vacuumschmelze - Vacodym 633HR
+Vacuumschmelze - Vacodym 655AP
+Vacuumschmelze - Vacodym 655HR
+Vacuumschmelze - Vacodym 669AP
+Vacuumschmelze - Vacodym 677AP
+Vacuumschmelze - Vacodym 677HR
+Vacuumschmelze - Vacodym 688AP
+Vacuumschmelze - Vacodym 688TP
+Vacuumschmelze - Vacodym 722HR
+Vacuumschmelze - Vacodym 745AP
+Vacuumschmelze - Vacodym 745HR
+Vacuumschmelze - Vacodym 764AP
+Vacuumschmelze - Vacodym 764TP
+Vacuumschmelze - Vacodym 776AP
+Vacuumschmelze - Vacodym 776TP
+Vacuumschmelze - Vacodym 837AP
+Vacuumschmelze - Vacodym 837TP
+Vacuumschmelze - Vacodym 854AP
+Vacuumschmelze - Vacodym 854TP
+Vacuumschmelze - Vacodym 863AP
+Vacuumschmelze - Vacodym 863TP
+Vacuumschmelze - Vacodym 872AP
+Vacuumschmelze - Vacodym 872TP
+Vacuumschmelze - Vacodym 881AP
+Vacuumschmelze - Vacodym 881TP
+Vacuumschmelze - Vacodym 890AP
+Vacuumschmelze - Vacodym 890TP
+Vacuumschmelze - Vacodym 956AP
+Vacuumschmelze - Vacodym 956TP
+Vacuumschmelze - Vacodym 965AP
+Vacuumschmelze - Vacodym 965TP
+Vacuumschmelze - Vacodym 974AP
+Vacuumschmelze - Vacodym 974TP
+Vacuumschmelze - Vacodym 983AP
+Vacuumschmelze - Vacodym 983TP
+Vacuumschmelze - Vacodym 992AP
+Vacuumschmelze - Vacodym 992TP
+Vacuumschmelze - Vacofer S1 Pure Iron (99.98%Fe)
+Vacuumschmelze - Vacoflux 17
+Vacuumschmelze - Vacoflux 48, .35mm
+Vacuumschmelze - Vacoflux 50, .35mm
+Vacuumschmelze - Vacomax 145S
+Vacuumschmelze - Vacomax 170HR
+Vacuumschmelze - Vacomax 225AP
+Vacuumschmelze - Vacomax 225HR
+Vacuumschmelze - Vacomax 240
+Vacuumschmelze - Vacoperm 100 (80%Ni)
+Vanadium, pure
+Ventec - tec-speed 6.0 (VT-462S), Core, 2116, 5 mil
+Ventec - tec-speed 6.0 (VT-462S), Prepreg, 2116, 4.9 mil
+Ventec - tec-speed 7.1, Core, 3313, 4 mil
+Ventec - tec-speed 7.1, Prepreg, 3313, 4.2 mil
+Ventec - VT-47, Core, 1x7628, 7 mil
+Ventec - VT-47, Prepreg, 2113, 4 mil
+Ventec - VT-90H, Core, 1506, 6 mil
+Ventec - VT-90H, Prepreg, 1506, 6.8 mil
+Voestalpine - Isovac 1000-65A, B-H at 50Hz
+Voestalpine - Isovac 1000-65K, B-H at 50Hz
+Voestalpine - Isovac 350-65A, B-H at 50Hz
+Voestalpine - Isovac 400-65A, B-H at 50Hz
+Voestalpine - Isovac 900-50A, B-H at 50Hz
+Voestalpine - Isovac HP 1400-100A, B-H at 50Hz
+Von Roll - Vetroferrite
+Water
+Water 0.2-35C 0.1-400GHz
+Water Vapor
+Water Vapor(@373K)
+Water vapor, gas
+Water(@280K)
+Water(@320K)
+Water(@360K)
+Water, distilled
+Water, fresh
+Water, salt
+water_distilled
+water_fresh
+water_sea
+Wood, Afrormosia
+Wood, Ash
+Wood, Balsa, low density
+Wood, Balsa, ultra low density
+Wood, Bamboo
+Wood, Beech
+Wood, Birch
+Wood, Cherry
+Wood, Chipboard
+Wood, Cork
+Wood, Cork board
+Wood, Elm
+Wood, End-grain balsa composite
+Wood, Fir
+Wood, Hardboard
+Wood, Insulation board
+Wood, Iroko
+Wood, Larch
+Wood, Lignumvitae
+Wood, Mahogany
+Wood, Maple
+Wood, Medium density fiberboard (MDF)
+Wood, Oak
+Wood, Palm
+Wood, Pine
+Wood, Plywood
+Wood, Redwood
+Wood, Rosewood
+Wood, Spruce
+Wood, Teak
+Wood, Walnut
+Wood, Willow
+Wood, Yew
+Wrought iron
+XG112/96
+XG128/120
+XG144/120
+XG144/56
+XG160/120
+XG169/42
+XG196/96
+XG208/44
+XG240/46
+XG80/36
+XG96/40
+Y10T
+Y15
+Y15H
+Y20
+Y20H
+Y25
+Y25BH
+Y30
+Y30BH
+Y35
+Yuxiang - YX-30A
+ZEONEX RS420 (tm)
+ZEONEX RS420-LDS (tm)
+Zhong Ke San Huan - N50SH
+Zhong Ke San Huan - N52H
+zinc
+Zinc alloy, Korloy 2573
+Zinc alloy, Z44330
+Zinc alloy, ZA-27
+Zinc, pure
+Zirconia
+zirconium
+Zirconium, pure, R60001
+Zn-Al-alloy
+Zn-Al-Cu-alloy
+Zn-ferrite
+Zn-oxide
+Zn-typical
+
+## Project (defined in this project only)

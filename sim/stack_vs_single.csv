@@ -1,0 +1,4 @@
+build,n_slices,steel_in,depth_in,glue_mm,gap_mm,Fz_N,Fz_per_in_N,B_track_peak_T,ratio_vs_n_x_single
+stack,1,1.0,1.0,0.0,8.0,94.409,94.409,0.814,1.0
+stack,3,3.0,3.0,0.0,8.0,479.587,159.862,1.388,1.6933
+extrusion,1,3.0,3.0,0.0,8.0,479.901,159.967,1.389,1.6944

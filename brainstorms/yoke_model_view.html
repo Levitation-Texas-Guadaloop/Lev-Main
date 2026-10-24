@@ -1,0 +1,466 @@
+<title>Yoke Model Viewer</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap">
+<style>
+/* Layout: AEDT-style window. Left model tree, centre 3D viewport + message manager, right design variables + properties.
+   Chrome follows the viewer theme; the viewport stays dark in both, like the real modeler window. */
+:root {
+  --bg: #e6eaef;
+  --panel: #f5f7fa;
+  --panel2: #eaeef3;
+  --line: #c3ccd6;
+  --fg: #1a2531;
+  --muted: #566677;
+  --accent: #b7791f;
+  --accent-soft: #f3e3bf;
+  --ok: #2f7d4f;
+  --warn: #9a6200;
+  --err: #b3261e;
+  --vp-top: #34425a;
+  --vp-bot: #0f141b;
+  --font-ui: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #0e1319; --panel: #171e27; --panel2: #1f2833; --line: #2c3845; --fg: #dfe6ee; --muted: #8a9aab;
+    --accent: #e0a63a; --accent-soft: #3b3017; --ok: #5cc08a; --warn: #e0a63a; --err: #ff7b72; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0e1319; --panel: #171e27; --panel2: #1f2833; --line: #2c3845; --fg: #dfe6ee; --muted: #8a9aab;
+  --accent: #e0a63a; --accent-soft: #3b3017; --ok: #5cc08a; --warn: #e0a63a; --err: #ff7b72; color-scheme: dark;
+}
+* { box-sizing: border-box; }
+body { background: var(--bg); color: var(--fg); font: 13px/1.45 var(--font-ui); }
+.wrap { max-width: 1320px; margin: 0 auto; padding-block: 16px; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.win { border: 1px solid var(--line); background: var(--panel); border-radius: 6px; overflow: hidden; }
+.titlebar { display: flex; flex-wrap: wrap; gap: 4px 16px; align-items: baseline; padding: 8px 12px; background: var(--panel2); border-bottom: 1px solid var(--line); }
+.titlebar b { font-weight: 600; }
+.titlebar span { color: var(--muted); font-family: var(--font-mono); font-size: 12px; }
+.menubar { display: flex; flex-wrap: wrap; gap: 2px 14px; padding: 5px 12px; border-bottom: 1px solid var(--line); color: var(--muted); font-size: 12px; }
+.body { display: grid; grid-template-columns: 230px minmax(0, 1fr) 280px; min-height: 560px; }
+.col { min-width: 0; }
+.left { border-right: 1px solid var(--line); background: var(--panel); overflow: auto; max-height: 720px; }
+.right { border-left: 1px solid var(--line); background: var(--panel); }
+h2 { margin: 0; padding: 6px 10px; font-size: 11px; letter-spacing: .08em; text-transform: uppercase; font-weight: 600; color: var(--muted); background: var(--panel2); border-bottom: 1px solid var(--line); border-top: 1px solid var(--line); }
+h2:first-child { border-top: 0; }
+.tree { list-style: none; margin: 0; padding: 6px 4px 10px; font-size: 12.5px; }
+.tree ul { list-style: none; margin: 0; padding-left: 14px; border-left: 1px dotted var(--line); margin-left: 6px; }
+.tree li { margin: 1px 0; }
+.tree .n { display: block; width: 100%; text-align: left; background: none; border: 0; color: var(--fg); font: inherit; padding: 2px 6px; border-radius: 3px; cursor: default; }
+.tree button.n { cursor: pointer; }
+.tree button.n:hover { background: var(--panel2); }
+.tree button.n[aria-pressed="true"] { background: var(--accent-soft); outline: 1px solid var(--accent); }
+.tree .grp { color: var(--muted); font-weight: 500; padding: 3px 6px; }
+.tree .dim { color: var(--muted); font-family: var(--font-mono); font-size: 11px; }
+.sw { display: inline-block; width: 9px; height: 9px; margin-right: 6px; border-radius: 2px; vertical-align: -1px; }
+.vp { position: relative; background: linear-gradient(180deg, var(--vp-top), var(--vp-bot)); }
+.vp canvas { display: block; width: 100%; height: 470px; cursor: grab; touch-action: none; }
+.vp canvas.drag { cursor: grabbing; }
+.vtools { position: absolute; top: 8px; left: 8px; right: 8px; display: flex; flex-wrap: wrap; gap: 6px; pointer-events: none; }
+.vtools > * { pointer-events: auto; }
+.seg { display: inline-flex; border: 1px solid rgba(255,255,255,.22); border-radius: 4px; overflow: hidden; background: rgba(10,14,20,.55); }
+.seg button { background: none; border: 0; color: #cdd8e4; font: 500 11.5px var(--font-ui); padding: 4px 9px; cursor: pointer; }
+.seg button + button { border-left: 1px solid rgba(255,255,255,.18); }
+.seg button[aria-pressed="true"] { background: #e0a63a; color: #1a1305; }
+.seg button:focus-visible, .chk input:focus-visible, .tree button:focus-visible, input[type=range]:focus-visible { outline: 2px solid #e0a63a; outline-offset: 1px; }
+.chk { display: inline-flex; gap: 5px; align-items: center; color: #cdd8e4; font-size: 11.5px; background: rgba(10,14,20,.55); border: 1px solid rgba(255,255,255,.22); border-radius: 4px; padding: 3px 8px; cursor: pointer; }
+.hint { position: absolute; left: 10px; bottom: 8px; color: #9fb0c2; font: 11px var(--font-mono); pointer-events: none; }
+.msgs { border-top: 1px solid var(--line); max-height: 190px; overflow: auto; }
+.msgs ul { list-style: none; margin: 0; padding: 4px 8px 8px; font: 12px/1.5 var(--font-mono); }
+.msgs li { padding: 1px 0; display: grid; grid-template-columns: 52px minmax(0, 1fr); gap: 6px; }
+.tag { font-weight: 500; }
+.tag.info { color: var(--muted); } .tag.ok { color: var(--ok); } .tag.warn { color: var(--warn); } .tag.err { color: var(--err); }
+.vars { padding: 8px 10px 10px; display: grid; gap: 9px; }
+.var { display: grid; grid-template-columns: 74px 1fr 62px; gap: 8px; align-items: center; }
+.var label { font-family: var(--font-mono); font-size: 12px; }
+.var output { font: 500 12px var(--font-mono); text-align: right; font-variant-numeric: tabular-nums; }
+input[type=range] { width: 100%; accent-color: var(--accent); }
+.props { padding: 8px 10px 12px; font-size: 12px; }
+.props dl { margin: 0; display: grid; grid-template-columns: 70px minmax(0, 1fr); gap: 3px 8px; }
+.props dt { color: var(--muted); }
+.props dd { margin: 0; font-family: var(--font-mono); font-variant-numeric: tabular-nums; overflow-wrap: anywhere; }
+.code { margin-top: 8px; padding: 6px 8px; background: var(--panel2); border: 1px solid var(--line); border-radius: 4px; font: 11px/1.45 var(--font-mono); white-space: pre-wrap; overflow-wrap: anywhere; }
+.res { padding: 8px 10px 12px; font-size: 12px; }
+.res .big { font: 500 22px var(--font-mono); font-variant-numeric: tabular-nums; }
+.res .sub { color: var(--muted); font-size: 11.5px; }
+.legend { display: flex; flex-wrap: wrap; gap: 6px 16px; padding: 8px 12px; border-top: 1px solid var(--line); color: var(--muted); font-size: 12px; background: var(--panel); }
+.legend i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; margin-right: 5px; vertical-align: -1px; }
+@media (max-width: 1020px) {
+  .body { grid-template-columns: minmax(0, 1fr); }
+  .center { order: 1; } .right { order: 2; border-left: 0; border-top: 1px solid var(--line); } .left { order: 3; border-right: 0; border-top: 1px solid var(--line); max-height: none; }
+  .vp canvas { height: 380px; }
+}
+@media (prefers-reduced-motion: reduce) { * { scroll-behavior: auto !important; } }
+</style>
+
+<div class="wrap">
+  <div class="win">
+    <div class="titlebar"><b>ANSYS Electronics Desktop 2025 R2 Student</b><span>yoke.aedt · Yoke (Magnetostatic) · Maxwell 3D · Modeler · mm</span></div>
+    <div class="menubar"><span>File</span><span>Edit</span><span>View</span><span>Project</span><span>Draw</span><span>Modeler</span><span>Maxwell 3D</span><span>Tools</span><span>Window</span><span>Help</span></div>
+    <div class="body">
+      <aside class="col left" aria-label="Project manager">
+        <h2>Project Manager</h2>
+        <ul class="tree" id="tree"></ul>
+      </aside>
+      <main class="col center">
+        <div class="vp">
+          <canvas id="cv" aria-label="3D model of the yoke, coils, magnets and steel track"></canvas>
+          <div class="vtools">
+            <div class="seg" role="group" aria-label="Model source">
+              <button id="m-orig" aria-pressed="true">Current script</button>
+              <button id="m-script" aria-pressed="false">Previous script (bug)</button>
+            </div>
+            <div class="seg" role="group" aria-label="View">
+              <button data-v="iso" aria-pressed="true">Iso</button>
+              <button data-v="front" aria-pressed="false">Front (XZ)</button>
+              <button data-v="side" aria-pressed="false">Side (YZ)</button>
+              <button data-v="top" aria-pressed="false">Top</button>
+            </div>
+            <label class="chk"><input type="checkbox" id="c-region"> Region</label>
+            <label class="chk"><input type="checkbox" id="c-dims" checked> Dimensions</label>
+          </div>
+          <div class="hint">drag to rotate · click an object to select</div>
+        </div>
+        <div class="legend" id="legend"></div>
+        <div class="msgs"><h2>Message Manager</h2><ul id="msgs"></ul></div>
+      </main>
+      <aside class="col right" aria-label="Properties">
+        <h2>Design variables</h2>
+        <div class="vars" id="vars"></div>
+        <h2>Properties</h2>
+        <div class="props" id="props"></div>
+        <h2>Results</h2>
+        <div class="res" id="res"></div>
+      </aside>
+    </div>
+  </div>
+</div>
+
+<script>
+(function () {
+  "use strict";
+  var NT = 250;                         // turns, from the script
+  // mode "orig" = current scripts/yoke_model.py (matches the original .aedt); "script" = the pre-fix script (LEV-109 bug)
+  var st = { gap: 5, iL: 0, iR: 0, roll: 0, mode: "orig", region: false, dims: true, az: -30, el: 24, sel: "Track" };
+  var RAD = Math.PI / 180;
+
+  /* ---------- geometry, straight from scripts/yoke_model.py (and BossExtrude1 in the original .aedt) ---------- */
+  function build(mode, gap, rollDeg) {
+    var s = mode === "script";
+    var x0 = -4.6, LEG = 25.4, DEPTH = 25.4, y0 = -12.7, SPAN = 127, MAG = 25.4, CAP = 12.7;
+    var BASE_Z0 = -11.75, baseTop = s ? BASE_Z0 + 43.18 : 39.05;
+    var zmag = baseTop, ztop = zmag + MAG + CAP;
+    var coil0 = s ? 39.05 : 30.82, coilTop = 74.0;
+    var COIL_T = 7.0, CLR = 3.0, wo = LEG + 2 * (CLR + COIL_T), wi = LEG + 2 * CLR;
+    var xc = x0 + SPAN / 2, xs = { L: x0, R: x0 + SPAN - LEG };
+    var th = rollDeg * RAD, zp = ztop + gap;
+    var objs = [];
+    function box(a, b) { return { a: a, b: b }; }
+    // base
+    var baseParts = s ? [box([x0, y0, BASE_Z0], [x0 + SPAN, y0 + DEPTH, baseTop])]
+      : [box([x0, y0, BASE_Z0], [x0 + SPAN, y0 + DEPTH, 26.35]), box([xs.L, y0, 26.35], [xs.L + LEG, y0 + DEPTH, 39.05]), box([xs.R, y0, 26.35], [xs.R + LEG, y0 + DEPTH, 39.05])];
+    objs.push({ name: "Base", mat: "steel_1010", parts: baseParts, rgb: [128, 143, 160], alpha: 1,
+      code: s ? 'mod.create_box([x0, y0, BASE_Z0], [SPAN, DEPTH, BASE_H], "Base", STEEL)\n# previous script: BASE_H = 43.18 -> solid block, top at z = 31.43'
+              : 'create_box([x0, y0, BASE_Z0], [SPAN, DEPTH, BASE_H - POCKET_D], "Base", STEEL)\ncreate_box(... "BaseBlockL" / "BaseBlockR") under each leg\nunite(["Base", "BaseBlockL", "BaseBlockR"])\n# BASE_H = 2", POCKET_D = 0.5"',
+      note: s ? "Previous script: solid 1.7 in block, legs 7.6 mm too low. Fixed." : "2 in tall at the legs; 1.5 in thick under the 76.2 x 12.7 mm pocket (as in the original .aedt)." });
+    ["L", "R"].forEach(function (k) {
+      var up = k === "R";           // right magnet: north face up (M up); left: south face up (M down)
+      var topC = up ? [196, 84, 70] : [70, 114, 186], botC = up ? [70, 114, 186] : [196, 84, 70];
+      var zm = zmag + MAG / 2;
+      var matName = s ? (up ? "N52_down" : "N52_up") : (up ? "N52_Mup" : "N52_Mdown");
+      objs.push({ name: "Magnet" + k, mat: matName, sortKey: 1,
+        parts: [{ a: [xs[k], y0, zmag], b: [xs[k] + LEG, y0 + DEPTH, zm], rgb: botC }, { a: [xs[k], y0, zm], b: [xs[k] + LEG, y0 + DEPTH, zmag + MAG], rgb: topC }],
+        rgb: topC, alpha: 1, mdir: up ? 1 : -1, topPole: up ? "N" : "S",
+        code: 'mod.create_box([x%, y0, z_mag], [LEG, DEPTH, MAG_H], "Magnet' + k + '", "' + matName + '")\n' + (s
+          ? '# previous naming: Hc = ' + (up ? "-" : "+") + '955000 A/m along +z. Maxwell warns when the magnitude is positive; M points ' + (up ? "up" : "down") + ' (the name "' + matName + '" is misleading)'
+          : '# set_magnetic_coercivity(-HC, 0, 0, ' + (up ? "+1" : "-1") + '): magnitude <= 0 as Maxwell expects, M points ' + (up ? "up (N face up)" : "down (S face up)")),
+        note: "N52, mu_r 1.07, |Hc| 955 kA/m. M points " + (up ? "up" : "down") + "." });
+      objs.push({ name: "Cap" + k, mat: "steel_1010", parts: [box([xs[k], y0, zmag + MAG], [xs[k] + LEG, y0 + DEPTH, ztop])], rgb: [150, 163, 178], alpha: 1,
+        code: 'mod.create_box([x%, y0, z_mag + MAG_H], [LEG, DEPTH, CAP_H], "Cap' + k + '", STEEL)', note: "Pole face at z = " + ztop.toFixed(2) + " mm." });
+    });
+    ["L", "R"].forEach(function (k) {
+      var cx = xs[k] + LEG / 2, cy = 0, h = coil0, H = coilTop;
+      var parts = [box([cx - wo / 2, cy - wo / 2, h], [cx + wo / 2, cy - wi / 2, H]), box([cx - wo / 2, cy + wi / 2, h], [cx + wo / 2, cy + wo / 2, H]),
+        box([cx - wo / 2, cy - wi / 2, h], [cx - wi / 2, cy + wi / 2, H]), box([cx + wi / 2, cy - wi / 2, h], [cx + wo / 2, cy + wi / 2, H])];
+      objs.push({ name: "Coil" + k, mat: "copper", parts: parts, rgb: [214, 132, 66], alpha: 0.62, cx: cx, cy: cy, wo: wo, COIL_T: COIL_T, z0: h, z1: H,
+        code: (s ? '# previous script: COIL_Z0 = 39.05, COIL_H = 34.95 (hard-coded)\n'
+                 : '# coil_z0 = z_floor + 4.47;  coil_h = (z_top - 3.15) - coil_z0   (tied to the base)\n') +
+          'outer = create_box(... [45.4, 45.4, coil_h], "Coil' + k + '", "copper")\ninner = create_box(... [31.4, 31.4, coil_h + 2], "tmp")\nsubtract(outer, inner)\nassign_current(sheet, "curr' + k + '*250")',
+        note: "Square loop, 7 mm wall, 3 mm clear of the leg. z " + h.toFixed(2) + " to " + H.toFixed(2) + "." });
+    });
+    // track in TrackCS: rotate about Y through (xc, 0, zp)
+    var tx = 177.8, ty = 304.8, tz = 6.35;
+    objs.push({ name: "Track", mat: "steel_1010", rot: { piv: [xc, 0, zp], th: th }, parts: [box([xc - tx / 2, -ty / 2, zp], [xc + tx / 2, ty / 2, zp + tz])], rgb: [120, 170, 205], alpha: 0.38,
+      code: 'cs = create_coordinate_system(origin=[xc, 0, z_top + GapHeight], mode="zyz", theta="rollDeg", name="TrackCS")\ncreate_box([-TRACK[0]/2, -TRACK[1]/2, 0], TRACK, "Track", STEEL)  # in TrackCS',
+      note: "7 x 12 x 0.25 in bar, rolled about Y at the gap mid-plane." });
+    return { objs: objs, xc: xc, ztop: ztop, zp: zp, x0: x0, y0: y0, xs: xs, LEG: LEG, DEPTH: DEPTH, coil0: coil0, coilTop: coilTop, baseTop: baseTop, th: th, wo: wo, COIL_T: COIL_T, s: s, SPAN: SPAN };
+  }
+
+  function rotY(p, piv, th) { var dx = p[0] - piv[0], dz = p[2] - piv[2]; return [piv[0] + dx * Math.cos(th) + dz * Math.sin(th), p[1], piv[2] - dx * Math.sin(th) + dz * Math.cos(th)]; }
+  function verts(a, b) { return [[a[0], a[1], a[2]], [b[0], a[1], a[2]], [b[0], b[1], a[2]], [a[0], b[1], a[2]], [a[0], a[1], b[2]], [b[0], a[1], b[2]], [b[0], b[1], b[2]], [a[0], b[1], b[2]]]; }
+  var FACES = [[0, 3, 2, 1], [4, 5, 6, 7], [0, 1, 5, 4], [2, 3, 7, 6], [1, 2, 6, 5], [3, 0, 4, 7]];
+  var NORM = [[0, 0, -1], [0, 0, 1], [0, -1, 0], [0, 1, 0], [1, 0, 0], [-1, 0, 0]];
+
+  /* ---------- camera ---------- */
+  var cv = document.getElementById("cv"), ctx = cv.getContext("2d"), W = 0, H = 0, DPR = 1;
+  function cam() { var a = st.az * RAD, e = st.el * RAD; return { ca: Math.cos(a), sa: Math.sin(a), ce: Math.cos(e), se: Math.sin(e) }; }
+  function proj(p, c) { var x1 = p[0] * c.ca - p[1] * c.sa, y1 = p[0] * c.sa + p[1] * c.ca; return { u: x1, v: p[2] * c.ce + y1 * c.se, d: -y1 * c.ce + p[2] * c.se }; }
+  function nview(n, c) { var x1 = n[0] * c.ca - n[1] * c.sa, y1 = n[0] * c.sa + n[1] * c.ca; return { u: x1, v: n[2] * c.ce + y1 * c.se, d: -y1 * c.ce + n[2] * c.se }; }
+
+  var fitCache = {};
+  function fit(c) {
+    var key = [st.mode, st.region, st.az, st.el].join("|");
+    if (fitCache[key]) return fitCache[key];
+    var m = build(st.mode, 15, 0), pts = [];
+    // frame the yoke and the middle of the track; the track runs off both ends of the view
+    m.objs.forEach(function (o) {
+      o.parts.forEach(function (pt) {
+        var a = pt.a, b = pt.b;
+        if (o.name === "Track") { a = [a[0], -85, a[2]]; b = [b[0], 85, b[2]]; }
+        verts(a, b).forEach(function (v) { pts.push(v); });
+      });
+    });
+    if (st.region) regionBox(m).forEach(function (v) { pts.push(v); });
+    var umin = 1e9, umax = -1e9, vmin = 1e9, vmax = -1e9;
+    pts.forEach(function (p) { var q = proj(p, c); umin = Math.min(umin, q.u); umax = Math.max(umax, q.u); vmin = Math.min(vmin, q.v); vmax = Math.max(vmax, q.v); });
+    return (fitCache[key] = { umin: umin, umax: umax, vmin: vmin, vmax: vmax });
+  }
+  function regionBox(m) {
+    var lo = [1e9, 1e9, 1e9], hi = [-1e9, -1e9, -1e9];
+    m.objs.forEach(function (o) { o.parts.forEach(function (pt) { verts(pt.a, pt.b).forEach(function (v) { if (o.rot) v = rotY(v, o.rot.piv, o.rot.th); for (var i = 0; i < 3; i++) { lo[i] = Math.min(lo[i], v[i]); hi[i] = Math.max(hi[i], v[i]); } }); }); });
+    var pad = [88.9, 152.4, 50.05];
+    return verts([lo[0] - pad[0], lo[1] - pad[1], lo[2] - pad[2]], [hi[0] + pad[0], hi[1] + pad[1], hi[2] + pad[2]]);
+  }
+
+  var hits = [];
+  function draw() {
+    var c = cam(), m = build(st.mode, st.gap, st.roll), f = fit(c);
+    ctx.setTransform(DPR, 0, 0, DPR, 0, 0); ctx.clearRect(0, 0, W, H);
+    var padX = 36, padTop = 52, padBot = 34;
+    var sc = Math.min((W - 2 * padX) / (f.umax - f.umin), (H - padTop - padBot) / (f.vmax - f.vmin));
+    var ox = W / 2 - sc * (f.umin + f.umax) / 2, oy = padTop + (H - padTop - padBot) / 2 + sc * (f.vmin + f.vmax) / 2;
+    function P(p) { var q = proj(p, c); return [ox + q.u * sc, oy - q.v * sc, q.d]; }
+    hits = [];
+    // region wireframe
+    if (st.region) {
+      var rv = regionBox(m).map(P); ctx.save(); ctx.strokeStyle = "rgba(150,190,230,.55)"; ctx.setLineDash([5, 4]); ctx.lineWidth = 1;
+      [[0,1],[1,2],[2,3],[3,0],[4,5],[5,6],[6,7],[7,4],[0,4],[1,5],[2,6],[3,7]].forEach(function (e) { ctx.beginPath(); ctx.moveTo(rv[e[0]][0], rv[e[0]][1]); ctx.lineTo(rv[e[1]][0], rv[e[1]][1]); ctx.stroke(); });
+      ctx.restore();
+    }
+    // collect solid parts, sort far to near, track last
+    var items = [], trackObj = null;
+    m.objs.forEach(function (o) {
+      if (o.name === "Track") { trackObj = o; return; }
+      o.parts.forEach(function (pt) {
+        var a = pt.a, b = pt.b, ctr = [(a[0] + b[0]) / 2, (a[1] + b[1]) / 2, (a[2] + b[2]) / 2];
+        items.push({ o: o, a: a, b: b, rgb: pt.rgb || o.rgb, d: proj(ctr, c).d });
+      });
+    });
+    items.sort(function (p, q) { return p.d - q.d; });
+    var light = [-0.35, 0.65, 0.67];
+    function face(vs, rgb, alpha, shade, sel, o, outline) {
+      ctx.beginPath(); vs.forEach(function (v, i) { if (i) ctx.lineTo(v[0], v[1]); else ctx.moveTo(v[0], v[1]); }); ctx.closePath();
+      var k = 0.42 + 0.58 * shade;
+      ctx.fillStyle = "rgba(" + Math.round(rgb[0] * k) + "," + Math.round(rgb[1] * k) + "," + Math.round(rgb[2] * k) + "," + alpha + ")"; ctx.fill();
+      ctx.lineWidth = sel ? 2 : 0.8; ctx.strokeStyle = sel ? "#ffc94d" : outline || "rgba(8,12,18,.55)"; ctx.stroke();
+      hits.push({ name: o.name, poly: vs });
+    }
+    function drawBox(it, o) {
+      var vs = verts(it.a, it.b), rot = o.rot;
+      if (rot) vs = vs.map(function (v) { return rotY(v, rot.piv, rot.th); });
+      var q = vs.map(P), sel = st.sel === o.name, order = [];
+      for (var i = 0; i < 6; i++) {
+        var n = NORM[i]; if (rot) n = rotY(n, [0, 0, 0], rot.th);
+        var nv = nview(n, c); order.push({ i: i, nv: nv, d: (q[FACES[i][0]][2] + q[FACES[i][1]][2] + q[FACES[i][2]][2] + q[FACES[i][3]][2]) / 4 });
+      }
+      if (o.alpha < 1 && o === trackObj) order.sort(function (a, b) { return a.d - b.d; });
+      order.forEach(function (f2) {
+        if (o !== trackObj && f2.nv.d <= 0) return;
+        var sh = Math.max(0, f2.nv.u * light[0] + f2.nv.v * light[1] + f2.nv.d * light[2]);
+        face(FACES[f2.i].map(function (k) { return q[k]; }), it.rgb, o.alpha, sh, sel, o);
+      });
+    }
+    items.forEach(function (it) { drawBox(it, it.o); });
+    // current sheets
+    ["L", "R"].forEach(function (k) {
+      var co = m.objs.filter(function (o) { return o.name === "Coil" + k; })[0], I = k === "L" ? st.iL : st.iR;
+      var yA = co.cy - co.wo / 2, yB = yA + co.COIL_T, quad = [[co.cx, yA, co.z0], [co.cx, yB, co.z0], [co.cx, yB, co.z1], [co.cx, yA, co.z1]].map(P);
+      ctx.beginPath(); quad.forEach(function (v, i) { if (i) ctx.lineTo(v[0], v[1]); else ctx.moveTo(v[0], v[1]); }); ctx.closePath();
+      ctx.fillStyle = "rgba(255,214,102,.30)"; ctx.fill(); ctx.strokeStyle = "rgba(255,214,102,.9)"; ctx.lineWidth = 1; ctx.stroke();
+      if (I !== 0) { var dir = (k === "R" ? -1 : 1) * Math.sign(I), mid = [co.cx, (yA + yB) / 2, (co.z0 + co.z1) / 2], a = P([mid[0] - 12 * dir, mid[1], mid[2]]), b = P([mid[0] + 12 * dir, mid[1], mid[2]]); arrow(a, b, "#ffd666", 2); }
+    });
+    // magnetisation arrows and pole letters
+    m.objs.forEach(function (o) {
+      if (!o.mdir) return;
+      var cx = m.xs[o.name.slice(-1)] + m.LEG / 2, zc = m.ztop - 12.7 - 12.7, a = P([cx, 0, zc - 9 * o.mdir]), b = P([cx, 0, zc + 9 * o.mdir]);
+      arrow(a, b, "#ffffff", 2.2, true);
+    });
+    // track last
+    if (trackObj) trackObj.parts.forEach(function (pt) { drawBox({ a: pt.a, b: pt.b, rgb: trackObj.rgb }, trackObj); });
+    // dimensions
+    if (st.dims) {
+      dim(P, m, c);
+    }
+    drawTriad(c);
+    // overlay name of selection
+    ctx.fillStyle = "#cfd9e4"; ctx.font = "500 11px 'IBM Plex Mono', monospace"; ctx.textAlign = "right";
+    ctx.fillText("Selected: " + st.sel, W - 12, H - 10); ctx.textAlign = "left";
+  }
+  function arrow(a, b, col, w, halo) {
+    var ang = Math.atan2(b[1] - a[1], b[0] - a[0]), hl = 9;
+    function stroke(c2, w2) {
+      ctx.strokeStyle = c2; ctx.fillStyle = c2; ctx.lineWidth = w2; ctx.beginPath(); ctx.moveTo(a[0], a[1]); ctx.lineTo(b[0], b[1]); ctx.stroke();
+      ctx.beginPath(); ctx.moveTo(b[0], b[1]); ctx.lineTo(b[0] - hl * Math.cos(ang - 0.4), b[1] - hl * Math.sin(ang - 0.4)); ctx.lineTo(b[0] - hl * Math.cos(ang + 0.4), b[1] - hl * Math.sin(ang + 0.4)); ctx.closePath(); ctx.fill();
+    }
+    if (halo) stroke("rgba(10,14,20,.8)", w + 3);
+    stroke(col, w);
+  }
+  function dim(P, m, c) {
+    ctx.font = "500 11px 'IBM Plex Mono', monospace";
+    function seg(p, q, col) { var a = P(p), b = P(q); ctx.strokeStyle = col; ctx.lineWidth = 1.4; ctx.beginPath(); ctx.moveTo(a[0], a[1]); ctx.lineTo(b[0], b[1]); ctx.stroke();
+      [a, b].forEach(function (e) { ctx.beginPath(); ctx.moveTo(e[0] - 4, e[1]); ctx.lineTo(e[0] + 4, e[1]); ctx.stroke(); }); return [a, b]; }
+    var xd = m.x0 - 14, yd = m.y0;
+    seg([xd, yd, m.ztop], [xd, yd, m.zp], "#ffc94d");
+    var rows = [["#ffc94d", "GapHeight " + st.gap.toFixed(1) + " mm (pole face to track)"]];
+    if (m.s) {
+      var xl = m.xs.L + m.LEG / 2 - m.wo / 2 - 4, yl = -m.wo / 2;
+      seg([xl, yl, m.ztop], [xl, yl, m.coilTop], "#ff7b72");
+      rows.push(["#ff9a92", "Coil top +" + (m.coilTop - m.ztop).toFixed(2) + " mm above pole face"]);
+    }
+    ctx.textAlign = "left";
+    rows.forEach(function (r, i) { var tw = ctx.measureText(r[1]).width, y = H - 32 - i * 16; ctx.fillStyle = r[0]; ctx.fillRect(W - 14 - tw - 14, y - 8, 8, 8); ctx.fillText(r[1], W - 14 - tw, y); });
+  }
+  function drawTriad(c) {
+    var ox = 38, oy = H - 34, L = 22;
+    [["X", [1, 0, 0], "#ff7b72"], ["Y", [0, 1, 0], "#7ee0a0"], ["Z", [0, 0, 1], "#7fb2ff"]].forEach(function (ax) {
+      var q = proj(ax[1], c); ctx.strokeStyle = ax[2]; ctx.fillStyle = ax[2]; ctx.lineWidth = 1.6; ctx.beginPath(); ctx.moveTo(ox, oy); ctx.lineTo(ox + q.u * L, oy - q.v * L); ctx.stroke();
+      ctx.font = "500 10px 'IBM Plex Mono', monospace"; ctx.fillText(ax[0], ox + q.u * (L + 8) - 3, oy - q.v * (L + 8) + 3);
+    });
+  }
+
+  /* ---------- UI: tree, variables, properties, results, messages ---------- */
+  var treeEl = document.getElementById("tree");
+  function swatch(rgb) { return '<span class="sw" style="background:rgb(' + rgb.join(",") + ')"></span>'; }
+  function renderTree() {
+    var m = build(st.mode, st.gap, st.roll);
+    function item(o) { return '<li><button class="n" data-sel="' + o.name + '" aria-pressed="' + (st.sel === o.name) + '">' + swatch(o.rgb) + o.name + ' <span class="dim">' + o.mat + '</span></button></li>'; }
+    var html = '<li><span class="n grp">yoke</span><ul><li><span class="n grp">Yoke (Magnetostatic)</span><ul>';
+    html += '<li><span class="n grp">Model</span><ul>' + m.objs.map(item).join("") +
+      '<li><button class="n" data-sel="Region" aria-pressed="' + (st.sel === "Region") + '"><span class="sw" style="background:transparent;border:1px dashed #7aa"></span>Region <span class="dim">vacuum</span></button></li></ul></li>';
+    html += '<li><span class="n grp">Boundaries</span><ul><li><span class="n">YokeForce <span class="dim">virtual force</span></span></li><li><span class="n">YokeTorque <span class="dim">about -Y</span></span></li></ul></li>';
+    html += '<li><span class="n grp">Excitations</span><ul><li><span class="n">CurrentL <span class="dim">currL*250</span></span></li><li><span class="n">CurrentR <span class="dim">currR*250, reversed</span></span></li></ul></li>';
+    html += '<li><span class="n grp">Mesh</span><ul><li><span class="n dim">adaptive, no operations</span></li></ul></li>';
+    html += '<li><span class="n grp">Analysis</span><ul><li><span class="n">Setup1 <span class="dim">15 passes, 1 %</span></span></li></ul></li>';
+    html += '<li><span class="n grp">Optimetrics</span><ul><li><span class="n">GapSweep <span class="dim">2 to 15 mm</span></span></li></ul></li>';
+    html += '<li><span class="n grp">Results</span><ul><li><span class="n dim">Force_z, Torque</span></li></ul></li></ul></li></ul></li>';
+    html += '<li><span class="n grp">Definitions</span><ul><li><span class="n">Materials <span class="dim">' + (st.mode === "orig" ? "N52_Mdown, N52_Mup" : "N52_up, N52_down") + '</span></span></li><li><span class="n">Coordinate systems <span class="dim">TrackCS, TorqueCS</span></span></li></ul></li>';
+    treeEl.innerHTML = html;
+  }
+  treeEl.addEventListener("click", function (e) { var b = e.target.closest("[data-sel]"); if (b) select(b.getAttribute("data-sel")); });
+
+  var VARS = [["GapHeight", "gap", 2, 15, 0.5, "mm"], ["currL", "iL", -15, 15, 1, "A"], ["currR", "iR", -15, 15, 1, "A"], ["rollDeg", "roll", 0, 4, 0.5, "deg"]];
+  var varsEl = document.getElementById("vars");
+  varsEl.innerHTML = VARS.map(function (v, i) { return '<div class="var"><label for="v' + i + '">' + v[0] + '</label><input id="v' + i + '" type="range" min="' + v[2] + '" max="' + v[3] + '" step="' + v[4] + '" value="' + st[v[1]] + '"><output id="o' + i + '"></output></div>'; }).join("");
+  VARS.forEach(function (v, i) {
+    var el = document.getElementById("v" + i);
+    el.addEventListener("input", function () { st[v[1]] = parseFloat(el.value); refresh(); });
+  });
+  function setOut() { VARS.forEach(function (v, i) { document.getElementById("o" + i).textContent = st[v[1]].toFixed(v[4] < 1 ? 1 : 0) + " " + v[5]; }); }
+
+  function bboxOf(o) {
+    var lo = [1e9, 1e9, 1e9], hi = [-1e9, -1e9, -1e9];
+    o.parts.forEach(function (pt) { verts(pt.a, pt.b).forEach(function (v) { if (o.rot) v = rotY(v, o.rot.piv, o.rot.th); for (var i = 0; i < 3; i++) { lo[i] = Math.min(lo[i], v[i]); hi[i] = Math.max(hi[i], v[i]); } }); });
+    return { lo: lo, hi: hi };
+  }
+  function f2(x) { return (Math.round(x * 100) / 100).toFixed(2); }
+  function renderProps(m) {
+    var el = document.getElementById("props");
+    if (st.sel === "Region") {
+      var rv = regionBox(m), lo = rv[0], hi = rv[6];
+      el.innerHTML = '<dl><dt>Name</dt><dd>Region</dd><dt>Material</dt><dd>vacuum</dd><dt>Padding</dt><dd>88.9 / 152.4 / 50.05 mm (x / y / z, absolute)</dd><dt>X</dt><dd>' + f2(lo[0]) + ' to ' + f2(hi[0]) + '</dd><dt>Y</dt><dd>' + f2(lo[1]) + ' to ' + f2(hi[1]) + '</dd><dt>Z</dt><dd>' + f2(lo[2]) + ' to ' + f2(hi[2]) + '</dd></dl><div class="code">mod.create_region([88.9, 88.9, 152.4, 152.4, 50.05, 50.05], is_percentage=False)</div>';
+      return;
+    }
+    var o = m.objs.filter(function (x) { return x.name === st.sel; })[0] || m.objs[0], bb = bboxOf(o);
+    var code = o.code.replace("x%", st.sel.slice(-1) === "R" ? "x0 + SPAN - LEG" : "x0");
+    el.innerHTML = '<dl><dt>Name</dt><dd>' + o.name + '</dd><dt>Material</dt><dd>' + o.mat + '</dd><dt>X</dt><dd>' + f2(bb.lo[0]) + ' to ' + f2(bb.hi[0]) + '</dd><dt>Y</dt><dd>' + f2(bb.lo[1]) + ' to ' + f2(bb.hi[1]) + '</dd><dt>Z</dt><dd>' + f2(bb.lo[2]) + ' to ' + f2(bb.hi[2]) + '</dd><dt>Note</dt><dd style="font-family:var(--font-ui)">' + o.note + '</dd></dl><div class="code">' + code.replace(/</g, "&lt;") + '</div>';
+  }
+  var STORED = { 3: 187.3, 4: 147.4, 5: 120.3, 6: 100.6, 7: 85.8, 8: 73.9, 9: 64.3, 10: 56.7, 11: 50.1, 12: 44.7, 13: 40.1, 14: 36.0, 15: 32.6 };
+  function renderRes() {
+    var el = document.getElementById("res"), g = st.gap, key = Math.round(g);
+    if (st.iL === 0 && st.iR === 0 && st.roll === 0 && g === key && STORED[key]) {
+      var src;
+      if (st.mode === "orig") {
+        src = (key === 3 || key === 5) ? 'Solved with the current script (3 mm: 187.32 N, 5 mm: 120.38 N).'
+          : 'From the previous script\'s sweep (4 mm from LEV-109). The current script re-solved only 3 and 5 mm, both within 0.1% of these.';
+      } else {
+        src = key < 5 ? 'Not solvable in the previous script (coil hits the track). Value from the LEV-109 coil-moved copy.' : 'Stored solve from the previous script.';
+      }
+      el.innerHTML = '<div class="big">' + STORED[key].toFixed(1) + ' N</div><div class="sub">YokeForce.Force_z at ' + key + ' mm, 0 A, 0 deg. ' + src + '</div>';
+    } else {
+      el.innerHTML = '<div class="sub">No stored solve for this state. Stored points: 0 A, 0 deg, whole-millimetre gaps from 3 to 15 mm.</div>';
+    }
+  }
+  function renderMsgs(m) {
+    var L = [];
+    L.push(["info", "Design 'Yoke' (Magnetostatic), 9 objects, 2 current sheets, force and torque on 7 bodies."]);
+    L.push(["info", "Setup1: 15 passes max, 1 % energy error. HPC set to 4 cores, 1 task (Student limit)."]);
+    L.push(["info", "GapSweep: GapHeight 2 to 15 mm in 1 mm steps, one solve at a time."]);
+    if (m.s) {
+      L.push(["warn", "Previous script (LEV-109 bug): base is a solid block, top at z = 31.43. Coils start at z = 39.05, 7.62 mm above it."]);
+      L.push(["warn", "Coil top z = 74.00 sits 4.47 mm above the pole face at z = " + m.ztop.toFixed(2) + ". Gaps under 4.5 mm fail."]);
+    } else {
+      L.push(["info", "Base: 50.8 mm tall at the legs, 76.2 x 12.7 mm pocket between them (1.5 in of steel underneath)."]);
+      L.push(["info", "Coils: z 30.82 to 74.00, derived from the pocket floor and pole face. 3 mm gap solves (187.32 N)."]);
+    }
+    var errs = [], th = m.th;
+    function zb(x) { return m.zp - (x - m.xc) * Math.tan(th); }
+    ["L", "R"].forEach(function (k) {
+      var cx = m.xs[k] + m.LEG / 2, lo = cx - m.wo / 2, hi = cx + m.wo / 2;
+      if (Math.min(zb(lo), zb(hi)) < m.coilTop) errs.push("Coil" + k);
+      var a = m.xs[k], b = a + m.LEG;
+      if (Math.min(zb(a), zb(b)) < m.ztop) errs.push("Cap" + k);
+    });
+    if (errs.length) errs.forEach(function (n) { L.push(["err", "Parts " + n + " and Track intersect. Simulation will not start."]); });
+    else L.push(["ok", "Validation: no intersecting parts at GapHeight " + st.gap.toFixed(1) + " mm, rollDeg " + st.roll.toFixed(1) + "."]);
+    document.getElementById("msgs").innerHTML = L.map(function (r) { return '<li><span class="tag ' + r[0] + '">' + ({ info: "Info", ok: "OK", warn: "Warn", err: "Error" })[r[0]] + '</span><span>' + r[1] + '</span></li>'; }).join("");
+  }
+  document.getElementById("legend").innerHTML =
+    '<span><i style="background:rgb(128,143,160)"></i>Steel</span><span><i style="background:rgb(196,84,70)"></i>Magnet, N end</span><span><i style="background:rgb(70,114,186)"></i>Magnet, S end</span><span><i style="background:rgb(214,132,66)"></i>Coil (copper)</span><span><i style="background:rgb(120,170,205)"></i>Track (shown transparent)</span><span><i style="background:rgba(255,214,102,.6)"></i>Current sheet</span><span>White arrow: magnetisation</span>';
+
+  /* ---------- wiring ---------- */
+  function select(n) { st.sel = n; renderTree(); renderProps(build(st.mode, st.gap, st.roll)); draw(); }
+  function refresh() { var m = build(st.mode, st.gap, st.roll); setOut(); renderTree(); renderProps(m); renderRes(); renderMsgs(m); draw(); }
+  function setMode(md) { st.mode = md; document.getElementById("m-script").setAttribute("aria-pressed", md === "script"); document.getElementById("m-orig").setAttribute("aria-pressed", md === "orig"); refresh(); }
+  document.getElementById("m-script").onclick = function () { setMode("script"); };
+  document.getElementById("m-orig").onclick = function () { setMode("orig"); };
+  document.getElementById("c-region").onchange = function (e) { st.region = e.target.checked; draw(); };
+  document.getElementById("c-dims").onchange = function (e) { st.dims = e.target.checked; draw(); };
+  var VIEWS = { iso: [-30, 24], front: [0, 0.01], side: [-90, 0.01], top: [0, 89.5] };
+  document.querySelectorAll("[data-v]").forEach(function (b) {
+    b.onclick = function () { var v = VIEWS[b.getAttribute("data-v")]; st.az = v[0]; st.el = v[1]; document.querySelectorAll("[data-v]").forEach(function (x) { x.setAttribute("aria-pressed", x === b); }); draw(); };
+  });
+  // drag to rotate, click to select
+  var drag = null;
+  cv.addEventListener("pointerdown", function (e) { drag = { x: e.clientX, y: e.clientY, az: st.az, el: st.el, moved: false }; cv.setPointerCapture(e.pointerId); cv.classList.add("drag"); });
+  cv.addEventListener("pointermove", function (e) {
+    if (!drag) return; var dx = e.clientX - drag.x, dy = e.clientY - drag.y;
+    if (Math.abs(dx) + Math.abs(dy) > 3) drag.moved = true;
+    if (drag.moved) { st.az = drag.az + dx * 0.4; st.el = Math.max(2, Math.min(89, drag.el + dy * 0.3)); document.querySelectorAll("[data-v]").forEach(function (x) { x.setAttribute("aria-pressed", "false"); }); draw(); }
+  });
+  cv.addEventListener("pointerup", function (e) {
+    cv.classList.remove("drag");
+    if (drag && !drag.moved) {
+      var r = cv.getBoundingClientRect(), x = e.clientX - r.left, y = e.clientY - r.top, hit = null;
+      for (var i = hits.length - 1; i >= 0 && !hit; i--) if (inPoly(x, y, hits[i].poly)) hit = hits[i].name;
+      if (hit) select(hit);
+    }
+    drag = null;
+  });
+  function inPoly(x, y, p) { var ins = false; for (var i = 0, j = p.length - 1; i < p.length; j = i++) { if (((p[i][1] > y) !== (p[j][1] > y)) && (x < (p[j][0] - p[i][0]) * (y - p[i][1]) / (p[j][1] - p[i][1]) + p[i][0])) ins = !ins; } return ins; }
+  function resize() { var r = cv.getBoundingClientRect(); DPR = window.devicePixelRatio || 1; W = r.width; H = r.height; cv.width = Math.round(W * DPR); cv.height = Math.round(H * DPR); draw(); }
+  if (window.ResizeObserver) new ResizeObserver(resize).observe(cv); else window.addEventListener("resize", resize);
+  setOut(); refresh(); resize();
+})();
+</script>

@@ -515,3 +515,404 @@ Project directory: F:\Ansys2\Projects
 [error] Project:yoke, Design:Yoke (Magnetostatic), Script macro error: No trace data for quantity: YokeForce.Force_z (01:12:19 PM  Sep 30, 2026)
 [error] Project:yoke, Design:Yoke (Magnetostatic), Script macro error: No trace data for quantity: YokeForce.Force_z (01:12:20 PM  Sep 30, 2026)
 Stopping Batch Run: 1:12:33 PM  Sep 30, 2026
+ 
+Ansys Electronics Desktop Student Version 2025.2.4, Build: 2025-11-06 17:01:32
+Location: F:\Ansys2\ANSYS Inc\ANSYS Student\v252\AnsysEM\ansysedtsv.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 2:33:43 PM  Oct 18, 2026
+Running as user : ADITYA-DESKTOP\adity
+Temp directory: C:\temp
+Project directory: F:\Ansys2\Projects
+[info] gRPC server started on port 57364 of local host. Only connections from the local host initiated by the same user are permitted.
+
+[warning] Project:yoke_gap, Design:Yoke (Magnetostatic), Material 'N52_up': The magnitude of Magnetic Coercivity is expected to be <= 0. If you use a positive value the direction used will be the opposite of the unit vector specified. (02:34:17 PM  Oct 18, 2026)
+[warning] Project:yoke_gap, Design:Yoke (Magnetostatic), Material 'N52_up': The magnitude of Magnetic Coercivity is expected to be <= 0. If you use a positive value the direction used will be the opposite of the unit vector specified. (02:34:17 PM  Oct 18, 2026)
+[warning] Project:yoke_gap, Design:Yoke (Magnetostatic), Part Attributes: Name tmp is already used, use name tmp_1. (02:34:17 PM  Oct 18, 2026)
+[warning] Project:yoke_gap, Design:Yoke (Magnetostatic), GPU acceleration will be disabled when automatic settings is selected in Analysis Configuration (02:34:19 PM  Oct 18, 2026)
+[error] Project:yoke_gap, Design:Yoke (Magnetostatic), Parts CoilR and Track intersect. (02:34:20 PM  Oct 18, 2026)
+[error] Project:yoke_gap, Design:Yoke (Magnetostatic), Parts CoilL and Track intersect. (02:34:20 PM  Oct 18, 2026)
+[error] Project:yoke_gap, Design:Yoke (Magnetostatic), Simulation completed with execution error on server: Local Machine. (02:34:21 PM  Oct 18, 2026)
+[error] Project:yoke_gap, Design:Yoke (Magnetostatic), Script macro error: Simulation for yoke_gap : Yoke : Setup1 has failed with execution error.  (02:34:21 PM  Oct 18, 2026)
+[warning] Project:yoke_gap, Design:Yoke (Magnetostatic), GPU acceleration will be disabled when automatic settings is selected in Analysis Configuration (02:34:23 PM  Oct 18, 2026)
+[error] Project:yoke_gap, Design:Yoke (Magnetostatic), Parts CoilR and Track intersect. (02:34:24 PM  Oct 18, 2026)
+[error] Project:yoke_gap, Design:Yoke (Magnetostatic), Parts CoilL and Track intersect. (02:34:24 PM  Oct 18, 2026)
+[error] Project:yoke_gap, Design:Yoke (Magnetostatic), Simulation completed with execution error on server: Local Machine. (02:34:24 PM  Oct 18, 2026)
+[error] Project:yoke_gap, Design:Yoke (Magnetostatic), Script macro error: Simulation for yoke_gap : Yoke : Setup1 has failed with execution error.  (02:34:24 PM  Oct 18, 2026)
+[warning] Project:yoke_gap, Design:Yoke (Magnetostatic), GPU acceleration will be disabled when automatic settings is selected in Analysis Configuration (02:34:26 PM  Oct 18, 2026)
+[warning] Project:yoke_gap, Design:Yoke (Magnetostatic), Material 'N52_up': The magnitude of Magnetic Coercivity is expected to be <= 0. If you use a positive value the direction used will be the opposite of the unit vector specified. (02:34:27 PM  Oct 18, 2026)
+[info] Project:yoke_gap, Design:Yoke (Magnetostatic), Verify conduction path: Conduction path validate success. (02:34:27 PM  Oct 18, 2026)
+[info] Project:yoke_gap, Design:Yoke (Magnetostatic), Normal completion of simulation on server: Local Machine. (02:35:11 PM  Oct 18, 2026)
+[warning] Project:yoke_gap, Design:Yoke (Magnetostatic), GPU acceleration will be disabled when automatic settings is selected in Analysis Configuration (02:35:13 PM  Oct 18, 2026)
+[warning] Project:yoke_gap, Design:Yoke (Magnetostatic), Material 'N52_up': The magnitude of Magnetic Coercivity is expected to be <= 0. If you use a positive value the direction used will be the opposite of the unit vector specified. (02:35:14 PM  Oct 18, 2026)
+[info] Project:yoke_gap, Design:Yoke (Magnetostatic), Verify conduction path: Conduction path validate success. (02:35:14 PM  Oct 18, 2026)
+[info] Project:yoke_gap, Design:Yoke (Magnetostatic), Normal completion of simulation on server: Local Machine. (02:35:52 PM  Oct 18, 2026)
+[warning] Project:yoke_gap, Design:Yoke (Magnetostatic), GPU acceleration will be disabled when automatic settings is selected in Analysis Configuration (02:35:53 PM  Oct 18, 2026)
+[warning] Project:yoke_gap, Design:Yoke (Magnetostatic), Material 'N52_up': The magnitude of Magnetic Coercivity is expected to be <= 0. If you use a positive value the direction used will be the opposite of the unit vector specified. (02:35:54 PM  Oct 18, 2026)
+[info] Project:yoke_gap, Design:Yoke (Magnetostatic), Verify conduction path: Conduction path validate success. (02:35:54 PM  Oct 18, 2026)
+[info] Project:yoke_gap, Design:Yoke (Magnetostatic), Normal completion of simulation on server: Local Machine. (02:36:40 PM  Oct 18, 2026)
+[warning] Project:yoke_gap, Design:Yoke (Magnetostatic), GPU acceleration will be disabled when automatic settings is selected in Analysis Configuration (02:36:42 PM  Oct 18, 2026)
+[warning] Project:yoke_gap, Design:Yoke (Magnetostatic), Material 'N52_up': The magnitude of Magnetic Coercivity is expected to be <= 0. If you use a positive value the direction used will be the opposite of the unit vector specified. (02:36:43 PM  Oct 18, 2026)
+[info] Project:yoke_gap, Design:Yoke (Magnetostatic), Verify conduction path: Conduction path validate success. (02:36:43 PM  Oct 18, 2026)
+[info] Project:yoke_gap, Design:Yoke (Magnetostatic), Normal completion of simulation on server: Local Machine. (02:37:29 PM  Oct 18, 2026)
+[warning] Project:yoke_gap, Design:Yoke (Magnetostatic), GPU acceleration will be disabled when automatic settings is selected in Analysis Configuration (02:37:30 PM  Oct 18, 2026)
+[warning] Project:yoke_gap, Design:Yoke (Magnetostatic), Material 'N52_up': The magnitude of Magnetic Coercivity is expected to be <= 0. If you use a positive value the direction used will be the opposite of the unit vector specified. (02:37:31 PM  Oct 18, 2026)
+[info] Project:yoke_gap, Design:Yoke (Magnetostatic), Verify conduction path: Conduction path validate success. (02:37:31 PM  Oct 18, 2026)
+[info] Project:yoke_gap, Design:Yoke (Magnetostatic), Normal completion of simulation on server: Local Machine. (02:38:17 PM  Oct 18, 2026)
+[warning] Project:yoke_gap, Design:Yoke (Magnetostatic), GPU acceleration will be disabled when automatic settings is selected in Analysis Configuration (02:38:19 PM  Oct 18, 2026)
+[warning] Project:yoke_gap, Design:Yoke (Magnetostatic), Material 'N52_up': The magnitude of Magnetic Coercivity is expected to be <= 0. If you use a positive value the direction used will be the opposite of the unit vector specified. (02:38:19 PM  Oct 18, 2026)
+[info] Project:yoke_gap, Design:Yoke (Magnetostatic), Verify conduction path: Conduction path validate success. (02:38:19 PM  Oct 18, 2026)
+[info] Project:yoke_gap, Design:Yoke (Magnetostatic), Normal completion of simulation on server: Local Machine. (02:39:05 PM  Oct 18, 2026)
+[warning] Project:yoke_gap, Design:Yoke (Magnetostatic), GPU acceleration will be disabled when automatic settings is selected in Analysis Configuration (02:39:07 PM  Oct 18, 2026)
+[warning] Project:yoke_gap, Design:Yoke (Magnetostatic), Material 'N52_up': The magnitude of Magnetic Coercivity is expected to be <= 0. If you use a positive value the direction used will be the opposite of the unit vector specified. (02:39:08 PM  Oct 18, 2026)
+[info] Project:yoke_gap, Design:Yoke (Magnetostatic), Verify conduction path: Conduction path validate success. (02:39:08 PM  Oct 18, 2026)
+[info] Project:yoke_gap, Design:Yoke (Magnetostatic), Normal completion of simulation on server: Local Machine. (02:39:44 PM  Oct 18, 2026)
+[warning] Project:yoke_gap, Design:Yoke (Magnetostatic), GPU acceleration will be disabled when automatic settings is selected in Analysis Configuration (02:39:45 PM  Oct 18, 2026)
+[warning] Project:yoke_gap, Design:Yoke (Magnetostatic), Material 'N52_up': The magnitude of Magnetic Coercivity is expected to be <= 0. If you use a positive value the direction used will be the opposite of the unit vector specified. (02:39:46 PM  Oct 18, 2026)
+[info] Project:yoke_gap, Design:Yoke (Magnetostatic), Verify conduction path: Conduction path validate success. (02:39:46 PM  Oct 18, 2026)
+[info] Project:yoke_gap, Design:Yoke (Magnetostatic), Normal completion of simulation on server: Local Machine. (02:40:22 PM  Oct 18, 2026)
+Stopping Batch Run: 2:40:34 PM  Oct 18, 2026
+ 
+Ansys Electronics Desktop Student Version 2025.2.4, Build: 2025-11-06 17:01:32
+Location: F:\Ansys2\ANSYS Inc\ANSYS Student\v252\AnsysEM\ansysedtsv.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 3:44:15 PM  Oct 18, 2026
+Running as user : ADITYA-DESKTOP\adity
+Temp directory: C:\temp
+Project directory: F:\Ansys2\Projects
+[info] gRPC server started on port 63582 of local host. Only connections from the local host initiated by the same user are permitted.
+
+[warning] Project:yoke_coilfix, Design:Yoke (Magnetostatic), Material 'N52_up': The magnitude of Magnetic Coercivity is expected to be <= 0. If you use a positive value the direction used will be the opposite of the unit vector specified. (03:44:32 PM  Oct 18, 2026)
+[warning] Project:yoke_coilfix, Design:Yoke (Magnetostatic), Material 'N52_up': The magnitude of Magnetic Coercivity is expected to be <= 0. If you use a positive value the direction used will be the opposite of the unit vector specified. (03:44:32 PM  Oct 18, 2026)
+[warning] Project:yoke_coilfix, Design:Yoke (Magnetostatic), Part Attributes: Name tmp is already used, use name tmp_1. (03:44:32 PM  Oct 18, 2026)
+[warning] Project:yoke_coilfix, Design:Yoke (Magnetostatic), GPU acceleration will be disabled when automatic settings is selected in Analysis Configuration (03:44:34 PM  Oct 18, 2026)
+[warning] Project:yoke_coilfix, Design:Yoke (Magnetostatic), Material 'N52_up': The magnitude of Magnetic Coercivity is expected to be <= 0. If you use a positive value the direction used will be the opposite of the unit vector specified. (03:44:34 PM  Oct 18, 2026)
+[info] Project:yoke_coilfix, Design:Yoke (Magnetostatic), Verify conduction path: Conduction path validate success. (03:44:34 PM  Oct 18, 2026)
+[info] Project:yoke_coilfix, Design:Yoke (Magnetostatic), Normal completion of simulation on server: Local Machine. (03:45:20 PM  Oct 18, 2026)
+[warning] Project:yoke_coilfix, Design:Yoke (Magnetostatic), GPU acceleration will be disabled when automatic settings is selected in Analysis Configuration (03:45:23 PM  Oct 18, 2026)
+[warning] Project:yoke_coilfix, Design:Yoke (Magnetostatic), Material 'N52_up': The magnitude of Magnetic Coercivity is expected to be <= 0. If you use a positive value the direction used will be the opposite of the unit vector specified. (03:45:23 PM  Oct 18, 2026)
+[info] Project:yoke_coilfix, Design:Yoke (Magnetostatic), Verify conduction path: Conduction path validate success. (03:45:23 PM  Oct 18, 2026)
+[info] Project:yoke_coilfix, Design:Yoke (Magnetostatic), Normal completion of simulation on server: Local Machine. (03:46:16 PM  Oct 18, 2026)
+[warning] Project:yoke_coilfix, Design:Yoke (Magnetostatic), GPU acceleration will be disabled when automatic settings is selected in Analysis Configuration (03:46:17 PM  Oct 18, 2026)
+[warning] Project:yoke_coilfix, Design:Yoke (Magnetostatic), Material 'N52_up': The magnitude of Magnetic Coercivity is expected to be <= 0. If you use a positive value the direction used will be the opposite of the unit vector specified. (03:46:18 PM  Oct 18, 2026)
+[info] Project:yoke_coilfix, Design:Yoke (Magnetostatic), Verify conduction path: Conduction path validate success. (03:46:18 PM  Oct 18, 2026)
+[info] Project:yoke_coilfix, Design:Yoke (Magnetostatic), Normal completion of simulation on server: Local Machine. (03:47:14 PM  Oct 18, 2026)
+[warning] Project:yoke_coilfix, Design:Yoke (Magnetostatic), GPU acceleration will be disabled when automatic settings is selected in Analysis Configuration (03:47:16 PM  Oct 18, 2026)
+[warning] Project:yoke_coilfix, Design:Yoke (Magnetostatic), Material 'N52_up': The magnitude of Magnetic Coercivity is expected to be <= 0. If you use a positive value the direction used will be the opposite of the unit vector specified. (03:47:17 PM  Oct 18, 2026)
+[info] Project:yoke_coilfix, Design:Yoke (Magnetostatic), Verify conduction path: Conduction path validate success. (03:47:17 PM  Oct 18, 2026)
+[info] Project:yoke_coilfix, Design:Yoke (Magnetostatic), Normal completion of simulation on server: Local Machine. (03:48:01 PM  Oct 18, 2026)
+[warning] Project:yoke_coilfix, Design:Yoke (Magnetostatic), GPU acceleration will be disabled when automatic settings is selected in Analysis Configuration (03:48:02 PM  Oct 18, 2026)
+[warning] Project:yoke_coilfix, Design:Yoke (Magnetostatic), Material 'N52_up': The magnitude of Magnetic Coercivity is expected to be <= 0. If you use a positive value the direction used will be the opposite of the unit vector specified. (03:48:03 PM  Oct 18, 2026)
+[info] Project:yoke_coilfix, Design:Yoke (Magnetostatic), Verify conduction path: Conduction path validate success. (03:48:03 PM  Oct 18, 2026)
+[info] Project:yoke_coilfix, Design:Yoke (Magnetostatic), Normal completion of simulation on server: Local Machine. (03:48:47 PM  Oct 18, 2026)
+[warning] Project:yoke_coilfix, Design:Yoke (Magnetostatic), GPU acceleration will be disabled when automatic settings is selected in Analysis Configuration (03:48:49 PM  Oct 18, 2026)
+[warning] Project:yoke_coilfix, Design:Yoke (Magnetostatic), Material 'N52_up': The magnitude of Magnetic Coercivity is expected to be <= 0. If you use a positive value the direction used will be the opposite of the unit vector specified. (03:48:49 PM  Oct 18, 2026)
+[info] Project:yoke_coilfix, Design:Yoke (Magnetostatic), Verify conduction path: Conduction path validate success. (03:48:49 PM  Oct 18, 2026)
+[info] Project:yoke_coilfix, Design:Yoke (Magnetostatic), Normal completion of simulation on server: Local Machine. (03:49:46 PM  Oct 18, 2026)
+[warning] Project:yoke_coilfix, Design:Yoke (Magnetostatic), GPU acceleration will be disabled when automatic settings is selected in Analysis Configuration (03:49:47 PM  Oct 18, 2026)
+[warning] Project:yoke_coilfix, Design:Yoke (Magnetostatic), Material 'N52_up': The magnitude of Magnetic Coercivity is expected to be <= 0. If you use a positive value the direction used will be the opposite of the unit vector specified. (03:49:48 PM  Oct 18, 2026)
+[info] Project:yoke_coilfix, Design:Yoke (Magnetostatic), Verify conduction path: Conduction path validate success. (03:49:48 PM  Oct 18, 2026)
+[info] Project:yoke_coilfix, Design:Yoke (Magnetostatic), Normal completion of simulation on server: Local Machine. (03:50:30 PM  Oct 18, 2026)
+[warning] Project:yoke_coilfix, Design:Yoke (Magnetostatic), GPU acceleration will be disabled when automatic settings is selected in Analysis Configuration (03:50:32 PM  Oct 18, 2026)
+[warning] Project:yoke_coilfix, Design:Yoke (Magnetostatic), Material 'N52_up': The magnitude of Magnetic Coercivity is expected to be <= 0. If you use a positive value the direction used will be the opposite of the unit vector specified. (03:50:33 PM  Oct 18, 2026)
+[info] Project:yoke_coilfix, Design:Yoke (Magnetostatic), Verify conduction path: Conduction path validate success. (03:50:33 PM  Oct 18, 2026)
+[info] Project:yoke_coilfix, Design:Yoke (Magnetostatic), Normal completion of simulation on server: Local Machine. (03:51:15 PM  Oct 18, 2026)
+[warning] Project:yoke_coilfix, Design:Yoke (Magnetostatic), GPU acceleration will be disabled when automatic settings is selected in Analysis Configuration (03:51:16 PM  Oct 18, 2026)
+[warning] Project:yoke_coilfix, Design:Yoke (Magnetostatic), Material 'N52_up': The magnitude of Magnetic Coercivity is expected to be <= 0. If you use a positive value the direction used will be the opposite of the unit vector specified. (03:51:17 PM  Oct 18, 2026)
+[info] Project:yoke_coilfix, Design:Yoke (Magnetostatic), Verify conduction path: Conduction path validate success. (03:51:17 PM  Oct 18, 2026)
+[info] Project:yoke_coilfix, Design:Yoke (Magnetostatic), Normal completion of simulation on server: Local Machine. (03:52:01 PM  Oct 18, 2026)
+[warning] Project:yoke_coilfix, Design:Yoke (Magnetostatic), GPU acceleration will be disabled when automatic settings is selected in Analysis Configuration (03:52:03 PM  Oct 18, 2026)
+[warning] Project:yoke_coilfix, Design:Yoke (Magnetostatic), Material 'N52_up': The magnitude of Magnetic Coercivity is expected to be <= 0. If you use a positive value the direction used will be the opposite of the unit vector specified. (03:52:04 PM  Oct 18, 2026)
+[info] Project:yoke_coilfix, Design:Yoke (Magnetostatic), Verify conduction path: Conduction path validate success. (03:52:04 PM  Oct 18, 2026)
+[info] Project:yoke_coilfix, Design:Yoke (Magnetostatic), Normal completion of simulation on server: Local Machine. (03:52:46 PM  Oct 18, 2026)
+Stopping Batch Run: 3:52:57 PM  Oct 18, 2026
+ 
+Ansys Electronics Desktop Student Version 2025.2.4, Build: 2025-11-06 17:01:32
+Location: F:\Ansys2\ANSYS Inc\ANSYS Student\v252\AnsysEM\ansysedtsv.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 11:17:38 PM  Oct 21, 2026
+Running as user : ADITYA-DESKTOP\adity
+Temp directory: C:\temp
+Project directory: F:\Ansys2\Projects
+[info] gRPC server started on port 55948 of local host. Only connections from the local host initiated by the same user are permitted.
+
+Stopping Batch Run: 11:18:16 PM  Oct 21, 2026
+ 
+Ansys Electronics Desktop Student Version 2025.2.4, Build: 2025-11-06 17:01:32
+Location: F:\Ansys2\ANSYS Inc\ANSYS Student\v252\AnsysEM\ansysedtsv.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 11:31:34 PM  Oct 21, 2026
+Running as user : ADITYA-DESKTOP\adity
+Temp directory: C:\temp
+Project directory: F:\Ansys2\Projects
+[info] gRPC server started on port 57848 of local host. Only connections from the local host initiated by the same user are permitted.
+
+[warning] Project:yoke, Design:Yoke (Magnetostatic), Part Attributes: Name tmp is already used, use name tmp_1. (11:31:53 PM  Oct 21, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), GPU acceleration will be disabled when automatic settings is selected in Analysis Configuration (11:31:56 PM  Oct 21, 2026)
+[info] Project:yoke, Design:Yoke (Magnetostatic), Verify conduction path: Conduction path validate success. (11:31:57 PM  Oct 21, 2026)
+[info] Project:yoke, Design:Yoke (Magnetostatic), Normal completion of simulation on server: Local Machine. (11:32:49 PM  Oct 21, 2026)
+Stopping Batch Run: 11:33:00 PM  Oct 21, 2026
+ 
+Ansys Electronics Desktop Student Version 2025.2.4, Build: 2025-11-06 17:01:32
+Location: F:\Ansys2\ANSYS Inc\ANSYS Student\v252\AnsysEM\ansysedtsv.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 11:33:05 PM  Oct 21, 2026
+Running as user : ADITYA-DESKTOP\adity
+Temp directory: C:\temp
+Project directory: F:\Ansys2\Projects
+[info] gRPC server started on port 58199 of local host. Only connections from the local host initiated by the same user are permitted.
+
+[warning] Project:yoke, Design:Yoke (Magnetostatic), Part Attributes: Name tmp is already used, use name tmp_1. (11:33:23 PM  Oct 21, 2026)
+[warning] Project:yoke, Design:Yoke (Magnetostatic), GPU acceleration will be disabled when automatic settings is selected in Analysis Configuration (11:33:25 PM  Oct 21, 2026)
+[info] Project:yoke, Design:Yoke (Magnetostatic), Verify conduction path: Conduction path validate success. (11:33:26 PM  Oct 21, 2026)
+[info] Project:yoke, Design:Yoke (Magnetostatic), Normal completion of simulation on server: Local Machine. (11:34:14 PM  Oct 21, 2026)
+Stopping Batch Run: 11:34:25 PM  Oct 21, 2026
+ 
+Ansys Electronics Desktop Student Version 2025.2.4, Build: 2025-11-06 17:01:32
+Location: F:\Ansys2\ANSYS Inc\ANSYS Student\v252\AnsysEM\ansysedtsv.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 11:57:01 PM  Oct 21, 2026
+Running as user : ADITYA-DESKTOP\adity
+Temp directory: C:\temp
+Project directory: F:\Ansys2\Projects
+[info] gRPC server started on port 60893 of local host. Only connections from the local host initiated by the same user are permitted.
+
+[warning] Project:Project1, The material Aichi Steel - MF18C was not found in the material libraries (11:57:18 PM  Oct 21, 2026)
+ 
+Ansys Electronics Desktop Student Version 2025.2.4, Build: 2025-11-06 17:01:32
+Location: F:\Ansys2\ANSYS Inc\ANSYS Student\v252\AnsysEM\ansysedtsv.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 11:58:18 PM  Oct 21, 2026
+Running as user : ADITYA-DESKTOP\adity
+Temp directory: C:\temp
+Project directory: F:\Ansys2\Projects
+[info] gRPC server started on port 61121 of local host. Only connections from the local host initiated by the same user are permitted.
+
+[error] No such feature exists.
+Feature
+m3dfs_gui
+License path
+C
+\Users\adity\AppData\Local\Temp\\c1ddb06c-8534-4390-a817-46dd47c74e6c;
+FlexNet Licensing error
+-5,357
+
+
+[error] No such feature exists.
+Feature
+m3dfs_gui
+License path
+C
+\Users\adity\AppData\Local\Temp\\c1ddb06c-8534-4390-a817-46dd47c74e6c;
+FlexNet Licensing error
+-5,357
+
+
+[info] Server 'srv_2001' started on ports (2001, 2002)
+ 
+Ansys Electronics Desktop Student Version 2025.2.4, Build: 2025-11-06 17:01:32
+Location: F:\Ansys2\ANSYS Inc\ANSYS Student\v252\AnsysEM\ansysedtsv.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 12:11:18 AM  Oct 22, 2026
+Running as user : ADITYA-DESKTOP\adity
+Temp directory: C:\temp
+Project directory: F:\Ansys2\Projects
+[info] gRPC server started on port 62697 of local host. Only connections from the local host initiated by the same user are permitted.
+
+Stopping Batch Run: 12:11:51 AM  Oct 22, 2026
+ 
+Ansys Electronics Desktop Student Version 2025.2.4, Build: 2025-11-06 17:01:32
+Location: F:\Ansys2\ANSYS Inc\ANSYS Student\v252\AnsysEM\ansysedtsv.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 12:38:07 AM  Oct 22, 2026
+Running as user : ADITYA-DESKTOP\adity
+Temp directory: C:\temp
+Project directory: F:\Ansys2\Projects
+[info] gRPC server started on port 65440 of local host. Only connections from the local host initiated by the same user are permitted.
+
+[warning] Project:xc_linear, Design:Yoke (Magnetostatic), Part Attributes: Name tmp is already used, use name tmp_1. (12:38:31 AM  Oct 22, 2026)
+[warning] Project:xc_linear, Design:Yoke (Magnetostatic), GPU acceleration will be disabled when automatic settings is selected in Analysis Configuration (12:38:33 AM  Oct 22, 2026)
+[info] Project:xc_linear, Design:Yoke (Magnetostatic), Verify conduction path: Conduction path validate success. (12:38:34 AM  Oct 22, 2026)
+[info] Project:xc_linear, Design:Yoke (Magnetostatic), Normal completion of simulation on server: Local Machine. (12:39:35 AM  Oct 22, 2026)
+Stopping Batch Run: 12:39:47 AM  Oct 22, 2026
+ 
+Ansys Electronics Desktop Student Version 2025.2.4, Build: 2025-11-06 17:01:32
+Location: F:\Ansys2\ANSYS Inc\ANSYS Student\v252\AnsysEM\ansysedtsv.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 12:39:50 AM  Oct 22, 2026
+Running as user : ADITYA-DESKTOP\adity
+Temp directory: C:\temp
+Project directory: F:\Ansys2\Projects
+[info] gRPC server started on port 49558 of local host. Only connections from the local host initiated by the same user are permitted.
+
+[warning] Project:xc_arnold, Design:Yoke (Magnetostatic), Part Attributes: Name tmp is already used, use name tmp_1. (12:40:07 AM  Oct 22, 2026)
+[warning] Project:xc_arnold, Design:Yoke (Magnetostatic), GPU acceleration will be disabled when automatic settings is selected in Analysis Configuration (12:40:09 AM  Oct 22, 2026)
+[info] Project:xc_arnold, Design:Yoke (Magnetostatic), Verify conduction path: Conduction path validate success. (12:40:10 AM  Oct 22, 2026)
+[info] Project:xc_arnold, Design:Yoke (Magnetostatic), Normal completion of simulation on server: Local Machine. (12:41:17 AM  Oct 22, 2026)
+Stopping Batch Run: 12:41:28 AM  Oct 22, 2026
+ 
+Ansys Electronics Desktop Student Version 2025.2.4, Build: 2025-11-06 17:01:32
+Location: F:\Ansys2\ANSYS Inc\ANSYS Student\v252\AnsysEM\ansysedtsv.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 12:41:32 AM  Oct 22, 2026
+Running as user : ADITYA-DESKTOP\adity
+Temp directory: C:\temp
+Project directory: F:\Ansys2\Projects
+[info] gRPC server started on port 50085 of local host. Only connections from the local host initiated by the same user are permitted.
+
+[warning] Project:xc_legacy, Design:Yoke (Magnetostatic), Part Attributes: Name tmp is already used, use name tmp_1. (12:41:49 AM  Oct 22, 2026)
+[warning] Project:xc_legacy, Design:Yoke (Magnetostatic), GPU acceleration will be disabled when automatic settings is selected in Analysis Configuration (12:41:51 AM  Oct 22, 2026)
+[info] Project:xc_legacy, Design:Yoke (Magnetostatic), Verify conduction path: Conduction path validate success. (12:41:52 AM  Oct 22, 2026)
+[info] Project:xc_legacy, Design:Yoke (Magnetostatic), Normal completion of simulation on server: Local Machine. (12:42:40 AM  Oct 22, 2026)
+Stopping Batch Run: 12:42:51 AM  Oct 22, 2026
+ 
+Ansys Electronics Desktop Student Version 2025.2.4, Build: 2025-11-06 17:01:32
+Location: F:\Ansys2\ANSYS Inc\ANSYS Student\v252\AnsysEM\ansysedtsv.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 12:46:04 AM  Oct 22, 2026
+Running as user : ADITYA-DESKTOP\adity
+Temp directory: C:\temp
+Project directory: F:\Ansys2\Projects
+[info] gRPC server started on port 50953 of local host. Only connections from the local host initiated by the same user are permitted.
+
+[warning] Project:track_t0250, Design:Yoke (Magnetostatic), Part Attributes: Name tmp is already used, use name tmp_1. (12:46:28 AM  Oct 22, 2026)
+[warning] Project:track_t0250, Design:Yoke (Magnetostatic), GPU acceleration will be disabled when automatic settings is selected in Analysis Configuration (12:46:31 AM  Oct 22, 2026)
+[info] Project:track_t0250, Design:Yoke (Magnetostatic), Verify conduction path: Conduction path validate success. (12:46:32 AM  Oct 22, 2026)
+[info] Project:track_t0250, Design:Yoke (Magnetostatic), Normal completion of simulation on server: Local Machine. (12:47:30 AM  Oct 22, 2026)
+[error] Project:track_t0250, Design:Yoke (Magnetostatic), Script macro error: Abnormal script termination. (12:47:31 AM  Oct 22, 2026)
+[warning] Project:track_t0250, Design:Yoke (Magnetostatic), GPU acceleration will be disabled when automatic settings is selected in Analysis Configuration (12:47:34 AM  Oct 22, 2026)
+[info] Project:track_t0250, Design:Yoke (Magnetostatic), Verify conduction path: Conduction path validate success. (12:47:34 AM  Oct 22, 2026)
+[info] Project:track_t0250, Design:Yoke (Magnetostatic), Normal completion of simulation on server: Local Machine. (12:48:26 AM  Oct 22, 2026)
+[error] Project:track_t0250, Design:Yoke (Magnetostatic), Script macro error: Abnormal script termination. (12:48:27 AM  Oct 22, 2026)
+[warning] Project:track_t0250, Design:Yoke (Magnetostatic), GPU acceleration will be disabled when automatic settings is selected in Analysis Configuration (12:48:30 AM  Oct 22, 2026)
+[info] Project:track_t0250, Design:Yoke (Magnetostatic), Verify conduction path: Conduction path validate success. (12:48:31 AM  Oct 22, 2026)
+[info] Project:track_t0250, Design:Yoke (Magnetostatic), Normal completion of simulation on server: Local Machine. (12:49:21 AM  Oct 22, 2026)
+[error] Project:track_t0250, Design:Yoke (Magnetostatic), Script macro error: Abnormal script termination. (12:49:22 AM  Oct 22, 2026)
+Stopping Batch Run: 12:49:34 AM  Oct 22, 2026
+ 
+Ansys Electronics Desktop Student Version 2025.2.4, Build: 2025-11-06 17:01:32
+Location: F:\Ansys2\ANSYS Inc\ANSYS Student\v252\AnsysEM\ansysedtsv.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 12:49:38 AM  Oct 22, 2026
+Running as user : ADITYA-DESKTOP\adity
+Temp directory: C:\temp
+Project directory: F:\Ansys2\Projects
+[info] gRPC server started on port 51631 of local host. Only connections from the local host initiated by the same user are permitted.
+
+[warning] Project:track_t0375, Design:Yoke (Magnetostatic), Part Attributes: Name tmp is already used, use name tmp_1. (12:49:57 AM  Oct 22, 2026)
+[warning] Project:track_t0375, Design:Yoke (Magnetostatic), GPU acceleration will be disabled when automatic settings is selected in Analysis Configuration (12:49:59 AM  Oct 22, 2026)
+[info] Project:track_t0375, Design:Yoke (Magnetostatic), Verify conduction path: Conduction path validate success. (12:50:00 AM  Oct 22, 2026)
+[info] Project:track_t0375, Design:Yoke (Magnetostatic), Normal completion of simulation on server: Local Machine. (12:50:54 AM  Oct 22, 2026)
+[error] Project:track_t0375, Design:Yoke (Magnetostatic), Script macro error: Abnormal script termination. (12:50:55 AM  Oct 22, 2026)
+[warning] Project:track_t0375, Design:Yoke (Magnetostatic), GPU acceleration will be disabled when automatic settings is selected in Analysis Configuration (12:50:57 AM  Oct 22, 2026)
+[info] Project:track_t0375, Design:Yoke (Magnetostatic), Verify conduction path: Conduction path validate success. (12:50:58 AM  Oct 22, 2026)
+[info] Project:track_t0375, Design:Yoke (Magnetostatic), Normal completion of simulation on server: Local Machine. (12:52:05 AM  Oct 22, 2026)
+[error] Project:track_t0375, Design:Yoke (Magnetostatic), Script macro error: Abnormal script termination. (12:52:05 AM  Oct 22, 2026)
+[warning] Project:track_t0375, Design:Yoke (Magnetostatic), GPU acceleration will be disabled when automatic settings is selected in Analysis Configuration (12:52:08 AM  Oct 22, 2026)
+[info] Project:track_t0375, Design:Yoke (Magnetostatic), Verify conduction path: Conduction path validate success. (12:52:09 AM  Oct 22, 2026)
+[info] Project:track_t0375, Design:Yoke (Magnetostatic), Normal completion of simulation on server: Local Machine. (12:52:59 AM  Oct 22, 2026)
+[error] Project:track_t0375, Design:Yoke (Magnetostatic), Script macro error: Abnormal script termination. (12:53:00 AM  Oct 22, 2026)
+Stopping Batch Run: 12:53:11 AM  Oct 22, 2026
+ 
+Ansys Electronics Desktop Student Version 2025.2.4, Build: 2025-11-06 17:01:32
+Location: F:\Ansys2\ANSYS Inc\ANSYS Student\v252\AnsysEM\ansysedtsv.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 7:33:36 PM  Oct 23, 2026
+Running as user : ADITYA-DESKTOP\adity
+Temp directory: C:\temp
+Project directory: F:\Ansys2\Projects
+[info] gRPC server started on port 56847 of local host. Only connections from the local host initiated by the same user are permitted.
+
+[warning] Project:track_t0500, Design:Yoke (Magnetostatic), Part Attributes: Name tmp is already used, use name tmp_1. (07:34:09 PM  Oct 23, 2026)
+[warning] Project:track_t0500, Design:Yoke (Magnetostatic), GPU acceleration will be disabled when automatic settings is selected in Analysis Configuration (07:34:11 PM  Oct 23, 2026)
+[info] Project:track_t0500, Design:Yoke (Magnetostatic), Verify conduction path: Conduction path validate success. (07:34:13 PM  Oct 23, 2026)
+[info] Project:track_t0500, Design:Yoke (Magnetostatic), Normal completion of simulation on server: Local Machine. (07:35:03 PM  Oct 23, 2026)
+[error] Project:track_t0500, Design:Yoke (Magnetostatic), Script macro error: Abnormal script termination. (07:35:04 PM  Oct 23, 2026)
+[warning] Project:track_t0500, Design:Yoke (Magnetostatic), GPU acceleration will be disabled when automatic settings is selected in Analysis Configuration (07:35:07 PM  Oct 23, 2026)
+[info] Project:track_t0500, Design:Yoke (Magnetostatic), Verify conduction path: Conduction path validate success. (07:35:08 PM  Oct 23, 2026)
+[info] Project:track_t0500, Design:Yoke (Magnetostatic), Normal completion of simulation on server: Local Machine. (07:35:52 PM  Oct 23, 2026)
+[error] Project:track_t0500, Design:Yoke (Magnetostatic), Script macro error: Abnormal script termination. (07:35:53 PM  Oct 23, 2026)
+[warning] Project:track_t0500, Design:Yoke (Magnetostatic), GPU acceleration will be disabled when automatic settings is selected in Analysis Configuration (07:35:54 PM  Oct 23, 2026)
+[info] Project:track_t0500, Design:Yoke (Magnetostatic), Verify conduction path: Conduction path validate success. (07:35:55 PM  Oct 23, 2026)
+[info] Project:track_t0500, Design:Yoke (Magnetostatic), Normal completion of simulation on server: Local Machine. (07:36:35 PM  Oct 23, 2026)
+[error] Project:track_t0500, Design:Yoke (Magnetostatic), Script macro error: Abnormal script termination. (07:36:36 PM  Oct 23, 2026)
+Stopping Batch Run: 7:36:47 PM  Oct 23, 2026
+ 
+Ansys Electronics Desktop Student Version 2025.2.4, Build: 2025-11-06 17:01:32
+Location: F:\Ansys2\ANSYS Inc\ANSYS Student\v252\AnsysEM\ansysedtsv.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 7:40:28 PM  Oct 23, 2026
+Running as user : ADITYA-DESKTOP\adity
+Temp directory: C:\temp
+Project directory: F:\Ansys2\Projects
+[info] gRPC server started on port 57750 of local host. Only connections from the local host initiated by the same user are permitted.
+
+[warning] Project:stack_1, Design:Yoke (Magnetostatic), Part Attributes: Name tmp is already used, use name tmp_1. (07:40:45 PM  Oct 23, 2026)
+[warning] Project:stack_1, Design:Yoke (Magnetostatic), GPU acceleration will be disabled when automatic settings is selected in Analysis Configuration (07:40:46 PM  Oct 23, 2026)
+[info] Project:stack_1, Design:Yoke (Magnetostatic), Verify conduction path: Conduction path validate success. (07:40:47 PM  Oct 23, 2026)
+[info] Project:stack_1, Design:Yoke (Magnetostatic), Normal completion of simulation on server: Local Machine. (07:41:31 PM  Oct 23, 2026)
+[error] Project:stack_1, Design:Yoke (Magnetostatic), Script macro error: Abnormal script termination. (07:41:32 PM  Oct 23, 2026)
+Stopping Batch Run: 7:41:43 PM  Oct 23, 2026
+ 
+Ansys Electronics Desktop Student Version 2025.2.4, Build: 2025-11-06 17:01:32
+Location: F:\Ansys2\ANSYS Inc\ANSYS Student\v252\AnsysEM\ansysedtsv.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 7:41:47 PM  Oct 23, 2026
+Running as user : ADITYA-DESKTOP\adity
+Temp directory: C:\temp
+Project directory: F:\Ansys2\Projects
+[info] gRPC server started on port 58018 of local host. Only connections from the local host initiated by the same user are permitted.
+
+[warning] Project:stack_3, Design:Yoke (Magnetostatic), Part Attributes: Name tmp is already used, use name tmp_1. (07:42:04 PM  Oct 23, 2026)
+[warning] Project:stack_3, Design:Yoke (Magnetostatic), GPU acceleration will be disabled when automatic settings is selected in Analysis Configuration (07:42:06 PM  Oct 23, 2026)
+[info] Project:stack_3, Design:Yoke (Magnetostatic), Verify conduction path: Conduction path validate success. (07:42:07 PM  Oct 23, 2026)
+[info] Project:stack_3, Design:Yoke (Magnetostatic), Normal completion of simulation on server: Local Machine. (07:42:59 PM  Oct 23, 2026)
+[error] Project:stack_3, Design:Yoke (Magnetostatic), Script macro error: Abnormal script termination. (07:42:59 PM  Oct 23, 2026)
+Stopping Batch Run: 7:43:10 PM  Oct 23, 2026
+ 
+Ansys Electronics Desktop Student Version 2025.2.4, Build: 2025-11-06 17:01:32
+Location: F:\Ansys2\ANSYS Inc\ANSYS Student\v252\AnsysEM\ansysedtsv.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 7:48:14 PM  Oct 23, 2026
+Running as user : ADITYA-DESKTOP\adity
+Temp directory: C:\temp
+Project directory: F:\Ansys2\Projects
+[info] gRPC server started on port 58643 of local host. Only connections from the local host initiated by the same user are permitted.
+
+[warning] Project:stack_1, Design:Yoke (Magnetostatic), Part Attributes: Name tmp is already used, use name tmp_1. (07:48:31 PM  Oct 23, 2026)
+[warning] Project:stack_1, Design:Yoke (Magnetostatic), GPU acceleration will be disabled when automatic settings is selected in Analysis Configuration (07:48:32 PM  Oct 23, 2026)
+[info] Project:stack_1, Design:Yoke (Magnetostatic), Verify conduction path: Conduction path validate success. (07:48:33 PM  Oct 23, 2026)
+[info] Project:stack_1, Design:Yoke (Magnetostatic), Normal completion of simulation on server: Local Machine. (07:49:17 PM  Oct 23, 2026)
+[error] Project:stack_1, Design:Yoke (Magnetostatic), Script macro error: Abnormal script termination. (07:49:18 PM  Oct 23, 2026)
+Stopping Batch Run: 7:49:29 PM  Oct 23, 2026
+ 
+Ansys Electronics Desktop Student Version 2025.2.4, Build: 2025-11-06 17:01:32
+Location: F:\Ansys2\ANSYS Inc\ANSYS Student\v252\AnsysEM\ansysedtsv.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 7:49:33 PM  Oct 23, 2026
+Running as user : ADITYA-DESKTOP\adity
+Temp directory: C:\temp
+Project directory: F:\Ansys2\Projects
+[info] gRPC server started on port 58957 of local host. Only connections from the local host initiated by the same user are permitted.
+
+[warning] Project:stack_3, Design:Yoke (Magnetostatic), Part Attributes: Name tmp is already used, use name tmp_1. (07:49:50 PM  Oct 23, 2026)
+[warning] Project:stack_3, Design:Yoke (Magnetostatic), GPU acceleration will be disabled when automatic settings is selected in Analysis Configuration (07:49:51 PM  Oct 23, 2026)
+[info] Project:stack_3, Design:Yoke (Magnetostatic), Verify conduction path: Conduction path validate success. (07:49:52 PM  Oct 23, 2026)
+[info] Project:stack_3, Design:Yoke (Magnetostatic), Normal completion of simulation on server: Local Machine. (07:50:45 PM  Oct 23, 2026)
+[error] Project:stack_3, Design:Yoke (Magnetostatic), Script macro error: Abnormal script termination. (07:50:45 PM  Oct 23, 2026)
+Stopping Batch Run: 7:50:56 PM  Oct 23, 2026
+ 
+Ansys Electronics Desktop Student Version 2025.2.4, Build: 2025-11-06 17:01:32
+Location: F:\Ansys2\ANSYS Inc\ANSYS Student\v252\AnsysEM\ansysedtsv.exe
+Non Graphical Mode: No Project??
+Starting Batch Run: 7:51:00 PM  Oct 23, 2026
+Running as user : ADITYA-DESKTOP\adity
+Temp directory: C:\temp
+Project directory: F:\Ansys2\Projects
+[info] gRPC server started on port 59239 of local host. Only connections from the local host initiated by the same user are permitted.
+
+[warning] Project:stack_ext3, Design:Yoke (Magnetostatic), Part Attributes: Name tmp is already used, use name tmp_1. (07:51:17 PM  Oct 23, 2026)
+[warning] Project:stack_ext3, Design:Yoke (Magnetostatic), GPU acceleration will be disabled when automatic settings is selected in Analysis Configuration (07:51:18 PM  Oct 23, 2026)
+[info] Project:stack_ext3, Design:Yoke (Magnetostatic), Verify conduction path: Conduction path validate success. (07:51:19 PM  Oct 23, 2026)
+[info] Project:stack_ext3, Design:Yoke (Magnetostatic), Normal completion of simulation on server: Local Machine. (07:52:13 PM  Oct 23, 2026)
+[error] Project:stack_ext3, Design:Yoke (Magnetostatic), Script macro error: Abnormal script termination. (07:52:14 PM  Oct 23, 2026)
+Stopping Batch Run: 7:52:25 PM  Oct 23, 2026
